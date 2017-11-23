@@ -13,7 +13,7 @@ def banner_iphone():
 	device.find_elements_by_class_name('android.view.View')[9].click()
 	time.sleep(6)
 	device.find_elements_by_class_name('android.widget.Button')[1].click()
-	pass
+
 
 if __name__ == '__main__':
     banner_iphone()

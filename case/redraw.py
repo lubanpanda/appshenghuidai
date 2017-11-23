@@ -75,11 +75,12 @@ def swipe_to_right(duration):
 
 
 
+if __name__ == '__main__':
 
-time.sleep(5)
+	time.sleep(5)
 
-swipe_to_left(1000)
-time.sleep(2)
-swipe_to_right(1000)
-time.sleep(2)
-swipe_to_down(1000)
+	swipe_to_left(1000)
+	time.sleep(2)
+	swipe_to_right(1000)
+	time.sleep(2)
+	swipe_to_down(1000)

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Author  : panda
 from appium import webdriver
-
+import time
 def connnect_ipad_device():
 	'''
 	定义测试平台的属性

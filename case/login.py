@@ -14,18 +14,18 @@ def ture_or_flase():
 	'''
 	try:
 		a=device.find_elements_by_class_name ('android.widget.TextView') [14]
-		print(a)
 		return True
 	except Exception :
 		return False
 def login():
-	print(ture_or_flase())
+
 	# 等待启动，设置程序休眠/防止手机反应慢卡死
 	time.sleep(5)
 	#点击账户
 	device.find_elements_by_class_name ('android.widget.RadioButton') [3].click ()
 	#点击更多
 	if ture_or_flase() is True:
+		print(ture_or_flase(),'准备开始切换账户了')
 		device.find_elements_by_class_name ('android.widget.TextView') [14].click()
 		device.find_elements_by_class_name('android.widget.Button')[0].click()
 		#确定
@@ -47,6 +47,7 @@ def login():
 		#跳过手势密码
 		device.find_elements_by_class_name ('android.widget.ImageView') [9].click ()
 	else:
+		print((ture_or_flase()),"准备开始登录了")
 		# 登录
 		device.find_elements_by_class_name ('android.view.View') [6].click ()
 		# 登录账户

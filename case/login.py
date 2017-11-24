@@ -8,16 +8,15 @@ import time
 
 
 def ture_or_flase():
-
+	'''
+	判断是否登录
+	:return:
+	'''
 	try:
 		a=device.find_elements_by_class_name ('android.widget.TextView') [14]
 		print(a)
-
 		return True
-
-	except Exception as e:
-
-		print(e)
+	except Exception :
 		return False
 def login():
 	print(ture_or_flase())

@@ -174,6 +174,7 @@ def login():
 
 
 def toubiao():
+
 	time.sleep(8)
 	device.find_elements_by_class_name('android.widget.RelativeLayout')[1].click()
 	jine=device.find_elements_by_class_name('android.widget.EditText')[0]
@@ -198,3 +199,6 @@ def toubiao():
 		device.find_elements_by_class_name('android.widget.Button')[0].click()
 if __name__ == '__main__':
     device=connnect_ipad_device()
+    time.sleep(8)
+    swipe_to_up (1000)
+    toubiao()

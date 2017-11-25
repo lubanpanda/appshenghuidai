@@ -23,6 +23,7 @@ def login():
 	time.sleep(5)
 	#点击账户
 	device.find_elements_by_class_name ('android.widget.RadioButton') [3].click ()
+
 	#点击更多
 	if ture_or_flase() is True:
 		print('准备开始切换账户了')

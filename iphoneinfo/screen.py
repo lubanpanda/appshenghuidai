@@ -21,7 +21,7 @@ def screenshot (name):
 		os.makedirs (path)
 	photo=os.popen ("adb pull /data/local/tmp/tmp.png " + PATH (path + "/" + name+timestamp + ".png"))
 	os.popen ("adb shell rm /data/local/tmp/tmp.png")
-	print("success",photo+'已经成功的保存在当前目录下')
+	print('success,已经成功的保存在当前目录下')
 
 
 if __name__ == "__main__":

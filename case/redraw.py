@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Author  : panda
-import time
 
 from iphoneinfo import shoujiinfo
 device=shoujiinfo.connnect_ipad_device()
-
+import time
 def getsize():
 	'''
 	获得手机屏幕大小
@@ -14,7 +13,7 @@ def getsize():
 	'''
 	x = device.get_window_size()['width']
 	y = device.get_window_size()['height']
-	return (x, y)
+	return x, y
 
 
 def swipe_to_up(duration):
@@ -53,8 +52,6 @@ def swipe_to_left(duration):
 	:param duration: 滑动持续的毫秒值
 	:return:
 	'''
-
-	device.find_elements_by_class_name ('android.widget.RadioButton') [2].click ()
 	screen_size = getsize()
 	x1 = int(screen_size[0] * 0.75)
 	y1 = int(screen_size[1] * 0.5)
@@ -73,14 +70,33 @@ def swipe_to_right(duration):
 	x2 = int(screen_size[0] * 0.75)
 	device.swipe(x1, y1, x2, y1, duration)
 
+def toubiao():
+	time.sleep(8)
+	device.find_elements_by_class_name('android.widget.RelativeLayout')[1].click()
+	jine=device.find_elements_by_class_name('android.widget.EditText')[0]
+	device.set_value(jine,10000)
+	device.find_elements_by_class_name('android.widget.Button')[1].click()
+	device.find_elements_by_class_name('android.widget.Button')[0].click()
+	for i in range (6):
+		password = device.find_elements_by_class_name ('android.widget.Button')[0]
+		password.click()
+	shouye_to=device.find_elements_by_class_name('android.widget.RadioButton')
+	time.sleep(5)
+	if shouye_to and len(shouye_to)==0:
+		a=shouye_to[0]
+		print(a,'密码正确')
+	else:
+		print('密码错误,正在尝试第二种密码......')
+		device.find_elements_by_class_name ('android.widget.Button') [0].click ()
+		for i in range(6):
+			new_password=device.find_elements_by_class_name('android.widget.Button')[i]
+			new_password.click()
+		print("密码正确，交易成功")
+		device.find_elements_by_class_name('android.widget.Button')[0].click()
 
 
 if __name__ == '__main__':
 
-	time.sleep(5)
-
-	swipe_to_left(1000)
-	time.sleep(2)
-	swipe_to_right(1000)
-	time.sleep(2)
-	swipe_to_down(1000)
+	time.sleep(8)
+	swipe_to_up(1000)
+	toubiao()

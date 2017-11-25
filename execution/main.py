@@ -178,12 +178,13 @@ def toubiao():
 	time.sleep(8)
 	device.find_elements_by_class_name('android.widget.RelativeLayout')[1].click()
 	jine=device.find_elements_by_class_name('android.widget.EditText')[0]
-	device.set_value(jine,10000)
+	device.set_value(jine,1000)
 	device.find_elements_by_class_name('android.widget.Button')[1].click()
 	device.find_elements_by_class_name('android.widget.Button')[0].click()
 	for i in range (6):
-		password = device.find_elements_by_class_name ('android.widget.Button')[0]
-		password.click()
+		new_password = device.find_elements_by_class_name ('android.widget.Button') [i]
+		new_password.click ()
+
 	shouye_to=device.find_elements_by_class_name('android.widget.RadioButton')
 	time.sleep(5)
 	if shouye_to and len(shouye_to)==0:
@@ -192,9 +193,9 @@ def toubiao():
 	else:
 		print('密码错误,正在尝试第二种密码......')
 		device.find_elements_by_class_name ('android.widget.Button') [0].click ()
-		for i in range(6):
-			new_password=device.find_elements_by_class_name('android.widget.Button')[i]
-			new_password.click()
+		for i in range (6):
+			password = device.find_elements_by_class_name ('android.widget.Button') [0]
+			password.click ()
 		print("密码正确，交易成功")
 		device.find_elements_by_class_name('android.widget.Button')[0].click()
 if __name__ == '__main__':

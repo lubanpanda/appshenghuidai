@@ -202,5 +202,6 @@ def toubiao():
 if __name__ == '__main__':
     device=connnect_ipad_device()
     time.sleep(8)
-    swipe_to_up (1000)
-    toubiao()
+    login()  # 登录账号
+    # swipe_to_up (1000)
+    # toubiao()

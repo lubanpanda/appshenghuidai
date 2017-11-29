@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Author  : panda
+import json
+
+import requests
 from appium import webdriver
 import os
 import time
@@ -128,7 +131,10 @@ def ture_or_flase():
 	except Exception :
 		return False
 def login():
-
+	'''
+	登录账号或者切换账号
+	:return:
+	'''
 	# 等待启动，设置程序休眠/防止手机反应慢卡死
 	time.sleep(5)
 	#点击账户
@@ -173,15 +179,54 @@ def login():
 		# 跳过手势密码
 		device.find_elements_by_class_name ('android.widget.ImageView') [9].click ()
 
-
-def toubiao():
-
-	time.sleep(8)
-	device.find_elements_by_class_name('android.widget.RelativeLayout')[1].click()
-	jine=device.find_elements_by_class_name('android.widget.EditText')[0]
-	device.set_value(jine,1000)
-	device.find_elements_by_class_name('android.widget.Button')[1].click()
-	device.find_elements_by_class_name('android.widget.Button')[0].click()
+def hongbao():
+	'''
+	判断优惠券的个数来进行操作
+	:return:
+	'''
+	url = "http://apitest.shenghuidai.com:8012/v1/asset/18519291259/red/pocket"
+	headers = {'cache-control': "no-cache", 'postman-token': "78531346-aad3-2a2b-57bb-b886fe3718ff"}
+	response = requests.request ("POST", url, headers = headers)
+	if response.status_code==200:
+		print("请求成功")
+	else:
+		print("请求失败，请查看网络配置")
+	hongbao_info=json.loads(response.text)
+	hongbao_geshu=[]
+	for i in hongbao_info['content']:
+		hongbao_geshu.append(len(i))
+	url = "http://apitest.shenghuidai.com:8012/v1/asset/18519291259/rate/pocket"
+	headers = {'cache-control': "no-cache", 'postman-token': "a5aa815a-8c15-5674-9ead-4b1340b46cbf"}
+	response = requests.request ("POST", url, headers = headers)
+	if response.status_code==200:
+		print("请求成功")
+	else:
+		print("请求失败，请查看网络配置")
+	jiaxiquan_info = json.loads (response.text)
+	jiaxiquan_geshu = []
+	for i in jiaxiquan_info ['content']:
+		jiaxiquan_geshu.append (len (i))
+	#print (len (jiaxiquan_geshu))
+	device.implicitly_wait(8)
+	device.find_elements_by_class_name('android.widget.RadioButton')[3].click()
+	device.find_elements_by_class_name('android.widget.TextView')[10].click()
+	if len(hongbao_geshu) >0:
+		print('有红包,红包个数为：',len(hongbao_geshu))
+		device.find_elements_by_class_name ('android.widget.TextView') [3].click ()
+		if len (jiaxiquan_geshu) > 0:
+			print ("有加息券，个数为：", len (jiaxiquan_geshu))
+			device.back ()
+	else:
+		print("没有红包")
+		device.find_elements_by_class_name('android.widget.TextView')[3].click()
+		if len(jiaxiquan_geshu)>0:
+			print("有加息券，个数为：",len(jiaxiquan_geshu))
+			device.back()
+def cipher():
+	'''
+	交易密码
+	:return:
+	'''
 	for i in range (6):
 		new_password = device.find_elements_by_class_name ('android.widget.Button') [i]
 		new_password.click ()
@@ -199,9 +244,40 @@ def toubiao():
 			password.click ()
 		print("密码正确，交易成功")
 		device.find_elements_by_class_name('android.widget.Button')[0].click()
+def new_toubiao():
+	'''
+	投资新手标
+	:return:
+	'''
+	device.implicitly_wait (10)
+	device.find_elements_by_class_name('android.widget.RelativeLayout')[1].click()
+	touzi_money=device.find_elements_by_class_name('android.widget.EditText')[0]
+	device.set_value(touzi_money,1000)
+	device.find_elements_by_class_name('android.widget.Button')[1].click()
+	new_biao_youhui=device.find_elements_by_class_name('android.widget.TextView')[21].click()
+	if new_biao_youhui:
+		print ("可以点击使用优惠券，请确认是否是新手或了解业务需求")
+	else:
+		print ("验证正确，不能使用优惠券")
+	new_buy=device.find_elements_by_class_name('android.widget.Button')[0].click()
+	if new_buy:
+		print("你不是新手，可以购买")
+		cipher()
+	else:
+		print("你已经不是新手了，不能购买新手标了")
+	device.back()
+	device.back()
+def toubiao():
+	'''
+	投资普通标
+	:return:
+	'''
+	time.sleep(8)
+	device.find_elements_by_class_name('android.widget.RelativeLayout')[1].click()
+	jine=device.find_elements_by_class_name('android.widget.EditText')[0]
+	device.set_value(jine,1000)
+	device.find_elements_by_class_name('android.widget.Button')[1].click()
+	device.find_elements_by_class_name('android.widget.Button')[0].click()
+	cipher()
 if __name__ == '__main__':
     device=connnect_ipad_device()
-    time.sleep(8)
-    login()  # 登录账号
-    # swipe_to_up (1000)
-    # toubiao()

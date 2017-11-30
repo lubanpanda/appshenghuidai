@@ -178,6 +178,10 @@ def login():
 		device.find_elements_by_class_name ('android.widget.Button') [0].click ()
 		# 跳过手势密码
 		device.find_elements_by_class_name ('android.widget.ImageView') [9].click ()
+def gonggao():
+
+	device.implicitly_wait(10)
+	device.find_elements_by_class_name('android.widget.LinearLayout')[10].click()
 
 def hongbao():
 	'''

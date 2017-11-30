@@ -6,6 +6,7 @@ from iphoneinfo import shoujiinfo
 device=shoujiinfo.connnect_ipad_device()
 import time
 import threading
+import os
 def timeout():
 	'''
 	支付密码超时处理
@@ -34,8 +35,7 @@ def all_account(money):
 	device.back()
 	t = threading.Timer (10.0, timeout)
 	t.start ()
-	select_tixian = int (input ("体现输入1，不提醒输入2:"))
-
+	select_tixian = int (input ("体现输入1，不提醒输入2，请在10S内输入:"+os.linesep))
 	if  select_tixian==1:
 		#体现
 		t.cancel()
@@ -66,6 +66,10 @@ def all_account(money):
 
 	other()
 def other():
+	'''
+	资金记录到更多
+	:return:
+	'''
 	#资金记录
 	time.sleep(2)
 	device.find_elements_by_class_name('android.widget.TextView')[9].click()

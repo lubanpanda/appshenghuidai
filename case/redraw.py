@@ -93,10 +93,13 @@ def toubiao():
 			new_password.click()
 		print("密码正确，交易成功")
 		device.find_elements_by_class_name('android.widget.Button')[0].click()
+def gonggao():
+
+	device.implicitly_wait(10)
+	device.find_elements_by_class_name('android.widget.LinearLayout')[10].click()
 
 
 if __name__ == '__main__':
-
-	time.sleep(8)
-	swipe_to_up(1000)
-	toubiao()
+	time.sleep(10)
+	swipe_to_up (1000)
+	gonggao()

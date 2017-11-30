@@ -43,6 +43,7 @@
           <option value="cookielib" />
           <option value="urllib.build_operner" />
           <option value="webdriver" />
+          <option value="msvcrt" />
         </list>
       </option>
     </inspection_tool>

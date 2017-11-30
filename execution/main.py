@@ -288,7 +288,7 @@ def timeout():
 	支付密码超时处理
 	:return:
 	'''
-	print("输入超时，默认不做提现处理")
+	print("输入超时，默认不做提现处理."+os.linesep)
 	other()
 
 
@@ -311,7 +311,8 @@ def all_account(money):
 	device.back()
 	t = threading.Timer (10.0, timeout)
 	t.start ()
-	select_tixian = int (input ("体现输入1，不提醒输入2，请在10S内输入:"+os.linesep))
+	#select_tixian = int (input ("体现输入1，不提醒输入2，请在10S内输入:"+os.linesep))
+	select_tixian=int(2)
 	if  select_tixian==1:
 		#体现
 		t.cancel()
@@ -376,3 +377,4 @@ def other():
 	device.back()
 if __name__ == '__main__':
     device=connnect_ipad_device()
+    all_account(1000)

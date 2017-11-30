@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Author  : panda
-
+import unittest
 from iphoneinfo import shoujiinfo
 device=shoujiinfo.connnect_ipad_device()
 import time
@@ -54,13 +54,14 @@ def login():
 		# 登录账户
 		device.find_elements_by_class_name ('android.widget.EditText') [0].clear ()
 		login_ip = device.find_elements_by_class_name ('android.widget.EditText') [0]
-		device.set_value (login_ip, '18519291259')
+		device.set_value(login_ip, '18519291259')
 		device.find_elements_by_class_name ('android.widget.Button') [0].click ()
 		# 密码
 		password = device.find_elements_by_class_name ('android.widget.EditText') [0]
 		device.set_value (password, '111111')
 		device.find_elements_by_class_name ('android.widget.Button') [0].click ()
 		# 跳过手势密码
+		time.sleep(2)
 		device.find_elements_by_class_name ('android.widget.ImageView') [9].click ()
 
 

@@ -119,6 +119,30 @@ def screenshot (name):
 	os.popen ("adb shell rm /data/local/tmp/tmp.png")
 	print('success,已经成功的保存在当前目录下')
 
+def All_shouye():
+	device.implicitly_wait(30)
+	u'投资攻略'
+	device.find_elements_by_class_name('android.widget.TextView')[0].click()
+	time.sleep(2)
+	device.back()
+	u'新手指引'
+	device.find_elements_by_class_name('android.widget.TextView')[1].click()
+	device.back()
+	u'邀请好友'
+	device.find_elements_by_class_name('android.widget.TextView')[2].click()
+	device.find_elements_by_class_name('android.widget.Button')[0].click()
+	device.back()
+	device.find_elements_by_class_name('android.widget.Button')[1].click()
+	device.back()
+	device.back()
+	u'每日签到'
+	device.find_elements_by_class_name('android.widget.TextView')[3].click()
+	u'签到'
+	device.find_elements_by_class_name('android.view.View')[53].click()
+	u'签到规则'
+	device.find_elements_by_class_name('android.widget.ImageView')[1].click()
+	device.back()
+	device.back()
 
 def ture_or_flase():
 	'''
@@ -185,7 +209,7 @@ def gonggao():
 
 def hongbao():
 	'''
-	判断优惠券的个数来进行操作
+	判断优惠券的个数来进行操作,测试版本的优惠券
 	:return:
 	'''
 	url = "http://apitest.shenghuidai.com:8012/v1/asset/18519291259/red/pocket"

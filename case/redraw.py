@@ -70,23 +70,31 @@ def swipe_to_right(duration):
 	x2 = int(screen_size[0] * 0.75)
 	device.swipe(x1, y1, x2, y1, duration)
 u'积分商城'
-def jifenshangcheng():
+def faxian_all():
 	'''
 	点击积分商场的兑换记录
 	:return:
 	'''
 	device.implicitly_wait(30)
 	device.find_elements_by_class_name ('android.widget.RadioButton') [2].click ()
-	device.find_element_by_id('com.yourenkeji.shenghuidai:id/jifenshangcheng').click()
+	#device.find_elements_by_class_name('android.widget.ImageView')[0].click()
+	u'平台数据'
+	device.find_elements_by_class_name('android.widget.TextView')[0].click()
+	time.sleep(2)
+	device.back()
+	u'安全保障'
+	device.find_elements_by_class_name ('android.widget.TextView') [1].click ()
+	for i in range(6):
+		for a in range(2):
+			device.find_elements_by_class_name('android.widget.Image')[1+i].click()
+	device.back()
 	u'查看积分'
+	device.find_element_by_id('com.yourenkeji.shenghuidai:id/jifenshangcheng').click()
 	device.find_elements_by_class_name('android.widget.Image')[0].click()
 	device.back()
 	for i in range(8):
 		if i >= 5:
-			try:
-				swipe_to_up(1000)
-			except Exception as e:
-				print(e)
+			swipe_to_up(1000)
 			device.find_elements_by_class_name('android.widget.Image')[2+i].click()
 			time.sleep(2)
 			device.back()
@@ -94,7 +102,14 @@ def jifenshangcheng():
 			device.find_elements_by_class_name ('android.widget.Image') [2 + i].click ()
 			time.sleep(2)
 			device.back()
-		device.back()
+	device.back()
+	u'活动中心'
+	device.find_element_by_id('com.yourenkeji.shenghuidai:id/huodongzhongxin').click()
+	device.back()
+	u'发现更多'
+	device.find_elements_by_class_name('android.widget.TextView')[6].click()
+	swipe_to_up(1000)
+	device.back()
 def All_shouye():
 	'''
 	首页的四个小模块查看
@@ -156,4 +171,4 @@ def gonggao():
 
 if __name__ == '__main__':
 	time.sleep(10)
-	jifenshangcheng()
+

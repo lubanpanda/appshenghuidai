@@ -8,7 +8,15 @@ import os
 import time
 from time import sleep
 import threading
+import datetime
 timestamp = time.strftime ('%Y-%m-%d-%H-%M-%S', time.localtime (time.time ()))
+def shijiancha(fune):
+	def zhuang():
+		star=datetime.datetime.now()
+		fune()
+		stop=datetime.datetime.now()
+		print('花费时间为：',stop-star)
+	return zhuang
 def connnect_ipad_device():
 	'''
 	定义测试平台的属性
@@ -118,7 +126,48 @@ def screenshot (name):
 	os.popen ("adb pull /data/local/tmp/tmp.png " + PATH (path + "/" + name+timestamp + ".png"))
 	os.popen ("adb shell rm /data/local/tmp/tmp.png")
 	print('success,已经成功的保存在当前目录下')
+def faxian_all():
+	'''
+	点击积分商场的兑换记录
+	:return:
+	'''
+	device.implicitly_wait(30)
+	device.find_elements_by_class_name ('android.widget.RadioButton') [2].click ()
+	#device.find_elements_by_class_name('android.widget.ImageView')[0].click()
+	u'平台数据'
+	device.find_elements_by_class_name('android.widget.TextView')[0].click()
+	time.sleep(2)
+	device.back()
+	u'安全保障'
+	device.find_elements_by_class_name ('android.widget.TextView') [1].click ()
+	for i in range(6):
+		for a in range(2):
+			device.find_elements_by_class_name('android.widget.Image')[1+i].click()
+	device.back()
+	u'查看积分'
+	device.find_element_by_id('com.yourenkeji.shenghuidai:id/jifenshangcheng').click()
+	device.find_elements_by_class_name('android.widget.Image')[0].click()
+	device.back()
+	for i in range(8):
+		if i >= 5:
+			swipe_to_up(1000)
+			device.find_elements_by_class_name('android.widget.Image')[2+i].click()
+			time.sleep(2)
+			device.back()
+		else:
+			device.find_elements_by_class_name ('android.widget.Image') [2 + i].click ()
+			time.sleep(2)
+			device.back()
+	device.back()
+	u'活动中心'
+	device.find_element_by_id('com.yourenkeji.shenghuidai:id/huodongzhongxin').click()
+	device.back()
+	u'发现更多'
+	device.find_elements_by_class_name('android.widget.TextView')[6].click()
+	swipe_to_up(1000)
+	device.back()
 
+@shijiancha
 def All_shouye():
 	'''
 	首页的四个小模块查看
@@ -153,6 +202,7 @@ def All_shouye():
 	device.back()
 	device.back()
 
+
 def ture_or_flase_login():
 	'''
 	判断是否登录
@@ -163,6 +213,8 @@ def ture_or_flase_login():
 		return True
 	except Exception :
 		return False
+
+@shijiancha
 def login():
 	'''
 	登录账号或者切换账号
@@ -211,12 +263,17 @@ def login():
 		device.find_elements_by_class_name ('android.widget.Button') [0].click ()
 		# 跳过手势密码
 		device.find_elements_by_class_name ('android.widget.ImageView') [9].click ()
+
+@shijiancha
 def gonggao():
 
 	device.implicitly_wait(10)
 	swipe_to_up (1000)
-	device.find_elements_by_class_name('android.widget.LinearLayout')[10].click()
+	device.find_elements_by_class_name('android.widget.LinearLayout')[9].click()
+	device.back()
 
+
+@shijiancha
 def hongbao():
 	'''
 	判断优惠券的个数来进行操作,测试版本的优惠券
@@ -260,6 +317,9 @@ def hongbao():
 		if len(jiaxiquan_geshu)>0:
 			print("有加息券，个数为：",len(jiaxiquan_geshu))
 			device.back()
+
+
+@shijiancha
 def cipher():
 	'''
 	交易密码
@@ -282,6 +342,9 @@ def cipher():
 			password.click ()
 		print("密码正确，交易成功")
 		device.find_elements_by_class_name('android.widget.Button')[0].click()
+
+
+@shijiancha
 def new_toubiao():
 	'''
 	投资新手标
@@ -305,6 +368,9 @@ def new_toubiao():
 		print("你已经不是新手了，不能购买新手标了")
 	device.back()
 	device.back()
+
+
+@shijiancha
 def toubiao():
 	'''
 	投资普通标
@@ -325,7 +391,7 @@ def timeout():
 	print("输入超时，默认不做提现处理."+os.linesep)
 	other()
 
-
+@shijiancha
 def all_account(money):
 	'''
 	账户页面的操作
@@ -376,6 +442,8 @@ def all_account(money):
 		print("不做提现动作")
 
 	other()
+
+@shijiancha
 def other():
 	'''
 	资金记录到更多
@@ -409,7 +477,17 @@ def other():
 	time.sleep(2)
 	device.find_elements_by_class_name('android.widget.TextView')[14].click()
 	device.back()
+
+
 if __name__ == '__main__':
     device=connnect_ipad_device()
+    star=timestamp
     All_shouye()
+    stop=timestamp
+    print('首页的已经跑完了哦',timestamp)
     gonggao()
+    print ('公告的已经跑完了哦', timestamp)
+    faxian_all()
+    print ('发现的已经跑完了哦', timestamp)
+    all_account(1000)
+    print ('账户的已经跑完了哦', timestamp)

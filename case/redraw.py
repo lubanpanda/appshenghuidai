@@ -13,7 +13,7 @@ def getsize():
 	'''
 	x = device.get_window_size()['width']
 	y = device.get_window_size()['height']
-	return x, y
+	return x,y
 
 
 def swipe_to_up(duration):
@@ -69,8 +69,63 @@ def swipe_to_right(duration):
 	y1 = int(screen_size[1] * 0.5)
 	x2 = int(screen_size[0] * 0.75)
 	device.swipe(x1, y1, x2, y1, duration)
-
+u'积分商城'
+def jifenshangcheng():
+	'''
+	点击积分商场的兑换记录
+	:return:
+	'''
+	device.implicitly_wait(30)
+	device.find_elements_by_class_name ('android.widget.RadioButton') [2].click ()
+	device.find_element_by_id('com.yourenkeji.shenghuidai:id/jifenshangcheng').click()
+	u'查看积分'
+	device.find_elements_by_class_name('android.widget.Image')[0].click()
+	device.back()
+	for i in range(8):
+		if i >= 5:
+			try:
+				swipe_to_up(1000)
+			except Exception as e:
+				print(e)
+			device.find_elements_by_class_name('android.widget.Image')[2+i].click()
+			time.sleep(2)
+			device.back()
+		else:
+			device.find_elements_by_class_name ('android.widget.Image') [2 + i].click ()
+			time.sleep(2)
+			device.back()
+		device.back()
+def All_shouye():
+	'''
+	首页的四个小模块查看
+	:return:
+	'''
+	device.implicitly_wait(30)
+	u'投资攻略'
+	device.find_elements_by_class_name('android.widget.TextView')[0].click()
+	time.sleep(2)
+	device.back()
+	u'新手指引'
+	device.find_elements_by_class_name('android.widget.TextView')[1].click()
+	time.sleep(2)
+	device.back()
+	u'邀请好友'
+	device.find_elements_by_class_name('android.widget.TextView')[2].click()
+	device.find_elements_by_class_name('android.widget.Button')[0].click()
+	device.back()
+	device.find_elements_by_class_name('android.widget.Button')[1].click()
+	device.back()
+	device.back()
+	u'每日签到'
+	device.find_elements_by_class_name('android.widget.TextView')[3].click()
+	u'签到'
+	device.find_elements_by_class_name('android.view.View')[53].click()
+	u'签到规则'
+	device.find_elements_by_class_name('android.widget.ImageView')[1].click()
+	device.back()
+	device.back()
 def toubiao():
+	u'投标'
 	time.sleep(8)
 	device.find_elements_by_class_name('android.widget.RelativeLayout')[1].click()
 	jine=device.find_elements_by_class_name('android.widget.EditText')[0]
@@ -101,5 +156,4 @@ def gonggao():
 
 if __name__ == '__main__':
 	time.sleep(10)
-	swipe_to_up (1000)
-	gonggao()
+	jifenshangcheng()

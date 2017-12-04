@@ -19,10 +19,10 @@ def shijiancha(fune):
 		"""
 		执行的时间
 		"""
-		star=datetime.datetime.now()
+		star_time=datetime.datetime.now()
 		fune()
-		stop=datetime.datetime.now()
-		print('花费时间为：',stop-star)
+		stop_time=datetime.datetime.now()
+		print('花费时间为：', stop_time - star_time)
 	return zhuang
 def connnect_ipad_device():
 	"""
@@ -55,8 +55,7 @@ def connnect_ipad_device():
 def getsize():
 	"""
 	获得手机屏幕大小
-	:param device: 测试的手机
-	:return: 手机屏幕大小
+	:return:
 	"""
 
 	x = device.get_window_size()['width']
@@ -177,10 +176,10 @@ def faxian_all():
 
 @shijiancha
 def All_shouye():
-	'''
+	"""
 	首页的四个小模块查看
 	:return:
-	'''
+		"""
 	device.implicitly_wait(30)
 	u'投资攻略'
 	device.find_elements_by_class_name('android.widget.TextView')[0].click()
@@ -275,6 +274,10 @@ def login():
 
 @shijiancha
 def gonggao():
+	"""
+	公告
+	:return:
+	"""
 	device.implicitly_wait(10)
 	swipe_to_up (1000)
 	device.find_elements_by_class_name('android.widget.LinearLayout')[9].click()

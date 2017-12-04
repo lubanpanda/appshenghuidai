@@ -120,6 +120,10 @@ def screenshot (name):
 	print('success,已经成功的保存在当前目录下')
 
 def All_shouye():
+	'''
+	首页的四个小模块查看
+	:return:
+	'''
 	device.implicitly_wait(30)
 	u'投资攻略'
 	device.find_elements_by_class_name('android.widget.TextView')[0].click()
@@ -127,6 +131,7 @@ def All_shouye():
 	device.back()
 	u'新手指引'
 	device.find_elements_by_class_name('android.widget.TextView')[1].click()
+	time.sleep(2)
 	device.back()
 	u'邀请好友'
 	device.find_elements_by_class_name('android.widget.TextView')[2].click()
@@ -138,13 +143,17 @@ def All_shouye():
 	u'每日签到'
 	device.find_elements_by_class_name('android.widget.TextView')[3].click()
 	u'签到'
-	device.find_elements_by_class_name('android.view.View')[53].click()
+	qiandao=device.find_elements_by_class_name('android.view.View')
+	if qiandao and len(qiandao)==53:
+		print('签到成功')
+	else:
+		print('已经签到了')
 	u'签到规则'
 	device.find_elements_by_class_name('android.widget.ImageView')[1].click()
 	device.back()
 	device.back()
 
-def ture_or_flase():
+def ture_or_flase_login():
 	'''
 	判断是否登录
 	:return:
@@ -165,7 +174,7 @@ def login():
 	device.find_elements_by_class_name ('android.widget.RadioButton') [3].click ()
 
 	#点击更多
-	if ture_or_flase() is True:
+	if ture_or_flase_login is True:
 		print('准备开始切换账户了')
 		device.find_elements_by_class_name ('android.widget.TextView') [14].click()
 		device.find_elements_by_class_name('android.widget.Button')[0].click()
@@ -205,6 +214,7 @@ def login():
 def gonggao():
 
 	device.implicitly_wait(10)
+	swipe_to_up (1000)
 	device.find_elements_by_class_name('android.widget.LinearLayout')[10].click()
 
 def hongbao():
@@ -401,4 +411,5 @@ def other():
 	device.back()
 if __name__ == '__main__':
     device=connnect_ipad_device()
-    all_account(1000)
+    All_shouye()
+    gonggao()

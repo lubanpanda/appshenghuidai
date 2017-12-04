@@ -12,6 +12,9 @@ import datetime
 timestamp = time.strftime ('%Y-%m-%d-%H-%M-%S', time.localtime (time.time ()))
 def shijiancha(fune):
 	def zhuang():
+		"""
+		执行的时间
+		"""
 		star=datetime.datetime.now()
 		fune()
 		stop=datetime.datetime.now()
@@ -204,10 +207,11 @@ def All_shouye():
 
 
 def ture_or_flase_login():
-	'''
+	"""
 	判断是否登录
 	:return:
-	'''
+	"""
+	# noinspection PyBroadException
 	try:
 		a=device.find_elements_by_class_name ('android.widget.TextView') [14]
 		return True
@@ -216,10 +220,10 @@ def ture_or_flase_login():
 
 @shijiancha
 def login():
-	'''
+	"""
 	登录账号或者切换账号
 	:return:
-	'''
+	"""
 	# 等待启动，设置程序休眠/防止手机反应慢卡死
 	time.sleep(5)
 	#点击账户
@@ -372,10 +376,10 @@ def new_toubiao():
 
 @shijiancha
 def toubiao():
-	'''
+	"""
 	投资普通标
 	:return:
-	'''
+	"""
 	time.sleep(8)
 	device.find_elements_by_class_name('android.widget.RelativeLayout')[1].click()
 	jine=device.find_elements_by_class_name('android.widget.EditText')[0]
@@ -384,10 +388,10 @@ def toubiao():
 	device.find_elements_by_class_name('android.widget.Button')[0].click()
 	cipher()
 def timeout():
-	'''
+	"""
 	支付密码超时处理
 	:return:
-	'''
+	"""
 	print("输入超时，默认不做提现处理."+os.linesep)
 	other()
 
@@ -445,10 +449,10 @@ def all_account(money):
 
 @shijiancha
 def other():
-	'''
+	"""
 	资金记录到更多
 	:return:
-	'''
+	"""
 	#资金记录
 	time.sleep(2)
 	device.find_elements_by_class_name('android.widget.TextView')[9].click()

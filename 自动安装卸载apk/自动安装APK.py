@@ -34,8 +34,8 @@ def eMail():
         try:
             installApks.installApk()
         except Exception as e:
-            print(e)
-        print('install  success')
+            print('这是异常信息:',e)
+        print('install 胜辉贷apk success')
     else:
         print("手机连接失败,请检查数据线是否插好")
 

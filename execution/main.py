@@ -11,6 +11,10 @@ import threading
 import datetime
 timestamp = time.strftime ('%Y-%m-%d-%H-%M-%S', time.localtime (time.time ()))
 def shijiancha(fune):
+	"""
+	:param fune:
+	:return:
+	"""
 	def zhuang():
 		"""
 		执行的时间
@@ -21,10 +25,10 @@ def shijiancha(fune):
 		print('花费时间为：',stop-star)
 	return zhuang
 def connnect_ipad_device():
-	'''
+	"""
 	定义测试平台的属性
 	:return: device及参数
-	'''
+	"""
 	try:
 
 		import time
@@ -49,22 +53,23 @@ def connnect_ipad_device():
 
 
 def getsize():
-	'''
+	"""
 	获得手机屏幕大小
 	:param device: 测试的手机
 	:return: 手机屏幕大小
-	'''
+	"""
+
 	x = device.get_window_size()['width']
 	y = device.get_window_size()['height']
 	return x, y
 
 
 def swipe_to_up(duration):
-	'''
+	"""
 	屏幕向上滑动
 	:param duration: 滑动的毫秒数值
 	:return:
-	'''
+	"""
 	screen_size = getsize()
 	# X坐标
 	x1 = int(screen_size[0] * 0.5)
@@ -76,11 +81,11 @@ def swipe_to_up(duration):
 
 
 def swipe_to_down(duration):
-	'''
+	"""
 	屏幕向下滑动
 	:param duration: 滑动的毫秒数值
 	:return:
-	'''
+	"""
 
 	screen_size = getsize()
 	x1 = int(screen_size[0] * 0.5)
@@ -90,11 +95,11 @@ def swipe_to_down(duration):
 
 
 def swipe_to_left(duration):
-	'''
+	"""
 	屏幕向左滑动
 	:param duration: 滑动持续的毫秒值
 	:return:
-	'''
+	"""
 	screen_size = getsize()
 	x1 = int(screen_size[0] * 0.75)
 	y1 = int(screen_size[1] * 0.5)
@@ -103,10 +108,10 @@ def swipe_to_left(duration):
 
 
 def swipe_to_right(duration):
-	'''
+	"""
 	屏幕向右滑动
 	:return:
-	'''
+	"""
 	screen_size = getsize()
 	x1 = int(screen_size[0] * 0.05)
 	y1 = int(screen_size[1] * 0.5)
@@ -116,11 +121,11 @@ def swipe_to_right(duration):
 
 PATH = lambda p: os.path.abspath (p)
 def screenshot (name):
-	'''
+	"""
 	截取手机屏幕
 	:param name:相片文件名
 	:return:
-	'''
+	"""
 	path = PATH (os.getcwd () + "/screenshot")
 	os.popen ("adb wait-for-device")
 	os.popen ("adb shell screencap -p /data/local/tmp/tmp.png")
@@ -130,10 +135,10 @@ def screenshot (name):
 	os.popen ("adb shell rm /data/local/tmp/tmp.png")
 	print('success,已经成功的保存在当前目录下')
 def faxian_all():
-	'''
+	"""
 	点击积分商场的兑换记录
 	:return:
-	'''
+	"""
 	device.implicitly_wait(30)
 	device.find_elements_by_class_name ('android.widget.RadioButton') [2].click ()
 	#device.find_elements_by_class_name('android.widget.ImageView')[0].click()
@@ -270,7 +275,6 @@ def login():
 
 @shijiancha
 def gonggao():
-
 	device.implicitly_wait(10)
 	swipe_to_up (1000)
 	device.find_elements_by_class_name('android.widget.LinearLayout')[9].click()
@@ -279,10 +283,10 @@ def gonggao():
 
 @shijiancha
 def hongbao():
-	'''
+	"""
 	判断优惠券的个数来进行操作,测试版本的优惠券
 	:return:
-	'''
+	"""
 	url = "http://apitest.shenghuidai.com:8012/v1/asset/18519291259/red/pocket"
 	headers = {'cache-control': "no-cache", 'postman-token': "78531346-aad3-2a2b-57bb-b886fe3718ff"}
 	response = requests.request ("POST", url, headers = headers)
@@ -325,10 +329,10 @@ def hongbao():
 
 @shijiancha
 def cipher():
-	'''
+	"""
 	交易密码
 	:return:
-	'''
+	"""
 	for i in range (6):
 		new_password = device.find_elements_by_class_name ('android.widget.Button') [i]
 		new_password.click ()
@@ -350,10 +354,10 @@ def cipher():
 
 @shijiancha
 def new_toubiao():
-	'''
+	"""
 	投资新手标
 	:return:
-	'''
+	"""
 	device.implicitly_wait (10)
 	device.find_elements_by_class_name('android.widget.RelativeLayout')[1].click()
 	touzi_money=device.find_elements_by_class_name('android.widget.EditText')[0]
@@ -397,11 +401,11 @@ def timeout():
 
 @shijiancha
 def all_account(money):
-	'''
+	"""
 	账户页面的操作
 	:param money:提现的金额
 	:return:
-	'''
+	"""
 	device.implicitly_wait(10)
 	device.find_elements_by_class_name('android.widget.RadioButton')[3].click()
 	#投资记录

@@ -9,7 +9,7 @@ import time
 from time import sleep
 import threading
 import datetime
-timestamp = time.strftime ('%Y-%m-%d-%H-%M-%S', time.localtime (time.time ()))
+timestamp = time.strftime ('%Y-%m-%d %H:%M:%S', time.localtime (time.time ()))
 def shijiancha(fune):
 	"""
 	:param fune:
@@ -201,6 +201,7 @@ def All_shouye():
 	u'签到'
 	qiandao=device.find_elements_by_class_name('android.view.View')
 	if qiandao and len(qiandao)==53:
+		qiandao[53].click()
 		print('签到成功')
 	else:
 		print('已经签到了')
@@ -402,7 +403,6 @@ def timeout():
 	print("输入超时，默认不做提现处理."+os.linesep)
 	other()
 
-@shijiancha
 def all_account(money):
 	"""
 	账户页面的操作

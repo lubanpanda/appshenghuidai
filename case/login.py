@@ -46,6 +46,7 @@ def login():
 		device.set_value(password,'111111')
 		device.find_elements_by_class_name('android.widget.Button')[0].click()
 		#跳过手势密码
+		time.sleep(5)
 		device.find_elements_by_class_name ('android.widget.ImageView') [9].click ()
 	else:
 		print("准备开始登录了")
@@ -61,7 +62,7 @@ def login():
 		device.set_value (password, '111111')
 		device.find_elements_by_class_name ('android.widget.Button') [0].click ()
 		# 跳过手势密码
-		time.sleep(2)
+		time.sleep(4)
 		device.find_elements_by_class_name ('android.widget.ImageView') [9].click ()
 
 

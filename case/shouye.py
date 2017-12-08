@@ -28,7 +28,13 @@ def All_shouye():
 	u'每日签到'
 	device.find_elements_by_class_name('android.widget.TextView')[3].click()
 	u'签到'
-	device.find_elements_by_class_name('android.view.View')[53].click()
+	qiandao = device.find_elements_by_class_name ('android.view.View')
+	if qiandao and len (qiandao) == 53:
+
+		print ('签到成功')
+	else:
+		device.find_elements_by_class_name ('android.view.View')[53].click ()
+		print ('已经签到完成')
 	u'签到规则'
 	device.find_elements_by_class_name('android.widget.ImageView')[1].click()
 	device.back()

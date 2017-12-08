@@ -204,7 +204,8 @@ def All_shouye():
 		qiandao[53].click()
 		print('签到成功')
 	else:
-		print('已经签到了')
+		device.find_elements_by_class_name ('android.view.View')[53].click()
+		print('已经签到完成')
 	u'签到规则'
 	device.find_elements_by_class_name('android.widget.ImageView')[1].click()
 	device.back()
@@ -223,7 +224,7 @@ def ture_or_flase_login():
 	except Exception :
 		return False
 
-@shijiancha
+
 def login():
 	"""
 	登录账号或者切换账号
@@ -235,7 +236,7 @@ def login():
 	device.find_elements_by_class_name ('android.widget.RadioButton') [3].click ()
 
 	#点击更多
-	if ture_or_flase_login is True:
+	if ture_or_flase_login () is True:
 		print('准备开始切换账户了')
 		device.find_elements_by_class_name ('android.widget.TextView') [14].click()
 		device.find_elements_by_class_name('android.widget.Button')[0].click()
@@ -465,23 +466,23 @@ def other():
 	device.find_elements_by_class_name('android.widget.TextView')[9].click()
 	device.back()
 	#安全管理
-	device.find_elements_by_class_name('android.widget.TextView')[12].click()
-	device.find_elements_by_class_name('android.widget.RelativeLayout')[1].click()
-	#记得支付密码
-	device.find_elements_by_class_name('android.widget.RelativeLayout')[2].click()
-	yuan_key=device.find_elements_by_class_name('android.widget.EditText')[0]
-	device.set_value(yuan_key,123456)
-	new_key=device.find_elements_by_class_name('android.widget.EditText')[1]
-	device.set_value(new_key,123456)
-	new_key_too=device.find_elements_by_class_name('android.widget.EditText')[2]
-	device.set_value(new_key_too,123456)
-	device.find_elements_by_class_name('android.widget.Button')[0].click()
-	time.sleep(2)
-	#设置手势密码
-	time.sleep(2)
-	device.find_elements_by_class_name('android.widget.RelativeLayout')[2].click()
-	device.back()
-	device.back()
+	# device.find_elements_by_class_name('android.widget.TextView')[12].click()
+	# device.find_elements_by_class_name('android.widget.RelativeLayout')[1].click()
+	# #记得支付密码
+	# device.find_elements_by_class_name('android.widget.RelativeLayout')[2].click()
+	# yuan_key=device.find_elements_by_class_name('android.widget.EditText')[0]
+	# device.set_value(yuan_key,123456)
+	# new_key=device.find_elements_by_class_name('android.widget.EditText')[1]
+	# device.set_value(new_key,123456)
+	# new_key_too=device.find_elements_by_class_name('android.widget.EditText')[2]
+	# device.set_value(new_key_too,123456)
+	# device.find_elements_by_class_name('android.widget.Button')[0].click()
+	# time.sleep(2)
+	# #设置手势密码
+	# time.sleep(2)
+	# device.find_elements_by_class_name('android.widget.RelativeLayout')[2].click()
+	# device.back()
+	# device.back()
 	time.sleep(2)
 	device.find_elements_by_class_name('android.widget.TextView')[13].click()
 	device.back()
@@ -492,6 +493,7 @@ def other():
 
 if __name__ == '__main__':
     device=connnect_ipad_device()
+    device.implicitly_wait(30)
     star=timestamp
     All_shouye()
     stop=timestamp

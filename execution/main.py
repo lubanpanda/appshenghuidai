@@ -243,6 +243,7 @@ def ture_or_flase_login():
 	# noinspection PyBroadException
 	try:
 		a=device.find_elements_by_class_name ('android.widget.TextView')
+		print(a)
 		return True
 	except Exception :
 		return False

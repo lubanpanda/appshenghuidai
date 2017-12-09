@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/case/Allaccount.py" afterPath="$PROJECT_DIR$/case/Allaccount.py" />
-      <change beforePath="$PROJECT_DIR$/case/ceshijiekou.py" afterPath="$PROJECT_DIR$/case/ceshijiekou.py" />
-      <change beforePath="$PROJECT_DIR$/case/redraw.py" afterPath="$PROJECT_DIR$/case/redraw.py" />
       <change beforePath="$PROJECT_DIR$/execution/main.py" afterPath="$PROJECT_DIR$/execution/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,8 +67,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/execution/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="141" column="82" lean-forward="false" selection-start-line="141" selection-start-column="82" selection-end-line="141" selection-end-column="82" />
+            <state relative-caret-position="280">
+              <caret line="194" column="13" lean-forward="true" selection-start-line="194" selection-start-column="13" selection-end-line="194" selection-end-column="13" />
               <folding>
                 <element signature="e#66#77#0" expanded="true" />
               </folding>
@@ -236,8 +233,8 @@
         <option value="$PROJECT_DIR$/case/__init__.py" />
         <option value="$PROJECT_DIR$/case/redraw.py" />
         <option value="$PROJECT_DIR$/case/Allaccount.py" />
-        <option value="$PROJECT_DIR$/execution/main.py" />
         <option value="$PROJECT_DIR$/case/ceshijiekou.py" />
+        <option value="$PROJECT_DIR$/execution/main.py" />
       </list>
     </option>
   </component>
@@ -728,7 +725,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512794631186</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="更细媒体新闻查看细节">
+      <created>1512801413112</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1512801413112</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1114,8 +1118,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/execution/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="141" column="82" lean-forward="false" selection-start-line="141" selection-start-column="82" selection-end-line="141" selection-end-column="82" />
+        <state relative-caret-position="280">
+          <caret line="194" column="13" lean-forward="true" selection-start-line="194" selection-start-column="13" selection-end-line="194" selection-end-column="13" />
           <folding>
             <element signature="e#66#77#0" expanded="true" />
           </folding>

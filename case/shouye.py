@@ -13,11 +13,11 @@ def All_shouye():
 	u'投资攻略'
 	device.find_elements_by_class_name('android.widget.TextView')[0].click()
 	time.sleep(2)
-	device.back()
-	u'新手指引'
-	device.find_elements_by_class_name('android.widget.TextView')[1].click()
+	for i in range(3,10,2):
+		device.find_elements_by_class_name('android.view.View')[i].click()
+	for a in range(5):
+		device.back()
 	time.sleep(2)
-	device.back()
 	u'邀请好友'
 	device.find_elements_by_class_name('android.widget.TextView')[2].click()
 	device.find_elements_by_class_name('android.widget.Button')[0].click()

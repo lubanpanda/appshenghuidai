@@ -15,17 +15,17 @@ class test1(unittest.TestCase):
 		pass
 	def test_all_find(self):
 		self.device.find_elements_by_class_name('android.widget.RadioButton')[2].click()
-		# self.device.find_elements_by_class_name('android.widget.ImageView')[0].click()
-		# u'平台数据'
-		# self.device.find_elements_by_class_name('android.widget.TextView')[0].click()
-		# time.sleep(2)
-		# self.device.back()
-		# u'安全保障'
-		# self.device.find_elements_by_class_name ('android.widget.TextView') [1].click ()
-		# for i in range(6):
-		# 	for a in range(2):
-		# 		self.device.find_elements_by_class_name('android.widget.Image')[1+i].click()
-		# self.device.back()
+		self.device.find_elements_by_class_name('android.widget.ImageView')[0].click()
+		u'平台数据'
+		self.device.find_elements_by_class_name('android.widget.TextView')[0].click()
+		time.sleep(2)
+		self.device.back()
+		u'安全保障'
+		self.device.find_elements_by_class_name ('android.widget.TextView') [1].click ()
+		for i in range(6):
+			for a in range(2):
+				self.device.find_elements_by_class_name('android.widget.Image')[1+i].click()
+		self.device.back()
 		u'积分商城'
 		self.device.find_element_by_id('com.yourenkeji.shenghuidai:id/jifenshangcheng').click()
 		u'查看积分'

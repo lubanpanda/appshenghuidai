@@ -170,9 +170,31 @@ def faxian_all():
 	device.find_element_by_id('com.yourenkeji.shenghuidai:id/huodongzhongxin').click()
 	device.back()
 	u'发现更多'
-	device.find_elements_by_class_name('android.widget.TextView')[6].click()
-	swipe_to_up(1000)
-	device.back()
+	url = "https://api.shenghuidai.com:8012/v1/news/media/all"
+
+	headers = {'Cache-Control': "no-cache", 'Postman-Token': "3949fa4d-8390-539d-dee7-a28c5565b02a"}
+
+	response = requests.request ("POST", url, headers = headers)
+	response = json.loads (response.text)
+	xinwen_geshu = []
+	if response ['code'] == str (10000):
+		print ("请求接口数据成功")
+		xinwen_geshu = []
+		for i in response ['content']:
+			xinwen_geshu.append (len (i))
+	else:
+		print ("失败喽")
+	print ('一共有{len(xinwen_geshu)}条新闻,前6条显示就可以默认都显示正常了')
+	xinwen_shuliang = int (len (xinwen_geshu))
+	device.find_elements_by_class_name ('android.widget.TextView') [6].click ()
+	for i in range (xinwen_shuliang):
+		if i <= 6:
+			device.find_elements_by_class_name ('android.widget.ImageView') [i + 1].click ()
+			time.sleep (2)
+			swipe_to_up (1000)
+			device.back ()
+		else:
+			pass
 
 @shijiancha
 def All_shouye():
@@ -493,14 +515,15 @@ def other():
 
 if __name__ == '__main__':
     device=connnect_ipad_device()
-    device.implicitly_wait(30)
-    star=timestamp
-    All_shouye()
-    stop=timestamp
-    print('首页的已经跑完了哦',timestamp)
-    gonggao()
-    print ('公告的已经跑完了哦', timestamp)
-    faxian_all()
-    print ('发现的已经跑完了哦', timestamp)
-    all_account(1000)
-    print ('账户的已经跑完了哦', timestamp)
+    for i in range(10):
+	    device.implicitly_wait(30)
+	    star=timestamp
+	    All_shouye()
+	    stop=timestamp
+	    print('首页的已经跑完了哦')
+	    gonggao()
+	    print ('公告的已经跑完了哦')
+	    faxian_all()
+	    print ('发现的已经跑完了哦')
+	    all_account(1000)
+	    print ('账户的已经跑完了哦')

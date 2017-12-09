@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Author  : panda
+import json
 
 from iphoneinfo import shoujiinfo
 device=shoujiinfo.connnect_ipad_device()
 import time
+import requests
 def getsize():
 	'''
 	获得手机屏幕大小
@@ -71,74 +73,69 @@ def swipe_to_right(duration):
 	device.swipe(x1, y1, x2, y1, duration)
 u'积分商城'
 def faxian_all():
-	'''
-	点击积分商场的兑换记录
-	:return:
-	'''
+	# '''
+	# 点击积分商场的兑换记录
+	# :return:
+	# '''
 	device.implicitly_wait(30)
 	device.find_elements_by_class_name ('android.widget.RadioButton') [2].click ()
-	#device.find_elements_by_class_name('android.widget.ImageView')[0].click()
-	u'平台数据'
-	device.find_elements_by_class_name('android.widget.TextView')[0].click()
-	time.sleep(2)
-	device.back()
-	u'安全保障'
-	device.find_elements_by_class_name ('android.widget.TextView') [1].click ()
-	for i in range(6):
-		for a in range(2):
-			device.find_elements_by_class_name('android.widget.Image')[1+i].click()
-	device.back()
-	u'查看积分'
-	device.find_element_by_id('com.yourenkeji.shenghuidai:id/jifenshangcheng').click()
-	device.find_elements_by_class_name('android.widget.Image')[0].click()
-	device.back()
-	for i in range(8):
-		if i >= 5:
-			swipe_to_up(1000)
-			device.find_elements_by_class_name('android.widget.Image')[2+i].click()
+	# #device.find_elements_by_class_name('android.widget.ImageView')[0].click()
+	# u'平台数据'
+	# device.find_elements_by_class_name('android.widget.TextView')[0].click()
+	# swipe_to_up(1000)
+	# time.sleep(2)
+	# device.back()
+	# u'安全保障'
+	# device.find_elements_by_class_name ('android.widget.TextView') [1].click ()
+	# for i in range(6):
+	# 	for a in range(2):
+	# 		device.find_elements_by_class_name('android.widget.Image')[1+i].click()
+	# device.back()
+	# u'查看积分'
+	# device.find_element_by_id('com.yourenkeji.shenghuidai:id/jifenshangcheng').click()
+	# device.find_elements_by_class_name('android.widget.Image')[0].click()
+	# device.back()
+	# for i in range(8):
+	# 	if i >= 5:
+	# 		swipe_to_up(1000)
+	# 		device.find_elements_by_class_name('android.widget.Image')[2+i].click()
+	# 		time.sleep(2)
+	# 		device.back()
+	# 	else:
+	# 		device.find_elements_by_class_name ('android.widget.Image') [2 + i].click ()
+	# 		time.sleep(2)
+	# 		device.back()
+	# device.back()
+	# u'活动中心'
+	# device.find_element_by_id('com.yourenkeji.shenghuidai:id/huodongzhongxin').click()
+	# device.back()
+	u'发现更多'
+
+	url = "https://api.shenghuidai.com:8012/v1/news/media/all"
+
+	headers = {'Cache-Control': "no-cache", 'Postman-Token': "3949fa4d-8390-539d-dee7-a28c5565b02a"}
+
+	response = requests.request ("POST", url, headers = headers)
+	response = json.loads (response.text)
+	xinwen_geshu=[]
+	if response ['code'] == str (10000):
+		print ("请求接口数据成功")
+		xinwen_geshu = []
+		for i in response ['content']:
+			xinwen_geshu.append (len (i))
+	else:
+		print ("失败喽")
+	print('一共有{len(xinwen_geshu)}条新闻,前6条显示就可以默认都显示正常了')
+	xinwen_shuliang=int(len(xinwen_geshu))
+	device.find_elements_by_class_name ('android.widget.TextView') [6].click ()
+	for i in range(xinwen_shuliang):
+		if i <=6:
+			device.find_elements_by_class_name('android.widget.ImageView')[i+1].click()
 			time.sleep(2)
+			swipe_to_up(1000)
 			device.back()
 		else:
-			device.find_elements_by_class_name ('android.widget.Image') [2 + i].click ()
-			time.sleep(2)
-			device.back()
-	device.back()
-	u'活动中心'
-	device.find_element_by_id('com.yourenkeji.shenghuidai:id/huodongzhongxin').click()
-	device.back()
-	u'发现更多'
-	device.find_elements_by_class_name('android.widget.TextView')[6].click()
-	swipe_to_up(1000)
-	device.back()
-def All_shouye():
-	'''
-	首页的四个小模块查看
-	:return:
-	'''
-	device.implicitly_wait(30)
-	u'投资攻略'
-	device.find_elements_by_class_name('android.widget.TextView')[0].click()
-	time.sleep(2)
-	device.back()
-	u'新手指引'
-	device.find_elements_by_class_name('android.widget.TextView')[1].click()
-	time.sleep(2)
-	device.back()
-	u'邀请好友'
-	device.find_elements_by_class_name('android.widget.TextView')[2].click()
-	device.find_elements_by_class_name('android.widget.Button')[0].click()
-	device.back()
-	device.find_elements_by_class_name('android.widget.Button')[1].click()
-	device.back()
-	device.back()
-	u'每日签到'
-	device.find_elements_by_class_name('android.widget.TextView')[3].click()
-	u'签到'
-	device.find_elements_by_class_name('android.view.View')[53].click()
-	u'签到规则'
-	device.find_elements_by_class_name('android.widget.ImageView')[1].click()
-	device.back()
-	device.back()
+			pass
 def toubiao():
 	u'投标'
 	time.sleep(8)
@@ -171,4 +168,4 @@ def gonggao():
 
 if __name__ == '__main__':
 	time.sleep(10)
-
+	faxian_all()

@@ -148,7 +148,7 @@ def faxian_all():
 	device.find_elements_by_class_name ('android.widget.TextView') [1].click ()
 	for a in range(6):
 		# noinspection PyAssignmentToLoopOrWithParameter
-		for a in range(2):
+		for i in range(2):
 			device.find_elements_by_class_name('android.widget.Image')[1 + a].click()
 	device.back()
 	u'查看积分'
@@ -196,8 +196,8 @@ def faxian_all():
 			device.back ()
 		else:
 			pass
+	device.back()
 
-@shijiancha
 def All_shouye():
 	"""
 	首页的四个小模块查看
@@ -205,9 +205,13 @@ def All_shouye():
 		"""
 	device.implicitly_wait(30)
 	u'投资攻略'
-	device.find_elements_by_class_name('android.widget.TextView')[0].click()
-	time.sleep(2)
-	device.back()
+	device.find_elements_by_class_name ('android.widget.TextView') [0].click ()
+	time.sleep (2)
+	for j in range (3, 10, 2):
+		device.find_elements_by_class_name ('android.view.View') [j].click ()
+	for a in range (5):
+		device.back ()
+	time.sleep (2)
 	u'新手指引'
 	device.find_elements_by_class_name('android.widget.TextView')[1].click()
 	time.sleep(2)
@@ -281,7 +285,11 @@ def login():
 		device.set_value(password,'111111')
 		device.find_elements_by_class_name('android.widget.Button')[0].click()
 		#跳过手势密码
-		device.find_elements_by_class_name ('android.widget.ImageView') [9].click ()
+		try:
+			device.find_element_by_id('com.yourenkeji.shenghuidai:id/img_cancel').click()
+		except Exception as e:
+			print(e)
+			device.back()
 	else:
 		print("准备开始登录了")
 		# 登录
@@ -296,7 +304,7 @@ def login():
 		device.set_value (password, '111111')
 		device.find_elements_by_class_name ('android.widget.Button') [0].click ()
 		# 跳过手势密码
-		device.find_elements_by_class_name ('android.widget.ImageView') [9].click ()
+		device.find_element_by_id ('com.yourenkeji.shenghuidai:id/img_cancel').click ()
 
 @shijiancha
 def gonggao():
@@ -434,7 +442,7 @@ def all_account(money):
 	:param money:提现的金额
 	:return:
 	"""
-	device.implicitly_wait(10)
+	device.implicitly_wait(30)
 	device.find_elements_by_class_name('android.widget.RadioButton')[3].click()
 	'隐藏金额'
 	device.find_element_by_id ('com.yourenkeji.shenghuidai:id/my_eyes_checkbox').click ()
@@ -445,6 +453,7 @@ def all_account(money):
 	'冻结金额'
 	device.find_element_by_id ('com.yourenkeji.shenghuidai:id/my_zongzichan_img_dongjieyue').click ()
 	device.find_element_by_id ('com.yourenkeji.shenghuidai:id/positiveButton').click ()
+	device.back()
 	#投资记录
 	device.find_elements_by_class_name('android.widget.TextView')[5].click()
 	sleep(2)
@@ -488,7 +497,6 @@ def all_account(money):
 
 	other()
 
-@shijiancha
 def other():
 	"""
 	资金记录到更多
@@ -526,15 +534,14 @@ def other():
 
 if __name__ == '__main__':
     device=connnect_ipad_device()
-    for i in range(10):
+    for i in range(2):
 	    device.implicitly_wait(30)
-	    star=timestamp
+	    login()
+	    print('已登录成功')
 	    All_shouye()
-	    stop=timestamp
-	    print('首页的已经跑完了哦')
+	    print('首页的已经跑完了哦',datetime.datetime.now())
 	    gonggao()
-	    print ('公告的已经跑完了哦')
+	    print ('公告的已经跑完了哦',datetime.datetime.now())
 	    faxian_all()
-	    print ('发现的已经跑完了哦')
-	    all_account(1000)
-	    print ('账户的已经跑完了哦')
+	    print ('发现的已经跑完了哦',datetime.datetime.now())
+	    print(f'这是第{i+1}次了',datetime.datetime.now())

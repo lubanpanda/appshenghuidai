@@ -147,6 +147,7 @@ def faxian_all():
 	u'安全保障'
 	device.find_elements_by_class_name ('android.widget.TextView') [1].click ()
 	for a in range(6):
+		# noinspection PyAssignmentToLoopOrWithParameter
 		for a in range(2):
 			device.find_elements_by_class_name('android.widget.Image')[1 + a].click()
 	device.back()
@@ -183,6 +184,7 @@ def faxian_all():
 			xinwen_geshu.append (len (a))
 	else:
 		print ("失败喽")
+	# noinspection PyCompatibility
 	print (f'一共有{len(xinwen_geshu)}条新闻,前6条显示就可以默认都显示正常了')
 	xinwen_shuliang = int (len (xinwen_geshu))
 	device.find_elements_by_class_name ('android.widget.TextView') [6].click ()
@@ -240,7 +242,7 @@ def ture_or_flase_login():
 	"""
 	# noinspection PyBroadException
 	try:
-		a=device.find_elements_by_class_name ('android.widget.TextView') [14]
+		a=device.find_elements_by_class_name ('android.widget.TextView')
 		return True
 	except Exception :
 		return False
@@ -322,8 +324,8 @@ def hongbao():
 		print("请求失败，请查看网络配置")
 	hongbao_info=json.loads(response.text)
 	hongbao_geshu=[]
-	for i in hongbao_info['content']:
-		hongbao_geshu.append(len(i))
+	for z in hongbao_info['content']:
+		hongbao_geshu.append(len(z))
 	url = "http://apitest.shenghuidai.com:8012/v1/asset/18519291259/rate/pocket"
 	headers = {'cache-control': "no-cache", 'postman-token': "a5aa815a-8c15-5674-9ead-4b1340b46cbf"}
 	response = requests.request ("POST", url, headers = headers)
@@ -333,8 +335,8 @@ def hongbao():
 		print("请求失败，请查看网络配置")
 	jiaxiquan_info = json.loads (response.text)
 	jiaxiquan_geshu = []
-	for i in jiaxiquan_info ['content']:
-		jiaxiquan_geshu.append (len (i))
+	for z in jiaxiquan_info ['content']:
+		jiaxiquan_geshu.append (len (z))
 	#print (len (jiaxiquan_geshu))
 	device.implicitly_wait(8)
 	device.find_elements_by_class_name('android.widget.RadioButton')[3].click()
@@ -359,8 +361,8 @@ def cipher():
 	交易密码
 	:return:
 	"""
-	for i in range (6):
-		new_password = device.find_elements_by_class_name ('android.widget.Button') [i]
+	for c in range (6):
+		new_password = device.find_elements_by_class_name ('android.widget.Button') [c]
 		new_password.click ()
 
 	shouye_to=device.find_elements_by_class_name('android.widget.RadioButton')
@@ -371,7 +373,7 @@ def cipher():
 	else:
 		print('密码错误,正在尝试第二种密码......')
 		device.find_elements_by_class_name ('android.widget.Button') [0].click ()
-		for i in range (6):
+		for c in range (6):
 			password = device.find_elements_by_class_name ('android.widget.Button') [0]
 			password.click ()
 		print("密码正确，交易成功")
@@ -473,8 +475,8 @@ def all_account(money):
 				print("金额输入正确，请进行下一步操作")
 				break
 		device.find_elements_by_class_name('android.widget.Button')[0].click()
-		for i in range (6):
-			new_password = device.find_elements_by_class_name ('android.widget.Button') [i]
+		for b in range (6):
+			new_password = device.find_elements_by_class_name ('android.widget.Button') [b]
 			new_password.click ()
 		time.sleep(2)
 		device.find_elements_by_class_name('android.widget.Button')[0].click()

@@ -125,7 +125,7 @@ def faxian_all():
 			xinwen_geshu.append (len (i))
 	else:
 		print ("失败喽")
-	print('一共有{len(xinwen_geshu)}条新闻,前6条显示就可以默认都显示正常了')
+	print(f'一共有{len(xinwen_geshu)}条新闻,前6条显示就可以默认都显示正常了')
 	xinwen_shuliang=int(len(xinwen_geshu))
 	device.find_elements_by_class_name ('android.widget.TextView') [6].click ()
 	for i in range(xinwen_shuliang):

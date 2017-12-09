@@ -22,8 +22,19 @@ def all_account(money):
 	:param money:提现的金额
 	:return:
 	'''
-	device.implicitly_wait(10)
+	device.implicitly_wait(30)
 	device.find_elements_by_class_name('android.widget.RadioButton')[3].click()
+	'隐藏金额'
+	device.find_element_by_id('com.yourenkeji.shenghuidai:id/my_eyes_checkbox').click()
+	'账户信息'
+	device.find_element_by_id('com.yourenkeji.shenghuidai:id/imageView1').click()
+	'账户余额'
+	device.find_element_by_id('com.yourenkeji.shenghuidai:id/my_zongzichan_img_right').click()
+	'冻结金额'
+	device.find_element_by_id('com.yourenkeji.shenghuidai:id/my_zongzichan_img_dongjieyue').click()
+	device.find_element_by_id('com.yourenkeji.shenghuidai:id/positiveButton').click()
+	time.sleep(2)
+	device.back()
 	#投资记录
 	device.find_elements_by_class_name('android.widget.TextView')[5].click()
 	sleep(2)

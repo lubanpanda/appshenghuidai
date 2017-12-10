@@ -1,18 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Author  : panda  84305510@qq.com
-from appium import webdriver
-
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import time
 def ios_devices():
+	chrom=webdriver.Chrome('/Users/yuchengtao/node_modules/accepts/chromedriver')
+	chrom.get("https://www.baidu.com/")
+	chrom.implicitly_wait(70)
+	chrom.find_element_by_xpath('//*[@id="kw"]').send_keys(u'随便点吧')
+	time.sleep(20)
 
-	desired_caps = {
-	    'platformName':'ios',
-		'deviceName':'panda iPhone5s',
-		'platformVersion':11.2,
-		'bundleId': 'com.shenghuitouziguanli.shenghuidai',
-	                }
-	driver = webdriver.Remote ('http://127.0.0.1:4723/wd/hub', desired_caps)
-	driver.implicitly_wait(60)
-	driver.find_element_by_xpath('//XCUIElementTypeButton[@name="ok"]').click()
 if __name__ == '__main__':
     ios_devices()

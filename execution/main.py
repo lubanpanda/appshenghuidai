@@ -9,8 +9,8 @@ import time
 from time import sleep
 import threading
 import datetime
-timestamp = time.strftime ('%Y-%m-%d %H:%M:%S', time.localtime (time.time ()))
-def shijiancha(fune):
+timestamp = time.strftime ('%Y-%m-%d %H:%M:%S', time.localtime ())
+def Shijiancha(fune):
 	"""
 	:param fune:
 	:return:
@@ -183,8 +183,10 @@ def faxian_all():
 	device.back()
 	'两个图片'
 	device.find_element_by_id('com.yourenkeji.shenghuidai:id/faxian_xshb_iv').click()
+	time.sleep(2)
 	device.back()
 	device.find_element_by_id('com.yourenkeji.shenghuidai:id/faxian_xydzp_iv').click()
+	time.sleep(2)
 	device.back()
 	u'发现更多'
 	url = "https://api.shenghuidai.com:8012/v1/news/media/all"
@@ -202,7 +204,7 @@ def faxian_all():
 	else:
 		print ("失败喽")
 	# noinspection PyCompatibility
-	print (f'一共有{len(xinwen_geshu)}条新闻,前6条显示就可以默认都显示正常了')
+	print (f"一共有{len(xinwen_geshu)}条新闻,前6条显示就可以默认都显示正常了")
 	xinwen_shuliang = int (len (xinwen_geshu))
 	device.find_elements_by_class_name ('android.widget.TextView') [6].click ()
 	for a in range (xinwen_shuliang):
@@ -221,9 +223,10 @@ def All_shouye():
 	:return:
 		"""
 	device.implicitly_wait(30)
+	device.find_element_by_id('com.yourenkeji.shenghuidai:id/boluos_bt_home').click()
 	u'投资攻略'
 	device.find_elements_by_class_name ('android.widget.TextView') [0].click ()
-	time.sleep (2)
+	time.sleep (5)
 	for j in range (3, 10, 2):
 		device.find_elements_by_class_name ('android.view.View') [j].click ()
 	for a in range (5):
@@ -323,7 +326,7 @@ def login():
 		# 跳过手势密码
 		device.find_element_by_id ('com.yourenkeji.shenghuidai:id/img_cancel').click ()
 
-@shijiancha
+@Shijiancha
 def gonggao():
 	"""
 	公告
@@ -335,7 +338,7 @@ def gonggao():
 	device.back()
 
 
-@shijiancha
+@Shijiancha
 def hongbao():
 	"""
 	判断优惠券的个数来进行操作,测试版本的优惠券
@@ -381,7 +384,7 @@ def hongbao():
 			device.back()
 
 
-@shijiancha
+@Shijiancha
 def cipher():
 	"""
 	交易密码
@@ -406,7 +409,7 @@ def cipher():
 		device.find_elements_by_class_name('android.widget.Button')[0].click()
 
 
-@shijiancha
+@Shijiancha
 def new_toubiao():
 	"""
 	投资新手标
@@ -432,7 +435,7 @@ def new_toubiao():
 	device.back()
 
 
-@shijiancha
+@Shijiancha
 def toubiao():
 	"""
 	投资普通标
@@ -523,6 +526,7 @@ def other():
 	time.sleep(2)
 	device.find_elements_by_class_name('android.widget.TextView')[9].click()
 	device.back()
+	'''
 	#安全管理
 	device.find_elements_by_class_name('android.widget.TextView')[12].click()
 	device.find_elements_by_class_name('android.widget.RelativeLayout')[1].click()
@@ -542,6 +546,7 @@ def other():
 	device.back()
 	device.back()
 	time.sleep(2)
+	'''
 	device.find_elements_by_class_name('android.widget.TextView')[13].click()
 	device.back()
 	time.sleep(2)
@@ -550,5 +555,14 @@ def other():
 
 if __name__ == '__main__':
     device=connnect_ipad_device()
-    device.implicitly_wait(30)
-    faxian_all()
+    for e in range(1000):
+	    device.implicitly_wait(30)
+	    # login()
+	    print('deng lu succeedfull')
+	    All_shouye()
+	    print('shou ye succeedfull')
+	    faxian_all ()
+	    print ('fa xian succeedfull')
+	    all_account(1000)
+	    print('geng duo succeedfull')
+	    print(f'这是第{e+1}次了',datetime.datetime.now())

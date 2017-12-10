@@ -23,7 +23,6 @@ def connnect_ipad_device():
 			'unicodeKeyboard':True,#设置appium输入法后就不会弹默认的系统输入法了
 			'resetKeyboard':False, #重置系统输入法
 
-			# 'appWaitActivity':'com.xingheng.mvp.presenter.activity.Main2Activity'
 		}
 		driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
 		return driver

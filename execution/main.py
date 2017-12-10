@@ -29,6 +29,7 @@ def connnect_ipad_device():
 	定义测试平台的属性
 	:return: device及参数
 	"""
+	pingmu_jiesuo()
 	try:
 
 		import time
@@ -50,7 +51,18 @@ def connnect_ipad_device():
 		return driver
 	except Exception as e:
 		print(e)
-
+def pingmu_jiesuo():
+	b = os.popen ('adb shell dumpsys window policy|grep mScreenOnFully')
+	a = b.read ().strip ()
+	deng = a [-5:]
+	if deng == str ('false'):
+		print ('屏幕是灭的,等待解锁')
+		os.popen ('adb shell input keyevent 26')
+		time.sleep (1)
+		os.popen ('adb shell input swipe 50 1000 50 0 100')
+	else:
+		os.popen ('adb shell input swipe 50 1000 50 0 100')
+		print ('不是锁屏状态,可直接执行项目哦')
 
 def getsize():
 	"""
@@ -169,6 +181,11 @@ def faxian_all():
 	u'活动中心'
 	device.find_element_by_id('com.yourenkeji.shenghuidai:id/huodongzhongxin').click()
 	device.back()
+	'两个图片'
+	device.find_element_by_id('com.yourenkeji.shenghuidai:id/faxian_xshb_iv').click()
+	device.back()
+	device.find_element_by_id('com.yourenkeji.shenghuidai:id/faxian_xydzp_iv').click()
+	device.back()
 	u'发现更多'
 	url = "https://api.shenghuidai.com:8012/v1/news/media/all"
 
@@ -246,7 +263,7 @@ def ture_or_flase_login():
 	"""
 	# noinspection PyBroadException
 	try:
-		a=device.find_elements_by_class_name ('android.widget.TextView')
+		a=device.find_elements_by_class_name ('android.widget.TextView')[14]
 		print(a)
 		return True
 	except Exception :
@@ -275,7 +292,7 @@ def login():
 		device.find_elements_by_class_name ('android.widget.RadioButton') [3].click ()
 		#登录
 		device.find_elements_by_class_name('android.view.View')[6].click()
-		#登录账户
+		'登录账户'
 		device.find_elements_by_class_name ('android.widget.EditText') [0].clear()
 		login_ip=device.find_elements_by_class_name('android.widget.EditText')[0]
 		device.set_value(login_ip,'18519291259')
@@ -531,17 +548,7 @@ def other():
 	device.find_elements_by_class_name('android.widget.TextView')[14].click()
 	device.back()
 
-
 if __name__ == '__main__':
     device=connnect_ipad_device()
-    for i in range(2):
-	    device.implicitly_wait(30)
-	    login()
-	    print('已登录成功')
-	    All_shouye()
-	    print('首页的已经跑完了哦',datetime.datetime.now())
-	    gonggao()
-	    print ('公告的已经跑完了哦',datetime.datetime.now())
-	    faxian_all()
-	    print ('发现的已经跑完了哦',datetime.datetime.now())
-	    print(f'这是第{i+1}次了',datetime.datetime.now())
+    device.implicitly_wait(30)
+    faxian_all()

@@ -237,7 +237,6 @@ def All_shouye():
 	time.sleep(2)
 	device.back()
 	u'邀请好友'
-	# TODO 测试好了一会回来改这里
 	device.find_elements_by_class_name('android.widget.TextView')[2].click()
 	device.find_element_by_id ('com.yourenkeji.shenghuidai:id/webView_bt_share').click ()
 	time.sleep (3)

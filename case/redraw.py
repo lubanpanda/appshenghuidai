@@ -82,7 +82,7 @@ def faxian_all():
 	# #device.find_elements_by_class_name('android.widget.ImageView')[0].click()
 	# u'平台数据'
 	# device.find_elements_by_class_name('android.widget.TextView')[0].click()
-	# swipe_to_up(1000)
+	# Swipe_to_up(1000)
 	# time.sleep(2)
 	# device.back()
 	# u'安全保障'
@@ -97,7 +97,7 @@ def faxian_all():
 	# device.back()
 	# for i in range(8):
 	# 	if i >= 5:
-	# 		swipe_to_up(1000)
+	# 		Swipe_to_up(1000)
 	# 		device.find_elements_by_class_name('android.widget.Image')[2+i].click()
 	# 		time.sleep(2)
 	# 		device.back()

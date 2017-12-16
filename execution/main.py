@@ -75,7 +75,7 @@ def getsize():
 	return x, y
 
 
-def swipe_to_up(duration):
+def Swipe_to_up(duration):
 	"""
 	屏幕向上滑动
 	:param duration: 滑动的毫秒数值
@@ -169,7 +169,7 @@ def faxian_all():
 	device.back()
 	for a in range(8):
 		if a >= 5:
-			swipe_to_up(1000)
+			Swipe_to_up(1000)
 			device.find_elements_by_class_name('android.widget.Image')[2 + a].click()
 			time.sleep(2)
 			device.back()
@@ -211,7 +211,7 @@ def faxian_all():
 		if a <= 6:
 			device.find_elements_by_class_name ('android.widget.ImageView') [a + 1].click ()
 			time.sleep (2)
-			swipe_to_up (1000)
+			Swipe_to_up (1000)
 			device.back ()
 		else:
 			pass
@@ -265,12 +265,12 @@ def All_shouye():
 	print('已经签到完成')
 	u'签到规则'
 	device.find_elements_by_class_name('android.widget.Image')[1].click()
-	swipe_to_up(4000)
+	Swipe_to_up(4000)
 	time.sleep(3)
 	device.back()
 
 
-def ture_or_flase_login():
+def Ture_or_flase_login():
 	"""
 	判断是否登录
 	:return:
@@ -295,7 +295,7 @@ def login():
 	device.find_elements_by_class_name ('android.widget.RadioButton') [3].click ()
 
 	#点击更多
-	if ture_or_flase_login () is True:
+	if Ture_or_flase_login () is True:
 		print('准备开始切换账户了')
 		device.find_elements_by_class_name ('android.widget.TextView') [14].click()
 		device.find_elements_by_class_name('android.widget.Button')[0].click()
@@ -344,7 +344,7 @@ def gonggao():
 	:return:
 	"""
 	device.implicitly_wait(10)
-	swipe_to_up (1000)
+	Swipe_to_up (1000)
 	device.find_elements_by_class_name('android.widget.LinearLayout')[9].click()
 	device.back()
 
@@ -396,7 +396,7 @@ def hongbao():
 
 
 @Shijiancha
-def cipher():
+def Cipher():
 	"""
 	交易密码
 	:return:
@@ -441,7 +441,7 @@ def new_toubiao():
 	new_buy=device.find_elements_by_class_name('android.widget.Button')[0].click()
 	if new_buy:
 		print("你不是新手，可以购买")
-		cipher()
+		Cipher()
 	else:
 		print("你已经不是新手了，不能购买新手标了")
 	device.back()
@@ -455,14 +455,14 @@ def toubiao():
 	:return:
 	"""
 	time.sleep(8)
-	swipe_to_up(1000)
+	Swipe_to_up(1000)
 	device.find_elements_by_class_name('android.widget.RelativeLayout')[1].click()
 	jine=device.find_elements_by_class_name('android.widget.EditText')[0]
 	device.set_value(jine,1000)
 	device.find_elements_by_class_name('android.widget.Button')[1].click()
 	device.find_elements_by_class_name('android.widget.Button')[0].click()
 	#输入支付密码
-	cipher()
+	Cipher()
 def timeout():
 	"""
 	支付密码超时处理

@@ -224,38 +224,50 @@ def All_shouye():
 		"""
 	device.implicitly_wait(30)
 	device.find_element_by_id('com.yourenkeji.shenghuidai:id/boluos_bt_home').click()
-	u'投资攻略'
-	device.find_elements_by_class_name ('android.widget.TextView') [0].click ()
-	time.sleep (5)
-	for j in range (3, 10, 2):
-		device.find_elements_by_class_name ('android.view.View') [j].click ()
-	for a in range (5):
-		device.back ()
-	time.sleep (2)
-	u'新手指引'
-	device.find_elements_by_class_name('android.widget.TextView')[1].click()
-	time.sleep(2)
-	device.back()
-	u'邀请好友'
-	device.find_elements_by_class_name('android.widget.TextView')[2].click()
-	device.find_elements_by_class_name('android.widget.Button')[0].click()
-	device.back()
-	device.find_elements_by_class_name('android.widget.Button')[1].click()
-	device.back()
-	device.back()
+	# u'投资攻略'
+	# device.find_elements_by_class_name ('android.widget.TextView') [0].click ()
+	# time.sleep (5)
+	# for j in range (3, 10, 2):
+	# 	device.find_elements_by_class_name ('android.view.View') [j].click ()
+	# for a in range (4):
+	# 	device.back ()
+	# time.sleep (2)
+	# u'新手指引'
+	# device.find_elements_by_class_name('android.widget.TextView')[1].click()
+	# time.sleep(2)
+	# device.back()
+	# u'邀请好友'
+	# # TODO 测试好了一会回来改这里
+	# device.find_elements_by_class_name('android.widget.TextView')[2].click()
+	# device.find_element_by_id ('com.yourenkeji.shenghuidai:id/webView_bt_share').click ()
+	# time.sleep (3)
+	# # '点击QQ'
+	# device.find_elements_by_class_name ('android.widget.ImageButton') [2].click ()
+	# time.sleep (3)
+	# '分享给我的电脑'
+	# device.find_elements_by_class_name ('android.widget.RelativeLayout') [5].click ()
+	# '发送'
+	# device.find_element_by_id ('com.tencent.mobileqq:id/dialogRightBtn').click ()
+	# '返回'
+	# device.find_element_by_id ('com.tencent.mobileqq:id/dialogLeftBtn').click ()
+	# '活动规则'
+	# device.find_elements_by_class_name('android.view.View')[1].click()
+	# time.sleep(3)
+	# device.find_elements_by_class_name('android.view.View')[9].click()
+	# device.back()
 	u'每日签到'
 	device.find_elements_by_class_name('android.widget.TextView')[3].click()
 	u'签到'
-	qiandao=device.find_elements_by_class_name('android.view.View')
-	if qiandao and len(qiandao)==53:
-		qiandao[53].click()
-		print('签到成功')
-	else:
-		device.find_elements_by_class_name ('android.view.View')[53].click()
-		print('已经签到完成')
+	device.find_elements_by_class_name ('android.view.View')[52].click()
+	try:
+		device.find_elements_by_class_name('android.widget.Button')[0].click()
+	except Exception:
+		print('保证签到成功就可以了')
+	print('已经签到完成')
 	u'签到规则'
-	device.find_elements_by_class_name('android.widget.ImageView')[1].click()
-	device.back()
+	device.find_elements_by_class_name('android.widget.Image')[1].click()
+	swipe_to_up(4000)
+	time.sleep(3)
 	device.back()
 
 
@@ -391,19 +403,21 @@ def cipher():
 	:return:
 	"""
 	for c in range (6):
-		new_password = device.find_elements_by_class_name ('android.widget.Button') [c]
+		new_password = device.find_elements_by_class_name ('android.widget.TextView') [c+11]
 		new_password.click ()
 
-	shouye_to=device.find_elements_by_class_name('android.widget.RadioButton')
+	#shouye_to=device.find_elements_by_class_name('android.widget.Button')
+	shouye_to=device.find_element_by_id('com.yourenkeji.shenghuidai:id/bidSucess_bt')
 	time.sleep(5)
-	if shouye_to and len(shouye_to)==0:
-		a=shouye_to[0]
-		print(a,'密码正确')
+	if shouye_to:
+		shouye_to.click()
+		print('密码正确')
 	else:
 		print('密码错误,正在尝试第二种密码......')
-		device.find_elements_by_class_name ('android.widget.Button') [0].click ()
+		for o in range(6):
+			device.find_elements_by_class_name ('android.widget.TextView') [22].click ()
 		for c in range (6):
-			password = device.find_elements_by_class_name ('android.widget.Button') [0]
+			password = device.find_elements_by_class_name ('android.widget.TextView') [0]
 			password.click ()
 		print("密码正确，交易成功")
 		device.find_elements_by_class_name('android.widget.Button')[0].click()
@@ -435,18 +449,20 @@ def new_toubiao():
 	device.back()
 
 
-@Shijiancha
+
 def toubiao():
 	"""
 	投资普通标
 	:return:
 	"""
 	time.sleep(8)
+	swipe_to_up(1000)
 	device.find_elements_by_class_name('android.widget.RelativeLayout')[1].click()
 	jine=device.find_elements_by_class_name('android.widget.EditText')[0]
 	device.set_value(jine,1000)
 	device.find_elements_by_class_name('android.widget.Button')[1].click()
 	device.find_elements_by_class_name('android.widget.Button')[0].click()
+	#输入支付密码
 	cipher()
 def timeout():
 	"""
@@ -555,14 +571,5 @@ def other():
 
 if __name__ == '__main__':
     device=connnect_ipad_device()
-    for e in range(1000):
-	    device.implicitly_wait(30)
-	    # login()
-	    print('deng lu succeedfull')
-	    All_shouye()
-	    print('shou ye succeedfull')
-	    faxian_all ()
-	    print ('fa xian succeedfull')
-	    all_account(1000)
-	    print('geng duo succeedfull')
-	    print(f'这是第{e+1}次了',datetime.datetime.now())
+    device.implicitly_wait(20)
+    All_shouye()

@@ -10,12 +10,12 @@ from time import sleep
 import threading
 import datetime
 timestamp = time.strftime ('%Y-%m-%d %H:%M:%S', time.localtime ())
-def Shijiancha(fune):
+def Shijian(fune):
 	"""
 	:param fune:
 	:return:
 	"""
-	def zhuang():
+	def Zhuang():
 		"""
 		执行的时间
 		"""
@@ -23,7 +23,7 @@ def Shijiancha(fune):
 		fune()
 		stop_time=datetime.datetime.now()
 		print('花费时间为：', stop_time - star_time)
-	return zhuang
+	return Zhuang
 def Connnect_ipad_device():
 	"""
 	定义测试平台的属性
@@ -337,7 +337,7 @@ def Login():
 		# 跳过手势密码
 		device.find_element_by_id ('com.yourenkeji.shenghuidai:id/img_cancel').click ()
 
-@Shijiancha
+@Shijian
 def gonggao():
 	"""
 	公告
@@ -349,7 +349,7 @@ def gonggao():
 	device.back()
 
 
-@Shijiancha
+@Shijian
 def hongbao():
 	"""
 	判断优惠券的个数来进行操作,测试版本的优惠券
@@ -395,7 +395,7 @@ def hongbao():
 			device.back()
 
 
-@Shijiancha
+@Shijian
 def Cipher():
 	"""
 	交易密码
@@ -422,7 +422,7 @@ def Cipher():
 		device.find_elements_by_class_name('android.widget.Button')[0].click()
 
 
-@Shijiancha
+@Shijian
 def new_toubiao():
 	"""
 	投资新手标

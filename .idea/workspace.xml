@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Automaticinstallation/QQ.text" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Automaticinstallation/__init__.py" afterPath="$PROJECT_DIR$/Automaticinstallation/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/case/ceshijiekou.py" afterPath="$PROJECT_DIR$/case/ceshijiekou.py" />
-      <change beforePath="$PROJECT_DIR$/case/shouye.py" afterPath="$PROJECT_DIR$/case/shouye.py" />
       <change beforePath="$PROJECT_DIR$/execution/main.py" afterPath="$PROJECT_DIR$/execution/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,8 +70,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/execution/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="264" column="21" lean-forward="true" selection-start-line="264" selection-start-column="21" selection-end-line="264" selection-end-column="21" />
+            <state relative-caret-position="288">
+              <caret line="256" column="17" lean-forward="true" selection-start-line="256" selection-start-column="17" selection-end-line="256" selection-end-column="17" />
               <folding>
                 <element signature="e#66#77#0" expanded="true" />
               </folding>
@@ -820,7 +816,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513063456470</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="根据新版本去优化">
+      <created>1513408755961</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1513408755961</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -974,7 +977,8 @@
     <MESSAGE value="............" />
     <MESSAGE value="更改一下名称" />
     <MESSAGE value="优化发送消息的输入" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化发送消息的输入" />
+    <MESSAGE value="根据新版本去优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="根据新版本去优化" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1266,8 +1270,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/execution/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="264" column="21" lean-forward="true" selection-start-line="264" selection-start-column="21" selection-end-line="264" selection-end-column="21" />
+        <state relative-caret-position="288">
+          <caret line="256" column="17" lean-forward="true" selection-start-line="256" selection-start-column="17" selection-end-line="256" selection-end-column="17" />
           <folding>
             <element signature="e#66#77#0" expanded="true" />
           </folding>

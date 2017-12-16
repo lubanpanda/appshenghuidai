@@ -224,37 +224,37 @@ def All_shouye():
 		"""
 	device.implicitly_wait(30)
 	device.find_element_by_id('com.yourenkeji.shenghuidai:id/boluos_bt_home').click()
-	# u'投资攻略'
-	# device.find_elements_by_class_name ('android.widget.TextView') [0].click ()
-	# time.sleep (5)
-	# for j in range (3, 10, 2):
-	# 	device.find_elements_by_class_name ('android.view.View') [j].click ()
-	# for a in range (4):
-	# 	device.back ()
-	# time.sleep (2)
-	# u'新手指引'
-	# device.find_elements_by_class_name('android.widget.TextView')[1].click()
-	# time.sleep(2)
-	# device.back()
-	# u'邀请好友'
-	# # TODO 测试好了一会回来改这里
-	# device.find_elements_by_class_name('android.widget.TextView')[2].click()
-	# device.find_element_by_id ('com.yourenkeji.shenghuidai:id/webView_bt_share').click ()
-	# time.sleep (3)
-	# # '点击QQ'
-	# device.find_elements_by_class_name ('android.widget.ImageButton') [2].click ()
-	# time.sleep (3)
-	# '分享给我的电脑'
-	# device.find_elements_by_class_name ('android.widget.RelativeLayout') [5].click ()
-	# '发送'
-	# device.find_element_by_id ('com.tencent.mobileqq:id/dialogRightBtn').click ()
-	# '返回'
-	# device.find_element_by_id ('com.tencent.mobileqq:id/dialogLeftBtn').click ()
-	# '活动规则'
-	# device.find_elements_by_class_name('android.view.View')[1].click()
-	# time.sleep(3)
-	# device.find_elements_by_class_name('android.view.View')[9].click()
-	# device.back()
+	u'投资攻略'
+	device.find_elements_by_class_name ('android.widget.TextView') [0].click ()
+	time.sleep (5)
+	for j in range (3, 10, 2):
+		device.find_elements_by_class_name ('android.view.View') [j].click ()
+	for a in range (4):
+		device.back ()
+	time.sleep (2)
+	u'新手指引'
+	device.find_elements_by_class_name('android.widget.TextView')[1].click()
+	time.sleep(2)
+	device.back()
+	u'邀请好友'
+	# TODO 测试好了一会回来改这里
+	device.find_elements_by_class_name('android.widget.TextView')[2].click()
+	device.find_element_by_id ('com.yourenkeji.shenghuidai:id/webView_bt_share').click ()
+	time.sleep (3)
+	# '点击QQ'
+	device.find_elements_by_class_name ('android.widget.ImageButton') [2].click ()
+	time.sleep (3)
+	'分享给我的电脑'
+	device.find_elements_by_class_name ('android.widget.RelativeLayout') [5].click ()
+	'发送'
+	device.find_element_by_id ('com.tencent.mobileqq:id/dialogRightBtn').click ()
+	'返回'
+	device.find_element_by_id ('com.tencent.mobileqq:id/dialogLeftBtn').click ()
+	'活动规则'
+	device.find_elements_by_class_name('android.view.View')[1].click()
+	time.sleep(3)
+	device.find_elements_by_class_name('android.view.View')[9].click()
+	device.back()
 	u'每日签到'
 	device.find_elements_by_class_name('android.widget.TextView')[3].click()
 	u'签到'

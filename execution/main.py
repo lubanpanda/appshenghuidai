@@ -24,12 +24,12 @@ def Shijiancha(fune):
 		stop_time=datetime.datetime.now()
 		print('花费时间为：', stop_time - star_time)
 	return zhuang
-def connnect_ipad_device():
+def Connnect_ipad_device():
 	"""
 	定义测试平台的属性
 	:return: device及参数
 	"""
-	pingmu_jiesuo()
+	Pingmu_jiesuo()
 	try:
 
 		import time
@@ -51,7 +51,7 @@ def connnect_ipad_device():
 		return driver
 	except Exception as e:
 		print(e)
-def pingmu_jiesuo():
+def Pingmu_jiesuo():
 	b = os.popen ('adb shell dumpsys window policy|grep mScreenOnFully')
 	a = b.read ().strip ()
 	deng = a [-5:]
@@ -64,7 +64,7 @@ def pingmu_jiesuo():
 		os.popen ('adb shell input swipe 50 1000 50 0 100')
 		print ('不是锁屏状态,可直接执行项目哦')
 
-def getsize():
+def Getsize():
 	"""
 	获得手机屏幕大小
 	:return:
@@ -81,7 +81,7 @@ def Swipe_to_up(duration):
 	:param duration: 滑动的毫秒数值
 	:return:
 	"""
-	screen_size = getsize()
+	screen_size = Getsize()
 	# X坐标
 	x1 = int(screen_size[0] * 0.5)
 	# 起始Y坐标
@@ -98,7 +98,7 @@ def swipe_to_down(duration):
 	:return:
 	"""
 
-	screen_size = getsize()
+	screen_size = Getsize()
 	x1 = int(screen_size[0] * 0.5)
 	y1 = int(screen_size[1] * 0.25)
 	y2 = int(screen_size[1] * 0.75)
@@ -111,7 +111,7 @@ def swipe_to_left(duration):
 	:param duration: 滑动持续的毫秒值
 	:return:
 	"""
-	screen_size = getsize()
+	screen_size = Getsize()
 	x1 = int(screen_size[0] * 0.75)
 	y1 = int(screen_size[1] * 0.5)
 	x2 = int(screen_size[0] * 0.05)
@@ -123,7 +123,7 @@ def swipe_to_right(duration):
 	屏幕向右滑动
 	:return:
 	"""
-	screen_size = getsize()
+	screen_size = Getsize()
 	x1 = int(screen_size[0] * 0.05)
 	y1 = int(screen_size[1] * 0.5)
 	x2 = int(screen_size[0] * 0.75)
@@ -217,7 +217,7 @@ def faxian_all():
 			pass
 	device.back()
 
-def All_shouye():
+def Shouye():
 	"""
 	首页的四个小模块查看
 	:return:
@@ -284,7 +284,7 @@ def Ture_or_flase_login():
 		return False
 
 
-def login():
+def Login():
 	"""
 	登录账号或者切换账号
 	:return:
@@ -449,7 +449,7 @@ def new_toubiao():
 
 
 
-def toubiao():
+def Toubiao():
 	"""
 	投资普通标
 	:return:
@@ -569,6 +569,6 @@ def other():
 	device.back()
 
 if __name__ == '__main__':
-    device=connnect_ipad_device()
+    device=Connnect_ipad_device()
     device.implicitly_wait(20)
-    All_shouye()
+    Shouye()

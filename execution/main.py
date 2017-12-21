@@ -9,6 +9,7 @@ import time
 from time import sleep
 import threading
 import datetime
+from appium.webdriver.common.touch_action import TouchAction
 timestamp = time.strftime ('%Y-%m-%d %H:%M:%S', time.localtime ())
 def Shijian(fune):
 	"""
@@ -39,13 +40,12 @@ def Connnect_ipad_device():
 			'platformVersion': '7.0',
 			'sessionOverride': True,
 			'appPackage': 'com.yourenkeji.shenghuidai',
-			'newCommandTimeout': 600,
+			'newCommandTimeout': 600, #一段时间不输入命令的话，app会退出。这个参数用来设置超时时间
 			'appActivity': 'com.delevin.shenghuidai.welcome.WelcomeActivity',
-			'autoAcceptAlerts': True,
+			'autoAcceptAlerts': True, #iOS 的个人信息访问警告(如位置'联系人、图片) 出现时，自动选择接受( Accept )。默认值 false。
 			'noReset':True,   #不要在会话前重置应用状态。默认值false
 			'unicodeKeyboard':True,#设置appium输入法后就不会弹默认的系统输入法了
-			'resetKeyboard':False, #重置系统输入法
-
+			'resetKeyboard':True, #重置系统输入法
 		}
 		driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
 		return driver
@@ -63,6 +63,17 @@ def Pingmu_jiesuo():
 	else:
 		os.popen ('adb shell input swipe 50 1000 50 0 100')
 		print ('不是锁屏状态,可直接执行项目哦')
+
+def shoushijiesuo():
+	list_pwd = device.find_elements_by_class_name ("android.widget.ImageView")
+	try:
+		TouchAction (device).press (list_pwd [0]).move_to (list_pwd [3]).move_to (list_pwd [6]).wait (100).move_to (
+			list_pwd [7]).wait (100).move_to (list_pwd [8]).release ().perform ()
+		time.sleep (2)
+		print('解锁成功')
+		return True
+	except Exception:
+		pass
 
 def Getsize():
 	"""
@@ -174,9 +185,12 @@ def faxian_all():
 			time.sleep(2)
 			device.back()
 		else:
-			device.find_elements_by_class_name ('android.widget.Image') [2 + a].click ()
-			time.sleep(2)
-			device.back()
+			try:
+				device.find_elements_by_class_name ('android.widget.Image') [2 + a].click ()
+				time.sleep(2)
+				device.back()
+			except Exception:
+				pass
 	device.back()
 	u'活动中心'
 	device.find_element_by_id('com.yourenkeji.shenghuidai:id/huodongzhongxin').click()
@@ -208,12 +222,15 @@ def faxian_all():
 	xinwen_shuliang = int (len (xinwen_geshu))
 	device.find_elements_by_class_name ('android.widget.TextView') [6].click ()
 	for a in range (xinwen_shuliang):
-		if a <= 6:
-			device.find_elements_by_class_name ('android.widget.ImageView') [a + 1].click ()
-			time.sleep (2)
-			Swipe_to_up (1000)
-			device.back ()
-		else:
+		try:
+			if a <= 6:
+				device.find_elements_by_class_name ('android.widget.ImageView') [a + 1].click ()
+				time.sleep (2)
+				Swipe_to_up (1000)
+				device.back ()
+				time.sleep(1)
+				print(f'第{a+1}条新闻')
+		except Exception:
 			pass
 	device.back()
 
@@ -237,10 +254,11 @@ def Shouye():
 	time.sleep(2)
 	device.back()
 	u'邀请好友'
+	time.sleep(3)
 	device.find_elements_by_class_name('android.widget.TextView')[2].click()
 	device.find_element_by_id ('com.yourenkeji.shenghuidai:id/webView_bt_share').click ()
 	time.sleep (3)
-	# '点击QQ'
+	'点击QQ'
 	device.find_elements_by_class_name ('android.widget.ImageButton') [2].click ()
 	time.sleep (3)
 	'分享给我的电脑'
@@ -293,7 +311,6 @@ def Login():
 	time.sleep(5)
 	#点击账户
 	device.find_elements_by_class_name ('android.widget.RadioButton') [3].click ()
-
 	#点击更多
 	if Ture_or_flase_login () is True:
 		print('准备开始切换账户了')
@@ -305,7 +322,7 @@ def Login():
 		# 点击账户
 		device.find_elements_by_class_name ('android.widget.RadioButton') [3].click ()
 		#登录
-		device.find_elements_by_class_name('android.view.View')[6].click()
+		device.find_element_by_id ('com.yourenkeji.shenghuidai:id/bt_dilog_login').click ()
 		'登录账户'
 		device.find_elements_by_class_name ('android.widget.EditText') [0].clear()
 		login_ip=device.find_elements_by_class_name('android.widget.EditText')[0]
@@ -321,6 +338,7 @@ def Login():
 		except Exception as e:
 			print(e)
 			device.back()
+		print('切换账号成功')
 	else:
 		print("准备开始登录了")
 		# 登录
@@ -336,7 +354,7 @@ def Login():
 		device.find_elements_by_class_name ('android.widget.Button') [0].click ()
 		# 跳过手势密码
 		device.find_element_by_id ('com.yourenkeji.shenghuidai:id/img_cancel').click ()
-
+		print('登陆账号成功')
 @Shijian
 def gonggao():
 	"""
@@ -348,8 +366,6 @@ def gonggao():
 	device.find_elements_by_class_name('android.widget.LinearLayout')[9].click()
 	device.back()
 
-
-@Shijian
 def hongbao():
 	"""
 	判断优惠券的个数来进行操作,测试版本的优惠券
@@ -529,7 +545,7 @@ def all_account(money):
 	else:
 		t.cancel()
 		print("不做提现动作")
-
+	hongbao()
 	other()
 
 def other():
@@ -570,5 +586,18 @@ def other():
 
 if __name__ == '__main__':
     device=Connnect_ipad_device()
-    device.implicitly_wait(20)
-    Shouye()
+    time.sleep(10)
+    if shoushijiesuo () is True:
+	    shoushijiesuo ()
+    else:
+	    pass
+    device.implicitly_wait(30)
+    a=0
+    while True:
+	    Login()
+	    Shouye()
+	    faxian_all()
+	    all_account(1000)
+	    time.sleep(5)
+	    a+=1
+	    print(f'\033[1;32;40m这是第{a}次\033[0m')

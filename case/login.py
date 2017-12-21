@@ -6,7 +6,6 @@ from iphoneinfo import shoujiinfo
 device=shoujiinfo.connnect_ipad_device()
 import time
 
-
 def ture_or_flase():
 	'''
 	判断是否登录
@@ -30,12 +29,11 @@ def login():
 		device.find_elements_by_class_name ('android.widget.TextView') [14].click()
 		device.find_elements_by_class_name('android.widget.Button')[0].click()
 		#确定
-
 		device.find_elements_by_class_name('android.widget.Button')[0].click()
 		# 点击账户
 		device.find_elements_by_class_name ('android.widget.RadioButton') [3].click ()
 		#登录
-		device.find_elements_by_class_name('android.view.View')[6].click()
+		device.find_element_by_id ('com.yourenkeji.shenghuidai:id/bt_dilog_login').click ()
 		#登录账户
 		device.find_elements_by_class_name ('android.widget.EditText') [0].clear()
 		login_ip=device.find_elements_by_class_name('android.widget.EditText')[0]
@@ -51,7 +49,7 @@ def login():
 	else:
 		print("准备开始登录了")
 		# 登录
-		device.find_elements_by_class_name ('android.view.View') [6].click ()
+		device.find_element_by_id ('com.yourenkeji.shenghuidai:id/bt_dilog_login').click ()
 		# 登录账户
 		device.find_elements_by_class_name ('android.widget.EditText') [0].clear ()
 		login_ip = device.find_elements_by_class_name ('android.widget.EditText') [0]

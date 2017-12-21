@@ -4,6 +4,7 @@
 
 import unittest
 import HTMLTestRunner
+import time
 from appium import webdriver
 class test0(unittest.TestCase):
 	def setUp(self):
@@ -39,7 +40,7 @@ class test0(unittest.TestCase):
 		# 点击账户
 		self.device.find_elements_by_class_name ('android.widget.RadioButton') [3].click ()
 		# 登录
-		self.device.find_elements_by_class_name ('android.view.View') [6].click ()
+		self.device.find_element_by_id('com.yourenkeji.shenghuidai:id/bt_dilog_login').click ()
 		# 登录账户
 		self.device.find_elements_by_class_name ('android.widget.EditText') [0].clear ()
 		login_ip = self.device.find_elements_by_class_name ('android.widget.EditText') [0]
@@ -50,12 +51,12 @@ class test0(unittest.TestCase):
 		self.device.set_value (password, '111111')
 		self.device.find_elements_by_class_name ('android.widget.Button') [0].click ()
 		# 跳过手势密码
-		self.device.find_elements_by_class_name ('android.widget.ImageView') [9].click ()
+		self.device.find_element_by_id('com.yourenkeji.shenghuidai:id/img_cancel').click()
 if __name__ == '__main__':
 	suite = unittest.TestSuite ()
-
+	nowtime = time.strftime ('%Y-%m-%d %H:%M:%S', time.localtime ())
 	suite.addTest (test0 ('test_log'))
-	report_file = "/Users/yuchengtao/Desktop/胜辉贷/appium_report.html"
+	report_file = "/Users/yuchengtao/Desktop/胜辉贷/"+nowtime+"appium_report.html"
 
 	fp = open (report_file,'wb')
 

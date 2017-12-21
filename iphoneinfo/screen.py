@@ -14,7 +14,7 @@ def screenshot (name):
 	:return:
 	'''
 	path = PATH (os.getcwd () + "/screenshot")
-	timestamp = time.strftime ('%Y-%m-%d-%H-%M-%S', time.localtime (time.time ()))
+	timestamp = time.strftime ('%Y-%m-%d-%H-%M-%S', time.localtime ())
 	os.popen ("adb wait-for-device")
 	os.popen ("adb shell screencap -p /data/local/tmp/tmp.png")
 	if not os.path.isdir (PATH (os.getcwd () + "/screenshot")):

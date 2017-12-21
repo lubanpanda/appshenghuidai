@@ -6,9 +6,11 @@ from selenium.webdriver.common.keys import Keys
 import time
 def ios_devices():
 	chrom=webdriver.Chrome('/Users/yuchengtao/node_modules/accepts/chromedriver')
-	chrom.get("https://www.baidu.com/")
+	chrom.get("https://mail.qq.com/")
 	chrom.implicitly_wait(70)
-	chrom.find_element_by_xpath('//*[@id="kw"]').send_keys(u'随便点吧')
+	time.sleep(3)
+	chrom.find_element_by_xpath('//*[@id="nick_84305510"]').click()
+	#chrom.find_element_by_xpath ('//*[@id="frame_html_setting"]').click ()
 	time.sleep(20)
 
 if __name__ == '__main__':

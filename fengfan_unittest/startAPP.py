@@ -1,6 +1,6 @@
-from  appiumtext import webdriver
+from  appium import webdriver
 from fengfan_unittest.feng_test_conf.feng_test_env.feng_test_config import config
-import logging
+
 from fengfan_unittest.feng_test_method.method import *
 
 class start_App(object):

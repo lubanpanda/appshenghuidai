@@ -4,16 +4,16 @@ from selenium import webdriver
 import time
 import random
 import  os
-from appiumtext.webdriver.common.touch_action import TouchAction #导入Touch Action类   这个是支持手势操作
-from appiumtext import webdriver
+from appium.webdriver.common.touch_action import TouchAction #导入Touch Action类   这个是支持手势操作
+from appium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import xlrd
-from xlutils.copy import copy
-
+import copy
+from  fengfan_unittest import startAPP
 from selenium.webdriver.support import *
-from pyocr import pyocr
+#from pyocr import pyocr
 from PIL import Image
 import traceback
 import logging

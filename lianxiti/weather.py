@@ -1,13 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Author  : panda  84305510@qq.com
+import logging
+
 from bs4 import BeautifulSoup
 import requests
+from lianxiti import loger
 
 def weather(city_name):
+	#logger.info("天气已经正常显示了哦")
 	url='http://m.sohu.com/weather/?city='+city_name
 	UA='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36'
 	weather_shuju=requests.get(url,headers={'User-Agent':UA})
+
 	html=weather_shuju.text
 	soup=BeautifulSoup(html,'html.parser')
 	now_wendu=soup.find('p',class_='cur').string
@@ -17,6 +22,9 @@ def weather(city_name):
 	PM=soup.find('p',class_='tit').string
 	fengli=soup.find('div',class_='pm')
 	feng,shidu=map(lambda a:a.string,fengli)
-	print(f'城市：{city_name}\n现在的温度：{now_wendu}\n最高气温：{up_wendu}\n最低温度：{low_wendu}\n天气情况:{xiangqing}\nPM值：{PM}\n舒适指数：{feng,shidu}')
+	b=loger.log()
+
+	a= (f'城市：{city_name}\n现在的温度：{now_wendu}\n最高气温：{up_wendu}\n最低温度：{low_wendu}\n天气情况:{xiangqing}\nPM值：{PM}\n舒适指数：{feng,shidu}')
+	b.warning(a)
 if __name__ == '__main__':
-    weather('佛山')
+    weather('北京')

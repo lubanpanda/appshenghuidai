@@ -5,26 +5,16 @@
 import unittest
 import HTMLTestRunner
 import time
+from iphoneinfo import shoujiinfo
 from appium import webdriver
-class test0(unittest.TestCase):
+from fengfan_unittest.feng_test_method.method import *
+class test0(unittest.TestCase,object):
+
 	def setUp(self):
-		desired_caps = {
-			'platformName': 'Android',
-			'deviceName': '3cdbb8e5',
-			'platformVersion': '7.0',
-			'sessionOverride': True,
-			'appPackage': 'com.yourenkeji.shenghuidai',
-			'newCommandTimeout': 600,
-			'appActivity': 'com.delevin.shenghuidai.welcome.WelcomeActivity',
-			'autoAcceptAlerts': True,
-			'noReset': True,
-			'unicodeKeyboard': True,  # 设置appium输入法后就不会弹默认的系统输入法了
-			'resetKeyboard': False,  # 重置系统输入法
-		                }
-		self.device=webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
-		self.device.implicitly_wait(20)
+		shoujiinfo.__init__(self)
+		shoujiinfo.setUp(self)
 	def tearDown(self):
-		pass
+		shoujiinfo.tearDown (self)
 	def test_log(self):
 		# 点击账户
 		self.device.find_elements_by_class_name ('android.widget.RadioButton') [3].click ()

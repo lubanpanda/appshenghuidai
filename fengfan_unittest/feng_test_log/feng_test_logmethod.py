@@ -3,7 +3,7 @@ import logging,time,os
 import logging.config
 import logging.handlers
 def Log():
-    logging.config.fileConfig('../feng_test_conf/feng_test_env/mylog.conf')  # 该路径是调用env下面的mylog日志配置文件
+    logging.config.fileConfig('/Users/yuchengtao/PycharmProjects/shenghuidai/fengfan_unittest/feng_test_conf/feng_test_env/mylog.conf')  # 该路径是调用env下面的mylog日志配置文件
 
     logger = logging.getLogger()
     fmt = '[%(asctime)s](%(levelname)s)%(name)s : %(message)s\n'

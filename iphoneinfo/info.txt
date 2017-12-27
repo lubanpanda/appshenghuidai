@@ -1,2 +1,0 @@
-1。加息券的接口：http://apitest.shenghuidai.com:8012/v1/asset/18519291259/rate/pocket
-2。红包接口：http://apitest.shenghuidai.com:8012/v1/asset/18519291259/red/pocket

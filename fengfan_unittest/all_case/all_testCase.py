@@ -3,7 +3,7 @@ import  unittest,requests,HTMLTestRunner,time,os
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 from fengfan_unittest.feng_test_method.method import *
-from appiumtext import webdriver
+from appium import webdriver
 def allCase():
     #待执行用例的目录
     case_dir=r'../feng_test_case'

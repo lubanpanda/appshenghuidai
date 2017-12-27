@@ -73,7 +73,7 @@ def shoushijiesuo():
 		print('解锁成功')
 		return True
 	except Exception:
-		pass
+		return False
 
 def Getsize():
 	"""
@@ -258,15 +258,18 @@ def Shouye():
 	device.find_elements_by_class_name('android.widget.TextView')[2].click()
 	device.find_element_by_id ('com.yourenkeji.shenghuidai:id/webView_bt_share').click ()
 	time.sleep (3)
-	'点击QQ'
-	device.find_elements_by_class_name ('android.widget.ImageButton') [2].click ()
-	time.sleep (3)
-	'分享给我的电脑'
-	device.find_elements_by_class_name ('android.widget.RelativeLayout') [5].click ()
-	'发送'
-	device.find_element_by_id ('com.tencent.mobileqq:id/dialogRightBtn').click ()
-	'返回'
-	device.find_element_by_id ('com.tencent.mobileqq:id/dialogLeftBtn').click ()
+	try:
+		'点击QQ'
+		device.find_elements_by_class_name ('android.widget.ImageButton') [2].click ()
+		time.sleep (3)
+		'分享给我的电脑'
+		device.find_elements_by_class_name ('android.widget.RelativeLayout') [5].click ()
+		'发送'
+		device.find_element_by_id ('com.tencent.mobileqq:id/dialogRightBtn').click ()
+		'返回'
+		device.find_element_by_id ('com.tencent.mobileqq:id/dialogLeftBtn').click ()
+	except Exception as e:
+		print(e)
 	'活动规则'
 	device.find_elements_by_class_name('android.view.View')[1].click()
 	time.sleep(3)
@@ -342,7 +345,7 @@ def Login():
 	else:
 		print("准备开始登录了")
 		# 登录
-		device.find_elements_by_class_name ('android.view.View') [6].click ()
+		device.find_element_by_id('com.yourenkeji.shenghuidai:id/bt_dilog_login').click ()
 		# 登录账户
 		device.find_elements_by_class_name ('android.widget.EditText') [0].clear ()
 		login_ip = device.find_elements_by_class_name ('android.widget.EditText') [0]
@@ -589,15 +592,26 @@ if __name__ == '__main__':
     time.sleep(10)
     if shoushijiesuo () is True:
 	    shoushijiesuo ()
-    else:
+    else :
 	    pass
-    device.implicitly_wait(30)
+    device.implicitly_wait(12)
     a=0
     while True:
-	    Login()
-	    Shouye()
-	    faxian_all()
-	    all_account(1000)
-	    time.sleep(5)
-	    a+=1
-	    print(f'\033[1;32;40m这是第{a}次\033[0m')
+	    try:
+		    Login()
+		    Shouye()
+		    faxian_all()
+		    all_account(1000)
+		    time.sleep(5)
+		    a+=1
+		    print(f'\033[1;32;40m这是第{a}次\033[0m')
+	    except Exception:
+		    device = Connnect_ipad_device ()
+		    device.implicitly_wait (12)
+		    Login ()
+		    Shouye ()
+		    faxian_all ()
+		    all_account (1000)
+		    time.sleep (5)
+		    a += 1
+		    print (f'\033[1;32;40m这是第{a}次\033[0m')

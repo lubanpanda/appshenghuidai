@@ -5,7 +5,6 @@ import random
 import time
 import os
 import traceback
-
 from appium.webdriver.common.touch_action import TouchAction
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -31,8 +30,8 @@ class My_method(object):
 				return self.driver.find_element_by_id (id).set_text (text)
 
 	'''方法包装_通过当前页面:classname+text定位控件并完成输入'''
-	def my_class_name_shuru (self, driver, className, text, txtUsername):
-		allClassNames = driver.find_elements_by_class_name (className)  # 定义所有该className下所有控件为 allclassname
+	def my_class_name_shuru (self,className, text, txtUsername):
+		allClassNames = self.driver.find_elements_by_class_name (className)  # 定义所有该className下所有控件为 allclassname
 		for allClassName in allClassNames:
 			print (allClassName.text)
 			if text in allClassName.text:  # 当text的值属于  遍历出来当中的一个text值时，则为我们需要的值
@@ -40,8 +39,8 @@ class My_method(object):
 				break
 
 	'''封装一个根据clsaa+text的方法点击控件 '''
-	def my_class_name_shuru_dianji (self, driver, className, text):
-		clickClassName = driver.find_elements_by_class_name (className)
+	def my_class_name_shuru_dianji (self, className, text):
+		clickClassName = self.driver.find_elements_by_class_name (className)
 		for clickclassNameOne in clickClassName:
 			if text in clickclassNameOne.text:
 				clickclassNameOne.click ()

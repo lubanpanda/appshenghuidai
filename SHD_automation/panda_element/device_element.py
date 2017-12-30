@@ -70,3 +70,7 @@ zhuce['注册']='com.yourenkeji.shenghuidai:id/bt_dilog_resger'
 zhuce['账号']='com.yourenkeji.shenghuidai:id/zhu_phone'
 zhuce['密码']='com.yourenkeji.shenghuidai:id/fragment_Login_password'
 zhuce['跳过']='com.yourenkeji.shenghuidai:id/img_cancel'
+
+global HTMLbaogao
+HTMLbaogao={}
+HTMLbaogao['报告地址']='/Users/yuchengtao/PycharmProjects/shenghuidai/SHD_automation/panda_baogao/'

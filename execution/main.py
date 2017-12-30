@@ -298,7 +298,7 @@ def Ture_or_flase_login():
 	"""
 	# noinspection PyBroadException
 	try:
-		a=device.find_elements_by_class_name ('android.widget.TextView')[14]
+		a=device.find_elements_by_class_name ('android.widget.TextView')[10]
 		print(a)
 		return True
 	except Exception :
@@ -317,7 +317,7 @@ def Login():
 	#点击更多
 	if Ture_or_flase_login () is True:
 		print('准备开始切换账户了')
-		device.find_elements_by_class_name ('android.widget.TextView') [14].click()
+		device.find_element_by_id('com.yourenkeji.shenghuidai:id/my_info_tv').click()
 		device.find_elements_by_class_name('android.widget.Button')[0].click()
 		#确定
 
@@ -327,7 +327,7 @@ def Login():
 		#登录
 		device.find_element_by_id ('com.yourenkeji.shenghuidai:id/bt_dilog_login').click ()
 		'登录账户'
-		device.find_elements_by_class_name ('android.widget.EditText') [0].clear()
+		#device.find_elements_by_class_name ('android.widget.EditText') [0].clear()
 		login_ip=device.find_elements_by_class_name('android.widget.EditText')[0]
 		device.set_value(login_ip,'18519291259')
 		device.find_elements_by_class_name('android.widget.Button')[0].click()
@@ -595,23 +595,4 @@ if __name__ == '__main__':
     else :
 	    pass
     device.implicitly_wait(12)
-    a=0
-    while True:
-	    try:
-		    Login()
-		    Shouye()
-		    faxian_all()
-		    all_account(1000)
-		    time.sleep(5)
-		    a+=1
-		    print(f'\033[1;32;40m这是第{a}次\033[0m')
-	    except Exception:
-		    device = Connnect_ipad_device ()
-		    device.implicitly_wait (12)
-		    Login ()
-		    Shouye ()
-		    faxian_all ()
-		    all_account (1000)
-		    time.sleep (5)
-		    a += 1
-		    print (f'\033[1;32;40m这是第{a}次\033[0m')
+    Login()

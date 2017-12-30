@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Author  : panda  84305510@qq.com
-import logging
-
 from bs4 import BeautifulSoup
 import requests
 from lianxiti import loger

@@ -15,7 +15,7 @@ from SHD_automation.device_info.device import *
 class My_method(object):
 	'获取ID元素'
 	def My_id(self,id,text):
-		if text == 'getyuansu':
+		if text == '获取元素':
 			pro = '获取元素：'
 			logging.info (u'>>>%s%s' % (pro, id))
 			return self.driver.find_element_by_id (id)
@@ -105,6 +105,26 @@ class My_method(object):
 		My_method.My_id (self, 'com.yourenkeji.shenghuidai:id/denglu_bt_a', 'click')
 		My_method.My_id (self, zhuce ['跳过'], 'click')
 		logging.info ('初始化登陆成功')
+
+	'''封装一个退出方法'''
+	def login_exit(self):
+			My_method.My_id(self,module_info['账户'],'click')
+			My_method.My_id(self,account['更多'],'click')
+			My_method.My_id(self,module_info['退出'],'click')
+			My_method.My_id(self,'com.yourenkeji.shenghuidai:id/positiveButton','click')
+			logging.info('退出账号成功')
+
+	'''判断是否登录'''
+	def login_turn_or_flase(self,panduan_login,name,password):
+		My_method.My_id (self, module_info ['账户'], 'click')
+		if panduan_login=='判断登录':
+			try:
+				a=My_method.My_id(self,zhuce['登录'],'获取元素')
+				if a :
+					My_method.loginCode (self, name, password)
+			except Exception:
+				logging.info('已经登录了哦')
+
 
 class myMethod (object):
 	'''封装一个随机生成电话号码的方法,默认方法首位字母为1，其余十位随机'''

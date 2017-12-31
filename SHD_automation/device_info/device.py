@@ -5,8 +5,9 @@ from SHD_automation.panda_element import *
 from appium import webdriver
 import logging
 from SHD_automation.panda_element.device_element import *
+from SHD_automation.panda_log.log import log
 from SHD_automation.panda_methods.my_methods import Pingmu_unlock_the_screen
-from lianxiti.loger import log
+
 
 
 class star_app(object):
@@ -31,6 +32,7 @@ class star_app(object):
 		self.driver = webdriver.Remote ('http://127.0.0.1:4723/wd/hub', desired_caps)
 		self.driver.implicitly_wait(30)
 		self.logging.info(self.driver)
+
 
 	def tearDown (self):
 		self.driver.quit ()

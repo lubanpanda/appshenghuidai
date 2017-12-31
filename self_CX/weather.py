@@ -3,7 +3,7 @@
 # @Author  : panda  84305510@qq.com
 from bs4 import BeautifulSoup
 import requests
-from lianxiti import loger
+
 
 def weather(city_name):
 	#logger.info("天气已经正常显示了哦")
@@ -20,9 +20,8 @@ def weather(city_name):
 	PM=soup.find('p',class_='tit').string
 	fengli=soup.find('div',class_='pm')
 	feng,shidu=map(lambda a:a.string,fengli)
-	b=loger.log()
 
-	a= (f'城市：{city_name}\n现在的温度：{now_wendu}\n最高气温：{up_wendu}\n最低温度：{low_wendu}\n天气情况:{xiangqing}\nPM值：{PM}\n舒适指数：{feng,shidu}')
-	b.warning(a)
+	print(f'城市：{city_name}\n现在的温度：{now_wendu}\n最高气温：{up_wendu}\n最低温度：{low_wendu}\n天气情况:{xiangqing}\nPM值：{PM}\n舒适指数：{feng,shidu}')
+
 if __name__ == '__main__':
     weather('北京')

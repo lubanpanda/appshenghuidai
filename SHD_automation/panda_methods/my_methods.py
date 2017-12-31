@@ -38,6 +38,22 @@ class My_method(object):
 				allClassName.set_text (txtUsername)
 				break
 
+	'''封装一个根据clsaa+id的方法点击控件'''
+	def my_class_name_id_dianji(self,classname,list_id,text):
+
+		if text == '获取元素':
+			pro = '获取classname元素：'
+			logging.info (u'>>>%s%s' % (pro, classname))
+			return self.driver.find_elements_by_class_name(classname)
+		else:
+			if text == 'click':
+				pro = '点击控件classname：'
+				logging.info (u'>>>%s%s' % (pro, classname))
+				return self.driver.find_elements_by_class_name(classname)[list_id].click ()
+			else:
+				pro = '输入内容为：'
+				logging.info (u'>>>定位控件%s,%s%s' % (classname, pro, text))
+				return self.driver.find_element_by_id (classname).set_text (text)
 	'''封装一个根据clsaa+text的方法点击控件 '''
 	def my_class_name_shuru_dianji (self, className, text):
 		clickClassName = self.driver.find_elements_by_class_name (className)
@@ -72,8 +88,7 @@ class My_method(object):
 	'''封装一个滑动当前页面class+text查看元素方法'''
 
 	def scroll_classText (self, classNameCode, textCode):
-		self.driver.find_element_by_android_uiautomator (('new UiScrollable(new UiSelector().className("%s")).scrollIntoView(new UiSelector().text("%s"))' % (
-			classNameCode, textCode)))
+		self.driver.find_element_by_android_uiautomator (('new UiScrollable(new UiSelector().className("%s")).scrollIntoView(new UiSelector().text("%s"))' % (classNameCode, textCode)))
 
 	'''封装退出APP方法'''
 
@@ -95,7 +110,8 @@ class My_method(object):
 			print (traceback.print_exc ())
 			logging.info ("false")
 
-	def loginCode (self,username,password):  # 封装登陆方法
+	'''封装登陆方法'''
+	def loginCode (self,username,password):
 		# 登录
 		My_method.My_id (self, module_info ['账户'], 'click')
 		My_method.My_id (self, zhuce ['登录'], 'click')
@@ -118,7 +134,9 @@ class My_method(object):
 	def login_turn_or_flase(self,panduan_login,name,password):
 		My_method.My_id (self, module_info ['账户'], 'click')
 		if panduan_login=='判断登录':
+			self.driver.implicitly_wait (5)
 			try:
+
 				a=My_method.My_id(self,zhuce['登录'],'获取元素')
 				if a :
 					My_method.loginCode (self, name, password)

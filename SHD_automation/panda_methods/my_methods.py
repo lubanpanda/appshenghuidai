@@ -6,6 +6,7 @@ import time
 import os
 import traceback
 from appium.webdriver.common.touch_action import TouchAction
+from django.utils import duration
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
@@ -206,45 +207,42 @@ class Pingmu_unlock_the_screen(object):
 		except Exception:
 			logging.info('解锁失败')
 
+'''封装一个滑动的方法'''
 class Huadong(object):
 	def Getsize (self):
 		x = self.driver.get_window_size () ['width']
 		y = self.driver.get_window_size () ['height']
 		logging.info(x,y)
 		return x, y
-
-	def Swipe_to_up (self,duration):
-
-		screen_size =Huadong.Getsize (self)
-		x1 = int (screen_size [0] * 0.5)
-		y1 = int (screen_size [1] * 0.75)
-		y2 = int (screen_size [1] * 0.25)
-		self.driver.swipe (x1, y1, x1, y2, duration)
-		logging.info(f'向上滑动了{duration}毫秒')
-
-	def swipe_to_down (self,duration):
-
+	def huadong(self,fangxiang,huadong_time):
 		screen_size = Huadong.Getsize (self)
-		x1 = int (screen_size [0] * 0.5)
-		y1 = int (screen_size [1] * 0.25)
-		y2 = int (screen_size [1] * 0.75)
-		self.driver.swipe (x1, y1, x1, y2, duration)
-		logging.info (f'向下滑动了{duration}毫秒')
-
-	def swipe_to_left (self,duration):
-
-		screen_size = Huadong.Getsize (self)
-		x1 = int (screen_size [0] * 0.75)
-		y1 = int (screen_size [1] * 0.5)
-		x2 = int (screen_size [0] * 0.05)
-		self.driver.swipe (x1, y1, x2, y1, duration)
-		logging.info (f'向左滑动了{duration}毫秒')
-
-	def swipe_to_right (self,duration):
-
-		screen_size = Huadong.Getsize (self)
-		x1 = int (screen_size [0] * 0.05)
-		y1 = int (screen_size [1] * 0.5)
-		x2 = int (screen_size [0] * 0.75)
-		self.driver.swipe (x1, y1, x2, y1, duration)
-		logging.info (f'向右滑动了{duration}毫秒')
+		if fangxiang=='上':
+			x1=int(screen_size[0]*0.5)
+			y1=int(screen_size[1]*0.75)
+			y2=int(screen_size[1]*0.25)
+			zuobiao='手机坐标为：'
+			logging.info('%s,x=(%s%s),y=(%s%s),滑动了%s毫秒'%(zuobiao,x1,y1,x1,y2,huadong_time))
+			return self.driver.swipe (x1, y1, x1, y2, huadong_time)
+		elif fangxiang=='下':
+			x2 = int (screen_size [0] * 0.5)
+			y3 = int (screen_size [1] * 0.25)
+			y4 = int (screen_size [1] * 0.75)
+			zuobiao = '手机坐标为：'
+			logging.info ('%s,x=(%s%s),y=(%s%s),滑动了%s毫秒' % (zuobiao, x2, y3, x2, y4,huadong_time))
+			return self.driver.swipe (x2, y3, x2, y4, huadong_time)
+		elif fangxiang=='左':
+			x3 = int (screen_size [0] * 0.75)
+			y5 = int (screen_size [1] * 0.5)
+			x4 = int (screen_size [0] * 0.05)
+			zuobiao = '手机坐标为：'
+			logging.info ('%s,x=(%s%s),y=(%s%s),滑动了%s毫秒' % (zuobiao, x3, y5, x4, y5,huadong_time))
+			return self.driver.swipe (x3, y5, x4, y5, huadong_time)
+		elif fangxiang=='右':
+			x5 = int (screen_size [0] * 0.05)
+			y6 = int (screen_size [1] * 0.5)
+			x6 = int (screen_size [0] * 0.75)
+			zuobiao = '手机坐标为：'
+			logging.info ('%s,x=(%s%s),y=(%s%s),滑动了%s毫秒' % (zuobiao, x5, y6, x6, y6,huadong_time))
+			return self.driver.swipe (x5, y6, x6, y6, huadong_time)
+		else:
+			logging.info("写错了哦，无法滑动")

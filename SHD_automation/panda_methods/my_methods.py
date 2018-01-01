@@ -14,20 +14,26 @@ from SHD_automation.device_info.device import *
 
 class My_method(object):
 	'获取ID元素'
-	def My_id(self,id,text):
+	def My_id(self,id,text,sleep_time=0):
 		if text == '获取元素':
 			pro = '获取元素：'
 			logging.info (u'>>>%s%s' % (pro, id))
-			return self.driver.find_element_by_id (id)
+			return self.driver.find_element_by_id (id),time.sleep(sleep_time)
 		else:
 			if text == 'click':
-				pro = '点击控件获取：'
+				pro = '点击控件获取'
 				logging.info (u'>>>%s%s' % (pro, id))
-				return self.driver.find_element_by_id (id).click ()
+				return self.driver.find_element_by_id (id).click (),time.sleep(sleep_time)
+			elif text=='获取内容':
+				pro='获取控件里的text内容'
+				logging.info('>>>%s%s'%(pro,id))
+				return self.driver.find_element_by_id(id).text,time.sleep(sleep_time)
+
 			else:
 				pro = '输入内容为：'
 				logging.info (u'>>>定位控件%s,%s%s' % (id, pro, text))
-				return self.driver.find_element_by_id (id).set_text (text)
+				return self.driver.find_element_by_id (id).set_text (text),time.sleep(sleep_time)
+
 
 	'''方法包装_通过当前页面:classname+text定位控件并完成输入'''
 	def my_class_name_shuru (self,className, text, txtUsername):
@@ -39,7 +45,7 @@ class My_method(object):
 				break
 
 	'''封装一个根据clsaa+id的方法点击控件'''
-	def my_class_name_id_dianji(self,classname,list_id,text):
+	def my_class_name_id_dianji(self,classname,list_id,text,sleep_time=0):
 
 		if text == '获取元素':
 			pro = '获取classname元素：'
@@ -48,8 +54,8 @@ class My_method(object):
 		else:
 			if text == 'click':
 				pro = '点击控件classname：'
-				logging.info (u'>>>%s%s' % (pro, classname))
-				return self.driver.find_elements_by_class_name(classname)[list_id].click ()
+				logging.info (u'>>>%s%s索引数字：%s' % (pro, classname,list_id))
+				return self.driver.find_elements_by_class_name(classname)[list_id].click (),time.sleep(sleep_time)
 			else:
 				pro = '输入内容为：'
 				logging.info (u'>>>定位控件%s,%s%s' % (classname, pro, text))
@@ -134,7 +140,7 @@ class My_method(object):
 	def login_turn_or_flase(self,panduan_login,name,password):
 		My_method.My_id (self, module_info ['账户'], 'click')
 		if panduan_login=='判断登录':
-			self.driver.implicitly_wait (5)
+			self.driver.implicitly_wait (3)
 			try:
 
 				a=My_method.My_id(self,zhuce['登录'],'获取元素')
@@ -142,6 +148,11 @@ class My_method(object):
 					My_method.loginCode (self, name, password)
 			except Exception:
 				logging.info('已经登录了哦')
+
+	'''封装一个多次返回的方法'''
+	def app_back(self,cishu=1):
+		for i in range(cishu):
+			self.driver.back()
 
 
 class myMethod (object):
@@ -197,38 +208,21 @@ class Pingmu_unlock_the_screen(object):
 
 class Huadong(object):
 	def Getsize (self):
-		"""
-		获得手机屏幕大小
-		:return:
-		"""
-
 		x = self.driver.get_window_size () ['width']
 		y = self.driver.get_window_size () ['height']
 		logging.info(x,y)
 		return x, y
 
 	def Swipe_to_up (self,duration):
-		"""
-		屏幕向上滑动
-		:param duration: 滑动的毫秒数值
-		:return:
-		"""
+
 		screen_size =Huadong.Getsize (self)
-		# X坐标
 		x1 = int (screen_size [0] * 0.5)
-		# 起始Y坐标
 		y1 = int (screen_size [1] * 0.75)
-		# 终点Y坐标
 		y2 = int (screen_size [1] * 0.25)
 		self.driver.swipe (x1, y1, x1, y2, duration)
 		logging.info(f'向上滑动了{duration}毫秒')
 
 	def swipe_to_down (self,duration):
-		"""
-		屏幕向下滑动
-		:param duration: 滑动的毫秒数值
-		:return:
-		"""
 
 		screen_size = Huadong.Getsize (self)
 		x1 = int (screen_size [0] * 0.5)
@@ -238,11 +232,7 @@ class Huadong(object):
 		logging.info (f'向下滑动了{duration}毫秒')
 
 	def swipe_to_left (self,duration):
-		"""
-		屏幕向左滑动
-		:param duration: 滑动持续的毫秒值
-		:return:
-		"""
+
 		screen_size = Huadong.Getsize (self)
 		x1 = int (screen_size [0] * 0.75)
 		y1 = int (screen_size [1] * 0.5)
@@ -251,10 +241,7 @@ class Huadong(object):
 		logging.info (f'向左滑动了{duration}毫秒')
 
 	def swipe_to_right (self,duration):
-		"""
-		屏幕向右滑动
-		:return:
-		"""
+
 		screen_size = Huadong.Getsize (self)
 		x1 = int (screen_size [0] * 0.05)
 		y1 = int (screen_size [1] * 0.5)

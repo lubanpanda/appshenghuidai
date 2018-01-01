@@ -55,6 +55,7 @@ account['投资记录']='com.yourenkeji.shenghuidai:id/my_touzi_tv'
 account['截标记录']='com.yourenkeji.shenghuidai:id/tvRightComplete'
 account['回款日历']='com.yourenkeji.shenghuidai:id/my_return_tv'
 account['提现']='com.yourenkeji.shenghuidai:id/my_tixian'
+account['我的余额']='com.yourenkeji.shenghuidai:id/tixian_remain_balance'
 account['提现-下一步']= 'com.yourenkeji.shenghuidai:id/bt_tixian'
 account['资金记录']='com.yourenkeji.shenghuidai:id/my_money_tv'
 account['我的优惠券']='com.yourenkeji.shenghuidai:id/my_page_layout'
@@ -74,34 +75,3 @@ zhuce['跳过']='com.yourenkeji.shenghuidai:id/img_cancel'
 global HTMLbaogao
 HTMLbaogao={}
 HTMLbaogao['报告地址']='/Users/yuchengtao/PycharmProjects/shenghuidai/SHD_automation/panda_baogao/'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

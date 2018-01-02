@@ -6,7 +6,6 @@ import time
 import os
 import traceback
 from appium.webdriver.common.touch_action import TouchAction
-from django.utils import duration
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
@@ -106,7 +105,6 @@ class My_method(object):
 		self.driver.find_element_by_id (account['更多']).click ()
 		self.driver.find_element_by_id (module_info['退出']).click ()
 		self.driver.find_element_by_id ('com.yourenkeji.shenghuidai:id/positiveButton').click ()
-
 	'''封装获取toast方法'''
 	def find_toast (self, message):
 		try:
@@ -246,3 +244,12 @@ class Huadong(object):
 			return self.driver.swipe (x5, y6, x6, y6, huadong_time)
 		else:
 			logging.info("写错了哦，无法滑动")
+'''截图功能'''
+class jietu(object):
+	def jietu_picture(name):
+		path = '/Users/yuchengtao/PycharmProjects/shenghuidai/SHD_automation/panda_picture/'
+		os.popen ("adb wait-for-device")
+		os.popen ("adb shell /system/bin/screencap -p /data/local/tmp/tmp.png")
+		os.popen ("adb pull /data/local/tmp/tmp.png " + path + name + ".png")
+		os.popen ("adb shell rm /data/local/tmp/tmp.png")
+		logging.info ('success,已经成功的保存在当前目录下')

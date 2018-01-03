@@ -5,10 +5,10 @@ import random
 import time
 import os
 import traceback
-from appium.webdriver.common.touch_action import TouchAction
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.wait import WebDriverWait
+from appium.webdriver.common.touch_action import TouchAction
 from SHD_automation.panda_log.log import *
 from SHD_automation.device_info.device import *
 
@@ -106,14 +106,13 @@ class My_method(object):
 		self.driver.find_element_by_id (module_info['退出']).click ()
 		self.driver.find_element_by_id ('com.yourenkeji.shenghuidai:id/positiveButton').click ()
 	'''封装获取toast方法'''
-	def find_toast (self, message):
-		try:
-			WebDriverWait (self, 30, 0.1).until (EC.presence_of_element_located ((By.PARTIAL_LINK_TEXT, message)))
-			logging.info (message)
+	def find_toast (self,message):
 
-		except:
-			print (traceback.print_exc ())
-			logging.info ("false")
+		toast_Code = ('xpath', './/*[contains(@text,"%s")]' % message)
+		t = WebDriverWait (self.driver, 5,0.1).until (EC.presence_of_element_located (toast_Code))
+		logging.info(f'获取到toast:{t}')
+
+
 
 	'''封装登陆方法'''
 	def loginCode (self,username,password):
@@ -129,11 +128,11 @@ class My_method(object):
 
 	'''封装一个退出方法'''
 	def login_exit(self):
-			My_method.My_id(self,module_info['账户'],'click')
-			My_method.My_id(self,account['更多'],'click')
-			My_method.My_id(self,module_info['退出'],'click')
-			My_method.My_id(self,'com.yourenkeji.shenghuidai:id/positiveButton','click')
-			logging.info('退出账号成功')
+		My_method.My_id(self,module_info['账户'],'click')
+		My_method.My_id(self,account['更多'],'click')
+		My_method.My_id(self,module_info['退出'],'click')
+		My_method.My_id(self,'com.yourenkeji.shenghuidai:id/positiveButton','click')
+		logging.info('退出账号成功')
 
 	'''判断是否登录'''
 	def login_turn_or_flase(self,panduan_login,name,password):

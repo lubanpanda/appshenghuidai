@@ -31,6 +31,9 @@ global shouye_modul
 # noinspection PyRedeclaration
 shouye_modul={}
 shouye_modul['投资攻略']='com.yourenkeji.shenghuidai:id/home_guanyuwomen'
+shouye_modul['开户绑卡']='android.view.View'  #5
+shouye_modul['充值投资']='android.view.View'   #7
+shouye_modul['坐等拿收益']='android.view.View' #9
 shouye_modul['新手指引']='com.yourenkeji.shenghuidai:id/home_xinshoubidu'
 shouye_modul['邀请好友']='com.yourenkeji.shenghuidai:id/home_yaoqinghaoyou'
 shouye_modul['每日签到']='com.yourenkeji.shenghuidai:id/home_qiandaosongli'
@@ -73,5 +76,13 @@ zhuce['密码']='com.yourenkeji.shenghuidai:id/fragment_Login_password'
 zhuce['跳过']='com.yourenkeji.shenghuidai:id/img_cancel'
 
 global HTMLbaogao
+# noinspection PyRedeclaration
 HTMLbaogao={}
 HTMLbaogao['报告地址']='/Users/yuchengtao/PycharmProjects/shenghuidai/SHD_automation/panda_baogao/'
+
+
+'''接口网址'''
+global shenghuidai
+shenghuidai={}
+#shenghuidai['请求头']='http://apitest.shenghuidai.com:8012/v1/' #测试环境
+shenghuidai['请求头']='https://api.shenghuidai.com:8012/v1/' #正式环境

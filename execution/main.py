@@ -46,6 +46,7 @@ def Connnect_ipad_device():
 			'noReset':True,   #不要在会话前重置应用状态。默认值false
 			'unicodeKeyboard':True,#设置appium输入法后就不会弹默认的系统输入法了
 			'resetKeyboard':True, #重置系统输入法
+			'AutomationName':'Uiautomator'
 		}
 		driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
 		return driver
@@ -590,9 +591,4 @@ def other():
 if __name__ == '__main__':
     device=Connnect_ipad_device()
     time.sleep(10)
-    if shoushijiesuo () is True:
-	    shoushijiesuo ()
-    else :
-	    pass
-    device.implicitly_wait(12)
-    Login()
+    screenshot('胜辉贷')

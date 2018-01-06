@@ -16,21 +16,21 @@ class My_method(object):
 	'获取ID元素'
 	def My_id(self,id,text,sleep_time=0):
 		if text == '获取元素':
-			pro = '获取元素：'
-			logging.info (u'>>>%s%s' % (pro, id))
+			pro = '获取元素>>>：'
+			logging.info (u'%s%s' % (pro, id))
 			return self.driver.find_element_by_id (id),time.sleep(sleep_time)
 		else:
 			if text == 'click':
-				pro = '点击控件获取'
+				pro = '点击控件获取>>>'
 				logging.info (u'>>>%s%s' % (pro, id))
 				return self.driver.find_element_by_id (id).click (),time.sleep(sleep_time)
 			elif text=='获取内容':
-				pro='获取控件里的text内容'
+				pro='获取控件里的text内容>>>'
 				logging.info('>>>%s%s'%(pro,id))
 				return self.driver.find_element_by_id(id).text,time.sleep(sleep_time)
 
 			else:
-				pro = '输入内容为：'
+				pro = '输入内容为>>>：'
 				logging.info (u'>>>定位控件%s,%s%s' % (id, pro, text))
 				return self.driver.find_element_by_id (id).set_text (text),time.sleep(sleep_time)
 
@@ -48,20 +48,20 @@ class My_method(object):
 	def my_class_name_id_dianji(self,classname,list_id,text,shuxing=None,sleep_time=1):
 
 		if text == '获取元素':
-			pro = '获取classname元素：'
+			pro = '获取classname元素>>>：'
 			logging.info (u'>>>%s%s' % (pro, classname))
 			return self.driver.find_elements_by_class_name(classname)
 		else:
 			if text == 'click':
-				pro = '点击控件classname：'
+				pro = '点击控件classname>>>：'
 				logging.info (u'>>>%s%s索引数字：%s' % (pro, classname,list_id))
 				return self.driver.find_elements_by_class_name(classname)[list_id].click (),time.sleep(sleep_time)
 			elif text=='属性':
-				pro = '获取控件classname的其他属性：'
+				pro = '获取控件classname的其他属性>>>：'
 				logging.info (u'>>>%s%s索引数字：%s' % (pro, classname, list_id))
 				return self.driver.find_elements_by_class_name (classname) [list_id].get_attribute(shuxing), time.sleep (sleep_time)
 			else:
-				pro = '输入内容为：'
+				pro = '输入内容为>>>：'
 				logging.info (u'>>>定位控件%s,%s%s' % (classname, pro, text))
 				return self.driver.find_element_by_id (classname).set_text (text)
 	'''封装一个根据clsaa+text的方法点击控件 '''
@@ -156,7 +156,7 @@ class My_method(object):
 		for i in range(cishu):
 			self.driver.back()
 		pro = '一共返回了'
-		logging.info(f'{pro}{cishu}次')
+		logging.info(f'{pro}<{cishu}>次')
 
 class myMethod (object):
 	'''封装一个随机生成电话号码的方法,默认方法首位字母为1，其余十位随机'''
@@ -216,34 +216,34 @@ class Huadong(object):
 		y = self.driver.get_window_size () ['height']
 		logging.info(x,y)
 		return x, y
-	def huadong(self,fangxiang,huadong_time,sleep_time=0):
+	def huadong(self,fangxiang,huadong_time,sleep_time=1):
 		screen_size = Huadong.Getsize (self)
 		if fangxiang=='上':
 			x1=int(screen_size[0]*0.5)
 			y1=int(screen_size[1]*0.75)
 			y2=int(screen_size[1]*0.25)
-			zuobiao='手机坐标为：'
+			zuobiao='手机坐标为>>>：'
 			logging.info('%s,x=(%s%s),y=(%s%s),向%s滑动了%s毫秒'%(zuobiao,x1,y1,x1,y2,fangxiang,huadong_time))
 			return self.driver.swipe (x1, y1, x1, y2, huadong_time),time.sleep(sleep_time)
 		elif fangxiang=='下':
 			x2 = int (screen_size [0] * 0.5)
 			y3 = int (screen_size [1] * 0.25)
 			y4 = int (screen_size [1] * 0.75)
-			zuobiao = '手机坐标为：'
+			zuobiao = '手机坐标为>>>：'
 			logging.info ('%s,x=(%s%s),y=(%s%s),向%s滑动了%s毫秒' % (zuobiao, x2, y3, x2, y4,fangxiang,huadong_time))
 			return self.driver.swipe (x2, y3, x2, y4, huadong_time),time.sleep(sleep_time)
 		elif fangxiang=='左':
 			x3 = int (screen_size [0] * 0.75)
 			y5 = int (screen_size [1] * 0.5)
 			x4 = int (screen_size [0] * 0.05)
-			zuobiao = '手机坐标为：'
+			zuobiao = '手机坐标为>>>：'
 			logging.info ('%s,x=(%s%s),y=(%s%s),向%s滑动了%s毫秒' % (zuobiao, x3, y5, x4, y5,fangxiang,huadong_time))
 			return self.driver.swipe (x3, y5, x4, y5, huadong_time),time.sleep(sleep_time)
 		elif fangxiang=='右':
 			x5 = int (screen_size [0] * 0.05)
 			y6 = int (screen_size [1] * 0.5)
 			x6 = int (screen_size [0] * 0.75)
-			zuobiao = '手机坐标为：'
+			zuobiao = '手机坐标为>>>：'
 			logging.info ('%s,x=(%s%s),y=(%s%s),向%s滑动了%s毫秒' % (zuobiao, x5, y6, x6, y6,fangxiang,huadong_time))
 			return self.driver.swipe (x5, y6, x6, y6, huadong_time),time.sleep(sleep_time)
 		else:

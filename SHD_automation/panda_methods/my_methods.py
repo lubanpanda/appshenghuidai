@@ -12,9 +12,11 @@ from appium.webdriver.common.touch_action import TouchAction
 from SHD_automation.panda_log.log import *
 from SHD_automation.device_info.device import *
 
+
+# noinspection PyUnresolvedReferences
 class My_method(object):
 	'获取ID元素'
-	def My_id(self,id,text,sleep_time=0):
+	def My_id(self,id,text,shuxing=None,sleep_time=0):
 		if text == '获取元素':
 			pro = '获取元素>>>：'
 			logging.info (u'%s%s' % (pro, id))
@@ -22,17 +24,20 @@ class My_method(object):
 		else:
 			if text == 'click':
 				pro = '点击控件获取>>>'
-				logging.info (u'>>>%s%s' % (pro, id))
+				logging.info (u'%s%s' % (pro, id))
 				return self.driver.find_element_by_id (id).click (),time.sleep(sleep_time)
 			elif text=='获取内容':
 				pro='获取控件里的text内容>>>'
-				logging.info('>>>%s%s'%(pro,id))
+				logging.info('%s%s'%(pro,id))
 				return self.driver.find_element_by_id(id).text,time.sleep(sleep_time)
-
+			elif text=='属性':
+				pro = '获取控件id的其他属性>>>：'
+				logging.info (u'%s%s' % (pro, id))
+				return self.driver.find_element_by_id (id).get_attribute(shuxing), time.sleep (sleep_time)
 			else:
 				pro = '输入内容为>>>：'
-				logging.info (u'>>>定位控件%s,%s%s' % (id, pro, text))
-				return self.driver.find_element_by_id (id).set_text (text),time.sleep(sleep_time)
+				logging.info (u'定位控件%s,%s%s' % (id, pro, text))
+				return self.driver.find_element_by_id (id).clear(),self.driver.find_element_by_id (id).send_keys (str(text)),time.sleep(sleep_time)
 
 
 	'''方法包装_通过当前页面:classname+text定位控件并完成输入'''
@@ -49,20 +54,20 @@ class My_method(object):
 
 		if text == '获取元素':
 			pro = '获取classname元素>>>：'
-			logging.info (u'>>>%s%s' % (pro, classname))
+			logging.info (u'%s%s' % (pro, classname))
 			return self.driver.find_elements_by_class_name(classname)
 		else:
 			if text == 'click':
 				pro = '点击控件classname>>>：'
-				logging.info (u'>>>%s%s索引数字：%s' % (pro, classname,list_id))
+				logging.info (u'%s%s索引数字：%s' % (pro, classname,list_id))
 				return self.driver.find_elements_by_class_name(classname)[list_id].click (),time.sleep(sleep_time)
 			elif text=='属性':
 				pro = '获取控件classname的其他属性>>>：'
-				logging.info (u'>>>%s%s索引数字：%s' % (pro, classname, list_id))
+				logging.info (u'%s%s索引数字：%s' % (pro, classname, list_id))
 				return self.driver.find_elements_by_class_name (classname) [list_id].get_attribute(shuxing), time.sleep (sleep_time)
 			else:
 				pro = '输入内容为>>>：'
-				logging.info (u'>>>定位控件%s,%s%s' % (classname, pro, text))
+				logging.info (u'定位控件%s,%s%s' % (classname, pro, text))
 				return self.driver.find_element_by_id (classname).set_text (text)
 	'''封装一个根据clsaa+text的方法点击控件 '''
 	def my_class_name_shuru_dianji (self, className, text):
@@ -111,12 +116,14 @@ class My_method(object):
 		self.driver.find_element_by_id ('com.yourenkeji.shenghuidai:id/positiveButton').click ()
 	'''封装获取toast方法'''
 	def find_toast (self,message):
-
 		toast_Code = ('xpath', './/*[contains(@text,"%s")]' % message)
-		t = WebDriverWait (self.driver, 5,0.1).until (EC.presence_of_element_located (toast_Code))
-		logging.info(f'获取到toast:{t}')
-
-
+		t = (WebDriverWait (self.driver, 5,0.1).until (EC.presence_of_element_located (toast_Code))).text
+		if message==t:
+			logging.info(f'吐司正确,内容为>>>:{message}')
+			return message
+		else:
+			logging.info(f'吐司错误，正确的吐司是toast :{t}')
+			return t
 
 	'''封装登陆方法'''
 	def loginCode (self,username,password):

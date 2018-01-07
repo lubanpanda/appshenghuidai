@@ -6,7 +6,7 @@ global device_info
 # noinspection PyRedeclaration
 device_info={}
 device_info['platformName']='Android'
-device_info['deviceName']='3cdbb8e5'
+device_info['deviceName']='5JP0217617007741'#'3cdbb8e5'
 device_info['platformVersion']= '7.0'
 device_info['sessionOverride']=True  #允许 session 被覆盖 (冲突的话),默认是False
 device_info['appPackage']='com.yourenkeji.shenghuidai'
@@ -15,7 +15,7 @@ device_info['appActivity']='com.delevin.shenghuidai.welcome.WelcomeActivity'
 device_info['autoAcceptAlerts']=True# iOS 的个人信息访问警告(如位置'联系人、图片) 出现时，自动选择接受( Accept )。默认值 false。
 device_info['noReset']=True # 不要在会话前重置应用状态。默认值false
 device_info['unicodeKeyboard']= True  # 设置appium输入法后就不会弹默认的系统输入法了
-device_info['resetKeyboard']= True  # 重置系统输入法
+device_info['resetKeyboard']= False  # 重置系统输入法
 
 global module_info
 # noinspection PyRedeclaration
@@ -37,6 +37,13 @@ shouye_modul['坐等拿收益']='android.view.View' #9
 shouye_modul['新手指引']='com.yourenkeji.shenghuidai:id/home_xinshoubidu'
 shouye_modul['邀请好友']='com.yourenkeji.shenghuidai:id/home_yaoqinghaoyou'
 shouye_modul['每日签到']='com.yourenkeji.shenghuidai:id/home_qiandaosongli'
+shouye_modul['消息公告']='com.yourenkeji.shenghuidai:id/home_more_meiti_img'
+shouye_modul['帮助中心']='com.yourenkeji.shenghuidai:id/home_kefu'
+shouye_modul['常见问题']='com.yourenkeji.shenghuidai:id/boluos_help_faq'
+shouye_modul['咨询电话']='com.yourenkeji.shenghuidai:id/boluos_help_tel'
+shouye_modul['在线客服']='com.yourenkeji.shenghuidai:id/boluos_help_online'
+shouye_modul['微信公众号']='com.yourenkeji.shenghuidai:id/boluos_help_wechat'
+shouye_modul['QQ客服']='com.yourenkeji.shenghuidai:id/boluos_help_QQGroup'
 
 global faxian
 # noinspection PyRedeclaration
@@ -65,6 +72,20 @@ account['我的优惠券']='com.yourenkeji.shenghuidai:id/my_page_layout'
 account['安全管理']='com.yourenkeji.shenghuidai:id/my_safe_tv'
 account['个人信息']='com.yourenkeji.shenghuidai:id/my_info_tv'
 account['更多']='com.yourenkeji.shenghuidai:id/my_many_tv'
+account['绑定卡号']='com.yourenkeji.shenghuidai:id/My_bangdingbankcard'
+account['姓名']='com.yourenkeji.shenghuidai:id/pay_Name'
+account['身份证号']='com.yourenkeji.shenghuidai:id/pay_idCode'
+account['银行卡号']='com.yourenkeji.shenghuidai:id/pay_bankCode'
+account['手机号']='com.yourenkeji.shenghuidai:id/pay_phone'
+account['绑卡-下一步']='com.yourenkeji.shenghuidai:id/bt_pay'
+account['支持银行']='com.yourenkeji.shenghuidai:id/tvRightComplete'
+account['地址管理']='com.yourenkeji.shenghuidai:id/my_head_pic_rl_shouhuoAdress'
+account['联系人']='com.yourenkeji.shenghuidai:id/adress_name'
+account['手机号']='com.yourenkeji.shenghuidai:id/adress_phone'
+account['收货地址']='com.yourenkeji.shenghuidai:id/adress_adress'
+account['收货地址格式']='com.yourenkeji.shenghuidai:id/address_tip_tv'
+account['地址保存']='com.yourenkeji.shenghuidai:id/adress_bt'
+
 
 global zhuce
 # noinspection PyRedeclaration
@@ -84,5 +105,5 @@ HTMLbaogao['报告地址']='/Users/yuchengtao/PycharmProjects/shenghuidai/SHD_au
 '''接口网址'''
 global shenghuidai
 shenghuidai={}
-#shenghuidai['请求头']='http://apitest.shenghuidai.com:8012/v1/' #测试环境
-shenghuidai['请求头']='https://api.shenghuidai.com:8012/v1/' #正式环境
+shenghuidai['请求头']='http://apitest.shenghuidai.com:8012/v1/' #测试环境
+#shenghuidai['请求头']='https://api.shenghuidai.com:8012/v1/' #正式环境

@@ -34,5 +34,5 @@ class man(People,life):
 m1=man('panda',24,'男')
 m2=man('wangmin',22,'女')
 # m1.working()
-# m1.eat()
-m1.good_life(m2,m2)
+m1.eat()
+#m1.good_life(m2,m2)

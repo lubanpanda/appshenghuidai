@@ -24,7 +24,6 @@ module_info['首页']='com.yourenkeji.shenghuidai:id/boluos_bt_home'
 module_info['项目']='com.yourenkeji.shenghuidai:id/boluos_bt_touzi'
 module_info['发现']='com.yourenkeji.shenghuidai:id/boluos_bt_faxian'
 module_info['账户']='com.yourenkeji.shenghuidai:id/boluos_bt_my'
-
 module_info['退出']='com.yourenkeji.shenghuidai:id/boluos_exit'
 
 global shouye_modul

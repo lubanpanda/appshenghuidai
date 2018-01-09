@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Author  : panda  84305510@qq.com
-from SHD_automation.panda_element import *
 from appium import webdriver
 import logging
 from SHD_automation.panda_element.device_element import *

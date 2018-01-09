@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="整理">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/shenghuidai.iml" afterPath="$PROJECT_DIR$/.idea/panda.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/SHD_automation/panda_case/test_registered.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/SHD_automation/device_info/device.py" afterPath="$PROJECT_DIR$/SHD_automation/device_info/device.py" />
+      <change beforePath="$PROJECT_DIR$/SHD_automation/panda_element/device_element.py" afterPath="$PROJECT_DIR$/SHD_automation/panda_element/device_element.py" />
+      <change beforePath="$PROJECT_DIR$/SHD_automation/panda_methods/my_methods.py" afterPath="$PROJECT_DIR$/SHD_automation/panda_methods/my_methods.py" />
       <change beforePath="$PROJECT_DIR$/fengfan_unittest/feng_exlce_case/blood_exlce.xls" afterPath="$PROJECT_DIR$/fengfan_unittest/feng_exlce_case/blood_exlce.xls" />
       <change beforePath="$PROJECT_DIR$/fengfan_unittest/feng_test_log/feng_test_logfile/20170919214558.log" afterPath="$PROJECT_DIR$/fengfan_unittest/feng_test_log/feng_test_logfile/20170919214558.log" />
       <change beforePath="$PROJECT_DIR$/fengfan_unittest/feng_test_log/feng_test_logfile/20170919214804.log" afterPath="$PROJECT_DIR$/fengfan_unittest/feng_test_log/feng_test_logfile/20170919214804.log" />
+      <change beforePath="$PROJECT_DIR$/fengfan_unittest/feng_test_result/20170920092410.html" afterPath="$PROJECT_DIR$/fengfan_unittest/feng_test_result/20170920092410.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,11 +29,15 @@
     <SUITE FILE_PATH="coverage/shenghuidai$login.coverage" NAME="login Coverage Results" MODIFIED="1513568019688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/shenghuidai$.coverage" NAME="倒计时 Coverage Results" MODIFIED="1514193995232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Automaticinstallation" />
     <SUITE FILE_PATH="coverage/shenghuidai$feng_test_logmethod.coverage" NAME="feng_test_logmethod Coverage Results" MODIFIED="1514353840197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fengfan_unittest/feng_test_log" />
-    <SUITE FILE_PATH="coverage/panda$main.coverage" NAME="main Coverage Results" MODIFIED="1514360484717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/execution" />
+    <SUITE FILE_PATH="coverage/panda$main.coverage" NAME="main Coverage Results" MODIFIED="1515294676588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/execution" />
     <SUITE FILE_PATH="coverage/shenghuidai$shouye.coverage" NAME="shouye Coverage Results" MODIFIED="1513404570817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/shenghuidai$weather.coverage" NAME="weather Coverage Results" MODIFIED="1514356568655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lianxiti" />
+    <SUITE FILE_PATH="coverage/panda$test_zhanghu.coverage" NAME="test_zhanghu Coverage Results" MODIFIED="1515403297393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SHD_automation/panda_case" />
     <SUITE FILE_PATH="coverage/shenghuidai$Nosetests_for_baogao_text.coverage" NAME="Nosetests for baogao.text Coverage Results" MODIFIED="1512026423536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/自动安装卸载apk" />
     <SUITE FILE_PATH="coverage/shenghuidai$xunhuan.coverage" NAME="xunhuan Coverage Results" MODIFIED="1514355046368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lianxiti" />
+    <SUITE FILE_PATH="coverage/panda$Nosetests_for_test_zhanghu_test_zhanghu_test_03_zhanghu.coverage" NAME="Nosetests for test_zhanghu.test_zhanghu.test_03_zhanghu Coverage Results" MODIFIED="1515310657424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SHD_automation/panda_case" />
+    <SUITE FILE_PATH="coverage/panda$.coverage" NAME="类的使用 Coverage Results" MODIFIED="1515137026466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX" />
+    <SUITE FILE_PATH="coverage/panda$Nosetests_for_test_zhanghu_test_zhanghu.coverage" NAME="Nosetests for test_zhanghu.test_zhanghu Coverage Results" MODIFIED="1515118388311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SHD_automation/panda_case" />
     <SUITE FILE_PATH="coverage/shenghuidai$Nosetests_for_allfind_test1_test_all_find.coverage" NAME="Nosetests for allfind.test1.test_all_find Coverage Results" MODIFIED="1512789334971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/shenghuidai$banner.coverage" NAME="banner Coverage Results" MODIFIED="1511502814830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/shenghuidai$APK.coverage" NAME="自动安装APK Coverage Results" MODIFIED="1513044831781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/自动安装卸载apk" />
@@ -43,30 +51,42 @@
     <SUITE FILE_PATH="coverage/shenghuidai$Nosetests_for_Homepage_test0.coverage" NAME="Nosetests for Homepage.test0 Coverage Results" MODIFIED="1511536879471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/shenghuidai$LineCase.coverage" NAME="LineCase Coverage Results" MODIFIED="1513489653453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../pandatext" />
     <SUITE FILE_PATH="coverage/shenghuidai$tosat.coverage" NAME="tosat Coverage Results" MODIFIED="1514272429666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lianxiti" />
+    <SUITE FILE_PATH="coverage/panda$12306.coverage" NAME="12306 Coverage Results" MODIFIED="1515228408924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop" />
     <SUITE FILE_PATH="coverage/shenghuidai$Nosetests_for_baogao_test_test_login.coverage" NAME="Nosetests for baogao.test.test_login Coverage Results" MODIFIED="1512036732139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyDev" />
     <SUITE FILE_PATH="coverage/shenghuidai$hongbao.coverage" NAME="hongbao Coverage Results" MODIFIED="1512642295577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interfaces" />
     <SUITE FILE_PATH="coverage/shenghuidai$ceshijiekou.coverage" NAME="ceshijiekou Coverage Results" MODIFIED="1513401824379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/shenghuidai$main.coverage" NAME="main Coverage Results" MODIFIED="1514190343676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/execution" />
     <SUITE FILE_PATH="coverage/shenghuidai$Nosetests_in_enen_py.coverage" NAME="Nosetests in enen.py Coverage Results" MODIFIED="1512032151724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyDev" />
     <SUITE FILE_PATH="coverage/shenghuidai$Allaccount.coverage" NAME="Allaccount Coverage Results" MODIFIED="1512798095098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
+    <SUITE FILE_PATH="coverage/panda$my_jiekou_methods.coverage" NAME="my_jiekou_methods Coverage Results" MODIFIED="1515143842661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SHD_automation/panda_jiekou" />
     <SUITE FILE_PATH="coverage/shenghuidai$allfind.coverage" NAME="allfind Coverage Results" MODIFIED="1512372087942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/shenghuidai$installApks.coverage" NAME="installApks Coverage Results" MODIFIED="1514117019407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Automaticinstallation" />
     <SUITE FILE_PATH="coverage/shenghuidai$Homepage.coverage" NAME="Homepage Coverage Results" MODIFIED="1511537989069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/shenghuidai$Nosetests_for_test_case_login_Test_login_test09.coverage" NAME="Nosetests for test_case_login.Test_login.test09 Coverage Results" MODIFIED="1514274281670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fengfan_unittest/feng_test_case" />
+    <SUITE FILE_PATH="coverage/panda$zhengze.coverage" NAME="zhengze Coverage Results" MODIFIED="1515060296334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX" />
     <SUITE FILE_PATH="coverage/shenghuidai$shi.coverage" NAME="shi Coverage Results" MODIFIED="1511424054228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/execution" />
+    <SUITE FILE_PATH="coverage/panda$Nosetests_for_test_zhanghu_test_zhanghu_test_01_shouye.coverage" NAME="Nosetests for test_zhanghu.test_zhanghu.test_01_shouye Coverage Results" MODIFIED="1515045005793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SHD_automation/panda_case" />
+    <SUITE FILE_PATH="coverage/panda$my_methods.coverage" NAME="my_methods Coverage Results" MODIFIED="1515292998800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SHD_automation/panda_methods" />
     <SUITE FILE_PATH="coverage/shenghuidai$iosdevices.coverage" NAME="iosdevices Coverage Results" MODIFIED="1514266166432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ioscase" />
     <SUITE FILE_PATH="coverage/shenghuidai$environment.coverage" NAME="environment Coverage Results" MODIFIED="1511331010172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
+    <SUITE FILE_PATH="coverage/panda$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1515469941691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SHD_automation/panda_case" />
     <SUITE FILE_PATH="coverage/shenghuidai$Nosetests_for_baogao_test.coverage" NAME="Nosetests for baogao.test Coverage Results" MODIFIED="1512037485180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyDev" />
     <SUITE FILE_PATH="coverage/shenghuidai$Nosetests_for_All_the_reports_huadong.coverage" NAME="Nosetests for All the reports.huadong Coverage Results" MODIFIED="1513584336876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interfaces" />
     <SUITE FILE_PATH="coverage/shenghuidai$loger.coverage" NAME="loger Coverage Results" MODIFIED="1514353910332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lianxiti" />
+    <SUITE FILE_PATH="coverage/panda$SHD_jiekou_fangfa.coverage" NAME="SHD_jiekou_fangfa Coverage Results" MODIFIED="1514968982071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SHD_automation/panda_jiekou/jiekou_methods" />
+    <SUITE FILE_PATH="coverage/panda$device.coverage" NAME="device Coverage Results" MODIFIED="1515244771535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SHD_automation/device_info" />
     <SUITE FILE_PATH="coverage/shenghuidai$screen.coverage" NAME="screen Coverage Results" MODIFIED="1514009536202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/iphoneinfo" />
     <SUITE FILE_PATH="coverage/shenghuidai$All_the_reports.coverage" NAME="All the reports Coverage Results" MODIFIED="1513589129772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interfaces" />
+    <SUITE FILE_PATH="coverage/panda$web_zidong.coverage" NAME="web_zidong Coverage Results" MODIFIED="1515388783984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX" />
     <SUITE FILE_PATH="coverage/shenghuidai$Nosetests_for_Homepage_test2.coverage" NAME="Nosetests for Homepage.test2 Coverage Results" MODIFIED="1511535572772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/shenghuidai$Nosetests_for_enen_Baidu.coverage" NAME="Nosetests for enen.Baidu Coverage Results" MODIFIED="1512032208334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyDev" />
     <SUITE FILE_PATH="coverage/shenghuidai$baogao.coverage" NAME="baogao Coverage Results" MODIFIED="1514276017197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/execution" />
+    <SUITE FILE_PATH="coverage/panda$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1515470192888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX" />
+    <SUITE FILE_PATH="coverage/panda$weather.coverage" NAME="weather Coverage Results" MODIFIED="1515228145901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX" />
     <SUITE FILE_PATH="coverage/shenghuidai$cha.coverage" NAME="cha Coverage Results" MODIFIED="1511424063595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/execution" />
     <SUITE FILE_PATH="coverage/shenghuidai$newtoubiao.coverage" NAME="newtoubiao Coverage Results" MODIFIED="1512094851201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/shenghuidai$screenshot.coverage" NAME="screenshot Coverage Results" MODIFIED="1511505560475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/iphoneinfo" />
+    <SUITE FILE_PATH="coverage/panda$ceshioo.coverage" NAME="ceshioo Coverage Results" MODIFIED="1515233611653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX" />
     <SUITE FILE_PATH="coverage/shenghuidai$redraw.coverage" NAME="redraw Coverage Results" MODIFIED="1512794200047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/shenghuidai$xiugaimoney.coverage" NAME="xiugaimoney Coverage Results" MODIFIED="1514031873417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lianxiti" />
     <SUITE FILE_PATH="coverage/shenghuidai$Nosetests_in_test_old_user_py.coverage" NAME="Nosetests in test_old_user.py Coverage Results" MODIFIED="1514280304558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fengfan_unittest/feng_test_case" />
@@ -88,12 +108,85 @@
   <component name="ExportTestResults" outputFolder="$USER_HOME$/Desktop/胜辉贷" userTempatePath="" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/execution/main.py">
+      <file leaf-file-name="my_methods.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SHD_automation/panda_methods/my_methods.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="319" column="8" lean-forward="false" selection-start-line="319" selection-start-column="8" selection-end-line="319" selection-end-column="8" />
+            <state relative-caret-position="38">
+              <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+              <folding>
+                <element signature="e#83#96#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zhengze.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/self_CX/zhengze.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web_zidong.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/self_CX/web_zidong.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="98">
+              <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_zhanghu.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SHD_automation/panda_case/test_zhanghu.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_registered.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SHD_automation/panda_case/test_registered.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="device.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SHD_automation/device_info/device.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="28">
+              <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+              <folding>
+                <element signature="e#83#111#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="device_element.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SHD_automation/panda_element/device_element.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="93" column="52" lean-forward="false" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="appium运行日志.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SHD_automation/panda_log/appium运行日志.log">
+          <provider selected="true" editor-type-id="LogFileEditorProvider">
+            <state relative-caret-position="325">
+              <caret line="48" column="67" lean-forward="true" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -129,6 +222,8 @@
       <find>login</find>
       <find>shoushi</find>
       <find>toubiao</find>
+      <find>faxian</find>
+      <find>com.yourenkeji.shenghuidai:id/zhu_phone</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -136,27 +231,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/lianxiti/练习类的使用.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/execution/main.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/case/Homepage.py" />
-        <option value="$PROJECT_DIR$/../ZS_shenghuidai/Zs_shenghuidaiapp.py" />
-        <option value="$PROJECT_DIR$/ZS_appshenghuidai/execution/main.py" />
-        <option value="$USER_HOME$/Downloads/自动安装APK.py" />
-        <option value="$PROJECT_DIR$/iphoneinfo/info.txt" />
-        <option value="$PROJECT_DIR$/interfaces/hongbao.py" />
-        <option value="$USER_HOME$/Desktop/胜辉贷/HTMLTestRunner.py" />
-        <option value="$PROJECT_DIR$/自动安装卸载apk/baogao.py" />
-        <option value="$PROJECT_DIR$/自动安装卸载apk/__init__.py" />
-        <option value="$PROJECT_DIR$/PyDev/enen.py" />
-        <option value="$PROJECT_DIR$/PyDev/baogao.py" />
-        <option value="$PROJECT_DIR$/case/newtoubiao.py" />
-        <option value="$PROJECT_DIR$/interfaces/__init__.py" />
-        <option value="$PROJECT_DIR$/execution/__init__.py" />
-        <option value="$PROJECT_DIR$/case/allfind.py" />
         <option value="$PROJECT_DIR$/case/__init__.py" />
         <option value="$PROJECT_DIR$/case/redraw.py" />
         <option value="$PROJECT_DIR$/case/Allaccount.py" />
@@ -180,7 +259,6 @@
         <option value="$PROJECT_DIR$/Automaticinstallation/installApks.py" />
         <option value="$PROJECT_DIR$/lianxiti/__init__.py" />
         <option value="$PROJECT_DIR$/Automaticinstallation/发送QQ邮件.py" />
-        <option value="$PROJECT_DIR$/execution/main.py" />
         <option value="$PROJECT_DIR$/Automaticinstallation/倒计时.py" />
         <option value="$PROJECT_DIR$/lianxiti/tosat.py" />
         <option value="$PROJECT_DIR$/fengfan_unittest/all_case/all_testCase.py" />
@@ -193,6 +271,22 @@
         <option value="$PROJECT_DIR$/lianxiti/loger.py" />
         <option value="$PROJECT_DIR$/lianxiti/config.conf" />
         <option value="$PROJECT_DIR$/lianxiti/weather.py" />
+        <option value="$PROJECT_DIR$/SHD_automation/panda_jiekou/jiekou_methods/SHD_jiekou_fangfa.py" />
+        <option value="$PROJECT_DIR$/self_CX/zhengze.py" />
+        <option value="$PROJECT_DIR$/self_CX/类的使用.py" />
+        <option value="$PROJECT_DIR$/SHD_automation/panda_jiekou/my_jiekou_methods.py" />
+        <option value="$PROJECT_DIR$/self_CX/sed_qq_info.py" />
+        <option value="$PROJECT_DIR$/self_CX/ceshioo.py" />
+        <option value="$PROJECT_DIR$/execution/main.py" />
+        <option value="$PROJECT_DIR$/SHD_automation/panda_case/test_zhanghu.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/99ff8fa9-332d-4819-88a2-61c8c11bc439/console.sql" />
+        <option value="$PROJECT_DIR$/SHD_automation/panda_methods/my_methods.py" />
+        <option value="$PROJECT_DIR$/self_CX/web_zidong.py" />
+        <option value="$PROJECT_DIR$/SHD_automation/device_info/device.py" />
+        <option value="$PROJECT_DIR$/SHD_automation/panda_element/device_element.py" />
+        <option value="$PROJECT_DIR$/SHD_automation/panda_case/__init__.py" />
+        <option value="$PROJECT_DIR$/self_CX/__init__.py" />
+        <option value="$PROJECT_DIR$/SHD_automation/panda_case/test_registered.py" />
       </list>
     </option>
   </component>
@@ -205,7 +299,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="739" />
+    <option name="height" value="737" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -223,7 +317,7 @@
         </expanded-state>
         <selected-state>
           <State>
-            <id>PyUnresolvedReferencesInspection</id>
+            <id>PyPep8Inspection</id>
           </State>
         </selected-state>
       </profile-state>
@@ -247,32 +341,33 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="panda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
               <item name="panda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
-              <item name="execution" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6.1 (/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6) &gt;" type="70bed36:NamedLibraryElementNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="SearchEverywhereHistoryKey" value="All&#9;null&#9;null" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="PyDebuggerOptionsProvider">
     <option name="mySaveCallSignatures" value="true" />
@@ -294,7 +389,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.__init__">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -340,96 +435,77 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="ADDITIONAL_ARGS" value="" />
     </configuration>
-    <configuration name="feng_test_logmethod" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="__init__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fengfan_unittest/feng_test_log" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="shenghuidai" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fengfan_unittest/feng_test_log/feng_test_logmethod.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="loger" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lianxiti" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="shenghuidai" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lianxiti/loger.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/execution" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SHD_automation/panda_case" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="panda" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/execution/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SHD_automation/panda_case/__init__.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="weather" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lianxiti" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/self_CX" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="shenghuidai" />
+      <module name="panda" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lianxiti/weather.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/self_CX/__init__.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="xunhuan" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test_zhanghu" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lianxiti" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SHD_automation/panda_case" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="shenghuidai" />
+      <module name="panda" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lianxiti/xunhuan.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SHD_automation/panda_case/test_zhanghu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="web_zidong" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/self_CX" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="panda" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/self_CX/web_zidong.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -446,6 +522,22 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <module name="shenghuidai" />
+    </configuration>
+    <configuration name="Nosetests for test_zhanghu.test_zhanghu.test_03_zhanghu" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SHD_automation/panda_case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="panda" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_zhanghu.test_zhanghu.test_03_zhanghu&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -529,19 +621,19 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.weather" />
-      <item index="1" class="java.lang.String" itemvalue="Python.loger" />
-      <item index="2" class="java.lang.String" itemvalue="Python.xunhuan" />
-      <item index="3" class="java.lang.String" itemvalue="Python.feng_test_logmethod" />
-      <item index="4" class="java.lang.String" itemvalue="Python.main" />
+      <item index="0" class="java.lang.String" itemvalue="Python.test_zhanghu" />
+      <item index="1" class="java.lang.String" itemvalue="Python.web_zidong" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests for test_zhanghu.test_zhanghu.test_03_zhanghu" />
+      <item index="3" class="java.lang.String" itemvalue="Python.__init__" />
+      <item index="4" class="java.lang.String" itemvalue="Python.__init__ (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.main" />
-        <item index="1" class="java.lang.String" itemvalue="Python.weather" />
-        <item index="2" class="java.lang.String" itemvalue="Python.xunhuan" />
-        <item index="3" class="java.lang.String" itemvalue="Python.loger" />
-        <item index="4" class="java.lang.String" itemvalue="Python.feng_test_logmethod" />
+        <item index="0" class="java.lang.String" itemvalue="Python.__init__" />
+        <item index="1" class="java.lang.String" itemvalue="Python.__init__ (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test_zhanghu" />
+        <item index="3" class="java.lang.String" itemvalue="Python.web_zidong" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetests for test_zhanghu.test_zhanghu.test_03_zhanghu" />
       </list>
     </recent_temporary>
   </component>
@@ -558,34 +650,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511416187661</updated>
-    </task>
-    <task id="LOCAL-00005" summary="判断用户是否登录">
-      <created>1511495891901</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1511495891901</updated>
-    </task>
-    <task id="LOCAL-00006" summary="判断用户是否登录">
-      <created>1511502999265</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1511502999265</updated>
-    </task>
-    <task id="LOCAL-00007" summary="截取手机屏幕">
-      <created>1511505891455</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1511505891455</updated>
-    </task>
-    <task id="LOCAL-00008" summary="添加了投标的功能">
-      <created>1511602353941</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1511602353941</updated>
     </task>
     <task id="LOCAL-00009" summary="重新提一下">
       <created>1511603079755</created>
@@ -902,36 +966,64 @@
       <option name="project" value="LOCAL" />
       <updated>1514359558310</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="整理">
+      <created>1515049079428</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1515049079428</updated>
+    </task>
+    <task id="LOCAL-00055" summary="整理">
+      <created>1515226790347</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1515226790349</updated>
+    </task>
+    <task id="LOCAL-00056" summary="完善了toast功能">
+      <created>1515251665147</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1515251665147</updated>
+    </task>
+    <task id="LOCAL-00057" summary="整理">
+      <created>1515308038277</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1515308038279</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nosetests_for_baogao_test0 - 2017.12.26 at 16h 07m 27s.xml">
-      <configuration name="Nosetests for baogao.test0" configurationId="tests" />
+    <history-entry file="Nosetests_for_test_zhanghu_test_zhanghu - 2018.01.05 at 10h 11m 20s.xml">
+      <configuration name="Nosetests for test_zhanghu.test_zhanghu" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_for_baogao_test0 - 2017.12.26 at 16h 09m 27s.xml">
-      <configuration name="Nosetests for baogao.test0" configurationId="tests" />
+    <history-entry file="Nosetests_for_test_zhanghu_test_zhanghu - 2018.01.05 at 10h 12m 31s.xml">
+      <configuration name="Nosetests for test_zhanghu.test_zhanghu" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_for_baogao_test0 - 2017.12.26 at 16h 21m 48s.xml">
-      <configuration name="Nosetests for baogao.test0" configurationId="tests" />
+    <history-entry file="Nosetests_for_test_zhanghu_test_zhanghu - 2018.01.05 at 10h 14m 03s.xml">
+      <configuration name="Nosetests for test_zhanghu.test_zhanghu" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_for_baogao_test0_test_log - 2017.12.26 at 16h 05m 14s.xml">
-      <configuration name="Nosetests for baogao.test0.test_log" configurationId="tests" />
+    <history-entry file="Nosetests_for_test_zhanghu_test_zhanghu_test_01_shouye - 2018.01.04 at 13h 45m 43s.xml">
+      <configuration name="Nosetests for test_zhanghu.test_zhanghu.test_01_shouye" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_for_test_case_login_Test_login_test09 - 2017.12.26 at 15h 44m 42s.xml">
-      <configuration name="Nosetests for test_case_login.Test_login.test09" configurationId="tests" />
+    <history-entry file="Nosetests_for_test_zhanghu_test_zhanghu_test_01_shouye - 2018.01.04 at 13h 47m 17s.xml">
+      <configuration name="Nosetests for test_zhanghu.test_zhanghu.test_01_shouye" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_baogao_py - 2017.11.30 at 18h 21m 26s.xml">
-      <configuration name="Nosetests in baogao.py" configurationId="tests" />
+    <history-entry file="Nosetests_for_test_zhanghu_test_zhanghu_test_01_shouye - 2018.01.04 at 13h 49m 50s.xml">
+      <configuration name="Nosetests for test_zhanghu.test_zhanghu.test_01_shouye" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_baogao_py - 2017.11.30 at 18h 27m 03s.xml">
-      <configuration name="Nosetests in baogao.py" configurationId="tests" />
+    <history-entry file="Nosetests_for_test_zhanghu_test_zhanghu_test_01_shouye - 2018.01.04 at 13h 50m 59s.xml">
+      <configuration name="Nosetests for test_zhanghu.test_zhanghu.test_01_shouye" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_baogao_py - 2017.11.30 at 18h 28m 45s.xml">
-      <configuration name="Nosetests in baogao.py" configurationId="tests" />
+    <history-entry file="Nosetests_for_test_zhanghu_test_zhanghu_test_03_zhanghu - 2018.01.07 at 15h 34m 58s.xml">
+      <configuration name="Nosetests for test_zhanghu.test_zhanghu.test_03_zhanghu" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_baogao_py - 2017.12.26 at 16h 11m 29s.xml">
-      <configuration name="Nosetests in baogao.py" configurationId="tests" />
+    <history-entry file="Nosetests_for_test_zhanghu_test_zhanghu_test_03_zhanghu - 2018.01.07 at 15h 37m 55s.xml">
+      <configuration name="Nosetests for test_zhanghu.test_zhanghu.test_03_zhanghu" configurationId="tests" />
     </history-entry>
     <history-entry file="Nosetests_in_test_old_user_py - 2017.12.26 at 17h 25m 05s.xml">
       <configuration name="Nosetests in test_old_user.py" configurationId="tests" />
@@ -947,29 +1039,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="739" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="737" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279743" sideWeight="0.4822294" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3268921" sideWeight="0.5282714" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32206118" sideWeight="0.44991922" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31755725" sideWeight="0.4749596" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3268921" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32671756" sideWeight="0.4717286" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1914378" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3268921" sideWeight="0.4822294" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3236715" sideWeight="0.5282714" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31603053" sideWeight="0.46688208" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3263328" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3457189" sideWeight="0.4717286" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32471728" sideWeight="0.46849757" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13731825" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19951534" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32671756" sideWeight="0.49676898" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33587787" sideWeight="0.48465267" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3984733" sideWeight="0.48465267" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32671756" sideWeight="0.49676898" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1063,6 +1157,7 @@
     <MESSAGE value="优化功能" />
     <MESSAGE value="爬虫搜狐的天气" />
     <MESSAGE value="封装的方法" />
+    <MESSAGE value="完善了toast功能" />
     <MESSAGE value="整理" />
     <option name="LAST_COMMIT_MESSAGE" value="整理" />
   </component>
@@ -1075,7 +1170,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="79" />
+      <option name="time" value="105" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1089,84 +1184,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/iphoneinfo/screenshot/胜辉贷2017-12-23-14-12-16.png" />
-    <entry file="file://$PROJECT_DIR$/lianxiti/xiugaimoney.py" />
-    <entry file="file://$PROJECT_DIR$/case/shoushijiesuo.py" />
-    <entry file="file://$PROJECT_DIR$/interfaces/hongbao.py" />
-    <entry file="file://$PROJECT_DIR$/Automaticinstallation/自动安装APK.py" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="1071" column="0" lean-forward="false" selection-start-line="1071" selection-start-column="0" selection-end-line="1071" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/Allaccount.py" />
-    <entry file="file://$PROJECT_DIR$/lianxiti/__init__.py" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/bs4/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1788">
-          <caret line="74" column="18" lean-forward="true" selection-start-line="56" selection-start-column="4" selection-end-line="74" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/smtplib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-419">
-          <caret line="292" column="13" lean-forward="false" selection-start-line="292" selection-start-column="13" selection-end-line="292" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Automaticinstallation/qingdao.py" />
-    <entry file="file://$PROJECT_DIR$/Automaticinstallation/installApks.py" />
-    <entry file="file://$PROJECT_DIR$/Automaticinstallation/倒计时.py" />
-    <entry file="file://$PROJECT_DIR$/Automaticinstallation/发送QQ邮件.py" />
-    <entry file="file://$PROJECT_DIR$/lianxiti/练习类的使用.py" />
-    <entry file="file://$PROJECT_DIR$/case/newtoubiao.py" />
-    <entry file="file://$PROJECT_DIR$/fengfan_unittest/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/fengfan_unittest/all_case/all_testCase.py" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/execution/baogao.py" />
-    <entry file="file://$PROJECT_DIR$/fengfan_unittest/feng_test_log/feng_test_logfile/test.log" />
-    <entry file="file://$PROJECT_DIR$/fengfan_unittest/feng_test_log/feng_test_logfile/20170919214804.log" />
-    <entry file="file://$PROJECT_DIR$/lianxiti/正则基础笔记.txt" />
-    <entry file="file://$PROJECT_DIR$/lianxiti/log.txt" />
-    <entry file="file://$PROJECT_DIR$/lianxiti/tosat.py" />
-    <entry file="file://$PROJECT_DIR$/fengfan_unittest/feng_test_conf/feng_test_env/feng_test_config.py" />
-    <entry file="file://$PROJECT_DIR$/fengfan_unittest/feng_test_method/method.py" />
-    <entry file="file://$PROJECT_DIR$/lianxiti/config.log" />
-    <entry file="file://$PROJECT_DIR$/fengfan_unittest/startAPP.py" />
-    <entry file="file://$PROJECT_DIR$/fengfan_unittest/feng_test_case/test_old_user.py" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="1891" column="4" lean-forward="false" selection-start-line="1891" selection-start-column="4" selection-end-line="1891" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lianxiti/xxx.log" />
-    <entry file="file://$PROJECT_DIR$/iphoneinfo/info.txt" />
-    <entry file="file://$PROJECT_DIR$/fengfan_unittest/feng_test_case/test_new_user.py" />
-    <entry file="file://$PROJECT_DIR$/fengfan_unittest/feng_test_case/test_case_login.py" />
-    <entry file="file://$PROJECT_DIR$/fengfan_unittest/feng_test_conf/feng_test_env/mylog.conf" />
-    <entry file="file://$PROJECT_DIR$/fengfan_unittest/feng_test_log/feng_test_logmethod.py" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lianxiti/mylog.conf" />
     <entry file="file://$PROJECT_DIR$/lianxiti/file_config.log" />
     <entry file="file://$PROJECT_DIR$/lianxiti/shenghuidai.log" />
     <entry file="file://$PROJECT_DIR$/lianxiti/xunhuan.py" />
@@ -1178,10 +1195,269 @@
     <entry file="file://$PROJECT_DIR$/lianxiti/weather.py" />
     <entry file="file://$PROJECT_DIR$/lianxiti/myapp.log" />
     <entry file="file://$PROJECT_DIR$/lianxiti/loger.py" />
+    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_jiekou/jiekou_methods/SHD_jiekou_fangfa.py" />
+    <entry file="file://$PROJECT_DIR$/fengfan_unittest/feng_test_case/test_old_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fengfan_unittest/feng_test_case/test_case_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fengfan_unittest/feng_test_case/test_new_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fengfan_unittest/all_case/all_testCase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/HTMLTestRunner.py" />
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/HTMLTestRunner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_baogao/appium_report.html" />
+    <entry file="file://$PROJECT_DIR$/self_CX/installApks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/nose/suite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="177" column="0" lean-forward="false" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/nose/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_CX/类的使用.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/requests/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_jiekou/my_jiekou_methods.py" />
+    <entry file="file://$PROJECT_DIR$/self_CX/weather.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/12306.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="31" column="52" lean-forward="true" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_CX/sed_qq_info.py" />
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="1169" column="26" lean-forward="true" selection-start-line="1169" selection-start-column="26" selection-end-line="1169" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/appium/webdriver/webelement.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="143" column="16" lean-forward="true" selection-start-line="143" selection-start-column="16" selection-end-line="143" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_CX/ceshioo.py" />
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/subprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="765" column="0" lean-forward="false" selection-start-line="765" selection-start-column="0" selection-end-line="765" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="604" column="0" lean-forward="false" selection-start-line="604" selection-start-column="0" selection-end-line="604" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="446" column="8" lean-forward="false" selection-start-line="446" selection-start-column="8" selection-end-line="446" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/99ff8fa9-332d-4819-88a2-61c8c11bc439/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="46" lean-forward="true" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/6768917e/99ff8fa9-332d-4819-88a2-61c8c11bc439/ahsh_test.tjtyy_member_login">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/execution/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="319" column="8" lean-forward="false" selection-start-line="319" selection-start-column="8" selection-end-line="319" selection-end-column="8" />
+        <state relative-caret-position="0">
+          <caret line="332" column="24" lean-forward="false" selection-start-line="332" selection-start-column="14" selection-end-line="332" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_baogao/2018-01-07 15:09:50胜辉贷.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2847">
+          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_log/myapp.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-5684">
+          <caret line="4272" column="0" lean-forward="false" selection-start-line="4272" selection-start-column="0" selection-end-line="4272" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3125">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_CX/zhengze.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_CX/web_zidong.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_case/test_zhanghu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SHD_automation/device_info/device.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding>
+            <element signature="e#83#111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_log/appium运行日志.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="325">
+          <caret line="48" column="67" lean-forward="true" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_element/device_element.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="93" column="52" lean-forward="false" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_methods/my_methods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+          <folding>
+            <element signature="e#83#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_case/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/first.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="46" column="43" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_CX/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_case/test_registered.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
           <folding />
         </state>
       </provider>

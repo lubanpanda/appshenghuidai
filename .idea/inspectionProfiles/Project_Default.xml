@@ -6,13 +6,15 @@
     <inspection_tool class="PyArgumentEqualDefaultInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PyAugmentAssignmentInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PyBehaveInspection" enabled="true" level="WARNING" enabled_by_default="true" />
-    <inspection_tool class="PyBroadExceptionInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyCallByClassInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="PyClassicStyleClassInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyDictCreationInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="PyInconsistentIndentationInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="PyMandatoryEncodingInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyMissingOrEmptyDocstringInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PyMissingTypeHintsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PyPep8Inspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
-    <inspection_tool class="PyPep8NamingInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false">
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <option name="ignoredErrors">
         <list>
           <option value="N802" />
@@ -34,6 +36,7 @@
           <option value="urllib.build_operner" />
           <option value="webdriver" />
           <option value="msvcrt" />
+          <option value="SHD_automation.panda_methods.interface_methods.logging" />
         </list>
       </option>
     </inspection_tool>

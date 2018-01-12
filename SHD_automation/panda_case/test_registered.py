@@ -13,8 +13,8 @@ import unittest
 import time
 from SHD_automation.device_info.device import star_app
 from SHD_automation.panda_element.device_element import *
-from SHD_automation.panda_methods.my_methods import My_method, logging
-from fengfan_unittest.feng_test_method.method import myMethod
+from SHD_automation.panda_methods.my_methods import My_method, logging, myMethod
+#from fengfan_unittest.feng_test_method.method import myMethod
 
 # noinspection PyTypeChecker
 class Zhuce(unittest.TestCase):

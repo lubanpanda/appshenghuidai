@@ -35,6 +35,21 @@ class test_zhanghu(unittest.TestCase,object):
 		My_method.My_id(self,shouye_modul['邀请好友'],'click',2)
 		My_method.app_back(self)
 		My_method.My_id(self,shouye_modul['每日签到'],'click',2)
+		try:
+			huoqu_jifen=My_method.my_class_name_id_dianji(self,'android.view.View',1,'属性',"name")
+			time.sleep (3)
+			logging.info (huoqu_jifen [0])
+		except:
+			logging.info('积分获取失败')
+		b = My_method.my_class_name_id_dianji (self, 'android.view.View', 53, 'click')
+		if b:
+			self.driver.implicitly_wait (3)
+			try:
+				qiandao_jifen = My_method.my_class_name_id_dianji (self, 'android.widget.Button', 0, '属性', "name", 4)
+				My_method.my_class_name_id_dianji (self, 'android.widget.Button', 0, 'click')
+				logging.info (qiandao_jifen)
+			except:
+				logging.info ("已经签到了")
 		My_method.app_back(self)
 		time.sleep(2)
 		Huadong.huadong(self,'上',6000)
@@ -97,7 +112,21 @@ if __name__ == '__main__':
 	#suite.addTest(test_zhanghu('test_05_tixian'))
 	report_file = HTMLbaogao['报告地址'] + nowtime + "胜辉贷.html"
 	fp = open (report_file, 'wb')
-	baogao_info='简单的自动化'
+	baogao_info='内容包括：\n' \
+	            '一.首页\n' \
+	            '1.首页的投资攻略模块\n' \
+	            '2.新手指引模块\n' \
+	            '3.每日签到模块\n' \
+	            '4.邀请好友模块带完成\n' \
+	            '5.帮助中心\n' \
+	            '二.发现模块\n' \
+	            '1.平台数据\n' \
+	            '2.安全保障\n' \
+	            '3.积分商城\n' \
+	            '4.活动中心\n' \
+	            '三.账户模块\n' \
+	            '1.除【提现，充值】外的所以功能'
+	logging.info(f'报告内容：{baogao_info},报告地址{report_file}')
 	runner = HTMLTestRunner.HTMLTestRunner (stream = fp, title = "胜辉贷测试报告", description = baogao_info)
 	runner.run (suite)
 	fp.close ()

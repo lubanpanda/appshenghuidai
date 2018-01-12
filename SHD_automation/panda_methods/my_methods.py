@@ -51,8 +51,8 @@ class My_method(object):
 	def my_class_name_id_dianji(self,classname,list_id,text,shuxing=None,sleep_time=1):
 
 		if text == '获取元素':
-			pro = '获取classname元素>>>：'
-			logging.info (u'%s%s' % (pro, classname))
+			proo = '获取classname元素>>>：'
+			logging.info (u'%s%s' % (proo, classname))
 			return self.driver.find_elements_by_class_name(classname)
 		else:
 			if text == 'click':
@@ -60,12 +60,12 @@ class My_method(object):
 				logging.info (u'%s%s索引数字：%s' % (pro, classname,list_id))
 				return self.driver.find_elements_by_class_name(classname)[list_id].click (),time.sleep(sleep_time)
 			elif text=='属性':
-				pro = '获取控件classname的其他属性>>>：'
-				logging.info (u'%s%s索引数字：%s' % (pro, classname, list_id))
+				proa = '获取控件classname的其他属性>>>：'
+				logging.info (u'%s%s索引数字：%s' % (proa, classname, list_id))
 				return self.driver.find_elements_by_class_name (classname) [list_id].get_attribute(shuxing), time.sleep (sleep_time)
 			else:
-				pro = '输入内容为>>>：'
-				logging.info (u'定位控件%s,%s%s' % (classname, pro, text))
+				pros = '输入内容为>>>：'
+				logging.info (u'定位控件%s,%s%s' % (classname, pros, text))
 				return self.driver.find_element_by_id (classname).set_text (text)
 	'''封装一个根据clsaa+text的方法点击控件 '''
 	def my_class_name_shuru_dianji (self, className, text):
@@ -163,16 +163,18 @@ class My_method(object):
 		pro = '一共返回了'
 		logging.info(f'{pro}<{cishu}>次')
 
+# noinspection PyUnresolvedReferences
 class myMethod (object):
 	'''封装一个随机生成电话号码的方法,默认方法首位字母为1，其余十位随机'''
 
 	def randomTel (self):
 		i = 1
-		listUsername = ['1']
-		while i <= 10:
+		listUsername = ['185']
+		while i <= 8:
 			Usernamecode = str (random.choice (range (10)))
 			listUsername.append (Usernamecode)
 			i += 1
+		logging.info(f'手机号为:{listUsername}')
 		return ''.join (listUsername)
 
 	'''等待定位元素'''
@@ -187,6 +189,8 @@ class myMethod (object):
 			logging.info (u'>>>未检测到{},页面跳转成功'.format (resourceid))
 
 '''封装一个解锁手机功能'''
+
+# noinspection PyUnresolvedReferences
 class Pingmu_unlock_the_screen(object):
 	def pingmu_jiesuo(self):
 		b = os.popen ('adb shell dumpsys window policy|grep mScreenOnFully')
@@ -215,6 +219,8 @@ class Pingmu_unlock_the_screen(object):
 			logging.info('解锁失败')
 
 '''封装一个滑动的方法'''
+
+# noinspection PyUnresolvedReferences
 class Huadong(object):
 	def Getsize (self):
 		x = self.driver.get_window_size () ['width']
@@ -262,3 +268,8 @@ class jietu(object):
 		os.popen ("adb pull /data/local/tmp/tmp.png " + path + name + ".png")
 		os.popen ("adb shell rm /data/local/tmp/tmp.png")
 		logging.info ('success,已经成功的保存在当前目录下')
+
+if __name__ == '__main__':
+	a=myMethod()
+	b=a.randomTel()
+	print(b)

@@ -15,7 +15,7 @@ device_info['appActivity']='com.delevin.shenghuidai.welcome.WelcomeActivity'
 device_info['autoAcceptAlerts']=True# iOS 的个人信息访问警告(如位置'联系人、图片) 出现时，自动选择接受( Accept )。默认值 false。
 device_info['noReset']=True # 不要在会话前重置应用状态。默认值false
 device_info['unicodeKeyboard']= True  # 设置appium输入法后就不会弹默认的系统输入法了
-device_info['resetKeyboard']= False  # 重置系统输入法
+device_info['resetKeyboard']= True  # 重置系统输入法
 
 global module_info
 # noinspection PyRedeclaration

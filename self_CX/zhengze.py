@@ -7,12 +7,21 @@
 # @Software: PyCharm
 
 import re
+import random
+# a="嗯那12321421 你好大额啊让我请让我去"
+#
+# b=re.findall('[\u4e00-\u9fa5]+',a)
+# print(b)
+#
+# content = 'Hello 123 4567 World_This is a Regex Demo'
+# result = re.findall('^Hello\s\d\d\d\s\d{4}\s\w{10}', content)
+# print(result)
+class tese_zz():
+	def tese_01(self):
+		a='积分 340952'
 
-a="嗯那12321421 你好大额啊让我请让我去"
+		w=re.findall('[A-Za-z0-9]+',a)
+		print(w)
 
-b=re.findall('[\u4e00-\u9fa5]+',a)
-print(b)
-
-content = 'Hello 123 4567 World_This is a Regex Demo'
-result = re.findall('^Hello\s\d\d\d\s\d{4}\s\w{10}', content)
-print(result)
+suiji_list_to = random.randrange (7, 28, 3)
+print(suiji_list_to)

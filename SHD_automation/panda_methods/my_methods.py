@@ -36,7 +36,11 @@ class My_method(object):
 				pro = '输入内容为>>>：'
 				logging.info (u'定位控件%s,%s%s' % (id, pro, text))
 				return self.driver.find_element_by_id (id).clear(),self.driver.find_element_by_id (id).send_keys (str(text)),time.sleep(sleep_time)
-
+	'''通过accessibility id查找元素'''
+	def my_accessibility_id_dianji(self,accessibility_id,sleep_time=0):
+		proo='accessibility id查找元素>>>'
+		logging.info(f'{proo}{accessibility_id}')
+		return self.device.find_element_by_accessibility_id(accessibility_id).click(),time.sleep(sleep_time)
 
 	'''方法包装_通过当前页面:classname+text定位控件并完成输入'''
 	def my_class_name_shuru (self,className, text, txtUsername):
@@ -134,7 +138,15 @@ class My_method(object):
 		My_method.My_id (self, 'com.yourenkeji.shenghuidai:id/denglu_bt_a', 'click')
 		My_method.My_id (self, zhuce ['跳过'], 'click')
 		logging.info ('初始化登陆成功')
-
+	'''非正常退出的登录方式'''
+	def yiwai_login(self,uesrnames=18519291259,passwords=111111):
+		My_method.my_class_name_id_dianji (self, 'android.widget.Button', 0, 'click')
+		My_method.My_id (self, zhuce ['账号'], uesrnames)
+		My_method.My_id (self, 'com.yourenkeji.shenghuidai:id/zhu_bt', 'click')
+		My_method.My_id (self, zhuce ['密码'], passwords)
+		My_method.My_id (self, 'com.yourenkeji.shenghuidai:id/denglu_bt_a', 'click')
+		My_method.My_id (self, zhuce ['跳过'], 'click')
+		logging.info('重新登录成功')
 	'''封装一个退出方法'''
 	def login_exit(self):
 		My_method.My_id(self,module_info['账户'],'click')

@@ -29,9 +29,10 @@ class star_app(object):
 		desired_caps ['newCommandTimeout'] = device_info['newCommandTimeout']
 		#desired_caps ['automationName']='UIAutomator2'
 		self.driver = webdriver.Remote ('http://127.0.0.1:4723/wd/hub', desired_caps)
-		self.driver.implicitly_wait(30)
+		self.driver.implicitly_wait(20)
 		#My_method.login_turn_or_flase (self, '判断登录', 18519291259, 111111)
 		return self.driver
 
 	def tearDown (self):
+		self.driver.activate_ime_engine('com.sohu.inputmethod.sogou.zui/.SogouIME') # 恢复默认输入法
 		self.driver.quit ()

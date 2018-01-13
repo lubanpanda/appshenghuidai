@@ -112,7 +112,7 @@ global HTMLbaogao
 # noinspection PyRedeclaration
 HTMLbaogao={}
 HTMLbaogao['报告地址']='/Users/yuchengtao/PycharmProjects/shenghuidai/SHD_automation/panda_baogao/'
-
+HTMLbaogao['图片地址']='/Users/yuchengtao/PycharmProjects/shenghuidai/SHD_automation/panda_picture/'
 
 '''接口网址'''
 global shenghuidai

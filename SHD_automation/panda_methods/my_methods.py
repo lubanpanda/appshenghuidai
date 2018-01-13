@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from appium.webdriver.common.touch_action import TouchAction
 from SHD_automation.panda_log.log import *
 from SHD_automation.device_info.device import *
-
+from datetime import datetime
 
 # noinspection PyUnresolvedReferences
 class My_method(object):
@@ -273,13 +273,10 @@ class Huadong(object):
 			logging.info("写错了哦，无法滑动")
 '''截图功能'''
 class jietu(object):
-	def jietu_picture(name):
-		path = '/Users/yuchengtao/PycharmProjects/shenghuidai/SHD_automation/panda_picture/'
-		os.popen ("adb wait-for-device")
-		os.popen ("adb shell /system/bin/screencap -p /data/local/tmp/tmp.png")
-		os.popen ("adb pull /data/local/tmp/tmp.png " + path + name + ".png")
-		os.popen ("adb shell rm /data/local/tmp/tmp.png")
-		logging.info ('success,已经成功的保存在当前目录下')
+	def jietu_picture(self,name):
+		self.driver.implicitly_wait (1)
+		picture_time=time.strftime ('%Y-%m-%d %H:%M:%S', time.localtime ())
+		self.driver.save_screenshot((HTMLbaogao['图片地址']+picture_time+"%s.png")%name)
 
 if __name__ == '__main__':
 	a=myMethod()

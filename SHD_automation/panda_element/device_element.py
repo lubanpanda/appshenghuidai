@@ -73,6 +73,7 @@ account['我的优惠券']='com.yourenkeji.shenghuidai:id/my_page_layout'
 account['安全管理']='com.yourenkeji.shenghuidai:id/my_safe_tv'
 account['个人信息']='com.yourenkeji.shenghuidai:id/my_info_tv'
 account['更多']='com.yourenkeji.shenghuidai:id/my_many_tv'
+account['风险评估']='com.yourenkeji.shenghuidai:id/more_fengxian_pinggu'
 
 #绑定银行卡元素
 account['绑定卡号']='com.yourenkeji.shenghuidai:id/My_bangdingbankcard'
@@ -114,8 +115,3 @@ HTMLbaogao={}
 HTMLbaogao['报告地址']='/Users/yuchengtao/PycharmProjects/shenghuidai/SHD_automation/panda_baogao/'
 HTMLbaogao['图片地址']='/Users/yuchengtao/PycharmProjects/shenghuidai/SHD_automation/panda_picture/'
 
-'''接口网址'''
-global shenghuidai
-shenghuidai={}
-shenghuidai['请求头']='http://apitest.shenghuidai.com:8012/v1/' #测试环境
-#shenghuidai['请求头']='https://api.shenghuidai.com:8012/v1/' #正式环境

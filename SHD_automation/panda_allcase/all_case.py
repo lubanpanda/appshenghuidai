@@ -12,7 +12,7 @@ import time
 case_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # 报告存放路径
-report_path = os.path.join('/Users/yuchengtao/PycharmProjects/shenghuidai/SHD_automation/panda_baogao')
+report_path = os.path.join('/Users/yuchengtao/PycharmProjects/shenghuidai/SHD_automation/panda_baogao/')
 def all_case():
     discover = unittest.defaultTestLoader.discover(case_path,pattern="test*.py",top_level_dir=None)
     print(discover)

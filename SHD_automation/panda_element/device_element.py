@@ -37,6 +37,9 @@ shouye_modul['新手指引']='com.yourenkeji.shenghuidai:id/home_xinshoubidu'
 shouye_modul['邀请好友']='com.yourenkeji.shenghuidai:id/home_yaoqinghaoyou'
 shouye_modul['每日签到']='com.yourenkeji.shenghuidai:id/home_qiandaosongli'
 shouye_modul['消息公告']='com.yourenkeji.shenghuidai:id/home_more_meiti_img'
+shouye_modul['邀请-好友']='com.yourenkeji.shenghuidai:id/webView_bt_share'
+shouye_modul['分享发送']='com.tencent.mobileqq:id/dialogRightBtn'
+shouye_modul['分享取消']='com.tencent.mobileqq:id/dialogLeftBtn'
 
 #帮助中心
 shouye_modul['帮助中心']='com.yourenkeji.shenghuidai:id/home_kefu'

@@ -4,6 +4,7 @@
 import random
 import time
 import os
+import sys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from appium.webdriver.common.touch_action import TouchAction
@@ -11,7 +12,7 @@ from SHD_automation.panda_log.log import *
 from SHD_automation.device_info.device import *
 from datetime import datetime
 
-# noinspection PyUnresolvedReferences
+# noinspection PyUnresolvedReferences,PyPep8Naming
 class My_method(object):
 	'获取ID元素'
 	def My_id(self,id,text,shuxing=None,sleep_time=0):
@@ -278,7 +279,16 @@ class jietu(object):
 		picture_time=time.strftime ('%Y-%m-%d %H:%M:%S', time.localtime ())
 		self.driver.save_screenshot((HTMLbaogao['图片地址']+picture_time+"%s.png")%name)
 
+'''倒计时功能来阻止程序运行'''
+class daojishi(object):
+	def daojishi_seconds(self,seconds):
+		count = 0
+		while count < seconds:
+			ncount = seconds - count
+			sys.stdout.write ("\r%d " % ncount)
+			sys.stdout.flush ()
+			time.sleep (1)
+			count += 1
 if __name__ == '__main__':
-	a=myMethod()
-	b=a.randomTel()
-	print(b)
+	a=daojishi()
+	a.daojishi_seconds(5)

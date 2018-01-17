@@ -11,7 +11,7 @@ import time
 from SHD_automation.device_info.device import star_app
 from SHD_automation.panda_element.device_element import *
 from SHD_automation.panda_methods.my_methods import My_method, logging, myMethod
-
+import os
 
 # noinspection PyTypeChecker
 class test_fengxian(unittest.TestCase,object):
@@ -27,6 +27,7 @@ class test_fengxian(unittest.TestCase,object):
 
 	def test_01_fengxian(self):
 		My_method.My_id (self, module_info ['账户'], 'click')
+		os.popen ('adb shell input swipe 50 1000 50 750 100')
 		My_method.My_id(self,account['更多'],'click')
 		My_method.My_id(self,account['风险评估'],'click')
 		cishu=1

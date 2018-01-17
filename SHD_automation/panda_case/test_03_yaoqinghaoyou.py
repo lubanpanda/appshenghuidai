@@ -9,7 +9,7 @@ from SHD_automation.panda_element.device_element import *
 from SHD_automation.panda_methods.my_methods import My_method, logging, jietu
 import unittest
 
-# noinspection PyTypeChecker
+# noinspection PyTypeChecker,PyUnresolvedReferences
 class test_yaoqinghaoyou(unittest.TestCase,object):
 	@classmethod
 	def setUpClass (self):
@@ -42,9 +42,10 @@ class test_yaoqinghaoyou(unittest.TestCase,object):
 			My_method.My_id(self,shouye_modul['分享发送'],'click')
 			My_method.My_id(self,'com.tencent.mobileqq:id/dialogLeftBtn','click')
 			jietu.jietu_picture(self,"邀请好友成功")
+			My_method.app_back(self)
 		except:
 			logging.info("QQ没有登录，分享失败")
-			My_method.app_back(self)
+			My_method.app_back(self,2)
 
 if __name__ == '__main__':
     unittest.main()

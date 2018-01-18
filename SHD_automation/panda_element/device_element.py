@@ -6,7 +6,7 @@ global device_info
 # noinspection PyRedeclaration
 device_info={}
 device_info['platformName']='Android'
-device_info['deviceName']='5JP0217617007741'#'3cdbb8e5'
+device_info['deviceName']='3cdbb8e5'
 device_info['platformVersion']= '7.0'
 device_info['sessionOverride']=True  #允许 session 被覆盖 (冲突的话),默认是False
 device_info['appPackage']='com.yourenkeji.shenghuidai'
@@ -117,4 +117,7 @@ global HTMLbaogao
 HTMLbaogao={}
 HTMLbaogao['报告地址']='/Users/yuchengtao/PycharmProjects/shenghuidai/SHD_automation/panda_baogao/'
 HTMLbaogao['图片地址']='/Users/yuchengtao/PycharmProjects/shenghuidai/SHD_automation/panda_picture/'
+
+global others
+others={}
 

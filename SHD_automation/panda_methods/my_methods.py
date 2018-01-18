@@ -68,6 +68,10 @@ class My_method(object):
 				proa = '获取控件classname的其他属性>>>：'
 				logging.info (u'%s%s索引数字：%s' % (proa, classname, list_id))
 				return self.driver.find_elements_by_class_name (classname) [list_id].get_attribute(shuxing), time.sleep (sleep_time)
+			elif text=='text':
+				proa = '获取控件text属性>>>：'
+				logging.info (u'%s%s索引数字：%s' % (proa, classname, list_id))
+				return self.driver.find_elements_by_class_name (classname)[list_id].text, time.sleep (sleep_time)
 			else:
 				pros = '输入内容为>>>：'
 				logging.info (u'定位控件%s,%s%s' % (classname, pros, text))

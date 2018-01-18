@@ -3,6 +3,7 @@
 # @Author  : panda  
 # @Email :  84305510@qq.com
 # @Time : 2018/1/16 10:59
+import HTMLTestRunner
 import time
 from SHD_automation.device_info.device import star_app
 from SHD_automation.panda_element.device_element import *
@@ -26,8 +27,11 @@ class test_yaoqinghaoyou(unittest.TestCase,object):
 		My_method.My_id(self,shouye_modul['邀请好友'],'click')
 		#先查看规则
 		self.driver.implicitly_wait (20)
-		My_method.my_class_name_id_dianji(self,'android.view.View',2,'click')
-		My_method.my_class_name_id_dianji(self,'android.view.View',10,'click')
+		try:
+			My_method.my_class_name_id_dianji(self,'android.view.View',2,'click')
+			My_method.my_class_name_id_dianji(self,'android.view.View',10,'click')
+		except:
+			logging.info("查看规则失败了")
 		yaoqing_zhanji=['邀请人数','累计红包奖励','累计佣金奖励']
 		for i in range(3):
 			renshu=My_method.my_class_name_id_dianji(self,'android.view.View',6+i,'属性',"name")
@@ -48,4 +52,12 @@ class test_yaoqinghaoyou(unittest.TestCase,object):
 			My_method.app_back(self,2)
 
 if __name__ == '__main__':
-    unittest.main()
+	suite = unittest.TestSuite ()
+	nowtime = time.strftime ('%Y-%m-%d %H:%M:%S', time.localtime ())
+	suite.addTest (test_yaoqinghaoyou ('test_yaoqing_haoyou'))
+	report_file = HTMLbaogao ['报告地址'] + nowtime + "胜辉贷邀请好友.html"
+	fp = open (report_file, 'wb')
+	baogao_info ='邀请好友的信息'
+	runner = HTMLTestRunner.HTMLTestRunner (stream = fp, title = "胜辉贷测试报告", description = baogao_info)
+	runner.run (suite)
+	fp.close ()

@@ -33,7 +33,7 @@ class test_fengxian(unittest.TestCase,object):
 		cishu=1
 		while cishu<=10:
 			timu=My_method.my_class_name_id_dianji(self,'android.view.View',3,'属性',"name") #答题的题目
-			time.sleep(2)
+			time.sleep(3)
 			logging.info(f'题目:{timu[0]}')
 			xuan_xiang=random.randint(4,7)
 			xuanxiang_info=My_method.my_class_name_id_dianji(self,'android.view.View',xuan_xiang,'属性',"name") #获得选项信息
@@ -50,4 +50,12 @@ class test_fengxian(unittest.TestCase,object):
 		logging.info(f'评估结果:{pinggu_jieguo[0]}')
 		self.driver.find_element_by_xpath ('//android.widget.Button[@content-desc="去理财"]').click ()
 if __name__ == '__main__':
-    unittest.main()
+	suite = unittest.TestSuite ()
+	nowtime = time.strftime ('%Y-%m-%d %H:%M:%S', time.localtime ())
+	suite.addTest (test_fengxian ('test_01_fengxian'))
+	report_file = HTMLbaogao ['报告地址'] + nowtime + "胜辉贷风险评估.html"
+	fp = open (report_file, 'wb')
+	baogao_info ='风险评估的答题，答案自动化'
+	runner = HTMLTestRunner.HTMLTestRunner (stream = fp, title = "胜辉贷测试报告", description = baogao_info)
+	runner.run (suite)
+	fp.close ()

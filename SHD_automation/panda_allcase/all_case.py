@@ -23,6 +23,8 @@ if __name__ == "__main__":
     curtime = time.strftime ('%Y-%m-%d %H:%M:%S', time.localtime ())
     report_paths = report_path + curtime + '.html'
     report_set = open (report_paths, 'wb')
-    runner = HTMLTestRunner.HTMLTestRunner (stream = report_set, title = '自动化测试报告', description = '胜辉贷各用例执行情况：')
+    # noinspection LongLine
+    baogao_info = '内容包括：\n 一.首页\n1.首页的投资攻略模块\n2.新手指引模块\n3.每日签到模块\n4.邀请好友模块带完成\n5.帮助中心\n二.发现模块\n1.平台数据\n2.安全保障\n3.积分商城\n4.活动中心\n三.账户模块\n1.除【提现，充值】外的所以功能'
+    runner = HTMLTestRunner.HTMLTestRunner (stream = report_set, title = '自动化测试报告', description = baogao_info)
     runner.run (all_case ())
     report_set.close ()

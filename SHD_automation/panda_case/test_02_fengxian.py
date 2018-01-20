@@ -32,9 +32,15 @@ class test_fengxian(unittest.TestCase,object):
 		My_method.My_id(self,account['风险评估'],'click')
 		cishu=1
 		while cishu<=10:
-			timu=My_method.my_class_name_id_dianji(self,'android.view.View',3,'属性',"name") #答题的题目
-			time.sleep(3)
-			logging.info(f'题目:{timu[0]}')
+			#强制获取题目内容，不考虑失败结果
+			while True:
+				try:
+					timu=My_method.my_class_name_id_dianji(self,'android.view.View',3,'属性',"name") #答题的题目
+					time.sleep(3)
+					logging.info(f'题目:{timu[0]}')
+					break
+				except:
+					continue
 			xuan_xiang=random.randint(4,7)
 			xuanxiang_info=My_method.my_class_name_id_dianji(self,'android.view.View',xuan_xiang,'属性',"name") #获得选项信息
 			logging.info(f'选项：{xuanxiang_info[0]}')

@@ -6,31 +6,17 @@
 import HTMLTestRunner
 import unittest
 import time
-from appium import webdriver
 from SHD_automation.device_info.device import star_app
 from SHD_automation.panda_element.device_element import *
 from SHD_automation.panda_methods.my_methods import My_method, logging, jietu
 
-
+nowtime = time.strftime ('%Y-%m-%d %H:%M:%S', time.localtime ())
 # noinspection PyTypeChecker
 class test_fengxian(unittest.TestCase,object):
 	@classmethod
 	def setUpClass (self):
 		star_app.__init__ (self)
-		desired_caps = {}
-		desired_caps ['platformName'] = device_info ['platformName']
-		desired_caps ['platformVersion'] = device_info ['platformVersion']
-		desired_caps ['sessionOverride'] = device_info ['sessionOverride']
-		desired_caps ['deviceName'] = device_info ['deviceName']
-		desired_caps ['appPackage'] = device_info ['appPackage']
-		desired_caps ['appActivity'] = device_info ['appActivity']
-		desired_caps ['noReset'] = device_info ['noReset']
-		desired_caps ['unicodeKeyboard'] = device_info ['unicodeKeyboard']
-		desired_caps ['resetKeyboard'] = device_info ['resetKeyboard']
-		desired_caps ['newCommandTimeout'] = device_info ['newCommandTimeout']
-		desired_caps ['automationName'] = 'UIAutomator2'
-		self.driver = webdriver.Remote ('http://127.0.0.1:4723/wd/hub', desired_caps)
-		self.driver.implicitly_wait (20)
+		star_app.setup(self)
 
 	@classmethod
 	def tearDownClass (self):
@@ -51,13 +37,12 @@ class test_fengxian(unittest.TestCase,object):
 		My_method.My_id(self,'com.yourenkeji.shenghuidai:id/bid_detals_et_bidMoney',100) #就是看看可不可以投资
 		My_method.My_id(self,'com.yourenkeji.shenghuidai:id/bid_detals_bt_bid','click')
 		My_method.My_id(self,'com.yourenkeji.shenghuidai:id/bid_buy_bt','click')    #立即购买
-		jietu.jietu_picture(self,"新手标")
+		jietu.jietu_picture(self,nowtime+"新手标")
 		logging.info("你已经不是新手了，不能在投资新手标了")
 
 
 if __name__ == '__main__':
 	suite = unittest.TestSuite ()
-	nowtime = time.strftime ('%Y-%m-%d %H:%M:%S', time.localtime ())
 	suite.addTest (test_fengxian ('test_01_fengxian'))
 	report_file = HTMLbaogao ['报告地址'] + nowtime + "胜辉贷新手标.html"
 	fp = open (report_file, 'wb')

@@ -26,9 +26,10 @@ class test_zhanghu(unittest.TestCase,object):
 		My_method.My_id(self,module_info['首页'],'click')
 		My_method.My_id(self,shouye_modul['投资攻略'],'click',3)
 		try:
-			My_method.my_class_name_id_dianji(self,'android.view.View',5,'click',1)
-			My_method.my_class_name_id_dianji(self,'android.view.View',7,'click',1)
-			My_method.my_class_name_id_dianji(self,'android.view.View',9,'click',1)
+			q=5
+			for i in range(3):
+				My_method.my_class_name_id_dianji(self,'android.view.View',q,'click',1)
+				q += 2
 			My_method.app_back(self,4)
 		except:
 			My_method.app_back(self)

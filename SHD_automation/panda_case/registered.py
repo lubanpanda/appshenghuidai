@@ -6,7 +6,7 @@
 # @File : test_registered.py
 # @Software: PyCharm
 '''
-用于用户的注册操作
+用于用户的注册,绑卡操作
 '''
 import HTMLTestRunner
 import unittest
@@ -25,7 +25,7 @@ class Zhuce(unittest.TestCase):
 	def tearDown (self):
 		star_app.tearDown (self)
 
-	def test_zhuce(self,yaoqingren=0,phone=''):
+	def test_01_zhuce(self,yaoqingren=0,phone=''):
 		My_method.My_id(self,module_info['账户'],'click')
 		My_method.My_id(self,zhuce['注册'],'click')
 		phone_number=myMethod.randomTel(self)
@@ -52,6 +52,17 @@ class Zhuce(unittest.TestCase):
 			logging.info(f'{tuijianren}:{phone}')
 		My_method.My_id(self,account['确定'],'click')
 		My_method.My_id(self,zhuce['跳过'],'click')
+	'绑定银行卡'
+	def test_02_bangka(self):
+		My_method.My_id (self, module_info ['账户'], 'click')
+		My_method.My_id(self,account['绑定卡号'],'click')
+		My_method.My_id(self,account['姓名'],'任丽军')
+		My_method.My_id(self,account['身份证号'],'142332199003260010')
+		My_method.My_id(self,account['银行卡号'],'6214830119703311')
+		My_method.My_id(self,account['手机号'],'18910142769')
+		My_method.My_id(self,account['绑卡-下一步'],'click')
+		logging.info('绑卡成功')
+
 if __name__ == '__main__':
 	unittest.main()
     # suite = unittest.TestSuite ()

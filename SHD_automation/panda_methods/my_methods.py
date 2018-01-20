@@ -144,7 +144,7 @@ class My_method(object):
 		My_method.My_id (self, zhuce ['跳过'], 'click')
 		logging.info ('初始化登陆成功')
 	'''非正常退出的登录方式'''
-	def yiwai_login(self,uesrnames=18519291259,passwords=111111):
+	def yiwai_login(self,uesrnames=15201525754,passwords=123456):
 		My_method.my_class_name_id_dianji (self, 'android.widget.Button', 0, 'click')
 		My_method.My_id (self, zhuce ['账号'], uesrnames)
 		My_method.My_id (self, 'com.yourenkeji.shenghuidai:id/zhu_bt', 'click')

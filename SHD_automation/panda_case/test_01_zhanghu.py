@@ -4,7 +4,12 @@
 import unittest
 import HTMLTestRunner
 import re
-from SHD_automation.panda_methods.my_methods import *
+import time
+import os
+import random
+from SHD_automation.device_info.device import star_app
+from SHD_automation.panda_element.device_element import *
+from SHD_automation.panda_methods.my_methods import My_method, logging, jietu
 
 # noinspection PyTypeChecker
 class test_zhanghu(unittest.TestCase,object):

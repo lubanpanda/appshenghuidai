@@ -10,7 +10,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from appium.webdriver.common.touch_action import TouchAction
 from SHD_automation.panda_log.log import *
 from SHD_automation.device_info.device import *
-from datetime import datetime
 
 # noinspection PyUnresolvedReferences,PyPep8Naming
 class My_method(object):
@@ -177,8 +176,8 @@ class My_method(object):
 	def app_back(self,cishu=1):
 		for i in range(cishu):
 			self.driver.back()
-		pro = '一共返回了'
-		logging.info(f'{pro}<{cishu}>次')
+		pro = '一共返回了:'
+		logging.info(f'{pro}{cishu}次')
 
 # noinspection PyUnresolvedReferences
 class myMethod (object):
@@ -199,7 +198,7 @@ class myMethod (object):
 		try:
 			if waitTime == None:
 				waitTime = 10
-			WebDriverWait (waitTime).until (lambda driver: driver.find_element_by_id (resourceid))
+			WebDriverWait (waitTime).until (lambda driver: self.driver.find_element_by_id (resourceid))
 			logging.info (u'>>>检测到{},页面未跳转成功'.format (resourceid))
 		except Exception as f:
 			print (f)
@@ -224,12 +223,13 @@ class Pingmu_unlock_the_screen(object):
 			logging.info('不是锁屏状态,可直接执行项目哦')
 
 	def App_jiesuo(self):
+		time.sleep(6)
 		list_pwd = self.driver.find_elements_by_class_name ("android.widget.ImageView")
 		logging.info(list_pwd)
 		try:
 			TouchAction (self.driver).press (list_pwd [0]).move_to (list_pwd [3]).move_to (list_pwd [6]).wait (100).move_to (
 				list_pwd [7]).wait (100).move_to (list_pwd [8]).release ().perform ()
-			time.sleep (2)
+			time.sleep (4)
 			logging.info ('解锁成功')
 			return True
 		except Exception:

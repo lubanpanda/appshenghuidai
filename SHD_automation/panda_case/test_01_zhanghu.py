@@ -3,11 +3,8 @@
 # @Author  : panda  84305510@qq.com
 import unittest
 import HTMLTestRunner
-import time
 import re
-from SHD_automation.device_info.device import *
 from SHD_automation.panda_methods.my_methods import *
-import datetime
 
 # noinspection PyTypeChecker
 class test_zhanghu(unittest.TestCase,object):
@@ -142,7 +139,6 @@ class test_zhanghu(unittest.TestCase,object):
 		My_method.app_back(self)
 
 if __name__ == '__main__':
-	#unittest.main()
 	suite = unittest.TestSuite ()
 	nowtime = time.strftime ('%Y-%m-%d %H:%M:%S', time.localtime ())
 	suite.addTest(test_zhanghu ('test_01_shouye'))

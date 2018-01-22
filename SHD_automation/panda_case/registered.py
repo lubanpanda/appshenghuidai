@@ -18,11 +18,13 @@ from SHD_automation.panda_methods.my_methods import My_method, logging, myMethod
 
 # noinspection PyTypeChecker
 class Zhuce(unittest.TestCase):
-	def setUp (self):
+	@classmethod
+	def setUpClass (self):
 		star_app.__init__(self)
 		star_app.setup (self)
 
-	def tearDown (self):
+	@classmethod
+	def tearDownClass (self):
 		star_app.tearDown (self)
 
 	def test_01_zhuce(self,yaoqingren=0,phone=''):

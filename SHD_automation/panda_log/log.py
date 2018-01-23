@@ -4,7 +4,7 @@
 
 import logging.config
 def log():
-    logging.config.fileConfig ("/Users/yuchengtao/PycharmProjects/shenghuidai/SHD_automation/panda_log/config.conf")
+    logging.config.fileConfig ("../panda_log/config.conf")
     logging.getLogger ("example01")
     return logging
 

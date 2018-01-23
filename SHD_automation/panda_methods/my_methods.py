@@ -14,13 +14,13 @@ from SHD_automation.device_info.device import *
 # noinspection PyUnresolvedReferences,PyPep8Naming
 class My_method(object):
 	def My_id(self,id,text,shuxing=None,sleep_time=0):
-		'''
+		"""
 		:param id: 元素ID
 		:param text: 操作对象
 		:param shuxing: 获取text内容或其他控件信息
 		:param sleep_time: 睡眠时间
 		:return: 获取ID元素或者其他熟悉操作
-		'''
+		"""
 		if text == '获取元素':
 			pro = '获取元素>>>：'
 			logging.info (u'%s%s' % (pro, id))
@@ -156,6 +156,7 @@ class My_method(object):
 		:param textCode: 要寻找的名字
 		:return: 封装一个滑动当前页面class+text查看元素方法
 		"""
+		# noinspection LongLine
 		self.driver.find_element_by_android_uiautomator (('new UiScrollable(new UiSelector().className("%s")).scrollIntoView(new UiSelector().text("%s"))' % (classNameCode, textCode)))
 
 

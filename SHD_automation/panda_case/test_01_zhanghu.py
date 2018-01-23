@@ -40,24 +40,28 @@ class test_zhanghu(unittest.TestCase,object):
 		My_method.My_id(self,shouye_modul['邀请好友'],'click',2)
 		My_method.app_back(self)
 		My_method.My_id(self,shouye_modul['每日签到'],'click',2)
-		try:
+		while True:
 			try:
-				huoqu_jifen=My_method.my_class_name_id_dianji(self,'android.view.View',1,'属性',"name")
-				time.sleep (3)
-				logging.info (huoqu_jifen [0])
-			except:
-				logging.info('积分获取失败')
-			b = My_method.my_class_name_id_dianji (self, 'android.view.View', 53, 'click')
-			if b:
-				self.driver.implicitly_wait (3)
 				try:
-					qiandao_jifen = My_method.my_class_name_id_dianji (self, 'android.widget.Button', 0, '属性', "name", 4)
-					My_method.my_class_name_id_dianji (self, 'android.widget.Button', 0, 'click')
-					logging.info (qiandao_jifen)
+					huoqu_jifen=My_method.my_class_name_id_dianji(self,'android.view.View',1,'属性',"name")
+					time.sleep (3)
+					logging.info (huoqu_jifen [0])
 				except:
-					logging.info ("已经签到了")
-		except:
-			My_method.yiwai_login(self)
+					logging.info('积分获取失败')
+				b = My_method.my_class_name_id_dianji (self, 'android.view.View', 53, 'click')
+				if b:
+					self.driver.implicitly_wait (3)
+					try:
+						qiandao_jifen = My_method.my_class_name_id_dianji (self, 'android.widget.Button', 0, '属性', "name", 4)
+						My_method.my_class_name_id_dianji (self, 'android.widget.Button', 0, 'click')
+						logging.info (qiandao_jifen)
+						break
+					except:
+						logging.info ("已经签到了")
+						break
+			except:
+				My_method.yiwai_login(self)
+				continue
 		My_method.app_back(self)
 
 

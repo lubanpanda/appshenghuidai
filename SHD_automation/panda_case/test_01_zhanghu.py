@@ -27,14 +27,16 @@ class test_zhanghu(unittest.TestCase,object):
 	def test_01_shouye(self):
 		My_method.My_id(self,module_info['首页'],'click')
 		My_method.My_id(self,shouye_modul['投资攻略'],'click',3)
-		try:
-			q=5
-			for i in range(3):
-				My_method.my_class_name_id_dianji(self,'android.view.View',q,'click',1)
-				q += 2
-			My_method.app_back(self,4)
-		except:
-			My_method.app_back(self)
+		while True:
+			try:
+				q=5
+				for i in range(3):
+					My_method.my_class_name_id_dianji(self,'android.view.View',q,'click',1)
+					q += 2
+				My_method.app_back(self,4)
+				break
+			except:
+				continue
 		My_method.My_id(self,shouye_modul['新手指引'],'click',2)
 		My_method.app_back(self)
 		My_method.My_id(self,shouye_modul['邀请好友'],'click',2)
@@ -42,12 +44,14 @@ class test_zhanghu(unittest.TestCase,object):
 		My_method.My_id(self,shouye_modul['每日签到'],'click',2)
 		while True:
 			try:
-				try:
-					huoqu_jifen=My_method.my_class_name_id_dianji(self,'android.view.View',1,'属性',"name")
-					time.sleep (3)
-					logging.info (huoqu_jifen [0])
-				except:
-					logging.info('积分获取失败')
+				while True:
+					try:
+						huoqu_jifen=My_method.my_class_name_id_dianji(self,'android.view.View',1,'属性',"name")
+						time.sleep (3)
+						logging.info (huoqu_jifen [0])
+						break
+					except:
+						continue
 				b = My_method.my_class_name_id_dianji (self, 'android.view.View', 53, 'click')
 				if b:
 					self.driver.implicitly_wait (3)

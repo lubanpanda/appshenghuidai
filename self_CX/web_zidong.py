@@ -8,7 +8,7 @@
 import time
 from selenium import webdriver
 
-drive=webdriver.Chrome('/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-chromedriver/chromedriver/mac/chromedriver')
+drive=webdriver.Chrome()
 drive.implicitly_wait(40)
 drive.get('https://kingss.win/index.php/index/login/?')
 drive.find_element_by_xpath('//*[@placeholder="Username"]').send_keys('panda')

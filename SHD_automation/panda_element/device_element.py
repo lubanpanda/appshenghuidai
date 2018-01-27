@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Author  : panda  84305510@qq.com
-'手机配置信息'
+"""手机配置信息"""
 global device_info
 # noinspection PyRedeclaration
 device_info={}
@@ -93,7 +93,7 @@ account['绑定卡号']='com.yourenkeji.shenghuidai:id/My_bangdingbankcard'
 account['姓名']='com.yourenkeji.shenghuidai:id/pay_Name'
 account['身份证号']='com.yourenkeji.shenghuidai:id/pay_idCode'
 account['银行卡号']='com.yourenkeji.shenghuidai:id/pay_bankCode'
-account['手机号']='com.yourenkeji.shenghuidai:id/pay_phone'
+account['银行预留-手机号']='com.yourenkeji.shenghuidai:id/pay_phone'
 account['绑卡-下一步']='com.yourenkeji.shenghuidai:id/bt_pay'
 account['支持银行']='com.yourenkeji.shenghuidai:id/tvRightComplete'
 
@@ -127,7 +127,3 @@ global HTMLbaogao
 HTMLbaogao={}
 HTMLbaogao['报告地址']='/Users/yuchengtao/PycharmProjects/shenghuidai/SHD_automation/panda_baogao/'
 HTMLbaogao['图片地址']='/Users/yuchengtao/PycharmProjects/shenghuidai/SHD_automation/panda_picture/'
-
-global others
-others={}
-

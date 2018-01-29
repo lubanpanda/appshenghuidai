@@ -100,7 +100,7 @@ class test_zhanghu(unittest.TestCase,object):
 					jifen_op = My_method.my_class_name_id_dianji (self, 'android.view.View', p, '属性', "name")
 					jifen_io = re.findall ('[A-Za-z0-9]+', jifen_op [0])
 					zong_jifen.append (jifen_io [0])
-					p = p + 3
+					p += 3
 				logging.info (zong_jifen)
 				suiji_list_len = [7]
 				suiji_list = 7

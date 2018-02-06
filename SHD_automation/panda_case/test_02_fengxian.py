@@ -27,9 +27,9 @@ class test_fengxian(unittest.TestCase,object):
 
 	def test_01_fengxian(self):
 		My_method.My_id (self, module_info ['账户'], 'click')
-		os.popen ('adb shell input swipe 50 1000 50 750 100')
-		My_method.My_id(self,account['更多'],'click')
+		My_method.My_id(self,account['个人中心'],'click')
 		My_method.My_id(self,account['风险评估'],'click')
+		self.driver.find_element_by_xpath ('//android.view.View[@content-desc="重新测评"]').click ()
 		cishu=1
 		while cishu<=10:
 			#强制获取题目内容，不考虑失败结果
@@ -54,7 +54,7 @@ class test_fengxian(unittest.TestCase,object):
 		pinggu_jieguo=My_method.my_class_name_id_dianji(self,'android.view.View',2,'属性',"name")#获得评估完成的信息
 		time.sleep(2)
 		logging.info(f'评估结果:{pinggu_jieguo[0]}')
-		self.driver.find_element_by_xpath ('//android.widget.Button[@content-desc="去理财"]').click ()
+		self.driver.find_element_by_xpath ('//android.widget.Button[@content-desc="去投资"]').click ()
 if __name__ == '__main__':
 	suite = unittest.TestSuite ()
 	nowtime = time.strftime ('%Y-%m-%d %H:%M:%S', time.localtime ())

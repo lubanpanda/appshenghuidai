@@ -29,7 +29,7 @@ module_info['退出']='com.yourenkeji.shenghuidai:id/boluos_exit'
 global shouye_modul
 # noinspection PyRedeclaration
 shouye_modul={}
-shouye_modul['投资攻略']='com.yourenkeji.shenghuidai:id/home_guanyuwomen'
+shouye_modul['榜上有名']='com.yourenkeji.shenghuidai:id/home_guanyuwomen'
 shouye_modul['开户绑卡']='android.view.View'  #5
 shouye_modul['充值投资']='android.view.View'   #7
 shouye_modul['坐等拿收益']='android.view.View' #9
@@ -86,7 +86,8 @@ account['密码-验证码']='com.yourenkeji.shenghuidai:id/idcard_next_phonecode
 account['验证-下一步']='com.yourenkeji.shenghuidai:id/idcard_next_phonecode_btn_next'
 account['个人信息']='com.yourenkeji.shenghuidai:id/my_info_tv'
 account['更多']='com.yourenkeji.shenghuidai:id/my_many_tv'
-account['风险评估']='com.yourenkeji.shenghuidai:id/more_fengxian_pinggu'
+account['风险评估']='com.yourenkeji.shenghuidai:id/my_fengxianpinggu_layout'
+account['个人中心']='com.yourenkeji.shenghuidai:id/my_img_grzx'
 
 #绑定银行卡元素
 account['绑定卡号']='com.yourenkeji.shenghuidai:id/My_bangdingbankcard'
@@ -101,7 +102,7 @@ account['支持银行']='com.yourenkeji.shenghuidai:id/tvRightComplete'
 account['地址管理']='com.yourenkeji.shenghuidai:id/my_head_pic_rl_shouhuoAdress'
 account['联系人']='com.yourenkeji.shenghuidai:id/adress_name'
 account['手机号']='com.yourenkeji.shenghuidai:id/adress_phone'
-account['收货地址']='com.yourenkeji.shenghuidai:id/adress_adress'
+account['收货地址']='com.yourenkeji.shenghuidai:id/my_head_pic_rl_shouhuoAdress'
 account['收货地址格式']='com.yourenkeji.shenghuidai:id/address_tip_tv'
 account['地址保存']='com.yourenkeji.shenghuidai:id/adress_bt'
 

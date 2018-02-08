@@ -10,8 +10,7 @@ import unittest
 import time
 from SHD_automation.device_info.device import star_app
 from SHD_automation.panda_element.device_element import *
-from SHD_automation.panda_methods.my_methods import My_method, logging, myMethod
-import os
+from SHD_automation.panda_methods.my_methods import My_method, logging
 
 # noinspection PyTypeChecker
 class test_fengxian(unittest.TestCase,object):
@@ -41,7 +40,7 @@ class test_fengxian(unittest.TestCase,object):
 					break
 				except:
 					continue
-			xuan_xiang=random.randint(4,7)
+			xuan_xiang=random.randint(3,6)
 			xuanxiang_info=My_method.my_class_name_id_dianji(self,'android.view.View',xuan_xiang,'属性',"name") #获得选项信息
 			logging.info(f'选项：{xuanxiang_info[0]}')
 			My_method.my_class_name_id_dianji(self,'android.view.View',xuan_xiang,'click')
@@ -52,8 +51,9 @@ class test_fengxian(unittest.TestCase,object):
 				self.driver.find_element_by_xpath ('//android.view.View[@content-desc="完成"]').click ()
 				break
 		pinggu_jieguo=My_method.my_class_name_id_dianji(self,'android.view.View',2,'属性',"name")#获得评估完成的信息
+		pinggu_jieguo_two=My_method.my_class_name_id_dianji(self,'android.view.View',3,'属性',"name")
 		time.sleep(2)
-		logging.info(f'评估结果:{pinggu_jieguo[0]}')
+		logging.info(f'评估结果:{pinggu_jieguo[0]}\n详情为:{pinggu_jieguo_two[0]}')
 		self.driver.find_element_by_xpath ('//android.widget.Button[@content-desc="去投资"]').click ()
 if __name__ == '__main__':
 	suite = unittest.TestSuite ()

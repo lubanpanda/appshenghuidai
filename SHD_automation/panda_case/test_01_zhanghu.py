@@ -26,17 +26,8 @@ class test_zhanghu(unittest.TestCase,object):
 
 	def test_01_shouye(self):
 		My_method.My_id(self,module_info['首页'],'click')
-		My_method.My_id(self,shouye_modul['投资攻略'],'click',3)
-		while True:
-			try:
-				q=5
-				for i in range(3):
-					My_method.my_class_name_id_dianji(self,'android.view.View',q,'click',1)
-					q += 2
-				My_method.app_back(self,4)
-				break
-			except:
-				continue
+		My_method.My_id(self,shouye_modul['榜上有名'],'click',3)
+		My_method.app_back(self)
 		My_method.My_id(self,shouye_modul['新手指引'],'click',2)
 		My_method.app_back(self)
 		My_method.My_id(self,shouye_modul['邀请好友'],'click',2)
@@ -58,7 +49,7 @@ class test_zhanghu(unittest.TestCase,object):
 					try:
 						qiandao_jifen = My_method.my_class_name_id_dianji (self, 'android.widget.Button', 0, '属性', "name", 4)
 						My_method.my_class_name_id_dianji (self, 'android.widget.Button', 0, 'click')
-						logging.info (qiandao_jifen)
+						logging.info (qiandao_jifen[0])
 						break
 					except:
 						logging.info ("已经签到了")
@@ -129,19 +120,9 @@ class test_zhanghu(unittest.TestCase,object):
 		My_method.my_class_name_id_dianji(self,faxian['更多'],6,'click')
 		My_method.app_back(self)
 
-	def test_03_zhanghu(self):
-		My_method.My_id(self,module_info['账户'],'click')
-		My_method.My_id(self,account['隐藏或显示'],'click')
-		My_method.My_id(self,account['投资记录'],'click')
-		My_method.My_id(self,account['截标记录'],'click')
-		My_method.app_back(self,2)
-		My_method.My_id(self,account['回款日历'],'click')
-		My_method.app_back(self)
-		My_method.My_id(self,account['资金记录'],'click')
-		My_method.app_back(self)
-
-	def test_04_shouhuo_addres(self):
-		My_method.My_id(self,account['个人信息'],'click')
+	def test_03_shouhuo_addres(self):
+		My_method.My_id (self, module_info ['账户'], 'click')
+		My_method.My_id (self, account ['个人中心'], 'click')
 		My_method.My_id(self,account['地址管理'],'click')
 		My_method.My_id(self,account['联系人'],"时寿阳")
 		My_method.My_id(self,account['手机号'],'18519291259')
@@ -156,8 +137,7 @@ if __name__ == '__main__':
 	nowtime = time.strftime ('%Y-%m-%d %H:%M:%S', time.localtime ())
 	suite.addTest(test_zhanghu ('test_01_shouye'))
 	suite.addTest(test_zhanghu('test_02_faxian'))
-	suite.addTest(test_zhanghu('test_03_zhanghu'))
-	suite.addTest(test_zhanghu('test_04_shouhuo_addres'))
+	suite.addTest(test_zhanghu('test_03_shouhuo_addres'))
 	report_file = HTMLbaogao['报告地址'] + nowtime + "胜辉贷.html"
 	fp = open (report_file, 'wb')
 	baogao_info='内容包括：\n' \

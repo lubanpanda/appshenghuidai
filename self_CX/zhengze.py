@@ -22,6 +22,18 @@ class tese_zz():
 
 		w=re.findall('[A-Za-z0-9]+',a)
 		print(w)
-
+a=tese_zz()
+a.tese_01()
 suiji_list_to = random.randrange (7, 28, 3)
 print(suiji_list_to)
+
+
+f=open('QQ.text','r')
+f1=open('q.text','w')
+b=f.readlines()
+for i in b:
+	w=i.replace('你','hello')
+	f1.write(w)
+f1.write(i)
+f.close()
+f1.close()

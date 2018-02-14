@@ -33,13 +33,18 @@ class test_fengxian(unittest.TestCase,object):
 		while cishu<=10:
 			#强制获取题目内容，不考虑失败结果
 			while True:
+				number=1
 				try:
 					timu=My_method.my_class_name_id_dianji(self,'android.view.View',3,'属性',"name") #答题的题目
 					time.sleep(3)
 					logging.info(f'题目:{timu[0]}')
 					break
 				except:
-					continue
+					number+=1
+					if number<5:
+						continue
+					else:
+						break
 			xuan_xiang=random.randint(3,6)
 			xuanxiang_info=My_method.my_class_name_id_dianji(self,'android.view.View',xuan_xiang,'属性',"name") #获得选项信息
 			logging.info(f'选项：{xuanxiang_info[0]}')

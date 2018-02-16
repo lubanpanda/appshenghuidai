@@ -6,7 +6,6 @@
 import itchat
 import time
 import re
-
 from itchat.content import *
 import xlwt
 
@@ -23,8 +22,10 @@ class weixin(object):
 		self.friends = itchat.get_friends (update = True) [0:]
 		self.myUserName=itchat.get_friends(update=True)[0]["UserName"]
 		self.friedd_data=[]
-		self.book = xlwt.Workbook (encoding = 'utf-8', style_compression = 0)
-		self.sheet = self.book.add_sheet ('微信', cell_overwrite_ok = True)
+		self.book = xlwt.Workbook (encoding = 'utf-8', style_compression = 0)#style_compression是否进行文件压缩，0代表否
+		self.sheet = self.book.add_sheet ('微信详细信息', cell_overwrite_ok = True)
+
+#获取微信所有的信息
 	def weixin_info(self):
 		for friend in self.friends[1:]:
 			f_d={
@@ -37,6 +38,7 @@ class weixin(object):
 				'signature' : friend ['Signature']#签名
 			}
 			self.friedd_data.append(f_d)
+		print(self.friedd_data)
 		feiend_number=len(self.friedd_data)
 		print(f'一共有{feiend_number}位好友')
 		boy=0
@@ -64,14 +66,15 @@ class weixin(object):
 					boy+=1
 				else:
 					girl+=1
-			head=['备注','网名','性别','微信ID','城市','个性签名','省份']
+
 			shuxing_info=[self.friedd_data[i]['niceName'],xingbie,self.friedd_data[i]['uuid'],self.friedd_data[i]['city'],self.friedd_data[i]['signature'],self.friedd_data[i]['province']]
-			for b in range(7):
-				self.sheet.write(0,b,head[b])
 			for a in range(6):
 				self.sheet.write(i+1,1+a,shuxing_info[a])
+		head = ['备注', '网名', '性别', '微信ID', '城市', '个性签名', '省份']
+		for b in range (7):
+			self.sheet.write (0, b, head [b])
 
-		self.book.save ('../self_CX/微信.xls')
+		self.book.save ('../self_CX/微信个人信息.xls')
 		print(f'男孩子有{boy}个，女孩子有{girl}个')
 		if boy>girl:
 			print('你的微信怎么全是男孩子哦，要添加点异性朋友哦')
@@ -80,6 +83,7 @@ class weixin(object):
 		else:
 			print('额。。。。。女同志有点多哦')
 
+#发送消息
 	def send_weixin(self,name,message):
 		"""
 		:param message: 发送消息的内容
@@ -97,6 +101,8 @@ class weixin(object):
 			time.sleep(0.2)
 			continue
 
+
+#自动回复消息
 @itchat.msg_register('Text')
 def text_reply(self,msg):
     if not msg['FromUserName'] == self.myUserName:
@@ -107,7 +113,7 @@ def text_reply(self,msg):
 
         return '[自动回复]您好，我现在有事不在，一会再和您联系。\n我已经收到您的的信息：%s\n' % (msg['Text'])
 
-
+#接受好友消息
 @itchat.msg_register ([TEXT, PICTURE, FRIENDS, CARD, MAP, SHARING, RECORDING, ATTACHMENT, VIDEO],
                       isFriendChat = True, isGroupChat = True, isMpChat = True)
 def personal_msg (msg):
@@ -130,8 +136,7 @@ def personal_msg (msg):
 		'Type'] == 'Recording':
 		print(msg_time_rec + "  " + msg_from + ' send a ' + msg ['Type'])
 
-# 接收群聊天信息，如果不需要可以不运行这段内容
-
+# 接收群聊天信息，如果不需要可以不运行
 @itchat.msg_register ([TEXT, PICTURE, FRIENDS, CARD, MAP, SHARING, RECORDING, ATTACHMENT, VIDEO],
                       isFriendChat = False, isGroupChat = True, isMpChat = False)
 def chatroom_msg (msg):

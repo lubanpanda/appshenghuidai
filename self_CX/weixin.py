@@ -3,21 +3,21 @@
 # @Author  : panda  
 # @Email :  84305510@qq.com
 # @Time : 2018/2/15 14:23
-"""
-微信信息数据
-1.可以分析好友里的数据信息
-2.可以发送微信消息
-3.可以自动回复微信消息
-"""
 import itchat
 import time
-import sys
 import re
-import os
+
 from itchat.content import *
 import xlwt
 
 class weixin(object):
+	"""
+	微信信息数据
+	1.可以分析好友里的数据信息
+	2.可以发送微信消息
+	3.可以自动回复微信消息
+	4.把自己的信息存储到一个excel表格里
+	"""
 	def __init__(self):
 		itchat.auto_login (hotReload = True)
 		self.friends = itchat.get_friends (update = True) [0:]
@@ -113,10 +113,6 @@ def text_reply(self,msg):
 def personal_msg (msg):
 	msg_time_rec = time.strftime ("%Y-%m-%d %H:%M:%S", time.localtime ())
 	msg_from = itchat.search_friends (userName = msg ['FromUserName']) ['NickName']
-	msg_time = msg ['CreateTime']
-	msg_id = msg ['MsgId']
-	msg_content = None
-	msg_share_url = None
 	if msg ['Type'] == 'Text' or msg ['Type'] == "Friends":
 		print(msg_time_rec + "  " + msg_from + ' send a ' + msg ['Type'] + ' : ' + msg ['Text'])
 	elif msg ['Type'] == 'Map':
@@ -142,10 +138,6 @@ def chatroom_msg (msg):
 	msg_time_rec = time.strftime ("%Y-%m-%d %H:%M:%S", time.localtime ())
 	msg_from = itchat.search_chatrooms (userName = msg ['FromUserName']) ['NickName'] + '  ' + msg [
 		'ActualNickName']
-	msg_time = msg ['CreateTime']
-	msg_id = msg ['MsgId']
-	msg_content = None
-	msg_share_url = None
 	if msg ['Type'] == 'Text':
 		print(msg_time_rec + "  " + msg_from + ' send a ' + msg ['Type'] + ' : ' + msg ['Text'])
 	elif msg ['Type'] == 'Map':

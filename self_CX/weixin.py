@@ -24,6 +24,7 @@ class weixin(object):
 		self.friedd_data=[]
 		self.book = xlwt.Workbook (encoding = 'utf-8', style_compression = 0)#style_compression是否进行文件压缩，0代表否
 		self.sheet = self.book.add_sheet ('微信详细信息', cell_overwrite_ok = True)
+		self.name = time.strftime ("%Y-%m-%d %H:%M:%S", time.localtime ())
 
 #获取微信所有的信息
 	def weixin_info(self):
@@ -38,9 +39,7 @@ class weixin(object):
 				'signature' : friend ['Signature']#签名
 			}
 			self.friedd_data.append(f_d)
-		print(self.friedd_data)
 		feiend_number=len(self.friedd_data)
-		print(f'一共有{feiend_number}位好友')
 		boy=0
 		girl=0
 
@@ -54,7 +53,7 @@ class weixin(object):
 				xingbie='女'
 			if not beizhu:
 				self.sheet.write(i+1,0,self.friedd_data[i]['niceName'])
-				# print(self.friedd_data[i]['niceName']+',性别：'+xingbie+',uuid='+self.friedd_data[i]['uuid'])#网名
+				print(self.friedd_data[i]['niceName']+',性别：'+xingbie+',uuid='+self.friedd_data[i]['uuid'])#网名
 				if xingbie=='男':
 					boy += 1
 				else:
@@ -73,9 +72,8 @@ class weixin(object):
 		head = ['备注', '网名', '性别', '微信ID', '城市', '个性签名', '省份']
 		for b in range (7):
 			self.sheet.write (0, b, head [b])
-
-		self.book.save ('../self_CX/微信个人信息.xls')
-		print(f'男孩子有{boy}个，女孩子有{girl}个')
+		self.book.save ('../self_CX/'+self.name+'.xls')
+		print(f'一共有{feiend_number}位好友，男孩子有{boy}个，女孩子有{girl}个')
 		if boy>girl:
 			print('你的微信怎么全是男孩子哦，要添加点异性朋友哦')
 		elif boy-girl==0:
@@ -101,7 +99,6 @@ class weixin(object):
 			time.sleep(0.2)
 			continue
 
-
 #自动回复消息
 @itchat.msg_register('Text')
 def text_reply(self,msg):
@@ -117,7 +114,7 @@ def text_reply(self,msg):
 @itchat.msg_register ([TEXT, PICTURE, FRIENDS, CARD, MAP, SHARING, RECORDING, ATTACHMENT, VIDEO],
                       isFriendChat = True, isGroupChat = True, isMpChat = True)
 def personal_msg (msg):
-	msg_time_rec = time.strftime ("%Y-%m-%d %H:%M:%S", time.localtime ())
+	msg_time_rec=time.strftime ("%Y-%m-%d %H:%M:%S", time.localtime ())
 	msg_from = itchat.search_friends (userName = msg ['FromUserName']) ['NickName']
 	if msg ['Type'] == 'Text' or msg ['Type'] == "Friends":
 		print(msg_time_rec + "  " + msg_from + ' send a ' + msg ['Type'] + ' : ' + msg ['Text'])

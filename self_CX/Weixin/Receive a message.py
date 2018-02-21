@@ -9,6 +9,30 @@ import itchat
 import time,re
 from itchat.content import *
 
+
+#接受好友消息
+@itchat.msg_register ([TEXT, PICTURE, FRIENDS, CARD, MAP, SHARING, RECORDING, ATTACHMENT, VIDEO],
+                      isFriendChat = True, isGroupChat = True, isMpChat = True)
+def personal_msg (msg):
+	msg_time_rec=time.strftime ("%Y-%m-%d %H:%M:%S", time.localtime ())
+	msg_from = itchat.search_friends (userName = msg ['FromUserName']) ['NickName']
+	if msg ['Type'] == 'Text' or msg ['Type'] == "Friends":
+		print(msg_time_rec + "  " + msg_from + ' send a ' + msg ['Type'] + ' : ' + msg ['Text'])
+	elif msg ['Type'] == 'Map':
+		x, y, location = re.search ("<location x=\"(.*?)\" y=\"(.*?)\".*label=\"(.*?)\".*",
+		                            msg ['OriContent']).group (1, 2, 3)
+		print(msg_time_rec + "  " + msg_from + ' send a ' + msg ['Type'] + ' : ' + msg ['Text'])
+		print('The detail location is : ' + u"纬度->" + x.__str__ () + u" 经度->" + y.__str__ ())
+	elif msg ['Type'] == 'Card':
+		print(msg_time_rec + "  " + msg_from + ' send a ' + msg ['Type'] + ' : ' + msg ['RecommendInfo'] [
+			'NickName'] + '的名片')
+	elif msg ['Type'] == 'Sharing':
+		print(msg_time_rec + "  " + msg_from + ' send a ' + msg ['Type'] + ' : ' + msg ['Text'])
+		print('The Url is: ' + msg ['Url'])
+	elif msg ['Type'] == "Attachment" or msg ['Type'] == "Video" or msg ['Type'] == 'Picture' or msg [
+		'Type'] == 'Recording':
+		print(msg_time_rec + "  " + msg_from + ' send a ' + msg ['Type'])
+
 # 接收群聊天信息
 @itchat.msg_register ([TEXT, PICTURE, FRIENDS, CARD, MAP, SHARING, RECORDING, ATTACHMENT, VIDEO],
                       isFriendChat = False, isGroupChat = True, isMpChat = False)

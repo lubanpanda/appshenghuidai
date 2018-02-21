@@ -8,10 +8,10 @@ import time,re
 from itchat.content import *
 import threading
 
-#自动回复消息
 @itchat.msg_register('Text')
-def text_reply(self,msg):
-    if not msg['FromUserName'] == self.myUserName:
+def text_reply(msg):
+
+    if not msg['FromUserName'] == myUserName:
         itchat.send_msg(u"[%s]收到好友@%s 的信息：%s\n" %
                         (time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(msg['CreateTime'])),
                          msg['User']['NickName'],
@@ -44,4 +44,5 @@ def personal_msg (msg):
 
 if __name__ == '__main__':
 	itchat.auto_login (hotReload = True)
+	myUserName = itchat.get_friends (update = True) [0] ["UserName"]
 	itchat.run()

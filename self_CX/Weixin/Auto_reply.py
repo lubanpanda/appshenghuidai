@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# @Author  : panda  
+# @Author  : panda
 # @Email :  84305510@qq.com
 # @Time : 2018/2/19 14:29
 import itchat
 import time,re
 from itchat.content import *
-import threading
 
 @itchat.msg_register('Text')
 def text_reply(msg):
-
+    """
+    :param msg: 消息内容
+    :return:
+    """
     if not msg['FromUserName'] == myUserName:
         itchat.send_msg(u"[%s]收到好友@%s 的信息：%s\n" %
                         (time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(msg['CreateTime'])),
@@ -23,6 +25,9 @@ def text_reply(msg):
 @itchat.msg_register ([TEXT, PICTURE, FRIENDS, CARD, MAP, SHARING, RECORDING, ATTACHMENT, VIDEO],
                       isFriendChat = True, isGroupChat = True, isMpChat = True)
 def personal_msg (msg):
+	"""
+	:param msg: 消息汇总
+	"""
 	msg_time_rec=time.strftime ("%Y-%m-%d %H:%M:%S", time.localtime ())
 	msg_from = itchat.search_friends (userName = msg ['FromUserName']) ['NickName']
 	if msg ['Type'] == 'Text' or msg ['Type'] == "Friends":

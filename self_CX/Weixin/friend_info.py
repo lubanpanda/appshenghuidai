@@ -21,7 +21,7 @@ class weixin(object):
 		self.friends = itchat.get_friends (update = True) [0:]
 		self.myUserName=itchat.get_friends(update=True)[0]["UserName"]
 		self.friedd_data=[]
-		self.book = xlwt.Workbook (encoding = 'utf-8', style_compression = 0)   #style_compression是否进行文件压缩，0代表否
+		self.book = xlwt.Workbook (encoding = 'utf-8')  #style_compression是否进行文件压缩，0代表否
 		self.sheet = self.book.add_sheet ('微信详细信息', cell_overwrite_ok = True)
 		self.name = time.strftime ("%Y-%m-%d %H:%M:%S", time.localtime ())
 
@@ -44,7 +44,7 @@ class weixin(object):
 
 		for i in range(feiend_number):
 			beizhu=self.friedd_data[i]['remarkName']
-			id=self.friedd_data[i]['uuid']
+			zhanghao_id=self.friedd_data[i]['uuid']
 			Sex=self.friedd_data[i]['sex']
 			if self.friedd_data[i]['sex']==1:                   #定义性别，把数字转化为男或女
 				xingbie='男'
@@ -59,15 +59,15 @@ class weixin(object):
 					girl+=1
 			else:
 				self.sheet.write (i+1,0, beizhu)
-				print(beizhu+',性别:'+xingbie+',uuid='+id)
+				print(beizhu +',性别:' + xingbie +',uuid=' + zhanghao_id)
 				if Sex==1:
 					boy+=1
 				else:
 					girl+=1
 
 			shuxing_info=[self.friedd_data[i]['niceName'],xingbie,self.friedd_data[i]['uuid'],self.friedd_data[i]['city'],self.friedd_data[i]['signature'],self.friedd_data[i]['province']]
-			for a in range(6):
-				self.sheet.write(i+1,1+a,shuxing_info[a])
+			for c in range(6):
+				self.sheet.write(i + 1, 1 + c, shuxing_info[c])
 		head = ['备注', '网名', '性别', '微信ID', '城市', '个性签名', '省份']
 		for b in range (7):
 			self.sheet.write (0, b, head [b])

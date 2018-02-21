@@ -10,7 +10,8 @@ from self_CX.Weixin.friend_info import weixin
 
 class Send_wein(weixin):
 
-	def send_weixin (self):
+	@staticmethod
+	def send_weixin ():
 		Help = """友情提示：
 		请输入想要查询的城市名称，如果输入的内容不对，则只显示哈尔滨的天气
 		"""

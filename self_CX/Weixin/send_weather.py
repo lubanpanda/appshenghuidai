@@ -18,15 +18,14 @@ class weixin(object):
 	def send_weixin(self,Tousername):
 		"""
 		:param Tousername: 发送的人
-		:param name: 备注、微信号、昵称
-		:param message: 发送消息的内容
 		:return:发送微信消息
-		 ***使用search_friends方法可以搜索用户，有四种搜索方式：***
+		***使用search_friends方法可以搜索用户，有四种搜索方式：***
 		   1. 仅获取自己的用户信息
 		   2. 获取特定UserName的用户信息
 		   3. 获取备注、微信号、昵称中的任何一项等于name键值的用户
 		   4. 获取备注、微信号、昵称分别等于相应键值的用户
 		"""
+
 		Help = """先生/女士你好：
 		欢迎来到机器人天气实施查询小程序，请输入你想查询的城市：
 		"""
@@ -76,13 +75,13 @@ def weather(city_name):
 	PM=soup.find('p',class_='tit').string
 	fengli=soup.find('div',class_='pm')
 	feng,shidu=map(lambda ab:ab.string, fengli)
-	xiangxi_weather_info= f'城市：{city_name}\n' \
-	                      f'现在的温度：{now_wendu}\n' \
-	                      f'最高气温：{up_wendu}\n' \
-	                      f'最低温度：{low_wendu}\n' \
-	                      f'天气情况:{xiangqing}\n' \
-	                      f'PM值：{PM}\n' \
-	                      f'舒适指数：{feng,shidu}'
+	xiangxi_weather_info= f"城市：{city_name}\n"\
+	                      f"现在的温度：{now_wendu}\n" \
+	                      f"最高气温：{up_wendu}\n" \
+	                      f"最低温度：{low_wendu}\n" \
+	                      f"天气情况:{xiangqing}\n"\
+	                      f"PM值：{PM}\n" \
+	                      f"舒适指数：{feng,shidu}"
 	print(xiangxi_weather_info)
 	return xiangxi_weather_info
 

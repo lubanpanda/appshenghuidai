@@ -17,6 +17,7 @@ class weixin(object):
 
 	def send_weixin(self,Tousername):
 		"""
+		:param Tousername: 发送的人
 		:param name: 备注、微信号、昵称
 		:param message: 发送消息的内容
 		:return:发送微信消息
@@ -52,7 +53,7 @@ def getcity(msg):
 	if len(to_name)==1:
 		print(len(to_name))
 	else:
-		with open ('chengshi.txt', 'r') as f:
+		with open ('chengshi.txt') as f:
 			chengshi_name = f.read()
 		if 6 >= len(city_name) >= 2:
 			names=city_name+'市'
@@ -74,8 +75,14 @@ def weather(city_name):
 	xiangqing=soup.find('em',class_='stat').string
 	PM=soup.find('p',class_='tit').string
 	fengli=soup.find('div',class_='pm')
-	feng,shidu=map(lambda a:a.string,fengli)
-	xiangxi_weather_info= (f'城市：{city_name}\n现在的温度：{now_wendu}\n最高气温：{up_wendu}\n最低温度：{low_wendu}\n天气情况:{xiangqing}\nPM值：{PM}\n舒适指数：{feng,shidu}')
+	feng,shidu=map(lambda ab:ab.string, fengli)
+	xiangxi_weather_info= f'城市：{city_name}\n' \
+	                      f'现在的温度：{now_wendu}\n' \
+	                      f'最高气温：{up_wendu}\n' \
+	                      f'最低温度：{low_wendu}\n' \
+	                      f'天气情况:{xiangqing}\n' \
+	                      f'PM值：{PM}\n' \
+	                      f'舒适指数：{feng,shidu}'
 	print(xiangxi_weather_info)
 	return xiangxi_weather_info
 

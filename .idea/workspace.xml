@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="关于微信的功能">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/SHD_automation/panda_element/device_element.py" afterPath="$PROJECT_DIR$/SHD_automation/panda_element/device_element.py" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -170,8 +168,8 @@
       <file leaf-file-name="Auto_reply.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/self_CX/Weixin/Auto_reply.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="51" column="68" lean-forward="false" selection-start-line="51" selection-start-column="68" selection-end-line="51" selection-end-column="68" />
+            <state relative-caret-position="420">
+              <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
               <folding>
                 <element signature="e#120#133#0" expanded="true" />
               </folding>
@@ -189,13 +187,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="friend_info.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="friend_info.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/self_CX/Weixin/friend_info.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
               <folding>
                 <element signature="e#123#136#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="device.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SHD_automation/device_info/device.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="device_element.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SHD_automation/panda_element/device_element.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="类的使用.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/self_CX/类的使用.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="5" />
+              <folding>
+                <element signature="e#216#245#0" expanded="false" />
+                <element signature="e#266#301#0" expanded="false" />
+                <element signature="e#321#359#0" expanded="false" />
+                <element signature="e#414#477#0" expanded="false" />
+                <element signature="e#544#601#0" expanded="false" />
+                <element signature="e#624#670#0" expanded="false" />
+                <element signature="e#689#730#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -308,7 +344,6 @@
         <option value="$PROJECT_DIR$/self_CX/caishu.py" />
         <option value="$PROJECT_DIR$/self_CX/send_meassge.py" />
         <option value="$PROJECT_DIR$/self_CX/zhengze.py" />
-        <option value="$PROJECT_DIR$/SHD_automation/panda_element/device_element.py" />
         <option value="$PROJECT_DIR$/self_CX/chuangti.py" />
         <option value="$PROJECT_DIR$/SHD_automation/panda_allcase/all_case.py" />
         <option value="$PROJECT_DIR$/self_CX/shopping/__init__.py" />
@@ -332,6 +367,7 @@
         <option value="$PROJECT_DIR$/self_CX/Weixin/send_message.py" />
         <option value="$PROJECT_DIR$/self_CX/Weixin/send_weather.py" />
         <option value="$PROJECT_DIR$/self_CX/Weixin/friend_info.py" />
+        <option value="$PROJECT_DIR$/SHD_automation/panda_element/device_element.py" />
       </list>
     </option>
   </component>
@@ -405,18 +441,6 @@
             <path>
               <item name="panda" type="b2602c69:ProjectViewProjectNode" />
               <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
-              <item name="self_CX" type="462c0819:PsiDirectoryNode" />
-              <item name="shopping" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
-              <item name="self_CX" type="462c0819:PsiDirectoryNode" />
-              <item name="Weixin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
               <item name="SHD_automation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -431,6 +455,12 @@
               <item name="SHD_automation" type="462c0819:PsiDirectoryNode" />
               <item name="panda_allcase" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
+              <item name="SHD_automation" type="462c0819:PsiDirectoryNode" />
+              <item name="panda_case" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -439,7 +469,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="main&#9;null&#9;null&#10;All&#9;FILE&#9;file:///Users/yuchengtao/PycharmProjects/shenghuidai/SHD_automation/panda_allcase/all_case.py&#10;accessibility&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/yuchengtao/PycharmProjects/shenghuidai/SHD_automation/device_info/device.py&#10;devi&#9;FILE&#9;file:///Users/yuchengtao/PycharmProjects/shenghuidai/SHD_automation/device_info/device.py&#10;main&#9;null&#9;null&#10;All&#9;FILE&#9;file:///Users/yuchengtao/PycharmProjects/shenghuidai/SHD_automation/panda_allcase/all_case.py&#10;accessibility&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -731,13 +761,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511416187661</updated>
-    </task>
-    <task id="LOCAL-00062" summary="整理">
-      <created>1515838328749</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1515838328750</updated>
     </task>
     <task id="LOCAL-00063" summary="风险评估">
       <created>1515993981038</created>
@@ -1075,7 +1098,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519195523744</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="修改一些配置信息">
+      <created>1519629407195</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1519629407196</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1124,9 +1154,9 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30229008" sideWeight="0.5121163" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29007635" sideWeight="0.5145396" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30229008" sideWeight="0.4878837" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29007635" sideWeight="0.48869145" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29007635" sideWeight="0.48546043" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15105008" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1192,7 +1222,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="增加了随机注册的功能" />
     <MESSAGE value="风险评估" />
     <MESSAGE value="整理元素属性" />
     <MESSAGE value="整理内容" />
@@ -1217,7 +1246,8 @@
     <MESSAGE value="微信的简单功能" />
     <MESSAGE value="添加一些注释" />
     <MESSAGE value="关于微信的功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="关于微信的功能" />
+    <MESSAGE value="修改一些配置信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改一些配置信息" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1267,13 +1297,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_element/device_element.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="22" column="17" lean-forward="false" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/self_CX/chuangti.py" />
     <entry file="file://$PROJECT_DIR$/self_CX/itchat.pkl" />
     <entry file="file://$PROJECT_DIR$/self_CX/send_meassge.py" />
@@ -1352,16 +1375,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/self_CX/保存图片.py" />
     <entry file="file://$PROJECT_DIR$/self_CX/tupian.py" />
-    <entry file="file://$PROJECT_DIR$/SHD_automation/device_info/device.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-          <folding>
-            <element signature="e#83#111#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/requests/api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1515">
@@ -1480,14 +1493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/self_CX/类的使用.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/self_CX/自动安装APK.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1556,23 +1561,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/self_CX/Weixin/Auto_reply.py">
+    <entry file="file://$PROJECT_DIR$/self_CX/类的使用.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="51" column="68" lean-forward="false" selection-start-line="51" selection-start-column="68" selection-end-line="51" selection-end-column="68" />
+          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="5" />
           <folding>
-            <element signature="e#120#133#0" expanded="true" />
+            <element signature="e#216#245#0" expanded="false" />
+            <element signature="e#266#301#0" expanded="false" />
+            <element signature="e#321#359#0" expanded="false" />
+            <element signature="e#414#477#0" expanded="false" />
+            <element signature="e#544#601#0" expanded="false" />
+            <element signature="e#624#670#0" expanded="false" />
+            <element signature="e#689#730#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/self_CX/Weixin/friend_info.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
           <folding>
             <element signature="e#123#136#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_CX/Weixin/Auto_reply.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding>
+            <element signature="e#120#133#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SHD_automation/device_info/device.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_element/device_element.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

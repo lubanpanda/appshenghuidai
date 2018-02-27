@@ -8,14 +8,14 @@ device_info={}
 device_info['platformName']='Android'
 device_info['deviceName']='3cdbb8e5'
 device_info['platformVersion']= '7.0'
-device_info['sessionOverride']=True  #允许 session 被覆盖 (冲突的话),默认是False
+device_info['sessionOverride']=True                 #允许 session 被覆盖 (冲突的话),默认是False
 device_info['appPackage']='com.yourenkeji.shenghuidai'
-device_info['newCommandTimeout']=600  # 一段时间不输入命令的话，app会退出。这个参数用来设置超时时间
+device_info['newCommandTimeout']=600                # 一段时间不输入命令的话，app会退出。这个参数用来设置超时时间
 device_info['appActivity']='com.delevin.shenghuidai.welcome.WelcomeActivity'
-device_info['autoAcceptAlerts']=True# iOS 的个人信息访问警告(如位置'联系人、图片) 出现时，自动选择接受( Accept )。默认值 false。
-device_info['noReset']=True # 不要在会话前重置应用状态。默认值false
-device_info['unicodeKeyboard']= True  # 设置appium输入法后就不会弹默认的系统输入法了
-device_info['resetKeyboard']= True  # 重置系统输入法
+device_info['autoAcceptAlerts']=True                # iOS 的个人信息访问警告(如位置'联系人、图片) 出现时，自动选择接受( Accept )。默认值 false。
+device_info['noReset']=True                         # 不要在会话前重置应用状态。默认值false
+device_info['unicodeKeyboard']= True                # 设置appium输入法后就不会弹默认的系统输入法了
+device_info['resetKeyboard']= True                  # 重置系统输入法
 
 global module_info
 # noinspection PyRedeclaration
@@ -30,9 +30,9 @@ global shouye_modul
 # noinspection PyRedeclaration
 shouye_modul={}
 shouye_modul['榜上有名']='com.yourenkeji.shenghuidai:id/home_guanyuwomen'
-shouye_modul['开户绑卡']='android.view.View'  #5
-shouye_modul['充值投资']='android.view.View'   #7
-shouye_modul['坐等拿收益']='android.view.View' #9
+shouye_modul['开户绑卡']='android.view.View'        #5
+shouye_modul['充值投资']='android.view.View'        #7
+shouye_modul['坐等拿收益']='android.view.View'      #9
 shouye_modul['新手指引']='com.yourenkeji.shenghuidai:id/home_xinshoubidu'
 shouye_modul['邀请好友']='com.yourenkeji.shenghuidai:id/home_yaoqinghaoyou'
 shouye_modul['每日签到']='com.yourenkeji.shenghuidai:id/home_qiandaosongli'

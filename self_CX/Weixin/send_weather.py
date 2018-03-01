@@ -49,19 +49,16 @@ def getcity(msg):
 	except:
 		a.send_weixin (too_name)
 		to_name.append (too_name)
-	if len(to_name)==1:
-		print(len(to_name))
-	else:
-		with open ('chengshi.txt') as f:
-			chengshi_name = f.read()
-		if 6 >= len(city_name) >= 2:
-			names=city_name+'市'
-			if names in chengshi_name :
-				results = weather (city_name)
-				itchat.send(results,msg['FromUserName'])
-			elif not city_name or not names in chengshi_name:
-				itchat.send ('请输入正确的城市名称', msg['FromUserName'])
-		else:pass
+	with open ('chengshi.txt') as f:
+		chengshi_name = f.read()
+	if 6 >= len(city_name) >= 2:
+		names=city_name+'市'
+		if names in chengshi_name :
+			results = weather (city_name)
+			itchat.send(results,msg['FromUserName'])
+		elif not city_name or not names in chengshi_name:
+			itchat.send ('请输入正确的城市名称', msg['FromUserName'])
+	else:pass
 def weather(city_name):
 	url='http://m.sohu.com/weather/?city='+city_name
 	UA='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36'

@@ -13,9 +13,9 @@ from SHD_automation.device_info.device import *
 
 # noinspection PyUnresolvedReferences,PyPep8Naming
 class My_method(object):
-	def My_id(self,id,text,shuxing=None,sleep_time=0):
+	def My_id(self, yuansu_id, text, shuxing=None, sleep_time=0):
 		"""
-		:param id: 元素ID
+		:param yuansu_id: 元素ID
 		:param text: 操作对象
 		:param shuxing: 获取text内容或其他控件信息
 		:param sleep_time: 睡眠时间
@@ -23,25 +23,25 @@ class My_method(object):
 		"""
 		if text == '获取元素':
 			pro = '获取元素>>>：'
-			logging.info (u'%s%s' % (pro, id))
-			return self.driver.find_element_by_id (id),time.sleep(sleep_time)
+			logging.info (u'%s%s' % (pro, yuansu_id))
+			return self.driver.find_element_by_id (yuansu_id), time.sleep(sleep_time)
 		else:
 			if text == 'click':
 				pro = '点击控件获取>>>'
-				logging.info (u'%s%s' % (pro, id))
-				return self.driver.find_element_by_id (id).click (),time.sleep(sleep_time)
+				logging.info (u'%s%s' % (pro, yuansu_id))
+				return self.driver.find_element_by_id (yuansu_id).click (), time.sleep(sleep_time)
 			elif text=='获取内容':
 				pro='获取控件里的text内容>>>'
-				logging.info('%s%s'%(pro,id))
-				return self.driver.find_element_by_id(id).text,time.sleep(sleep_time)
+				logging.info('%s%s' % (pro, yuansu_id))
+				return self.driver.find_element_by_id(yuansu_id).text, time.sleep(sleep_time)
 			elif text=='属性':
 				pro = '获取控件id的其他属性>>>：'
-				logging.info (u'%s%s' % (pro, id))
-				return self.driver.find_element_by_id (id).get_attribute(shuxing), time.sleep (sleep_time)
+				logging.info (u'%s%s' % (pro, yuansu_id))
+				return self.driver.find_element_by_id (yuansu_id).get_attribute(shuxing), time.sleep (sleep_time)
 			else:
 				pro = '输入内容为>>>：'
-				logging.info (u'定位控件%s,%s%s' % (id, pro, text))
-				return self.driver.find_element_by_id (id).clear(),self.driver.find_element_by_id (id).send_keys (str(text)),time.sleep(sleep_time)
+				logging.info (u'定位控件%s,%s%s' % (yuansu_id, pro, text))
+				return self.driver.find_element_by_id (yuansu_id).clear(), self.driver.find_element_by_id (yuansu_id).send_keys (str(text)), time.sleep(sleep_time)
 
 	def my_accessibility_id_dianji(self,accessibility_id,sleep_time=0):
 		"""

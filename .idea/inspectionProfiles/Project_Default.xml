@@ -38,6 +38,7 @@
           <option value="webdriver" />
           <option value="msvcrt" />
           <option value="SHD_automation.panda_methods.interface_methods.logging" />
+          <option value="SHD_automation.panda_case.test_02_fengxian.test_fengxian.driver" />
         </list>
       </option>
     </inspection_tool>

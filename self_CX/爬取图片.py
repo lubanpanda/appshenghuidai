@@ -20,12 +20,22 @@ def Climb_the_pictures():
 	else:
 		os.mkdir('panda')
 	q=1
+	url_adds=[]
+	url_add=[]
 	for i in b:
 		if i.endswith('jpg'):
-			c=requests.get(i)
-			with open('../self_CX/panda/'+str(q)+'.png','wb') as f:
-				f.write(c.content)
-			q+=1
+
+			url_adds.append(i)
+	for i in url_adds:
+		if i in url_add:
+			continue
+		else:
+			url_add.append(i)
+	for a in url_add:
+		c = requests.get (a)
+		with open('../self_CX/panda/'+str(q)+'.png','wb') as f:
+			f.write(c.content)
+		q+=1
 
 
 if __name__ == '__main__':

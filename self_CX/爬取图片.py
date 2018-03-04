@@ -24,7 +24,6 @@ def Climb_the_pictures():
 	url_add=[]
 	for i in b:
 		if i.endswith('jpg'):
-
 			url_adds.append(i)
 	for i in url_adds:
 		if i in url_add:
@@ -35,8 +34,8 @@ def Climb_the_pictures():
 		c = requests.get (a)
 		with open('../self_CX/panda/'+str(q)+'.png','wb') as f:
 			f.write(c.content)
+		print (f'正在下载第{q}张图片')
 		q+=1
-
 
 if __name__ == '__main__':
     Climb_the_pictures()

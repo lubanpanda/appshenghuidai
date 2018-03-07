@@ -4,7 +4,7 @@ from email.utils import formataddr
 import requests
 from bs4 import BeautifulSoup
 
-my_sender = '84305510@qq.com'
+my_sender = '1007596772@qq.com'
 my_user = "919792828@qq.com"
 def weather(city_name):
 	#logger.info("天气已经正常显示了哦")
@@ -33,7 +33,7 @@ def mail(news):
         msg['To'] = 'entry'.join(my_user)
         msg['Subject'] = "天气预报 "
         server = smtplib.SMTP_SSL('smtp.qq.com', 465)
-        server.login(my_sender, "")
+        server.login(my_sender, "fcatmurzxrvvbbeh")
         server.sendmail(my_sender, [my_user, ], msg.as_string())
         server.set_debuglevel(1)
         server.quit()

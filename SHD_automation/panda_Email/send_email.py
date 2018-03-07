@@ -10,14 +10,13 @@ from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 
 def send_QQ_Email(name):
-	username = '84305510@qq.com'
-	password = ''
+	username = '1007596772@qq.com'
+	password = 'fcatmurzxrvvbbeh'
 	sender = username
-	receivers = ','.join(['1007596772@qq.com'])
+	receivers = ','.join(['84305510@qq.com'])
 
-	# 如名字所示： Multipart就是多个部分
 	msg = MIMEMultipart()
-	msg['Subject'] = 'Python mail Test'
+	msg['Subject'] = 'shenghuidai Test'
 	msg['From'] = sender
 	msg['To'] = receivers
 

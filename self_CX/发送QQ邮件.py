@@ -33,7 +33,7 @@ def mail(news):
         msg['To'] = 'entry'.join(my_user)
         msg['Subject'] = "天气预报 "
         server = smtplib.SMTP_SSL('smtp.qq.com', 465)
-        server.login(my_sender, "rplzfcgilxqbbjfe")
+        server.login(my_sender, "")
         server.sendmail(my_sender, [my_user, ], msg.as_string())
         server.set_debuglevel(1)
         server.quit()

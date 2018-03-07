@@ -9,6 +9,7 @@ import random
 import unittest
 import time
 from SHD_automation.device_info.device import star_app
+from SHD_automation.panda_Email.send_email import send_QQ_Email
 from SHD_automation.panda_element.device_element import *
 from SHD_automation.panda_methods.my_methods import My_method, logging
 
@@ -70,3 +71,4 @@ if __name__ == '__main__':
 	runner = HTMLTestRunner.HTMLTestRunner (stream = fp, title = "胜辉贷测试报告", description = baogao_info)
 	runner.run (suite)
 	fp.close ()
+	send_QQ_Email(report_file)

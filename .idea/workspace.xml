@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="去除多余图片">
+    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/SHD_automation/panda_Email/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/SHD_automation/panda_Email/send_email.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/panda.iml" afterPath="$PROJECT_DIR$/.idea/panda.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/SHD_automation/panda_log/config.conf" afterPath="$PROJECT_DIR$/SHD_automation/panda_log/config.conf" />
+      <change beforePath="$PROJECT_DIR$/SHD_automation/panda_case/test_02_fengxian.py" afterPath="$PROJECT_DIR$/SHD_automation/panda_case/test_02_fengxian.py" />
+      <change beforePath="$PROJECT_DIR$/self_CX/qqemail.py" afterPath="$PROJECT_DIR$/self_CX/qqemail.py" />
+      <change beforePath="$PROJECT_DIR$/self_CX/发送QQ邮件.py" afterPath="$PROJECT_DIR$/self_CX/发送QQ邮件.py" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +21,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/shenghuidai$Nosetests_for_Homepage_test2_test0.coverage" NAME="Nosetests for Homepage.test2.test0 Coverage Results" MODIFIED="1511536469144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/shenghuidai$Nosetests_for_baogao_test0_test_log.coverage" NAME="Nosetests for baogao.test0.test_log Coverage Results" MODIFIED="1514275513355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/execution" />
-    <SUITE FILE_PATH="coverage/panda$QQ.coverage" NAME="发送QQ邮件 Coverage Results" MODIFIED="1520167459958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX" />
+    <SUITE FILE_PATH="coverage/panda$QQ.coverage" NAME="发送带附件的QQ邮件 Coverage Results" MODIFIED="1520402306778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX" />
     <SUITE FILE_PATH="coverage/panda$Nosetests_for_test_registered_Zhuce_test_zhuce.coverage" NAME="Nosetests for test_registered.Zhuce.test_zhuce Coverage Results" MODIFIED="1515482870490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SHD_automation/panda_case" />
     <SUITE FILE_PATH="coverage/shenghuidai$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1514103877288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lianxiti" />
     <SUITE FILE_PATH="coverage/shenghuidai$login.coverage" NAME="login Coverage Results" MODIFIED="1513568019688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
@@ -24,7 +29,7 @@
     <SUITE FILE_PATH="coverage/shenghuidai$.coverage" NAME="倒计时 Coverage Results" MODIFIED="1514193995232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Automaticinstallation" />
     <SUITE FILE_PATH="coverage/shenghuidai$feng_test_logmethod.coverage" NAME="feng_test_logmethod Coverage Results" MODIFIED="1514353840197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fengfan_unittest/feng_test_log" />
     <SUITE FILE_PATH="coverage/panda$main.coverage" NAME="main Coverage Results" MODIFIED="1515814862647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/execution" />
-    <SUITE FILE_PATH="coverage/panda$gitbug.coverage" NAME="gitbug Coverage Results" MODIFIED="1520215937224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX" />
+    <SUITE FILE_PATH="coverage/panda$gitbug.coverage" NAME="gitbug Coverage Results" MODIFIED="1520330843556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX" />
     <SUITE FILE_PATH="coverage/shenghuidai$weather.coverage" NAME="weather Coverage Results" MODIFIED="1514356568655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lianxiti" />
     <SUITE FILE_PATH="coverage/panda$test_zhanghu.coverage" NAME="test_zhanghu Coverage Results" MODIFIED="1515823522166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SHD_automation/panda_case" />
     <SUITE FILE_PATH="coverage/panda$send_message.coverage" NAME="send_message Coverage Results" MODIFIED="1519201842753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX/Weixin" />
@@ -48,6 +53,7 @@
     <SUITE FILE_PATH="coverage/shenghuidai$hongbao.coverage" NAME="hongbao Coverage Results" MODIFIED="1512642295577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interfaces" />
     <SUITE FILE_PATH="coverage/shenghuidai$Allaccount.coverage" NAME="Allaccount Coverage Results" MODIFIED="1512798095098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/panda$my_jiekou_methods.coverage" NAME="my_jiekou_methods Coverage Results" MODIFIED="1515143842661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SHD_automation/panda_jiekou" />
+    <SUITE FILE_PATH="coverage/panda$py_test_for_test_01_zhanghu_test_zhanghu.coverage" NAME="py.test for test_01_zhanghu.test_zhanghu Coverage Results" MODIFIED="1520308056026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SHD_automation/panda_case" />
     <SUITE FILE_PATH="coverage/panda$qq.coverage" NAME="qq Coverage Results" MODIFIED="1515929700589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
     <SUITE FILE_PATH="coverage/shenghuidai$allfind.coverage" NAME="allfind Coverage Results" MODIFIED="1512372087942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/shenghuidai$installApks.coverage" NAME="installApks Coverage Results" MODIFIED="1514117019407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Automaticinstallation" />
@@ -65,7 +71,7 @@
     <SUITE FILE_PATH="coverage/shenghuidai$loger.coverage" NAME="loger Coverage Results" MODIFIED="1514353910332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lianxiti" />
     <SUITE FILE_PATH="coverage/panda$friend_info.coverage" NAME="friend_info Coverage Results" MODIFIED="1519178955380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX/Weixin" />
     <SUITE FILE_PATH="coverage/shenghuidai$screen.coverage" NAME="screen Coverage Results" MODIFIED="1514009536202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/iphoneinfo" />
-    <SUITE FILE_PATH="coverage/panda$web_zidong.coverage" NAME="web_zidong Coverage Results" MODIFIED="1520166492158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX" />
+    <SUITE FILE_PATH="coverage/panda$web_zidong.coverage" NAME="web_zidong Coverage Results" MODIFIED="1520307499250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX" />
     <SUITE FILE_PATH="coverage/shenghuidai$Nosetests_for_Homepage_test2.coverage" NAME="Nosetests for Homepage.test2 Coverage Results" MODIFIED="1511535572772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/panda$tupian.coverage" NAME="tupian Coverage Results" MODIFIED="1519002464671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX" />
     <SUITE FILE_PATH="coverage/shenghuidai$baogao.coverage" NAME="baogao Coverage Results" MODIFIED="1514276017197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/execution" />
@@ -158,20 +164,10 @@
       <file leaf-file-name="test_02_fengxian.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SHD_automation/panda_case/test_02_fengxian.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="爬取图片.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/self_CX/爬取图片.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+            <state relative-caret-position="383">
+              <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
               <folding>
-                <element signature="e#121#130#0" expanded="true" />
+                <element signature="e#123#144#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -180,8 +176,8 @@
       <file leaf-file-name="发送QQ邮件.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/self_CX/发送QQ邮件.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="43" column="19" lean-forward="true" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+            <state relative-caret-position="262">
+              <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -189,70 +185,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myapp.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SHD_automation/panda_log/myapp.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="30">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+      <file leaf-file-name="send_email.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SHD_automation/panda_Email/send_email.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+              <folding>
+                <element signature="e#122#136#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="log.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SHD_automation/panda_log/log.py">
+      <file leaf-file-name="qqemail.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/self_CX/qqemail.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="all_case.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SHD_automation/panda_allcase/all_case.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.conf" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SHD_automation/panda_log/config.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="48" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_01_zhanghu.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SHD_automation/panda_case/test_01_zhanghu.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="device_element.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SHD_automation/panda_element/device_element.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="116" column="12" lean-forward="true" selection-start-line="116" selection-start-column="12" selection-end-line="116" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="friend_info.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/self_CX/Weixin/friend_info.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="78" column="19" lean-forward="true" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+            <state relative-caret-position="368">
+              <caret line="72" column="23" lean-forward="false" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -264,8 +213,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTTP Request" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -315,9 +264,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SHD_automation/panda_case/jiekou.py" />
-        <option value="$PROJECT_DIR$/SHD_automation/panda_baogao/__init__.py" />
-        <option value="$PROJECT_DIR$/SHD_automation/panda_case/tongzhi.py" />
         <option value="$PROJECT_DIR$/SHD_automation/panda_element/__init__.py" />
         <option value="$PROJECT_DIR$/SHD_automation/device_info/Mysqllianxi.py" />
         <option value="$PROJECT_DIR$/SHD_automation/panda_baogao/2018-01-23 17:15:13.html" />
@@ -330,7 +276,6 @@
         <option value="$PROJECT_DIR$/self_CX/send_meassge.py" />
         <option value="$PROJECT_DIR$/self_CX/zhengze.py" />
         <option value="$PROJECT_DIR$/self_CX/chuangti.py" />
-        <option value="$PROJECT_DIR$/SHD_automation/panda_allcase/all_case.py" />
         <option value="$PROJECT_DIR$/self_CX/shopping/__init__.py" />
         <option value="$PROJECT_DIR$/self_CX/__init__.py" />
         <option value="$PROJECT_DIR$/self_CX/paqu_pictor.py" />
@@ -350,7 +295,6 @@
         <option value="$PROJECT_DIR$/self_CX/Weixin/Auto_reply.py" />
         <option value="$PROJECT_DIR$/self_CX/Weixin/send_message.py" />
         <option value="$PROJECT_DIR$/SHD_automation/panda_element/device_element.py" />
-        <option value="$PROJECT_DIR$/SHD_automation/panda_case/test_02_fengxian.py" />
         <option value="$PROJECT_DIR$/SHD_automation/panda_methods/my_methods.py" />
         <option value="$PROJECT_DIR$/SHD_automation/device_info/__init__.py" />
         <option value="$PROJECT_DIR$/SHD_automation/panda_case/test_01_zhanghu.py" />
@@ -360,12 +304,17 @@
         <option value="$PROJECT_DIR$/SHD_automation/panda_allcase/__init__.py" />
         <option value="$PROJECT_DIR$/self_CX/Weixin/friend_info.py" />
         <option value="$PROJECT_DIR$/self_CX/Weixin/dadasd.html" />
-        <option value="$PROJECT_DIR$/self_CX/爬取图片.py" />
         <option value="$PROJECT_DIR$/SHD_automation/panda_case/__init__.py" />
         <option value="$PROJECT_DIR$/self_CX/main.py" />
-        <option value="$PROJECT_DIR$/self_CX/发送QQ邮件.py" />
         <option value="$PROJECT_DIR$/SHD_automation/panda_log/log.py" />
         <option value="$PROJECT_DIR$/SHD_automation/panda_log/config.conf" />
+        <option value="$PROJECT_DIR$/SHD_automation/panda_allcase/all_case.py" />
+        <option value="$PROJECT_DIR$/self_CX/爬取图片.py" />
+        <option value="$PROJECT_DIR$/self_CX/发送带附件的QQ邮件.py" />
+        <option value="$PROJECT_DIR$/SHD_automation/panda_Email/send_email.py" />
+        <option value="$PROJECT_DIR$/SHD_automation/panda_case/test_02_fengxian.py" />
+        <option value="$PROJECT_DIR$/self_CX/发送QQ邮件.py" />
+        <option value="$PROJECT_DIR$/self_CX/qqemail.py" />
       </list>
     </option>
   </component>
@@ -450,14 +399,13 @@
               <item name="panda" type="b2602c69:ProjectViewProjectNode" />
               <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
               <item name="SHD_automation" type="462c0819:PsiDirectoryNode" />
-              <item name="panda_allcase" type="462c0819:PsiDirectoryNode" />
+              <item name="device_info" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="panda" type="b2602c69:ProjectViewProjectNode" />
               <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
               <item name="SHD_automation" type="462c0819:PsiDirectoryNode" />
               <item name="panda_allcase" type="462c0819:PsiDirectoryNode" />
-              <item name="all_case.py" type="8704e2dd:PyFileNode" />
             </path>
             <path>
               <item name="panda" type="b2602c69:ProjectViewProjectNode" />
@@ -469,38 +417,7 @@
               <item name="panda" type="b2602c69:ProjectViewProjectNode" />
               <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
               <item name="SHD_automation" type="462c0819:PsiDirectoryNode" />
-              <item name="panda_case" type="462c0819:PsiDirectoryNode" />
-              <item name=".cache" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
-              <item name="SHD_automation" type="462c0819:PsiDirectoryNode" />
-              <item name="panda_case" type="462c0819:PsiDirectoryNode" />
-              <item name=".cache" type="462c0819:PsiDirectoryNode" />
-              <item name="v" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
-              <item name="SHD_automation" type="462c0819:PsiDirectoryNode" />
-              <item name="panda_case" type="462c0819:PsiDirectoryNode" />
-              <item name=".cache" type="462c0819:PsiDirectoryNode" />
-              <item name="v" type="462c0819:PsiDirectoryNode" />
-              <item name="cache" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
-              <item name="SHD_automation" type="462c0819:PsiDirectoryNode" />
-              <item name="panda_log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
-              <item name="SHD_automation" type="462c0819:PsiDirectoryNode" />
-              <item name="panda_log" type="462c0819:PsiDirectoryNode" />
-              <item name="log.py" type="8704e2dd:PyFileNode" />
+              <item name="panda_Email" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="panda" type="b2602c69:ProjectViewProjectNode" />
@@ -524,6 +441,12 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.tslint" value="" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.selected.package.stylelint" value="" />
   </component>
   <component name="PyDebuggerOptionsProvider">
     <option name="mySaveCallSignatures" value="true" />
@@ -546,7 +469,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_02_fengxian">
+  <component name="RunManager" selected="Python.发送带附件的QQ邮件">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -592,7 +515,7 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" runner="coverage.py" />
       <option name="ADDITIONAL_ARGS" value="" />
     </configuration>
-    <configuration name="发送QQ邮件" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="发送带附件的QQ邮件" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -605,26 +528,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="panda" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/self_CX/发送QQ邮件.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SHD_automation/panda_case" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="panda" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SHD_automation/panda_case/__init__.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/self_CX/发送带附件的QQ邮件.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -780,20 +684,36 @@
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
+    <configuration name="py.test for test_01_zhanghu.test_zhanghu" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SHD_automation/panda_case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="panda" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_01_zhanghu.test_zhanghu&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.gitbug" />
       <item index="1" class="java.lang.String" itemvalue="Python.web_zidong" />
-      <item index="2" class="java.lang.String" itemvalue="Python.发送QQ邮件" />
-      <item index="3" class="java.lang.String" itemvalue="Python.test_02_fengxian" />
-      <item index="4" class="java.lang.String" itemvalue="Python.__init__" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test_02_fengxian" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for test_01_zhanghu.test_zhanghu" />
+      <item index="4" class="java.lang.String" itemvalue="Python.发送带附件的QQ邮件" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.test_02_fengxian" />
-        <item index="1" class="java.lang.String" itemvalue="Python.__init__" />
-        <item index="2" class="java.lang.String" itemvalue="Python.gitbug" />
-        <item index="3" class="java.lang.String" itemvalue="Python.发送QQ邮件" />
-        <item index="4" class="java.lang.String" itemvalue="Python.web_zidong" />
+        <item index="0" class="java.lang.String" itemvalue="Python.发送带附件的QQ邮件" />
+        <item index="1" class="java.lang.String" itemvalue="Python.gitbug" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for test_01_zhanghu.test_zhanghu" />
+        <item index="3" class="java.lang.String" itemvalue="Python.web_zidong" />
+        <item index="4" class="java.lang.String" itemvalue="Python.test_02_fengxian" />
       </list>
     </recent_temporary>
   </component>
@@ -810,13 +730,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511416187661</updated>
-    </task>
-    <task id="LOCAL-00070" summary="整理一些文件">
-      <created>1516155107134</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1516155107134</updated>
     </task>
     <task id="LOCAL-00071" summary="整理一些文件或者新增的方法">
       <created>1516242340680</created>
@@ -1154,13 +1067,17 @@
       <option name="project" value="LOCAL" />
       <updated>1520167561607</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="配置文件的优化">
+      <created>1520307346094</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1520307346094</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nosetests_for_test_02_fengxian_test_fengxian_test_01_fengxian - 2018.02.27 at 11h 29m 51s.xml">
-      <configuration name="Nosetests for test_02_fengxian.test_fengxian.test_01_fengxian" configurationId="tests" />
-    </history-entry>
     <history-entry file="Nosetests_for_test_02_fengxian_test_fengxian_test_01_fengxian - 2018.02.27 at 11h 31m 09s.xml">
       <configuration name="Nosetests for test_02_fengxian.test_fengxian.test_01_fengxian" configurationId="tests" />
     </history-entry>
@@ -1188,6 +1105,9 @@
     <history-entry file="Nosetests_in_test_01_zhanghu_py - 2018.03.01 at 14h 40m 50s.xml">
       <configuration name="Nosetests in test_01_zhanghu.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="py_test_for_test_01_zhanghu_test_zhanghu - 2018.03.06 at 11h 47m 45s.xml">
+      <configuration name="py.test for test_01_zhanghu.test_zhanghu" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1203,20 +1123,20 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.51130855" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29007635" sideWeight="0.4838449" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23969465" sideWeight="0.4838449" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28854963" sideWeight="0.48546043" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1631664" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16558966" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45648855" sideWeight="0.4911147" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1271,7 +1191,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="整理" />
     <MESSAGE value="整理一些文件" />
     <MESSAGE value="整理一些文件或者新增的方法" />
     <MESSAGE value="增加强制获取题目的功能" />
@@ -1296,7 +1215,8 @@
     <MESSAGE value="去除无用代码块" />
     <MESSAGE value="爬图功能" />
     <MESSAGE value="去除多余图片" />
-    <option name="LAST_COMMIT_MESSAGE" value="去除多余图片" />
+    <MESSAGE value="配置文件的优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置文件的优化" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1346,57 +1266,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/self_CX/Weixin/chengshi.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-498">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/itchat/components/register.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/self_CX/Weixin/itchat.pkl" />
-    <entry file="file://$PROJECT_DIR$/self_CX/自动安装APK.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2017.3/python_stubs/-2010535109/time.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/self_CX/Weixin/Receive a message.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/self_CX/shopping/classText2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="37" column="43" lean-forward="false" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/self_CX/Weixin/Auto_reply.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/self_CX/类的使用.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1443,51 +1312,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/self_CX/贪吃蛇.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/self_CX/Weixin/send_message.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding>
-            <element signature="e#122#135#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SHD_automation/device_info/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2017.3/python_stubs/-2010535109/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2966">
-          <caret line="2563" column="8" lean-forward="false" selection-start-line="2563" selection-start-column="8" selection-end-line="2563" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SHD_automation/device_info/device.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="456" column="96" lean-forward="true" selection-start-line="456" selection-start-column="7" selection-end-line="456" selection-end-column="96" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1555,28 +1383,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/self_CX/web_zidong.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/self_CX/Weixin/dadasd.html" />
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/ntpath.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/self_CX/清理非法文件名.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1592,23 +1403,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="271" column="28" lean-forward="true" selection-start-line="271" selection-start-column="28" selection-end-line="271" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/self_CX/Weixin/friend_info.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="78" column="19" lean-forward="true" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_element/device_element.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="116" column="12" lean-forward="true" selection-start-line="116" selection-start-column="12" selection-end-line="116" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1624,7 +1418,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1632,7 +1425,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1640,7 +1432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1652,62 +1443,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/self_CX/爬取图片.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding>
-            <element signature="e#121#130#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SHD_automation/panda_case/.cache/v/cache/lastfailed">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/self_CX/发送QQ邮件.py">
+    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_log/config.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="43" column="19" lean-forward="true" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="420">
+          <caret line="28" column="48" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SHD_automation/panda_allcase/all_case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_case/test_01_zhanghu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_case/test_02_fengxian.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_log/myapp.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#122#143#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1719,10 +1475,187 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_log/config.conf">
+    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_log/myapp.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_CX/web_zidong.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="48" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+        <state relative-caret-position="105">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_CX/installApks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/panda.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2017.3/python_stubs/-2010535109/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29794">
+          <caret line="3595" column="8" lean-forward="false" selection-start-line="3595" selection-start-column="8" selection-end-line="3595" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_CX/爬取图片.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+          <folding>
+            <element signature="e#121#130#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_CX/Weixin/chengshi.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="932">
+          <caret line="350" column="3" lean-forward="true" selection-start-line="350" selection-start-column="3" selection-end-line="350" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_CX/Weixin/send_message.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="1240" column="8" lean-forward="false" selection-start-line="1240" selection-start-column="8" selection-end-line="1240" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_CX/贪吃蛇.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2012">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_case/test_01_zhanghu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-543">
+          <caret line="33" column="60" lean-forward="false" selection-start-line="33" selection-start-column="60" selection-end-line="33" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_CX/清理非法文件名.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SHD_automation/device_info/device.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_element/device_element.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_CX/Weixin/friend_info.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="78" column="19" lean-forward="false" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/email/mime/multipart.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_case/test_02_fengxian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding>
+            <element signature="e#123#144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_CX/发送带附件的QQ邮件.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_Email/send_email.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding>
+            <element signature="e#122#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_CX/发送QQ邮件.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_CX/qqemail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="72" column="23" lean-forward="false" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
           <folding />
         </state>
       </provider>

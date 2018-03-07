@@ -70,4 +70,4 @@ def qqemail(username, password):
 
 
 if __name__ == '__main__':
-    qqemail('84305510', 'orjraozjcgpybgie', )
+    qqemail('84305510',)

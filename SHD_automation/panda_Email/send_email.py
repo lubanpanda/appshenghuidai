@@ -11,7 +11,7 @@ from email.mime.application import MIMEApplication
 
 def send_QQ_Email(name):
 	username = '84305510@qq.com'
-	password = 'rplzfcgilxqbbjfe'
+	password = ''
 	sender = username
 	receivers = ','.join(['1007596772@qq.com'])
 

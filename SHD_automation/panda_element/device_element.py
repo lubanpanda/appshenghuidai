@@ -128,3 +128,7 @@ global HTMLbaogao
 HTMLbaogao={}
 HTMLbaogao['报告地址']='/Users/yuchengtao/PycharmProjects/shenghuidai/SHD_automation/panda_baogao/'
 HTMLbaogao['图片地址']='/Users/yuchengtao/PycharmProjects/shenghuidai/SHD_automation/panda_picture/'
+
+#谷歌游览器的驱动程序
+global chromdevice
+chromdevice='/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-chromedriver/chromedriver/mac/chromedriver'

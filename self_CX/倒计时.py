@@ -8,6 +8,7 @@
 #     for file in filenames:
 #         print(file)
 import sys,time
+from qqbot import _bot as bot
 
 count = 0
 while count < 10:
@@ -16,3 +17,8 @@ while count < 10:
     sys.stdout.flush()
     time.sleep(1)
     count += 1
+
+b = bot
+b.Login()
+lists = b.List('buddy')
+print(lists)

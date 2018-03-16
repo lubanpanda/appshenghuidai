@@ -34,8 +34,8 @@ def send_QQ_Email(name):
 	    client.login(username, password)
 	    client.sendmail(sender, receivers, msg.as_string())
 	    client.quit()
-	    print ('带有各种附件的邮件发送成功！')
+	    print (f'带有附件{name}的邮件发送成功！')
 	except :
 		print('邮件发送失败')
 if __name__ == '__main__':
-    send_QQ_Email('测试数据')
+    send_QQ_Email('send_email.py')

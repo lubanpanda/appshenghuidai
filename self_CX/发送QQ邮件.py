@@ -22,7 +22,7 @@ def weather(city_name):
 	fengli=soup.find('div',class_='pm')
 	feng,shidu=map(lambda a:a.string,fengli)
 
-	return (f'城市：{city_name}\n现在的温度：{now_wendu}\n最高气温：{up_wendu}\n最低温度：{low_wendu}\n天气情况:{xiangqing}\nPM值：{PM}\n舒适指数：{feng,shidu}')
+	return f'城市：{city_name}\n现在的温度：{now_wendu}\n最高气温：{up_wendu}\n最低温度：{low_wendu}\n天气情况:{xiangqing}\nPM值：{PM}\n舒适指数：{feng,shidu}'
 def mail(news):
     ret = True
     try:
@@ -35,7 +35,7 @@ def mail(news):
         server = smtplib.SMTP_SSL('smtp.qq.com', 465)
         server.login(my_sender, "fcatmurzxrvvbbeh")
         server.sendmail(my_sender, [my_user, ], msg.as_string())
-        server.set_debuglevel(1)
+        server.set_debuglevel(0)        #数字是1的话是开启debug模式
         server.quit()
     except Exception:
         ret = False

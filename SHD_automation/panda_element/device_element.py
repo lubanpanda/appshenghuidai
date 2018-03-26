@@ -131,4 +131,5 @@ HTMLbaogao['图片地址']='/Users/yuchengtao/PycharmProjects/shenghuidai/SHD_au
 
 #谷歌游览器的驱动程序
 global chromdevice
+# noinspection PyRedeclaration
 chromdevice='/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-chromedriver/chromedriver/mac/chromedriver'

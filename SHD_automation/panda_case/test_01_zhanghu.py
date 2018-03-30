@@ -66,7 +66,7 @@ class test_zhanghu(unittest.TestCase,object):
 		My_method.My_id(self,faxian['安全保障'],'click',2)
 		for a in range (6):
 			for i in range (2):
-				My_method.my_class_name_id_dianji (self,'android.widget.Image', 1+a,'click',sleep_time = 1)
+				My_method.my_class_name_id_dianji (self, 'android.widget.Image', 1 + a, 'click')
 		My_method.app_back(self)
 		My_method.My_id (self, faxian['积分商城'], 'click')
 		while True:

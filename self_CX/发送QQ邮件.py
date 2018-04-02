@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# @Author  : panda
+# @Email :  84305510@qq.com
+# @Time : 2018/3/26 15:23
 import smtplib
 from email.mime.text import MIMEText
 from email.utils import formataddr
@@ -7,7 +12,6 @@ from bs4 import BeautifulSoup
 my_sender = '1007596772@qq.com'
 my_user = "919792828@qq.com"
 def weather(city_name):
-	#logger.info("天气已经正常显示了哦")
 	url='http://m.sohu.com/weather/?city='+city_name
 	UA='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36'
 	weather_shuju=requests.get(url,headers={'User-Agent':UA})
@@ -20,15 +24,15 @@ def weather(city_name):
 	xiangqing=soup.find('em',class_='stat').string
 	PM=soup.find('p',class_='tit').string
 	fengli=soup.find('div',class_='pm')
-	feng,shidu=map(lambda a:a.string,fengli)
+	feng,shidu=map(lambda shushi:shushi.string, fengli)
 
 	return f'城市：{city_name}\n现在的温度：{now_wendu}\n最高气温：{up_wendu}\n最低温度：{low_wendu}\n天气情况:{xiangqing}\nPM值：{PM}\n舒适指数：{feng,shidu}'
 def mail(news):
-    ret = True
+    rets = True
     try:
         # with open('QQ.text','r') as e:
         #     news=e.read()
-        msg = MIMEText(news, 'plain', 'utf-8')
+        msg = MIMEText(news)
         msg['From'] = formataddr(["熊猫", my_sender])
         msg['To'] = 'entry'.join(my_user)
         msg['Subject'] = "天气预报 "
@@ -38,8 +42,8 @@ def mail(news):
         server.set_debuglevel(0)        #数字是1的话是开启debug模式
         server.quit()
     except Exception:
-        ret = False
-    return ret
+        rets = False
+    return rets
 if __name__ == '__main__':
     a=weather('太原')
     ret = mail(a)

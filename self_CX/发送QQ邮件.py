@@ -15,7 +15,6 @@ def weather(city_name):
 	url='http://m.sohu.com/weather/?city='+city_name
 	UA='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36'
 	weather_shuju=requests.get(url,headers={'User-Agent':UA})
-
 	html=weather_shuju.text
 	soup=BeautifulSoup(html,'html.parser')
 	now_wendu=soup.find('p',class_='cur').string
@@ -26,7 +25,9 @@ def weather(city_name):
 	fengli=soup.find('div',class_='pm')
 	feng,shidu=map(lambda shushi:shushi.string, fengli)
 
-	return f'城市：{city_name}\n现在的温度：{now_wendu}\n最高气温：{up_wendu}\n最低温度：{low_wendu}\n天气情况:{xiangqing}\nPM值：{PM}\n舒适指数：{feng,shidu}'
+	chengshi=f'城市：{city_name}\n现在的温度：{now_wendu}\n最高气温：{up_wendu}\n最低温度：{low_wendu}\n天气情况:{xiangqing}\nPM值：{PM}\n舒适指数：{feng,shidu}'
+	print(chengshi)
+	return chengshi
 def mail(news):
     rets = True
     try:

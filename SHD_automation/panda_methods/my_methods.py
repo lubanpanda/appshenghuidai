@@ -98,7 +98,7 @@ class My_method(object):
 			else:
 				pros = '输入内容为>>>：'
 				logging.info (u'定位控件%s,%s%s' % (classname, pros, text))
-				return self.driver.find_element_by_id (classname).set_text (text)
+				return self.driver.find_elements_by_class_name (classname)[list_id].set_text (text)
 
 	def my_class_name_shuru_dianji (self, className, text):
 		"""
@@ -268,6 +268,32 @@ class myMethod (object):
 			i += 1
 		logging.info(f'手机号为:{listUsername}')
 		return ''.join (listUsername)
+	def randomID(self):
+		"""
+
+		:return:身份证号码
+		"""
+		i = 1
+		list_username_i_d = ['2321']
+		while i <= 14:
+			Usernamecode = str (random.choice (range (10)))
+			list_username_i_d.append (Usernamecode)
+			i += 1
+		logging.info (f'身份证号:{list_username_i_d}')
+		return ''.join (list_username_i_d)
+	def bankId(self):
+		"""
+
+		:return: 银行卡号 6212260200094536345
+		"""
+		i = 1
+		kahao_id = ['6212']
+		while i <= 15:
+			Usernamecode = str (random.choice (range (10)))
+			kahao_id.append (Usernamecode)
+			i += 1
+		logging.info (f'身份证号:{kahao_id}')
+		return ''.join (kahao_id)
 
 
 	def wait_time (self, resourceid, waitTime = None):

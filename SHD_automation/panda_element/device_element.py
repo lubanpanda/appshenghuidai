@@ -25,7 +25,7 @@ module_info['项目']='com.yourenkeji.shenghuidai:id/boluos_bt_touzi'
 module_info['发现']='com.yourenkeji.shenghuidai:id/boluos_bt_faxian'
 module_info['账户']='com.yourenkeji.shenghuidai:id/boluos_bt_my'
 module_info['退出']='com.yourenkeji.shenghuidai:id/boluos_exit'
-
+module_info['存管注册']='com.yourenkeji.shenghuidai:id/home_bt_login'
 global shouye_modul
 # noinspection PyRedeclaration
 shouye_modul={}
@@ -133,3 +133,10 @@ HTMLbaogao['图片地址']='/Users/yuchengtao/PycharmProjects/shenghuidai/SHD_au
 global chromdevice
 # noinspection PyRedeclaration
 chromdevice='/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-chromedriver/chromedriver/mac/chromedriver'
+
+
+global cunguan
+
+cunguan={}
+cunguan["充值"]= 'com.yourenkeji.shenghuidai:id/my_tv_pay'
+cunguan['立即开通']='com.yourenkeji.shenghuidai:id/panzhihua_sure'

@@ -140,3 +140,6 @@ global cunguan
 cunguan={}
 cunguan["充值"]= 'com.yourenkeji.shenghuidai:id/my_tv_pay'
 cunguan['立即开通']='com.yourenkeji.shenghuidai:id/panzhihua_sure'
+cunguan['设置']='com.yourenkeji.shenghuidai:id/my_img_sz'
+cunguan['退出']='com.yourenkeji.shenghuidai:id/boluos_exit'
+cunguan['确定']='com.yourenkeji.shenghuidai:id/positiveButton'

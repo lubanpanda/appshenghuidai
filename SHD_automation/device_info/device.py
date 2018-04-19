@@ -31,7 +31,7 @@ class star_app(object):
 		self.driver = webdriver.Remote ('http://127.0.0.1:4723/wd/hub', desired_caps)
 		# Pingmu_unlock_the_screen.App_jiesuo (self)
 		self.driver.implicitly_wait(20)
-		My_method.login_turn_or_flase (self, '判断登录', 15201525754, 123456)
+		# My_method.login_turn_or_flase (self, '判断登录', 15201525754, 123456)
 		return self.driver
 
 	def tearDown (self):

@@ -26,8 +26,14 @@ class test_cunguan(unittest.TestCase,object):
 		star_app.tearDown (self)
 
 	def test_01_zhuce(self):
+		"""
+		:return:注册手机号
+		"""
 		My_method.My_id(self,module_info['存管注册'],'click')
-		My_method.My_id(self,zhuce['账号'],myMethod.randomTel(self))
+		with open ('手机号.txt', 'a+') as iphone:
+			iphone.write(myMethod.randomTel(self)+'\n')
+			number =myMethod.randomTel(self)
+		My_method.My_id(self,zhuce['账号'],number)
 		My_method.My_id(self,account['注册-下一步'],'click')
 		My_method.My_id(self,account['验证码'],123456)
 		My_method.My_id(self,account['登录密码'],123456)
@@ -35,6 +41,11 @@ class test_cunguan(unittest.TestCase,object):
 		My_method.My_id(self,zhuce['跳过'],'click')
 
 	def test_02_qianyue(self,names='张三'):
+		"""
+
+		:param names:
+		:return:签约
+		"""
 		My_method.My_id(self,module_info['账户'],'click')
 		My_method.My_id(self,cunguan["充值"],'click')
 		KT_cunguan=My_method.My_id(self,cunguan['立即开通'],'获取元素')
@@ -55,6 +66,10 @@ class test_cunguan(unittest.TestCase,object):
 			logging.info('已经开通存管账户')
 
 	def test_03_bangka(self):
+		"""
+
+		:return:绑卡
+		"""
 		My_method.My_id(self,module_info['账户'],'click')
 		My_method.My_id(self,cunguan["充值"],'click')
 		My_method.my_class_name_id_dianji(self,'android.widget.EditText',1,'click')
@@ -67,13 +82,29 @@ class test_cunguan(unittest.TestCase,object):
 		My_method.my_class_name_id_dianji(self,'android.view.View',26,myMethod.randomTel(self))
 		os.popen ('adb shell input swipe 50 1000 50 0 100')
 		My_method.my_class_name_id_dianji(self,'android.view.View',28,'click')
-		logging.info('绑卡成功')
+		bangka_chenggong=My_method.my_class_name_id_dianji(self,'android.view.View',32,'获取元素')
+		if bangka_chenggong:
+			logging.info('绑卡成功')
+			My_method.app_back(self)
+		else:
+			logging.info('绑卡失败')
+
+	def test_04_quit(self):
+		"""
+
+		:return:退出登陆
+		"""
+		My_method.My_id(self,cunguan['设置'],'click')
+		My_method.My_id(self,cunguan['退出'],'click')
+		My_method.My_id(self,cunguan['确定'],'click')
+
 
 if __name__ == '__main__':
 	suite = unittest.TestSuite ()
 	suite.addTest (test_cunguan ('test_01_zhuce'))
 	suite.addTest (test_cunguan ('test_02_qianyue'))
 	suite.addTest (test_cunguan ('test_03_bangka'))
+	suite.addTest (test_cunguan ('test_04_quit'))
 	report_file = HTMLbaogao ['报告地址'] + nowtime + "胜辉贷存管.html"
 	fp = open (report_file, 'wb')
 	baogao_info = '胜辉贷存管签约绑卡注册'

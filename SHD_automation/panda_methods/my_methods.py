@@ -397,6 +397,7 @@ class Huadong(object):
 		else:
 			logging.info("写错了哦，无法滑动")
 
+# noinspection PyUnresolvedReferences
 class jietu(object):
 	def jietu_picture(self,name):
 		"""

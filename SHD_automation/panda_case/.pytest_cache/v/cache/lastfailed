@@ -1,0 +1,6 @@
+{
+  "test_05_cunguan_zhuce.py::test_cunguan::test_01_zhuce": true,
+  "test_05_cunguan_zhuce.py::test_cunguan::test_02_qianyue": true,
+  "test_05_cunguan_zhuce.py::test_cunguan::test_03_bangka": true,
+  "test_05_cunguan_zhuce.py::test_cunguan::test_04_quit": true
+}

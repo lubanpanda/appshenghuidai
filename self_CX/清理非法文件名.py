@@ -3,7 +3,7 @@
 # @Time    : 2017/5/26 下午10:57
 # @Author  : Panda
 import os
-from pip._vendor.requests.packages import chardet
+from pip._vendor import chardet
 
 
 def file_name_is_legal(name):

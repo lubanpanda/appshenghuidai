@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="jieya">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self_CX/清理非法文件名.py" beforeDir="false" afterPath="$PROJECT_DIR$/self_CX/清理非法文件名.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -108,7 +110,7 @@
     <SUITE FILE_PATH="coverage/panda$data.coverage" NAME="data内容 Coverage Results" MODIFIED="1523585785946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX" />
     <SUITE FILE_PATH="coverage/shenghuidai$loger.coverage" NAME="loger Coverage Results" MODIFIED="1514353910332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lianxiti" />
     <SUITE FILE_PATH="coverage/panda$Unittests_in_test_05_cunguan_zhuce_py.coverage" NAME="Unittests in test_05_cunguan_zhuce.py Coverage Results" MODIFIED="1524123998504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SHD_automation/panda_case" />
-    <SUITE FILE_PATH="coverage/panda$.coverage" NAME="上标 Coverage Results" MODIFIED="1525767295252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/panda$.coverage" NAME="清理非法文件名 Coverage Results" MODIFIED="1525830931325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX" />
     <SUITE FILE_PATH="coverage/shenghuidai$login.coverage" NAME="login Coverage Results" MODIFIED="1513568019688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/panda$qqbotcls.coverage" NAME="qqbotcls Coverage Results" MODIFIED="1520926757851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/qqbot" />
     <SUITE FILE_PATH="coverage/panda$Nosetests_for_test_zhanghu_test_zhanghu.coverage" NAME="Nosetests for test_zhanghu.test_zhanghu Coverage Results" MODIFIED="1515810960692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SHD_automation/panda_case" />
@@ -204,23 +206,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="反射.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="反射.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/self_CX/反射.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
-              <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my_methods.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="my_methods.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SHD_automation/panda_methods/my_methods.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="862">
-              <caret line="297" selection-start-line="297" selection-end-line="297" />
+            <state relative-caret-position="-1112">
+              <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
               <folding>
                 <element signature="e#83#96#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="清理非法文件名.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/self_CX/清理非法文件名.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -318,7 +329,6 @@
         <option value="$PROJECT_DIR$/SHD_automation/panda_case/test_01_zhanghu.py" />
         <option value="$PROJECT_DIR$/self_CX/打酱油的.py" />
         <option value="$PROJECT_DIR$/self_CX/酱油.py" />
-        <option value="$PROJECT_DIR$/self_CX/清理非法文件名.py" />
         <option value="$PROJECT_DIR$/self_CX/胜辉贷接口.py" />
         <option value="$PROJECT_DIR$/SHD_automation/panda_case/test_05_kaihu_bangka.py" />
         <option value="$PROJECT_DIR$/self_CX/installApks.py" />
@@ -337,8 +347,6 @@
         <option value="$PROJECT_DIR$/SHD_automation/panda_Email/send_email.py" />
         <option value="$PROJECT_DIR$/self_CX/Weixin/__init__.py" />
         <option value="$PROJECT_DIR$/SHD_automation/device_info/device.py" />
-        <option value="$PROJECT_DIR$/SHD_automation/panda_methods/my_methods.py" />
-        <option value="$PROJECT_DIR$/SHD_automation/panda_case/test_05_cunguan_zhuce.py" />
         <option value="$PROJECT_DIR$/SHD_automation/device_info/__init__.py" />
         <option value="$USER_HOME$/Downloads/runsimulator.py" />
         <option value="$PROJECT_DIR$/self_CX/main.py" />
@@ -360,6 +368,9 @@
         <option value="$PROJECT_DIR$/SHD_automation/panda_case/test_02_fengxian.py" />
         <option value="$PROJECT_DIR$/self_CX/zip解压.py" />
         <option value="$PROJECT_DIR$/上标.py" />
+        <option value="$PROJECT_DIR$/SHD_automation/panda_methods/my_methods.py" />
+        <option value="$PROJECT_DIR$/self_CX/清理非法文件名.py" />
+        <option value="$PROJECT_DIR$/SHD_automation/panda_case/test_05_cunguan_zhuce.py" />
       </list>
     </option>
   </component>
@@ -419,6 +430,29 @@
               <item name="panda" type="b2602c69:ProjectViewProjectNode" />
               <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
               <item name="self_CX" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
+              <item name="SHD_automation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
+              <item name="SHD_automation" type="462c0819:PsiDirectoryNode" />
+              <item name="panda_case" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
+              <item name="SHD_automation" type="462c0819:PsiDirectoryNode" />
+              <item name="panda_element" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
+              <item name="SHD_automation" type="462c0819:PsiDirectoryNode" />
+              <item name="panda_methods" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -489,7 +523,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.上标">
+  <component name="RunManager" selected="Python.清理非法文件名">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <module name="shenghuidai" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -571,7 +605,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="2e32e23e" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="清理非法文件名" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="panda" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -584,7 +618,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/self_CX/装饰器.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/self_CX/清理非法文件名.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -1077,19 +1111,19 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list>
-      <item itemvalue="Python.2e32e23e" />
       <item itemvalue="Python.__init__" />
       <item itemvalue="Python.反射" />
       <item itemvalue="Python.zip解压" />
       <item itemvalue="Python.上标" />
+      <item itemvalue="Python.清理非法文件名" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.清理非法文件名" />
         <item itemvalue="Python.上标" />
         <item itemvalue="Python.zip解压" />
         <item itemvalue="Python.__init__" />
         <item itemvalue="Python.反射" />
-        <item itemvalue="Python.2e32e23e" />
       </list>
     </recent_temporary>
   </component>
@@ -1103,13 +1137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511416187661</updated>
-    </task>
-    <task id="LOCAL-00091" summary="。。。">
-      <created>1517019089096</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1517019089096</updated>
     </task>
     <task id="LOCAL-00092" summary="优化地址">
       <created>1517019170208</created>
@@ -1447,7 +1474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1525760985165</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="jieya">
+      <created>1525772362883</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1525772362883</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1493,11 +1527,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="23" width="1280" height="773" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32924962" />
+      <window_info anchor="bottom" id="Messages" order="8" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.40549272" side_tool="true" weight="0.32771823" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="1" sideWeight="0.5945073" weight="0.2588055" />
+      <window_info anchor="bottom" id="Run" order="1" sideWeight="0.5945073" visible="true" weight="0.2588055" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.47738287" weight="0.287902" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.287902" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49919224" weight="0.28177643" />
@@ -1515,7 +1551,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="13" sideWeight="0.48869145" weight="0.32924962" />
-      <window_info anchor="bottom" id="Messages" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1715,13 +1750,6 @@
         <state relative-caret-position="-1417" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/self_CX/清理非法文件名.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/self_CX/qqemail.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -1835,16 +1863,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-600">
           <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_case/test_05_cunguan_zhuce.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="59" />
-          <folding>
-            <element signature="e#123#144#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1983,20 +2001,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/self_CX/反射.py">
+    <entry file="file://$PROJECT_DIR$/self_CX/清理非法文件名.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        <state relative-caret-position="60">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SHD_automation/panda_methods/my_methods.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="862">
-          <caret line="297" selection-start-line="297" selection-end-line="297" />
+        <state relative-caret-position="-1112">
+          <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
           <folding>
             <element signature="e#83#96#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_case/test_05_cunguan_zhuce.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+          <folding>
+            <element signature="e#123#144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_CX/反射.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
         </state>
       </provider>
     </entry>

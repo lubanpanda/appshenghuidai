@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="可变参数">
-      <change afterPath="$PROJECT_DIR$/ATM/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ATM/bin/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ATM/bin/atm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ATM/conf/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ATM/conf/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ATM/core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ATM/core/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ATM/core/db_handle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ATM/core/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ATM/db/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ATM/db/accounts/123456.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ATM/db/accounts/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ATM/log/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ATM/log/atm_log.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ATM/log/config.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SHD_automation/panda_toubiao/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SHD_automation/panda_toubiao/投标.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/self_CX/congit.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/self_CX/text_01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SHD_automation/panda_element/device_element.py" beforeDir="false" afterPath="$PROJECT_DIR$/SHD_automation/panda_element/device_element.py" afterDir="false" />
-    </list>
+    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -216,14 +194,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ATM/core/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            <state relative-caret-position="180">
+              <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
               <folding>
                 <element signature="e#67#92#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="device_element.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SHD_automation/panda_element/device_element.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -452,48 +439,6 @@
             <path>
               <item name="panda" type="b2602c69:ProjectViewProjectNode" />
               <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
-              <item name="ATM" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
-              <item name="ATM" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
-              <item name="ATM" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
-              <item name="ATM" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
-              <item name="ATM" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
-              <item name="ATM" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="accounts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
-              <item name="ATM" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="panda" type="b2602c69:ProjectViewProjectNode" />
@@ -1367,20 +1312,6 @@
       <option name="presentableId" value="Default" />
       <updated>1511416187661</updated>
     </task>
-    <task id="LOCAL-00095" summary="摇摇球">
-      <created>1518655672645</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1518655672645</updated>
-    </task>
-    <task id="LOCAL-00096" summary="本地购物车">
-      <created>1518701917687</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1518701917688</updated>
-    </task>
     <task id="LOCAL-00097" summary="微信的简单功能">
       <created>1518742422429</created>
       <option name="number" value="00097" />
@@ -1710,7 +1641,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527903670229</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="可变参数">
+      <created>1528901107892</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1528901107892</updated>
+    </task>
+    <task id="LOCAL-00145" summary="可变参数">
+      <created>1528901131124</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1528901131125</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1756,14 +1701,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32924962" />
+      <window_info anchor="bottom" id="Messages" order="8" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.47334412" side_tool="true" weight="0.3047473" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.53958" weight="0.2863706" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.53958" visible="true" weight="0.2863706" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.5323102" weight="0.32618684" />
-      <window_info active="true" anchor="bottom" id="Run" order="1" sideWeight="0.5266559" visible="true" weight="0.3078101" />
+      <window_info anchor="bottom" id="Run" order="1" sideWeight="0.5266559" weight="0.3078101" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4983845" weight="0.28177643" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4977029" visible="true" weight="0.20678514" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -1776,7 +1721,6 @@
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="13" sideWeight="0.48869145" weight="0.32924962" />
@@ -2131,13 +2075,6 @@
         <state relative-caret-position="-4878" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_element/device_element.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SHD_automation/panda_log/log.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -2231,11 +2168,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ATM/core/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        <state relative-caret-position="180">
+          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
           <folding>
             <element signature="e#67#92#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_element/device_element.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
         </state>
       </provider>
     </entry>

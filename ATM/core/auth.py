@@ -10,6 +10,12 @@ from ATM.log.atm_log import *
 
 
 def acc_auch(accout, password):
+	"""
+	:param accout: 账户
+	:param password: 登陆密码
+	:return:
+	"""
+	#返回当前的路径信息，通过配置信息来验证是否正确
 	db_path=db_handle.db_handle(settings.DATABASE)
 	account_file= f"{db_path}/{accout}.json"
 	print(account_file)
@@ -29,6 +35,11 @@ def acc_auch(accout, password):
 
 
 def acc_login(user_data):
+	"""
+
+	:param user_data:是否已经认证
+	:return:
+	"""
 	retry_count=0
 	while user_data['is_authenticated'] is not True and retry_count<3:
 		accout=input('请输入你的账号'.strip()+os.linesep)

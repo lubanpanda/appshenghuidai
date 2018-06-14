@@ -11,7 +11,7 @@ from ATM.log.atm_log import *
 #临时的账户数据记录
 user_data={
 	'account_id':None,#账户的名字
-	'is_authenticated':False,#验证是否通关
+	'is_authenticated':False,#验证是否通过，通过后为TRUE
 	'account_data':None #账户详情
 }
 def account_info(acc_data=user_data['account_data']):
@@ -116,7 +116,7 @@ def transfer(acc_data):
 
 
 def run():
-	acc_data=auth.acc_login(user_data)
-	if user_data['is_authenticated']:
+	acc_data=auth.acc_login(user_data)  #判断是否登陆
+	if user_data['is_authenticated']:   #如果没有认证就更改下状态
 		user_data['account_data']=acc_data
-		interactive(user_data)
+		interactive(user_data)          #与用户的交互

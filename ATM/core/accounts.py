@@ -7,6 +7,11 @@ import json
 
 
 def load_current_balane(account_id):
+	"""
+
+	:param account_id:用户名
+	:return:
+	"""
 	db_path = db_handle.db_handle (settings.DATABASE)
 	account_file = f"{db_path}/{account_id}.json"
 	with open(account_file) as f:
@@ -14,6 +19,11 @@ def load_current_balane(account_id):
 		return acc_data
 
 def dump_account(account_data):
+	"""
+
+	:param account_data:用户总信息
+	:return:
+	"""
 	db_path = db_handle.db_handle (settings.DATABASE)
 	account_file = f"{db_path}/{account_data['id']}.json"
 	with open (account_file,'w') as f:

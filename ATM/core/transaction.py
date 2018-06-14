@@ -10,7 +10,7 @@ def mak_transaction(account_data,tran_type,amount):
 
 	:param account_data: 账户信息
 	:param tran_type: 交易类型
-	:param amount:要取得钱
+	:param amount:要交易的钱
 	:return:
 	"""
 	amount=float(amount)

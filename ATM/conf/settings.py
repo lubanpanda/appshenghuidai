@@ -2,7 +2,16 @@
 # -*- coding: utf-8 -*-
 # @Author  : panda  
 import os
+"""
+DATABASE：
+模拟数据库的账号做一个拓展，验证信息和用户名，正确后才可以进行转账存款等相应的操作
 
+
+
+TRANSACTION_TYPE：
+通过设置一个字典直接进行加减的操作(加plus，减minus)，通过判断交易的类型而直接进行运算而不必每次都去做下判断
+
+"""
 BASE_DIR=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 DATABASE={

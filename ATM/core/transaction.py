@@ -54,19 +54,3 @@ def mak_reimbursement(account_data,shoukuan_id):
 		return account_data,too_info
 	else:
 		print("你输入的金额有误，请重新输入")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -53,7 +53,7 @@ def interactive(acc_data):
 
 def withdrae(acc_data):
 	account_data=load_current_balane(acc_data['account_id'])
-	print(account_data)
+	# print(account_data)
 	infp=f"""
 	---------欢迎使用panda银行系统-----------
 	你的信用值是：{account_data['credit']}
@@ -66,7 +66,7 @@ def withdrae(acc_data):
 		if len(qukuan_money)>0 and qukuan_money.isdigit():
 			new_balance=mak_transaction(account_data,'repay',qukuan_money)
 			if new_balance:
-				print("取钱成功")
+				print("存款成功")
 			interactive(acc_data)
 		else:
 			print("你输入的金额有误，请重新输入,或者输入0选择退出进行其他操作")
@@ -80,7 +80,34 @@ def pay_check(acc_data):
 	pass
 
 def repay(acc_data):
-	pass
+	account_data=load_current_balane(acc_data['account_id'])
+	infp=f"""
+		---------欢迎使用panda银行系统-----------
+		你的信用值是：{account_data['credit']}
+		你需要还款金额是：{account_data['repay']}
+		"""
+	print(infp)
+	back_flag=False
+	if not back_flag:
+		huankuan_money=input("请输入你要存款的金额或者输入0选择退出进行其他操作:").strip()
+		if len(huankuan_money)>0 and huankuan_money.isdigit():
+			huanqian=account_data['repay']
+			if abs(huanqian)>=int(huankuan_money):
+				print("还款金额输入正确")
+				huanqian += int (huankuan_money)
+				account_data['repay']=huanqian
+				huankuan_qian = mak_transaction (account_data, 'withdraw', huankuan_money)
+				print(f"现在的账户余额还有{huankuan_qian['balance']}")
+				if huanqian==0:
+					print("你的所有账款已还清")
+				else:
+					print(f"还有{account_data['repay']}未还")
+				interactive(acc_data)
+
+			else:
+				print(f"还款金额输入错误或者你已经还清了所有的欠款")
+				interactive(acc_data)
+
 
 def transfer(acc_data):
 	pass

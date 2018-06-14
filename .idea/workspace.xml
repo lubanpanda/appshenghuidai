@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+    <list id="5cf675aa-ca75-4f95-9449-9ebdc19cd182" name="可变参数" comment="">
+      <change afterPath="$PROJECT_DIR$/self_CX/congit.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_CX/text_01.py" afterDir="false" />
+    </list>
     <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/ATM/core/accounts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ATM/core/transaction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ATM/conf/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/conf/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ATM/core/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/core/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ATM/db/accounts/123456.json" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/db/accounts/123456.json" afterDir="false" />
-    </list>
-    <list id="5cf675aa-ca75-4f95-9449-9ebdc19cd182" name="可变参数" comment="">
-      <change afterPath="$PROJECT_DIR$/self_CX/congit.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/self_CX/text_01.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,7 +54,7 @@
     <SUITE FILE_PATH="coverage/shenghuidai$Nosetests_for_test_case_login_Test_login_test09.coverage" NAME="Nosetests for test_case_login.Test_login.test09 Coverage Results" MODIFIED="1514274281670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fengfan_unittest/feng_test_case" />
     <SUITE FILE_PATH="coverage/panda$Nosetests_for_test_02_fengxian_test_fengxian_test_01_fengxian.coverage" NAME="Nosetests for test_02_fengxian.test_fengxian.test_01_fengxian Coverage Results" MODIFIED="1519726687263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SHD_automation/panda_case" />
     <SUITE FILE_PATH="coverage/panda$QQ.coverage" NAME="发送QQ邮件 Coverage Results" MODIFIED="1528845746852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX" />
-    <SUITE FILE_PATH="coverage/panda$atm.coverage" NAME="atm Coverage Results" MODIFIED="1528938779514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ATM/bin" />
+    <SUITE FILE_PATH="coverage/panda$atm.coverage" NAME="atm Coverage Results" MODIFIED="1528943402446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ATM/bin" />
     <SUITE FILE_PATH="coverage/panda$Nosetests_for_test_05_anquan_gl_test_anquan.coverage" NAME="Nosetests for test_05_anquan_gl.test_anquan Coverage Results" MODIFIED="1516607495986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SHD_automation/panda_case" />
     <SUITE FILE_PATH="coverage/panda$my_jiekou_methods.coverage" NAME="my_jiekou_methods Coverage Results" MODIFIED="1515143842661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SHD_automation/panda_jiekou" />
     <SUITE FILE_PATH="coverage/shenghuidai$hongbao.coverage" NAME="hongbao Coverage Results" MODIFIED="1512642295577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interfaces" />
@@ -207,13 +204,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ATM/core/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1133">
-              <caret line="80" column="35" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
+            <state relative-caret-position="170">
+              <caret line="95" column="33" lean-forward="true" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
               <folding>
                 <element signature="e#67#92#0" expanded="true" />
+                <element signature="e#1710#1716#0" />
+                <element signature="e#1744#1748#0" />
+                <element signature="e#1803#1807#0" />
               </folding>
             </state>
           </provider>
@@ -222,7 +222,7 @@
       <file leaf-file-name="accounts.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ATM/core/accounts.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
+            <state relative-caret-position="330">
               <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
               <folding>
                 <element signature="e#66#95#0" expanded="true" />
@@ -235,7 +235,7 @@
         <entry file="file://$PROJECT_DIR$/ATM/db/accounts/123456.json">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="141" selection-start-column="141" selection-end-column="141" />
+              <caret column="21" selection-start-column="16" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -243,8 +243,8 @@
       <file leaf-file-name="transaction.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ATM/core/transaction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="20" column="51" lean-forward="true" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+            <state relative-caret-position="107">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
               <folding>
                 <element signature="e#66#95#0" expanded="true" />
               </folding>
@@ -264,11 +264,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ATM/conf/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+            <state relative-caret-position="225">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -397,11 +397,11 @@
         <option value="$PROJECT_DIR$/ATM/log/config.conf" />
         <option value="$PROJECT_DIR$/ATM/bin/atm.py" />
         <option value="$PROJECT_DIR$/SHD_automation/device_info/device.py" />
-        <option value="$PROJECT_DIR$/ATM/conf/settings.py" />
         <option value="$PROJECT_DIR$/ATM/core/accounts.py" />
-        <option value="$PROJECT_DIR$/ATM/core/main.py" />
-        <option value="$PROJECT_DIR$/ATM/core/transaction.py" />
+        <option value="$PROJECT_DIR$/ATM/conf/settings.py" />
         <option value="$PROJECT_DIR$/ATM/db/accounts/123456.json" />
+        <option value="$PROJECT_DIR$/ATM/core/transaction.py" />
+        <option value="$PROJECT_DIR$/ATM/core/main.py" />
       </list>
     </option>
   </component>
@@ -1327,20 +1327,6 @@
       <option name="presentableId" value="Default" />
       <updated>1511416187661</updated>
     </task>
-    <task id="LOCAL-00098" summary="微信的简单功能">
-      <created>1518779332675</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1518779332675</updated>
-    </task>
-    <task id="LOCAL-00099" summary="微信的简单功能">
-      <created>1518779763573</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1518779763573</updated>
-    </task>
     <task id="LOCAL-00100" summary="微信的简单功能">
       <created>1518781971801</created>
       <option name="number" value="00100" />
@@ -1670,7 +1656,21 @@
       <option name="project" value="LOCAL" />
       <updated>1528901269185</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="优化ATM">
+      <created>1528938840437</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1528938840437</updated>
+    </task>
+    <task id="LOCAL-00148" summary="优化存款">
+      <created>1528940311315</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1528940311315</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1716,7 +1716,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32924962" />
       <window_info anchor="bottom" id="Messages" order="8" />
@@ -1726,7 +1725,7 @@
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.5323102" weight="0.32618684" />
       <window_info active="true" anchor="bottom" id="Run" order="1" sideWeight="0.5266559" visible="true" weight="0.287902" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4983845" weight="0.28177643" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4977029" visible="true" weight="0.11147011" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4977029" visible="true" weight="0.21243942" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32956383" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32956383" />
@@ -1814,8 +1813,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加一些注释" />
-    <MESSAGE value="关于微信的功能" />
     <MESSAGE value="修改一些配置信息" />
     <MESSAGE value="规范代码" />
     <MESSAGE value="修改元素名称" />
@@ -1839,17 +1836,12 @@
     <MESSAGE value="jieya" />
     <MESSAGE value="新的库" />
     <MESSAGE value="可变参数" />
-    <option name="LAST_COMMIT_MESSAGE" value="可变参数" />
+    <MESSAGE value="优化ATM" />
+    <MESSAGE value="优化存款" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化存款" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ATM/core/transaction.py</url>
-          <line>27</line>
-          <option name="timeStamp" value="232" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -2197,7 +2189,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ATM/core/accounts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
+        <state relative-caret-position="330">
           <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
           <folding>
             <element signature="e#66#95#0" expanded="true" />
@@ -2205,22 +2197,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ATM/core/transaction.py">
+    <entry file="file://$PROJECT_DIR$/ATM/conf/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="20" column="51" lean-forward="true" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-          <folding>
-            <element signature="e#66#95#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ATM/core/main.py">
+    <entry file="file://$PROJECT_DIR$/ATM/core/transaction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1133">
-          <caret line="80" column="35" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
+        <state relative-caret-position="107">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
           <folding>
-            <element signature="e#67#92#0" expanded="true" />
+            <element signature="e#66#95#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2228,14 +2217,20 @@
     <entry file="file://$PROJECT_DIR$/ATM/db/accounts/123456.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="141" selection-start-column="141" selection-end-column="141" />
+          <caret column="21" selection-start-column="16" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ATM/conf/settings.py">
+    <entry file="file://$PROJECT_DIR$/ATM/core/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        <state relative-caret-position="170">
+          <caret line="95" column="33" lean-forward="true" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
+          <folding>
+            <element signature="e#67#92#0" expanded="true" />
+            <element signature="e#1710#1716#0" />
+            <element signature="e#1744#1748#0" />
+            <element signature="e#1803#1807#0" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -25,7 +25,7 @@ def interactive(acc_data):
 	---------welcome to panda bank----------
 	1.账户信息
 	2.还款功能
-	3.取款功能
+	3.存款功能
 	4.转账
 	5.账单
 	6.退出
@@ -51,20 +51,6 @@ def interactive(acc_data):
 		else:
 			print('输入的序号错误，请重新输入')
 
-
-
-def logout(acc_data):
-	pass
-
-def pay_check(acc_data):
-	pass
-
-def repay(acc_data):
-	pass
-
-def transfer(acc_data):
-	pass
-
 def withdrae(acc_data):
 	account_data=load_current_balane(acc_data['account_id'])
 	print(account_data)
@@ -75,15 +61,31 @@ def withdrae(acc_data):
 	"""
 	print(infp)
 	back_flag=False
-	while not back_flag:
-		qukuan_money=input("请输入你要存款的金额:").strip()
+	if not back_flag:
+		qukuan_money=input("请输入你要存款的金额或者输入0选择退出进行其他操作:").strip()
 		if len(qukuan_money)>0 and qukuan_money.isdigit():
 			new_balance=mak_transaction(account_data,'repay',qukuan_money)
 			if new_balance:
 				print("取钱成功")
+			interactive(acc_data)
 		else:
-			print("你输入的金额有误，请重新输入")
-			continue
+			print("你输入的金额有误，请重新输入,或者输入0选择退出进行其他操作")
+
+
+
+def logout(acc_data):
+	exit()
+
+def pay_check(acc_data):
+	pass
+
+def repay(acc_data):
+	pass
+
+def transfer(acc_data):
+	pass
+
+
 
 
 def run():

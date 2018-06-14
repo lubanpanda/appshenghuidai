@@ -22,3 +22,11 @@ def db_handle(coon_parms):
 	"""
 	if coon_parms['engine']=='file_storage':
 		return file_db_handle(coon_parms)
+
+def too_file_db_handles(conn_params):
+	db_paths=f"{conn_params['path']}/{conn_params['too_name']}"
+	return db_paths
+
+def too_db_handle(conn_params):
+	if conn_params['names']=='panda':
+		return too_file_db_handles(conn_params)

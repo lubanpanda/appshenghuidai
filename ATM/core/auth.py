@@ -18,7 +18,7 @@ def acc_auch(accout, password):
 	#返回当前的路径信息，通过配置信息来验证是否正确
 	db_path=db_handle.db_handle(settings.DATABASE)
 	account_file= f"{db_path}/{accout}.json"
-	print(account_file)
+	# print(account_file)
 	if os.path.isfile(account_file):
 		with open(account_file,'r') as f:
 			account_data=json.load(f)

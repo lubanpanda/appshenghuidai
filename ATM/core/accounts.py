@@ -18,6 +18,18 @@ def load_current_balane(account_id):
 		acc_data=json.load(f)
 		return acc_data
 
+def loads_current_balane(account_id):
+	"""
+
+	:param account_id:用户名
+	:return:
+	"""
+	db_path = db_handle.too_db_handle(settings.DATABASE)
+	account_file = f"{db_path}/{account_id}.json"
+	with open(account_file) as f:
+		acc_data=json.load(f)
+		return acc_data
+
 def dump_account(account_data):
 	"""
 
@@ -29,6 +41,13 @@ def dump_account(account_data):
 	with open (account_file,'w') as f:
 		acc_data=json.dump(account_data,f)
 		return  True
+
+def dumps_account(accounts_data):
+	db_path = db_handle.too_db_handle (settings.DATABASE)
+	account_file = f"{db_path}/{accounts_data['id']}.json"
+	with open (account_file, 'w') as f:
+		acc_data = json.dump (accounts_data, f)
+		return True
 
 if __name__ == '__main__':
 	# load_current_balane('123456')

@@ -17,7 +17,10 @@ BASE_DIR=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATABASE={
 	'engine':'file_storage',
 	'name':'accounts',
-	'path':f'{BASE_DIR}/db'
+	'names':'panda',
+	'too_name':'Paymentaccount',
+	'path':f'{BASE_DIR}/db',
+	"paths":f"{BASE_DIR}/Paymentaccount"
 }
 
 TRANSACTION_TYPE={

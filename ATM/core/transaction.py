@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Author  : panda
 from ATM.conf import settings
-from ATM.core.accounts import dump_account
+from ATM.core.accounts import dump_account, loads_current_balane, dumps_account
 
 
 def mak_transaction(account_data,tran_type,amount):
@@ -30,3 +30,43 @@ def mak_transaction(account_data,tran_type,amount):
 		return account_data
 	else:
 		print("交易类型没有被找到")
+
+def mak_reimbursement(account_data,shoukuan_id):
+	"""
+
+	:param account_id:转账人
+	:param shoukuan_id: 接收人
+	:return:
+	"""
+	now_balanes=account_data['balance']
+	too_info= loads_current_balane (shoukuan_id)
+	now_too_balanes=too_info['balance']
+	zhuan_money=float(input("请输入要转账的金额").strip())
+	if zhuan_money>0:
+		now_balanes -= float(zhuan_money)
+		now_too_balanes += float(zhuan_money)
+		account_data['balance']=now_balanes
+		too_info['balance']=now_too_balanes
+		dump_account(account_data)
+		dumps_account(too_info)
+		print (f"转账成功,自己金额还剩余{account_data['balance']},现在借款方为{too_info['balance']}元")
+
+		return account_data,too_info
+	else:
+		print("你输入的金额有误，请重新输入")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

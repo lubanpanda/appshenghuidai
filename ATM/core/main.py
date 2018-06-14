@@ -3,8 +3,8 @@
 # @Author  : panda
 
 from ATM.core import auth
-from ATM.core.accounts import load_current_balane
-from ATM.core.transaction import mak_transaction
+from ATM.core.accounts import load_current_balane, loads_current_balane
+from ATM.core.transaction import mak_transaction, mak_reimbursement
 from ATM.log.atm_log import *
 
 
@@ -110,7 +110,27 @@ def repay(acc_data):
 
 
 def transfer(acc_data):
-	pass
+	account_data = load_current_balane (acc_data ['account_id'])
+	infp = f"""
+			---------欢迎使用panda银行系统-----------
+			你的信用值是：{account_data['credit']}
+			你账户金额是：{account_data['balance']}
+			"""
+	print (infp)
+	shoukuan_flag=False
+	if not shoukuan_flag:
+		shoukuan_id=input('请输入收款方账户的6位id：').strip()
+		if shoukuan_id:
+			try:
+				accounts_data = loads_current_balane (shoukuan_id)
+				print(f"现在借款方金额为{accounts_data['balance']}元")
+				if len(shoukuan_id)==6 and shoukuan_id.isdigit():
+					huankuan_info=mak_reimbursement(account_data,shoukuan_id)
+					print("请选择其他服务")
+					interactive(acc_data)
+			except Exception :
+				print("没有此账号，请重新选择服务")
+				interactive(acc_data)
 
 
 

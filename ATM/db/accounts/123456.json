@@ -1,9 +1,1 @@
-{
-  "status":0,
-  "password":"abcd",
-  "pay_dat":22,
-  "balance":16000,
-  "interest":0,
-  "expire_date":"2020-01-01"
-
-}
+{"id": 123456, "status": 0, "password": "abcd", "pay_dat": 22, "credit": 100, "balance": 16100.0, "interest": 0, "expire_date": "2020-01-01"}

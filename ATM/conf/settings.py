@@ -10,3 +10,11 @@ DATABASE={
 	'name':'accounts',
 	'path':f'{BASE_DIR}/db'
 }
+
+TRANSACTION_TYPE={
+	'repay':{'action':'plus','interest':0},#还款
+	'withdraw': {'action': 'minus', 'interest': 0.05},#取钱
+	'transfer': {'action': 'minus', 'interest': 0.05},#转账
+	'consume': {'action': 'minus', 'interest': 0},#刷卡
+
+}

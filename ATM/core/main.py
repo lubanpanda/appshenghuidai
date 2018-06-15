@@ -27,8 +27,7 @@ def interactive(acc_data):
 	2.还款功能
 	3.存款功能
 	4.转账
-	5.账单
-	6.退出
+	5.退出
 	
 	'''
 	menu_dic={
@@ -36,8 +35,7 @@ def interactive(acc_data):
 		'2':repay,
 		'3':withdrae,
 		'4':transfer,
-		'5':pay_check,
-		'6':logout
+		'5':logout
 	}
 
 	exit_flag=False
@@ -73,11 +71,8 @@ def withdrae(acc_data):
 
 
 
-def logout(acc_data):
+def logout():
 	exit()
-
-def pay_check(acc_data):
-	pass
 
 def repay(acc_data):
 	account_data=load_current_balane(acc_data['account_id'])

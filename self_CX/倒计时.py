@@ -22,3 +22,9 @@ b = bot
 b.Login()
 lists = b.List('buddy')
 print(lists)
+
+import configparser
+conf=configparser.ConfigParser()
+info=conf.read('congit.ini')
+print(info)
+print(conf['bitbucket.org']['User'])

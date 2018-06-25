@@ -7,6 +7,9 @@
 import itchat
 import time
 import xlwt
+import os
+
+PATH=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 class weixin(object):
 	"""
@@ -71,7 +74,8 @@ class weixin(object):
 		head = ['备注', '网名', '性别', '微信ID', '城市', '个性签名', '省份']
 		for b in range (7):
 			self.sheet.write (0, b, head [b])
-		self.book.save ('../Weixin/'+self.name+'.xls')
+		# self.book.save ('../Weixin/'+self.name+'.xls')
+		self.book.save(PATH+'/Weixin/'+self.name+'.xls')
 		print(f'一共有{feiend_number}位好友，男孩子有{boy}个，女孩子有{girl}个')
 
 if __name__ == '__main__':

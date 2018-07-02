@@ -71,7 +71,8 @@ def withdrae(acc_data):
 
 
 
-def logout():
+def logout(acc_data):
+	acc_data=0
 	exit()
 
 def repay(acc_data):

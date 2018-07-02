@@ -42,6 +42,7 @@
           <option value="SHD_automation.panda_case.test_02_fengxian.test_fengxian.driver" />
           <option value="pip._vendor.requests.packages.chardet" />
           <option value="ATM.core.transaction.accounts" />
+          <option value="shenghuidai.ATM.bin.atm.*" />
         </list>
       </option>
     </inspection_tool>

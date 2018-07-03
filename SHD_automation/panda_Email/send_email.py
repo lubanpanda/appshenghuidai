@@ -11,7 +11,7 @@ from email.mime.application import MIMEApplication
 
 def send_QQ_Email(name):
 	username = '1007596772@qq.com'
-	password = 'fcatmurzxrvvbbeh'
+	password = 'jpqlxgdlwcdlbdfa'
 	sender = username
 	receivers = ','.join(['84305510@qq.com'])
 
@@ -35,7 +35,7 @@ def send_QQ_Email(name):
 	    client.sendmail(sender, receivers, msg.as_string())
 	    client.quit()
 	    print (f'带有附件{name}的邮件发送成功！')
-	except :
-		print('邮件发送失败')
+	except Exception as e :
+		print('邮件发送失败',e)
 if __name__ == '__main__':
     send_QQ_Email('send_email.py')

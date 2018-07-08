@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Author  : panda
-from ATM.conf import settings
-from ATM.core.accounts import dump_account, loads_current_balane, dumps_account
-import random
+import time
 
+from ATM.conf import settings
+from ATM.core.accounts import dump_account, loads_current_balane, dumps_account, save_red_info
+import random
+import os
 
 def mak_transaction(account_data,tran_type,amount):
 	"""
@@ -62,3 +64,31 @@ def Save_gade_money(account_data,money):
 	print('现在的金额为%s元'%account_data ['balance'])
 	return account_data,money
 
+def qiang_red(Q_money):
+	nowtime = time.strftime ('%Y-%m-%d %H:%M:%S', time.localtime ())
+	namess=time.time()
+	people=1
+	money_too=Q_money
+	sum_noney=0
+	reds_info=[]
+	# shengyu_money=Q_money
+	while True:
+		everone_money=round(random.uniform(0,money_too),2)
+		if money_too <0.001:
+			print('红包已经被抢光了')
+			break
+		else:
+			money_too = money_too - everone_money
+			red_info=str(namess)+"第{0}个人抢了{1}元".format(people,everone_money)+os.linesep
+			reds_info.append(red_info)
+			print(red_info)
+			people+=1
+			sum_noney=sum_noney+everone_money
+			continue
+	qiangzou_bao= f"一共{sum_noney}元红包被抢走"
+	reds_info.append(qiangzou_bao)
+	print(qiangzou_bao)
+	for i in reds_info:
+		save_red_info(i,nowtime)
+if __name__ == '__main__':
+    qiang_red(100)

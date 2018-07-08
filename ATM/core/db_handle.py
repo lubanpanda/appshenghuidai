@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Author  : panda  
-
+import os
+from ATM.conf import settings
 
 def file_db_handle(conn_params):
 	"""
@@ -30,3 +31,8 @@ def too_file_db_handles(conn_params):
 def too_db_handle(conn_params):
 	if conn_params['names']=='panda':
 		return too_file_db_handles(conn_params)
+
+
+def red_path(conn_params):
+	db_paths = f"{conn_params['red_path']}"
+	return db_paths

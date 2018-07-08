@@ -4,8 +4,8 @@
 import os
 
 from ATM.core import auth
-from ATM.core.accounts import load_current_balane, loads_current_balane
-from ATM.core.transaction import mak_transaction, mak_reimbursement, Save_gade_money
+from ATM.core.accounts import *
+from ATM.core.transaction import *
 from ATM.log.atm_log import *
 
 
@@ -90,6 +90,8 @@ def Send_a_red(acc_data):
 				else:
 					print('红包发送成功')
 					Save_gade_money(account_data,send_grad)
+					print(f'哇，有人发{send_grad}红包了，大家快来抢吧')
+					qiang_red(int(send_grad))
 
 			else:
 				print('你输入的金额有误')
@@ -97,7 +99,8 @@ def Send_a_red(acc_data):
 		return send_grad
 
 def logout(acc_data):
-	acc_data=None
+	account_data=load_current_balane(acc_data['account_id'])
+	print(account_data['id'])
 	exit()
 
 def repay(acc_data):

@@ -20,7 +20,8 @@ DATABASE={
 	'names':'panda',
 	'too_name':'Paymentaccount',
 	'path':f'{BASE_DIR}/db',
-	"paths":f"{BASE_DIR}/Paymentaccount"
+	"paths":f"{BASE_DIR}/Paymentaccount",
+	"red_path":f"{BASE_DIR}/db/Redenvelopesnatcher/"      #抢红包的名单
 }
 
 TRANSACTION_TYPE={

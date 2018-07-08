@@ -49,6 +49,12 @@ def dumps_account(accounts_data):
 		acc_data = json.dump (accounts_data, f)
 		return True
 
+def save_red_info(accounts_data,names):
+	dbs_path=db_handle.red_path(settings.DATABASE)
+	account_file=f"{dbs_path}{names}.txt"
+	with open(account_file,'a+') as f:
+		acc_data=f.write(accounts_data)
+		return True
 if __name__ == '__main__':
 	# load_current_balane('123456')
     dump_account('123456')

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# @Author  : panda  
+__author__ = "panda  84305510@qq.com"
+
 import os
 import time
 import json
@@ -18,7 +19,6 @@ def acc_auch(accout, password):
 	#返回当前的路径信息，通过配置信息来验证是否正确
 	db_path=db_handle.db_handle(settings.DATABASE)
 	account_file= f"{db_path}/{accout}.json"
-	# print(account_file)
 	if os.path.isfile(account_file):
 		with open(account_file,'r') as f:
 			account_data=json.load(f)
@@ -36,16 +36,13 @@ def acc_auch(accout, password):
 
 def acc_login(user_data):
 	"""
-
 	:param user_data:是否已经认证
 	:return:
 	"""
 	retry_count=0
 	while user_data['is_authenticated'] is not True and retry_count<3:
-		# accout=input('请输入你的账号'.strip()+os.linesep)
-		# password=input('请输入你的密码'.strip()+os.linesep)
-		accout=123456
-		password='abcd'
+		accout=input('请输入你的账号'.strip()+os.linesep)
+		password=input('请输入你的密码'.strip()+os.linesep)
 		auch=acc_auch(accout,password)
 		if auch:
 			user_data['is_authenticated']=True
@@ -55,39 +52,3 @@ def acc_login(user_data):
 	else:
 		logging.info(f"输入的账号{accout}太多")
 		exit()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

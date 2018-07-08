@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# @Author  : panda
+__author__ = "panda  84305510@qq.com"
+
+
 import time
 from ATM.conf import settings
 from ATM.core.accounts import dump_account, loads_current_balane, dumps_account, save_red_info
 import random
 import os
 
+
 def mak_transaction(account_data,tran_type,amount):
 	"""
-
 	:param account_data: 账户信息
 	:param tran_type: 交易类型
 	:param amount:要交易的钱
@@ -33,6 +35,7 @@ def mak_transaction(account_data,tran_type,amount):
 	else:
 		print("交易类型没有被找到")
 
+
 def mak_reimbursement(account_data,shoukuan_id):
 	"""
 	:param account_id:转账人
@@ -51,20 +54,17 @@ def mak_reimbursement(account_data,shoukuan_id):
 		dump_account(account_data)
 		dumps_account(too_info)
 		print (f"转账成功,自己金额还剩余{account_data['balance']},现在借款方为{too_info['balance']}元")
-
 		return account_data,too_info
 	else:
 		print("你输入的金额有误，请重新输入")
 
-def Save_gade_money(account_data,money):
-	"""
 
-	:rtype: Tuple[Dict[str, int], str]
-	"""
+def Save_gade_money(account_data,money):
 	account_data ['balance'] -= float(money)
 	dump_account(account_data)
 	print('现在的金额为%s元'%account_data ['balance'])
 	return account_data,money
+
 
 def qiang_red(Q_money, cishu):
 	nowtime = time.strftime ('%Y-%m-%d %H:%M:%S', time.localtime ())
@@ -97,5 +97,3 @@ def qiang_red(Q_money, cishu):
 	print(bbb)
 	for i in reds_info:
 		save_red_info(i,nowtime)
-if __name__ == '__main__':
-    qiang_red(100,10)

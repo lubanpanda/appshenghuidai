@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# @Author  : panda
-import os
+__author__ = "panda  84305510@qq.com"
 
 from ATM.core import auth
 from ATM.core.accounts import *
@@ -15,11 +14,14 @@ user_data={
 	'is_authenticated':False,#验证是否通过，通过后为TRUE
 	'account_data':None #账户详情
 }
+
+
 def account_info(acc_data=user_data['account_data']):
 
 	log().info(f"-------你的账户信息如下---------\,账户:{acc_data['account_id']},密码:{acc_data['account_data']['password']},总资产:{acc_data['account_data']['balance']},利息:{acc_data['account_data']['interest']},卡的有效期:{acc_data['account_data']['expire_date']}")
 	print("请问是否还需要其他服务，是的话请选择服务菜单")
 	interactive(acc_data)
+
 
 def interactive(acc_data):
 	menu='''
@@ -51,9 +53,9 @@ def interactive(acc_data):
 		else:
 			print('输入的序号错误，请重新输入')
 
+
 def withdrae(acc_data):
 	account_data=load_current_balane(acc_data['account_id'])
-	# print(account_data)
 	infp=f"""
 	---------欢迎使用panda银行系统-----------
 	你的信用值是：{account_data['credit']}
@@ -70,6 +72,7 @@ def withdrae(acc_data):
 			interactive(acc_data)
 		else:
 			print("你输入的金额有误，请重新输入,或者输入0选择退出进行其他操作")
+
 
 def Send_a_red(acc_data):
 	account_data=load_current_balane(acc_data['account_id'])    #获取登陆人的信息
@@ -92,16 +95,17 @@ def Send_a_red(acc_data):
 					Save_gade_money(account_data,send_grad)
 					print(f'哇，有人发{send_grad}红包了，大家快来抢吧')
 					qiang_red(int(send_grad),int(grad_number))
-
 			else:
 				print('你输入的金额有误')
 				Send_a_red(acc_data)
 		return send_grad
 
+
 def logout(acc_data):
 	account_data=load_current_balane(acc_data['account_id'])
-	print(account_data['id'])
+	print(f"账户{account_data['id']}已退出")
 	exit()
+
 
 def repay(acc_data):
 	account_data=load_current_balane(acc_data['account_id'])
@@ -127,7 +131,6 @@ def repay(acc_data):
 				else:
 					print(f"还有{account_data['repay']}未还")
 				interactive(acc_data)
-
 			else:
 				print(f"还款金额输入错误或者你已经还清了所有的欠款")
 				interactive(acc_data)
@@ -155,8 +158,6 @@ def transfer(acc_data):
 			except Exception :
 				print("没有此账号，请重新选择服务")
 				interactive(acc_data)
-
-
 
 
 def run():

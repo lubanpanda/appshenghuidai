@@ -91,7 +91,7 @@ def Send_a_red(acc_data):
 					print('红包发送成功')
 					Save_gade_money(account_data,send_grad)
 					print(f'哇，有人发{send_grad}红包了，大家快来抢吧')
-					qiang_red(int(send_grad))
+					qiang_red(int(send_grad),int(grad_number))
 
 			else:
 				print('你输入的金额有误')

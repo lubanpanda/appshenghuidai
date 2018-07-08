@@ -6,8 +6,8 @@ global device_info
 # noinspection PyRedeclaration
 device_info={}
 device_info['platformName']='Android'
-device_info['deviceName']='3cdbb8e5'
-device_info['platformVersion']= '7.0'
+device_info['deviceName']='127.0.0.1:62001'
+device_info['platformVersion']= '4.4.2'
 device_info['sessionOverride']=True                 #允许 session 被覆盖 (冲突的话),默认是False
 device_info['appPackage']='com.yourenkeji.shenghuidai'
 device_info['newCommandTimeout']=600                # 一段时间不输入命令的话，app会退出。这个参数用来设置超时时间

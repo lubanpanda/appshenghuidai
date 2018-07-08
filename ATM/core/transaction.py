@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 # @Author  : panda
 import time
-
 from ATM.conf import settings
 from ATM.core.accounts import dump_account, loads_current_balane, dumps_account, save_red_info
 import random
@@ -36,7 +35,6 @@ def mak_transaction(account_data,tran_type,amount):
 
 def mak_reimbursement(account_data,shoukuan_id):
 	"""
-
 	:param account_id:转账人
 	:param shoukuan_id: 接收人
 	:return:
@@ -59,36 +57,45 @@ def mak_reimbursement(account_data,shoukuan_id):
 		print("你输入的金额有误，请重新输入")
 
 def Save_gade_money(account_data,money):
+	"""
+
+	:rtype: Tuple[Dict[str, int], str]
+	"""
 	account_data ['balance'] -= float(money)
 	dump_account(account_data)
 	print('现在的金额为%s元'%account_data ['balance'])
 	return account_data,money
 
-def qiang_red(Q_money):
+def qiang_red(Q_money, cishu):
 	nowtime = time.strftime ('%Y-%m-%d %H:%M:%S', time.localtime ())
-	namess=time.time()
-	people=1
-	money_too=Q_money
-	sum_noney=0
+	total = float (Q_money)
+	num = int (cishu)
+	min = 0.01
 	reds_info=[]
-	# shengyu_money=Q_money
-	while True:
-		everone_money=round(random.uniform(0,money_too),2)
-		if money_too <0.001:
-			print('红包已经被抢光了')
-			break
-		else:
-			money_too = money_too - everone_money
-			red_info=str(namess)+"第{0}个人抢了{1}元".format(people,everone_money)+os.linesep
-			reds_info.append(red_info)
-			print(red_info)
-			people+=1
-			sum_noney=sum_noney+everone_money
-			continue
-	qiangzou_bao= f"一共{sum_noney}元红包被抢走"
-	reds_info.append(qiangzou_bao)
-	print(qiangzou_bao)
+	if num < 1:
+		return
+	if num == 1:
+		print ("第%d个人拿到红包数:%.2f" % (num, total))
+		return
+	i = 1
+	totalMoney = total
+	while i < num:
+		max = totalMoney - min * (num - i)
+		k = int ((num - i) / 2)
+		if num - i <= 2:
+			k = num - i
+		max = max / k
+		monney = random.randint (int (min * 100), int (max * 100))
+		monney = float (monney) / 100
+		totalMoney -= monney
+		aaa=("第%d个人拿到红包为:%.2f" % (i, monney)+os.linesep)
+		reds_info.append(aaa)
+		print(aaa)
+		i += 1
+	bbb=("第%d个人拿到红包为:%.2f" % (i, totalMoney)+os.linesep)
+	reds_info.append(bbb)
+	print(bbb)
 	for i in reds_info:
 		save_red_info(i,nowtime)
 if __name__ == '__main__':
-    qiang_red(100)
+    qiang_red(100,10)

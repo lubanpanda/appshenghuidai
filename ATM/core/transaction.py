@@ -3,6 +3,7 @@
 # @Author  : panda
 from ATM.conf import settings
 from ATM.core.accounts import dump_account, loads_current_balane, dumps_account
+import random
 
 
 def mak_transaction(account_data,tran_type,amount):
@@ -54,3 +55,10 @@ def mak_reimbursement(account_data,shoukuan_id):
 		return account_data,too_info
 	else:
 		print("你输入的金额有误，请重新输入")
+
+def Save_gade_money(account_data,money):
+	account_data ['balance'] -= float(money)
+	dump_account(account_data)
+	print('现在的金额为%s元'%account_data ['balance'])
+	return account_data,money
+

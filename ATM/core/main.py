@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Author  : panda
+import os
 
 from ATM.core import auth
 from ATM.core.accounts import load_current_balane, loads_current_balane
-from ATM.core.transaction import mak_transaction, mak_reimbursement
+from ATM.core.transaction import mak_transaction, mak_reimbursement, Save_gade_money
 from ATM.log.atm_log import *
 
 
@@ -27,15 +28,16 @@ def interactive(acc_data):
 	2.还款功能
 	3.存款功能
 	4.转账
-	5.退出
-	
+	5.发红包
+	6.退出
 	'''
 	menu_dic={
 		'1':account_info,
 		'2':repay,
 		'3':withdrae,
 		'4':transfer,
-		'5':logout
+		'6':logout,
+		'5':Send_a_red
 	}
 
 	exit_flag=False
@@ -69,10 +71,33 @@ def withdrae(acc_data):
 		else:
 			print("你输入的金额有误，请重新输入,或者输入0选择退出进行其他操作")
 
+def Send_a_red(acc_data):
+	account_data=load_current_balane(acc_data['account_id'])    #获取登陆人的信息
+	print(f"#######欢迎来到银行发红包系统，目前你的金额为{account_data['balance']}元#######")
+	hongbao_flag=False
+	if not hongbao_flag:
+		send_grad=input('请输入你要发送红包的金额，最低为0元，最高为200元:'+os.linesep).strip()
+		if len(send_grad)>0 and send_grad.isdigit():
+			if str(0) < send_grad <= str(200):
+				grad_number=input('请输入红包个数').strip()
+				numbers=1
+				if str(0) >= grad_number > str(send_grad * 100):
+					print('红包输入的个数有误')
+					numbers+=0
+					if numbers==3:
+						print('输入次数太多，已退出红包程序')
+						interactive(acc_data)
+				else:
+					print('红包发送成功')
+					Save_gade_money(account_data,send_grad)
 
+			else:
+				print('你输入的金额有误')
+				Send_a_red(acc_data)
+		return send_grad
 
 def logout(acc_data):
-	acc_data=0
+	acc_data=None
 	exit()
 
 def repay(acc_data):

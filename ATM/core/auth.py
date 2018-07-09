@@ -42,6 +42,22 @@ def acc_auch(accout, password):
 	else:
 		print('没有这个文件目录')
 
+def admin_acc_auch(admin_id,admin_password):
+	db_path = db_handle.admins_db_handle (settings.ADMIN_DATABASE)
+	account_file = f"{db_path}.json"
+	pass_word = 1
+	if os.path.isfile (account_file):
+		with open (account_file, 'r') as f:
+			account_data = json.load (f)
+			if account_data ['admin_password'] == admin_password:
+					return account_data
+			else:
+				print ('你输入的密码不正确')
+				pass_word += 1
+				if pass_word == 3:
+					print ('卡的密码输入次数过多，请稍后再来尝试')
+		print ('没有这个文件目录')
+
 
 def acc_login(user_data):
 	"""
@@ -58,6 +74,22 @@ def acc_login(user_data):
 			user_data['account_id']=accout
 			return auch
 		retry_count+=1
+	else:
+		logging.info(f"你的账号已经通过了认证权限")
+		exit()
+
+
+def admin_login(user_Data):
+	admin_count=0
+	while user_Data['admin_is_authenticated'] is not True and admin_count<3:
+		admin_accout=input('请输入你的账号'.strip()+os.linesep)
+		admin_password=input('请输入你的密码'.strip()+os.linesep)
+		auchs=admin_acc_auch(admin_accout,admin_password)
+		if auchs:
+			user_Data ['is_authenticated'] = True
+			user_Data ['account_id'] = admin_accout
+			return auchs
+		admin_count+=1
 	else:
 		logging.info(f"你的账号已经通过了认证权限")
 		exit()

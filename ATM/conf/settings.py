@@ -31,3 +31,9 @@ TRANSACTION_TYPE={
 	'consume': {'action': 'minus', 'interest': 0},#刷卡
 
 }
+
+ADMIN_DATABASE={
+	'path':f'{BASE_DIR}/db/accounts',
+	'names':'admin'
+
+}

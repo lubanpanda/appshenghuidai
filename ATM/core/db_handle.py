@@ -34,3 +34,11 @@ def too_db_handle(conn_params):
 def red_path(conn_params):
 	db_paths = f"{conn_params['red_path']}"
 	return db_paths
+
+def admin_db_handle(conn_params):
+	db_path=f"{conn_params['path']}/{conn_params['names']}"
+	return db_path
+
+def admins_db_handle(conn_params):
+	if conn_params['names']=='admin':
+		return admin_db_handle(conn_params)

@@ -15,6 +15,12 @@ user_data={
 	'account_data':None #账户详情
 }
 
+"管理员的临时数据"
+user_Data={
+	"admin_id":None,
+	'admin_is_authenticated':False,
+	'admin_data':None
+}
 
 def account_info(acc_data=user_data['account_data']):
 
@@ -160,8 +166,24 @@ def transfer(acc_data):
 				interactive(acc_data)
 
 
+def ordinary_user():
+	acc_data = auth.acc_login (user_data)  # 判断是否登陆
+	if user_data ['is_authenticated']:  # 如果没有认证就更改下状态
+		user_data ['account_data'] = acc_data
+		interactive (user_data)  # 与用户的交互
+
+def administrator():
+	acc_data=auth.admin_login(user_Data)
+	if user_Data['admin_is_authenticated']:
+		user_Data['admin_data']=acc_data
+	print('登陆成功啦～～～～～～～～～')
+
 def run():
-	acc_data=auth.acc_login(user_data)  #判断是否登陆
-	if user_data['is_authenticated']:   #如果没有认证就更改下状态
-		user_data['account_data']=acc_data
-		interactive(user_data)          #与用户的交互
+	input_id=input('请选择你要登陆的账户类型，1是管理员用户，2是普通账户,其余任意键退出\n')
+	if input_id==str(1):
+		administrator()
+	elif input_id==str(2):
+		ordinary_user()
+	else:
+		print("欢迎你下次使用本银行")
+		exit()

@@ -28,16 +28,50 @@ def account_info(acc_data=user_data['account_data']):
 	print("请问是否还需要其他服务，是的话请选择服务菜单")
 	interactive(acc_data)
 
+def admin_interactive(admin_data):
+	menus="""
+	----------welcome to admin system----------
+	|   1.开户                                 |
+	|   2.销户                                 |
+	|   3.业务办理                              |
+	-------------------------------------------
+	
+	"""
+	menus_dic={
+		'1':Open_an_account,
+		'2':Pin_households,
+		'3':Business_is_dealt
+	}
+	exit_flag = False
+	if not exit_flag:
+		print (menus)
+		user_option = input (">>>".strip ())
 
+		if user_option in menus_dic:
+			menus_dic [user_option] (admin_data)
+
+		else:
+			print ('输入的序号错误，请重新输入')
+
+def Open_an_account(admin_data):
+	pass
+
+def Pin_households(admin_data):
+	pass
+
+def Business_is_dealt(admin_data):
+
+	pass
 def interactive(acc_data):
 	menu='''
-	---------welcome to panda bank----------
-	1.账户信息
-	2.还款功能
-	3.存款功能
-	4.转账
-	5.发红包
-	6.退出
+	|--------welcome to panda bank--------- |
+	|	1.账户信息                           |
+	|	2.还款功能                           |
+	|	3.存款功能                           |
+	|	4.转账                               |
+	|	5.发红包                             |
+	|	6.退出                               |
+	|----------------------------------------
 	'''
 	menu_dic={
 		'1':account_info,
@@ -177,6 +211,7 @@ def administrator():
 	if user_Data['admin_is_authenticated']:
 		user_Data['admin_data']=acc_data
 	print('登陆成功啦～～～～～～～～～')
+	admin_interactive (user_data)
 
 def run():
 	input_id=input('请选择你要登陆的账户类型，1是管理员用户，2是普通账户,其余任意键退出\n')

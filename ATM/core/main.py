@@ -7,7 +7,11 @@ from ATM.core.accounts import *
 from ATM.core.transaction import *
 from ATM.core import admin_transaction
 
+
+############################账户信息模块########################
 #临时的账户数据记录
+
+
 user_data={
 	'account_id':None,#账户的名字
 	'is_authenticated':False,#验证是否通过，通过后为TRUE
@@ -20,6 +24,10 @@ user_Data={
 	'admin_is_authenticated':False,
 	'admin_data':None
 }
+
+
+
+####################管理员账户操作#######################
 
 def account_info(acc_data=user_data['account_data']):
 
@@ -81,7 +89,11 @@ def Business_is_dealt(admin_data):
 
 
 
-	pass
+def admin_logout(admin_data):
+	exit()
+
+###################普通用户操作#########################
+
 def interactive(acc_data):
 	menu='''
 	|--------welcome to panda bank--------- |
@@ -161,8 +173,6 @@ def Send_a_red(acc_data):
 		return send_grad
 
 
-def admin_logout(admin_data):
-	exit()
 
 def logout(acc_data):
 	account_data=load_current_balane(acc_data['account_id'])
@@ -222,6 +232,7 @@ def transfer(acc_data):
 				print("没有此账号，请重新选择服务")
 				interactive(acc_data)
 
+##############登陆的一些交互和方法#################
 
 def ordinary_user():
 	acc_data = auth.acc_login (user_data)  # 判断是否登陆

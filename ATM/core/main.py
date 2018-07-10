@@ -41,7 +41,7 @@ def admin_interactive(admin_data):
 	|   1.开户                                 |
 	|   2.销户                                 |
 	|   3.业务办理                              |
-	|   4.退出|                                |
+	|   4.退出                                 |
 	-------------------------------------------
 	
 	"""
@@ -69,19 +69,18 @@ def Pin_households(admin_data):
 	pass
 
 def Business_is_dealt(admin_data):
-	print(admin_data)
 	account_data=load_current_balane(admin_data['admin_id'])
-	print(account_data)
 	input_admin_id = input ('--------亲爱的用户，请选择你要办理的业务----------\n1.修改用户交易密码\n2.冻结账户\n\n')
 	shuru_id=1
 	while shuru_id<=3:
 		if input_admin_id==str(1):
-			shuru_xiugai_id=input('请输入要修改的账户ID')
+			shuru_xiugai_id=input('请输入要修改的账户ID：')
 			admin_transaction.modify_password(shuru_xiugai_id)
 			admin_interactive(account_data)
 		elif input_admin_id==str(2):
-			pass
-
+			freeze_id=input('请输入冻结账户的id')
+			admin_transaction.freeze_account(freeze_id)
+			admin_interactive(account_data)
 		else:
 			print("输入有误，请重新输入")
 			shuru_id+=1

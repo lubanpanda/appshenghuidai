@@ -40,9 +40,26 @@ def modify_password(admin_id):
 							print (f'两次输入的密码不一致，请重新输入,还有{pass_id-1}次机会')
 							continue
 			elif true_password=='N':
-				pass
+				print('你取消了本次密码的修改')
 			else:
 				print('输入有误，已退出修改密码功能')
 
+	else:
+		print('你输入的账户有误,请核对后重新输入')
+
+
+def freeze_account(admin_id):
+	db_path = db_handle.db_handle (settings.DATABASE)
+	account_file = f"{db_path}/{admin_id}.json"
+	if os.path.isfile (account_file):
+		with open (account_file, 'r') as f:
+			account_data = json.load (f)
+			print(account_data)
+			account_data['Lock_the_card']='True'
+			dump_account(account_data)
+			print(f'冻结{admin_id}账户成功')
+	else:
+		print('没有此账户')
+
 if __name__ == '__main__':
-    modify_password('123456')
+    freeze_account('1236')

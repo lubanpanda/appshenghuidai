@@ -23,7 +23,7 @@ def acc_auch(accout, password):
 	if os.path.isfile(account_file):
 		with open(account_file,'r') as f:
 			account_data=json.load(f)
-			if not account_data ["Lock_the_card"]:
+			if account_data ["Lock_the_card"] =='':
 				if account_data['password']==password:
 					exp_time_stamp=time.mktime(time.strptime(account_data['expire_date'],"%Y-%m-%d"))
 					if time.time()>exp_time_stamp:
@@ -36,7 +36,7 @@ def acc_auch(accout, password):
 					if pass_word==3:
 						print('卡的密码输入次数过多，卡已经被锁定')
 						account_data["Lock_the_card"]=True
-			elif account_data ["Lock_the_card"]:
+			elif account_data ["Lock_the_card"]=='True':
 				print('你的卡已经被锁定不能进行操作了，请联系银行工作人员')
 				exit()
 	else:

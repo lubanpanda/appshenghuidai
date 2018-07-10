@@ -40,7 +40,7 @@ def dump_account(account_data):
 	account_file = f"{db_path}/{account_data['id']}.json"
 	with open (account_file,'w') as f:
 		acc_data=json.dump(account_data,f)
-		return  True
+		return  acc_data
 
 
 def dumps_account(accounts_data):
@@ -48,7 +48,7 @@ def dumps_account(accounts_data):
 	account_file = f"{db_path}/{accounts_data['id']}.json"
 	with open (account_file, 'w') as f:
 		acc_data = json.dump (accounts_data, f)
-		return True
+		return acc_data
 
 
 def save_red_info(accounts_data,names):
@@ -56,4 +56,11 @@ def save_red_info(accounts_data,names):
 	account_file=f"{dbs_path}{names}.txt"
 	with open(account_file,'a+') as f:
 		acc_data=f.write(accounts_data)
-		return True
+		return acc_data
+
+def Open_account(admin_id,info_account):
+	dbs_path = db_handle.db_handle (settings.DATABASE)
+	account_file = f"{dbs_path}/{admin_id}.json"
+	with open (account_file, 'w') as f:
+		acc_data = f.write(json.dumps(info_account))
+		return acc_data

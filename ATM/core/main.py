@@ -5,8 +5,7 @@ __author__ = "panda  84305510@qq.com"
 from ATM.core import auth
 from ATM.core.accounts import *
 from ATM.core.transaction import *
-from ATM.log.atm_log import *
-
+from ATM.core import admin_transaction
 
 #临时的账户数据记录
 user_data={
@@ -24,7 +23,7 @@ user_Data={
 
 def account_info(acc_data=user_data['account_data']):
 
-	log().info(f"-------你的账户信息如下---------\,账户:{acc_data['account_id']},密码:{acc_data['account_data']['password']},总资产:{acc_data['account_data']['balance']},利息:{acc_data['account_data']['interest']},卡的有效期:{acc_data['account_data']['expire_date']}")
+	print(f"-------你的账户信息如下---------\n账户:{acc_data['account_id']}\n密码:{acc_data['account_data']['password']}\n总资产:{acc_data['account_data']['balance']}\n利息:{acc_data['account_data']['interest']}\n卡的有效期:{acc_data['account_data']['expire_date']}\n")
 	print("请问是否还需要其他服务，是的话请选择服务菜单")
 	interactive(acc_data)
 
@@ -34,13 +33,15 @@ def admin_interactive(admin_data):
 	|   1.开户                                 |
 	|   2.销户                                 |
 	|   3.业务办理                              |
+	|   4.退出|                                |
 	-------------------------------------------
 	
 	"""
 	menus_dic={
 		'1':Open_an_account,
 		'2':Pin_households,
-		'3':Business_is_dealt
+		'3':Business_is_dealt,
+		'4':admin_logout
 	}
 	exit_flag = False
 	if not exit_flag:
@@ -60,6 +61,25 @@ def Pin_households(admin_data):
 	pass
 
 def Business_is_dealt(admin_data):
+	print(admin_data)
+	account_data=load_current_balane(admin_data['admin_id'])
+	print(account_data)
+	input_admin_id = input ('--------亲爱的用户，请选择你要办理的业务----------\n1.修改用户交易密码\n2.冻结账户\n\n')
+	shuru_id=1
+	while shuru_id<=3:
+		if input_admin_id==str(1):
+			shuru_xiugai_id=input('请输入要修改的账户ID')
+			admin_transaction.modify_password(shuru_xiugai_id)
+			admin_interactive(account_data)
+		elif input_admin_id==str(2):
+			pass
+
+		else:
+			print("输入有误，请重新输入")
+			shuru_id+=1
+	print('你输入的指令次数错误太多，已经暂停服务，如需服务请重新开始操作')
+
+
 
 	pass
 def interactive(acc_data):
@@ -141,6 +161,9 @@ def Send_a_red(acc_data):
 		return send_grad
 
 
+def admin_logout(admin_data):
+	exit()
+
 def logout(acc_data):
 	account_data=load_current_balane(acc_data['account_id'])
 	print(f"账户{account_data['id']}已退出")
@@ -211,7 +234,7 @@ def administrator():
 	if user_Data['admin_is_authenticated']:
 		user_Data['admin_data']=acc_data
 	print('登陆成功啦～～～～～～～～～')
-	admin_interactive (user_data)
+	admin_interactive (user_Data)
 
 def run():
 	input_id=input('请选择你要登陆的账户类型，1是管理员用户，2是普通账户,其余任意键退出\n')

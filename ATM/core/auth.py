@@ -86,8 +86,8 @@ def admin_login(user_Data):
 		admin_password=input('请输入你的密码'.strip()+os.linesep)
 		auchs=admin_acc_auch(admin_accout,admin_password)
 		if auchs:
-			user_Data ['is_authenticated'] = True
-			user_Data ['account_id'] = admin_accout
+			user_Data ['admin_is_authenticated'] = True
+			user_Data ['admin_id'] = admin_accout
 			return auchs
 		admin_count+=1
 	else:

@@ -88,8 +88,19 @@ def Open_an_account(admin_data):
 				Open_account(account_id,cunkuan_json)
 
 def Pin_households(admin_data):
-	pass
-
+	account_list=[]
+	account_data = load_current_balane (admin_data ['admin_id'])
+	account_id = input ('请输入要销户的账户ID:')
+	for (dirpath, dirnames, filenames) in os.walk ('../db/accounts'):
+		for file in filenames:
+			account_list.append(file)
+	if account_id+'.json' in account_list:
+		os.remove(f'../db/accounts/{account_id}.json')
+		print('销户成功')
+		admin_interactive(admin_data)
+	else:
+		print(f'{account_id}账户没有找到')
+		admin_interactive(admin_data)
 def Business_is_dealt(admin_data):
 	account_data=load_current_balane(admin_data['admin_id'])
 	input_admin_id = input ('--------亲爱的用户，请选择你要办理的业务----------\n1.修改用户交易密码\n2.冻结账户\n\n')

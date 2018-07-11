@@ -49,14 +49,18 @@ def admin_acc_auch(admin_id,admin_password):
 	if os.path.isfile (account_file):
 		with open (account_file, 'r') as f:
 			account_data = json.load (f)
-			if account_data ['admin_password'] == admin_password:
-					return account_data
-			else:
-				print ('你输入的密码不正确')
-				pass_word += 1
-				if pass_word == 3:
-					print ('卡的密码输入次数过多，请稍后再来尝试')
-		print ('没有这个文件目录')
+			try:
+				if account_data['admin_id']==admin_id:
+					if account_data ['admin_password'] == admin_password:
+							return account_data
+					else:
+						print ('你输入的密码不正确')
+						pass_word += 1
+						if pass_word == 3:
+							print ('卡的密码输入次数过多，请稍后再来尝试')
+				else:
+					print('没有这个账户')
+			except:pass
 
 
 def acc_login(user_data):

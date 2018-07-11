@@ -10,6 +10,7 @@ from ATM.core import admin_transaction
 
 ############################账户信息模块########################
 #临时的账户数据记录
+BASE_DIR=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 user_data={
@@ -66,7 +67,7 @@ def Open_an_account(admin_data):
 	account_data=load_current_balane(admin_data['admin_id'])
 	account_id=input('请输入账户ID:')
 	account_password=input('请输入密码:')
-	for (dirpath, dirnames, filenames) in os.walk ('../db/accounts'):
+	for (dirpath, dirnames, filenames) in os.walk (f'{BASE_DIR}/db/accounts'):
 		for file in filenames:
 			if account_id=='admin' or account_id+'.json'==file:
 				print('不能创建管理员账号或已经存在的账户')
@@ -86,12 +87,13 @@ def Open_an_account(admin_data):
 
 				}
 				Open_account(account_id,cunkuan_json)
+	print ('开户账户成功')
 
 def Pin_households(admin_data):
 	account_list=[]
 	account_data = load_current_balane (admin_data ['admin_id'])
 	account_id = input ('请输入要销户的账户ID:')
-	for (dirpath, dirnames, filenames) in os.walk ('../db/accounts'):
+	for (dirpath, dirnames, filenames) in os.walk (f'{BASE_DIR}/db/accounts'):
 		for file in filenames:
 			account_list.append(file)
 	if account_id+'.json' in account_list:

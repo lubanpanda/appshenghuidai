@@ -97,7 +97,7 @@ def Pin_households(admin_data):
 		for file in filenames:
 			account_list.append(file)
 	if account_id+'.json' in account_list:
-		os.remove(f'../db/accounts/{account_id}.json')
+		os.remove(f'{BASE_DIR}/db/accounts/{account_id}.json')
 		print('销户成功')
 		admin_interactive(admin_data)
 	else:

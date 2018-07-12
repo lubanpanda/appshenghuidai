@@ -142,8 +142,9 @@ def interactive(acc_data):
 	|	2.还款功能                           |
 	|	3.存款功能                           |
 	|	4.转账                               |
-	|	5.发红包                             |
-	|	6.退出                               |
+	|	5.发红包
+	    6.网上买菜系统                         |
+	|	7.退出                               |
 	|----------------------------------------
 	'''
 	menu_dic={
@@ -151,8 +152,10 @@ def interactive(acc_data):
 		'2':repay,
 		'3':withdrae,
 		'4':transfer,
-		'6':logout,
-		'5':Send_a_red
+		'5':Send_a_red ,
+		'6':Buy_shopping,
+		'7': logout,
+
 	}
 
 	exit_flag=False
@@ -213,6 +216,40 @@ def Send_a_red(acc_data):
 				Send_a_red(acc_data)
 		return send_grad
 
+def Buy_shopping(acc_data):
+	account_data=load_current_balane(acc_data['account_id'])
+	True_or_False=account_data['VIP']
+	VIP_LEVEL=account_data['vip_level']
+	all_money = 0
+	all_moneys=[]
+	if True_or_False=='True':
+		dazhe=settings.BUSINESS['vip_level']['1']['discount']
+		print(f"你是尊贵的VIP{VIP_LEVEL}客户买菜可以打折{dazhe}哦")
+
+
+		for i in range(len(settings.shucai_menus)):
+			aa=settings.shucai_menus[f'{i+1}']["action"]
+			bb=settings.shucai_menus[f'{i+1}']["interest"]
+			print(i+1,aa,":",bb,"元")
+
+		while True:
+			xuanze_id = input ('请选购你的商品，每次的价格都不一样哦')
+			danjia_money = settings.shucai_menus [xuanze_id] ["interest"]
+			if all_money<account_data['balance']:
+				all_moneys.append(danjia_money)
+				all_money=all_money+danjia_money
+				shiji_money = all_money * dazhe
+				shuru_info=input('输入任意键继续,结束购物请按Q')
+				if shuru_info=='Q':
+					break
+				else:
+					continue
+			else:
+				print('你的账户余额不足，请及时充值')
+				break
+		print('你一共话费了%s元'%shiji_money)
+		account_data['balance']=account_data['balance']-shiji_money
+		dump_account(account_data)
 
 
 def logout(acc_data):

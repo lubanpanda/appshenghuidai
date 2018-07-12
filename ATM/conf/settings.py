@@ -40,5 +40,25 @@ ADMIN_DATABASE={
 
 BUSINESS={
 	"VIP":'vip',
-	"vip_level":{1:{"discount",0.9},2:{"discount",0.85},3:{"discount",0.8},4:{"discount",0.75},5:{"discount",0.7},6:{"discount",0.5}}
+	"vip_level":{
+				 "1":{"discount":0.9},
+	             "2":{"discount",0.85},
+	             "3":{"discount",0.8},
+	             "4":{"discount",0.75},
+	             "5":{"discount",0.7},
+	             "6":{"discount",0.5}
+	             }
 }
+
+
+shucai_menus={
+	'1': {'action': '黄瓜', 'interest':3.2},
+	'2': {'action': '辣椒', 'interest': 3.3},
+	'3': {'action': '西红柿','interest': 2.2},
+	'4': {'action': '豆角', 'interest': 1.2},
+	'5': {'action': '茄子', 'interest': 4.2},
+
+}
+
+# print(len(shucai_menus))
+print(BUSINESS['vip_level']["1"])

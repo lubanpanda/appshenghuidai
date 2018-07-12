@@ -120,15 +120,15 @@ def admin_logout (admin_data):
 
 def interactive (acc_data):
 	menu = '''
-	|--------welcome to panda bank--------- |
-	|	1.账户信息                           |
-	|	2.还款功能                           |
-	|	3.存款功能                           |
-	|	4.转账                               |
-	|	5.发红包
-	    6.网上买菜系统                         |
-	|	7.退出                               |
-	|----------------------------------------
+	**********welcome to panda bank**********
+	*	1.账户信息                           *
+	*	2.还款功能                           *
+	*	3.存款功能                           *
+	*   4.转账                               *
+	*	5.发红包                             *
+	*   6.网上买菜系统                        *
+	*	7.退出                               *
+	*****************************************
 	'''
 	menu_dic = {'1': account_info, '2': repay, '3': withdrae, '4': transfer, '5': Send_a_red, '6': Buy_shopping,
 		'7': logout,

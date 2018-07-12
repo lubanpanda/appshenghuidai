@@ -5,10 +5,17 @@
       <change afterPath="$PROJECT_DIR$/self_CX/congit.ini" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/self_CX/text_01.py" afterDir="false" />
     </list>
-    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="">
+    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="增加VIP等级升级">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATM/bin/atm.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/bin/atm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATM/core/accounts.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/core/accounts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ATM/core/admin_transaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/core/admin_transaction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATM/core/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/core/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATM/core/db_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/core/db_handle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATM/core/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/core/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATM/core/transaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/core/transaction.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ATM/db/accounts/123456.json" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/db/accounts/123456.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATM/log/atm_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/log/atm_log.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -218,8 +225,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ATM/core/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="289" column="24" lean-forward="true" selection-start-line="289" selection-start-column="24" selection-end-line="289" selection-end-column="24" />
+            <state relative-caret-position="535">
+              <caret line="291" lean-forward="true" selection-start-line="291" selection-end-line="291" />
               <folding>
                 <element signature="e#86#111#0" expanded="true" />
               </folding>
@@ -230,8 +237,8 @@
       <file leaf-file-name="admin_transaction.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ATM/core/admin_transaction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="129" column="8" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="8" />
+            <state relative-caret-position="315">
+              <caret line="25" column="27" selection-end-line="139" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -239,8 +246,20 @@
       <file leaf-file-name="accounts.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ATM/core/accounts.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="975">
+              <caret line="67" selection-end-line="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="atm.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ATM/bin/atm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="15" selection-end-line="12" selection-end-column="15" />
+              <folding>
+                <element signature="e#86#95#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -248,17 +267,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ATM/conf/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="text_01.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/self_CX/text_01.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="710">
+              <caret line="60" column="1" lean-forward="true" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -266,8 +276,17 @@
       <file leaf-file-name="transaction.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ATM/core/transaction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+            <state relative-caret-position="465">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="atm_log.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ATM/log/atm_log.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -275,17 +294,26 @@
       <file leaf-file-name="auth.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ATM/core/auth.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-207">
-              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="250">
+              <caret line="84" column="9" lean-forward="true" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="123456.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="db_handle.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ATM/core/db_handle.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="123456.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ATM/db/accounts/123456.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret column="214" selection-start-column="214" selection-end-column="214" />
+              <caret column="176" selection-start-column="176" selection-end-column="176" />
             </state>
           </provider>
         </entry>
@@ -354,7 +382,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ATM/log/config.conf" />
         <option value="$PROJECT_DIR$/ATM/db/Paymentaccount/654321.json" />
         <option value="$PROJECT_DIR$/self_CX/弹窗.py" />
         <option value="$PROJECT_DIR$/self_CX/可变参数.py" />
@@ -384,8 +411,6 @@
         <option value="$PROJECT_DIR$/SHD_automation/device_info/device.py" />
         <option value="$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/HTML-JavaScript.html.js" />
         <option value="$PROJECT_DIR$/ATM/core/__init__.py" />
-        <option value="$PROJECT_DIR$/ATM/core/transaction.py" />
-        <option value="$PROJECT_DIR$/ATM/core/db_handle.py" />
         <option value="$PROJECT_DIR$/ATM/db/accounts/admin.json" />
         <option value="$PROJECT_DIR$/ATM/db/accounts/22222.json" />
         <option value="$PROJECT_DIR$/ATM/db/accounts/666666.json" />
@@ -395,16 +420,19 @@
         <option value="$PROJECT_DIR$/ATM/db/accounts/__init__.py" />
         <option value="$PROJECT_DIR$/SHD_automation/panda_methods/my_methods.py" />
         <option value="$PROJECT_DIR$/ATM/conf/__init__.py" />
-        <option value="$PROJECT_DIR$/ATM/bin/atm.py" />
         <option value="$PROJECT_DIR$/self_CX/测试练习.py" />
         <option value="$PROJECT_DIR$/self_CX/text_01.py" />
         <option value="$PROJECT_DIR$/ATM/bin/比较日期.py" />
+        <option value="$PROJECT_DIR$/ATM/db/accounts/123456.json" />
+        <option value="$PROJECT_DIR$/ATM/core/admin_transaction.py" />
+        <option value="$PROJECT_DIR$/ATM/core/accounts.py" />
+        <option value="$PROJECT_DIR$/ATM/bin/atm.py" />
         <option value="$PROJECT_DIR$/ATM/conf/settings.py" />
         <option value="$PROJECT_DIR$/ATM/core/auth.py" />
+        <option value="$PROJECT_DIR$/ATM/core/db_handle.py" />
         <option value="$PROJECT_DIR$/ATM/core/main.py" />
-        <option value="$PROJECT_DIR$/ATM/core/accounts.py" />
-        <option value="$PROJECT_DIR$/ATM/core/admin_transaction.py" />
-        <option value="$PROJECT_DIR$/ATM/db/accounts/123456.json" />
+        <option value="$PROJECT_DIR$/ATM/core/transaction.py" />
+        <option value="$PROJECT_DIR$/ATM/log/atm_log.py" />
       </list>
     </option>
   </component>
@@ -508,6 +536,12 @@
               <item name="ATM" type="462c0819:PsiDirectoryNode" />
               <item name="db" type="462c0819:PsiDirectoryNode" />
               <item name="Redenvelopesnatcher" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
+              <item name="ATM" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="panda" type="b2602c69:ProjectViewProjectNode" />
@@ -1309,13 +1343,6 @@
       <option name="presentableId" value="Default" />
       <updated>1511416187661</updated>
     </task>
-    <task id="LOCAL-00133" summary="存管注册绑卡签约">
-      <created>1523947303147</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1523947303148</updated>
-    </task>
     <task id="LOCAL-00134" summary="存管">
       <created>1524124503040</created>
       <option name="number" value="00134" />
@@ -1652,7 +1679,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531388463406</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="增加VIP等级升级">
+      <created>1531399235084</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1531399235084</updated>
+    </task>
+    <option name="localTasksCounter" value="183" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1698,6 +1732,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32924962" />
       <window_info anchor="bottom" id="Messages" order="8" />
@@ -1705,9 +1740,9 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.53958" weight="0.2863706" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.5274637" weight="0.32618684" />
-      <window_info active="true" anchor="bottom" id="Run" order="1" sideWeight="0.5282714" visible="true" weight="0.25727412" />
+      <window_info anchor="bottom" id="Run" order="1" sideWeight="0.5282714" weight="0.25727412" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.509693" weight="0.28177643" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4961715" visible="true" weight="0.16882068" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4961715" visible="true" weight="0.16882068" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32956383" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32956383" />
@@ -1821,6 +1856,7 @@
     <MESSAGE value="修复初始化类型错误" />
     <MESSAGE value="增加VIP等级升级" />
     <option name="LAST_COMMIT_MESSAGE" value="增加VIP等级升级" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1911,13 +1947,6 @@
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="188">
           <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ATM/log/atm_log.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -2017,13 +2046,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ATM/bin/atm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ATM/db/accounts/admin.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -2074,13 +2096,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ATM/core/db_handle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ATM/bin/比较日期.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -2095,55 +2110,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ATM/conf/settings.py">
+    <entry file="file://$PROJECT_DIR$/ATM/db/accounts/123456.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="15">
+          <caret column="176" selection-start-column="176" selection-end-column="176" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ATM/core/transaction.py">
+    <entry file="file://$PROJECT_DIR$/ATM/bin/atm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+        <state relative-caret-position="180">
+          <caret line="12" column="15" selection-end-line="12" selection-end-column="15" />
+          <folding>
+            <element signature="e#86#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATM/conf/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="710">
+          <caret line="60" column="1" lean-forward="true" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ATM/core/accounts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="975">
+          <caret line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATM/core/admin_transaction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="25" column="27" selection-end-line="139" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATM/core/auth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="84" column="9" lean-forward="true" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATM/core/db_handle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ATM/core/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="289" column="24" lean-forward="true" selection-start-line="289" selection-start-column="24" selection-end-line="289" selection-end-column="24" />
+        <state relative-caret-position="535">
+          <caret line="291" lean-forward="true" selection-start-line="291" selection-end-line="291" />
           <folding>
             <element signature="e#86#111#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ATM/core/auth.py">
+    <entry file="file://$PROJECT_DIR$/ATM/core/transaction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="465">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ATM/core/admin_transaction.py">
+    <entry file="file://$PROJECT_DIR$/ATM/log/atm_log.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="129" column="8" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ATM/db/accounts/123456.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret column="214" selection-start-column="214" selection-end-column="214" />
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>

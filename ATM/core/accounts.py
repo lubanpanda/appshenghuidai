@@ -42,12 +42,6 @@ def dump_account(account_data):
 		acc_data=json.dump(account_data,f)
 		return  acc_data
 
-def VIP_youhui(acc_data):
-	db_path = db_handle.db_handle (settings.BUSINESS)
-	account_file = f"{db_path}/{acc_data['id']}.json"
-	with open (account_file, 'w') as f:
-		acc_data = json.dump (account_data, f)
-		return acc_data
 
 def dumps_account(accounts_data):
 	db_path = db_handle.too_db_handle (settings.DATABASE)

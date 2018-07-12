@@ -72,6 +72,8 @@ def acc_login(user_data):
 	while user_data['is_authenticated'] is not True and retry_count<3 :
 		accout=input('请输入你的账号'.strip()+os.linesep)
 		password=input('请输入你的密码'.strip()+os.linesep)
+		# accout='123456'
+		# password='111'
 		auch=acc_auch(accout,password)
 		if auch:
 			user_data['is_authenticated']=True

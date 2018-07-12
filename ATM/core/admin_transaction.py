@@ -115,19 +115,19 @@ def VIP_jifen(account_data):
 	if 0<account_data['VIP_jifen']<=50:
 		account_data['vip_level']="1"
 		dump_account(account_data)
-	if 50 < account_data ['VIP_jifen'] <=100:
+	elif 50 < account_data ['VIP_jifen'] <= 100:
 		account_data ['vip_level'] = "2"
 		dump_account (account_data)
-	if 100 < account_data ['VIP_jifen'] <= 150:
+	elif 100 < account_data ['VIP_jifen'] <= 150:
 		account_data ['vip_level'] = "3"
 		dump_account (account_data)
-	if 150 < account_data ['VIP_jifen'] <=200:
+	elif 150 < account_data ['VIP_jifen'] <= 200:
 		account_data ['vip_level'] = "4"
 		dump_account (account_data)
-	if 200 < account_data ['VIP_jifen'] <250:
+	elif 200 < account_data ['VIP_jifen'] < 250:
 		account_data ['vip_level'] = "5"
 		dump_account (account_data)
-	if 250 < account_data ['VIP_jifen'] < 300:
+	elif 250 < account_data ['VIP_jifen']:
 		account_data ['vip_level'] = "6"
 		dump_account (account_data)
 if __name__ == '__main__':

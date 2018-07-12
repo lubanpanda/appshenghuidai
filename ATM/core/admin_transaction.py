@@ -67,7 +67,7 @@ def add_account_vip(add_count_id):
 		with open (account_file, 'r') as f:
 			account_data = json.load (f)
 			account_data['VIP']='True'
-			account_data['vip_level']=1
+			account_data['vip_level']="1"
 			dump_account(account_data)
 			print('开通VIP账户成功')
 

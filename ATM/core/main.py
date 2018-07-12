@@ -87,7 +87,8 @@ def Open_an_account(admin_data):
 
 				}
 				Open_account(account_id,cunkuan_json)
-	print ('开户账户成功')
+	print ('开户账户成功,请在选择其他的服务')
+	admin_interactive(admin_data)
 
 def Pin_households(admin_data):
 	account_list=[]
@@ -105,7 +106,7 @@ def Pin_households(admin_data):
 		admin_interactive(admin_data)
 def Business_is_dealt(admin_data):
 	account_data=load_current_balane(admin_data['admin_id'])
-	input_admin_id = input ('--------亲爱的用户，请选择你要办理的业务----------\n1.修改用户交易密码\n2.冻结账户\n\n')
+	input_admin_id = input ('--------亲爱的用户，请选择你要办理的业务----------\n1.修改用户交易密码\n2.冻结账户\n3.开通账户会员\n')
 	shuru_id=1
 	while shuru_id<=3:
 		if input_admin_id==str(1):
@@ -116,6 +117,12 @@ def Business_is_dealt(admin_data):
 			freeze_id=input('请输入冻结账户的id')
 			admin_transaction.freeze_account(freeze_id)
 			admin_interactive(account_data)
+
+		elif input_admin_id==str(3):
+			"增加服务字段,往用户里增加一些别的信息，如:是否可以升级为会员"
+			add_account_id=input('请输入要添加功能的账号：')
+			admin_transaction.add_account_vip(add_account_id)
+			admin_interactive(admin_data)
 		else:
 			print("输入有误，请重新输入")
 			shuru_id+=1

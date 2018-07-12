@@ -51,15 +51,27 @@ def modify_password(admin_id):
 def freeze_account(admin_id):
 	db_path = db_handle.db_handle (settings.DATABASE)
 	account_file = f"{db_path}/{admin_id}.json"
-	if os.path.isfile (account_file):
+	if os.path.isfile (account_file) and admin_id!='admin':
 		with open (account_file, 'r') as f:
 			account_data = json.load (f)
-			print(account_data)
 			account_data['Lock_the_card']='True'
 			dump_account(account_data)
 			print(f'冻结{admin_id}账户成功')
 	else:
-		print('没有此账户')
+		print('没有此账户或不能冻结管理员账户')
 
+def add_account_vip(add_count_id):
+	db_path = db_handle.db_handle (settings.DATABASE)
+	account_file = f"{db_path}/{add_count_id}.json"
+	if os.path.isfile (account_file) and add_count_id!='admin':
+		with open (account_file, 'r') as f:
+			account_data = json.load (f)
+			account_data['VIP']='True'
+			account_data['vip_level']=1
+			dump_account(account_data)
+			print('开通VIP账户成功')
+
+	else:
+		print('没有此账户或管理员账户不能设置为VIP')
 if __name__ == '__main__':
-    freeze_account('1236')
+	add_account_vip(123456)

@@ -83,7 +83,8 @@ def Open_an_account(admin_data):
 					"balance": 0,
 					"interest": 0,
 					"expire_date": "2020-01-01",
-					"Lock_the_card": ""
+					"Lock_the_card": "",
+					"VIP_jifen":"0",
 
 				}
 				Open_account(account_id,cunkuan_json)
@@ -217,37 +218,12 @@ def Send_a_red(acc_data):
 		return send_grad
 
 def Buy_shopping(acc_data):
-	global shiji_money
 	account_data=load_current_balane(acc_data['account_id'])
 	True_or_False=account_data['VIP']
 	VIP_LEVEL=account_data['vip_level']
-	all_money = 0
-	all_moneys=[]
-	if True_or_False=='True':
-		dazhe=settings.BUSINESS['vip_level'][VIP_LEVEL]['discount']
-		print(f"你是尊贵的VIP{VIP_LEVEL}客户买菜可以打折{dazhe}哦")
-		for i in range(len(settings.shucai_menus)):
-			aa=settings.shucai_menus[f'{i+1}']["action"]
-			bb=settings.shucai_menus[f'{i+1}']["interest"]
-			print(i+1,aa,":",bb,"元")
-		while True:
-			xuanze_id = input ('请选购你的商品，每次的价格都不一样哦')
-			danjia_money = settings.shucai_menus [xuanze_id] ["interest"]
-			if all_money<account_data['balance']:
-				all_moneys.append(danjia_money)
-				all_money=all_money+danjia_money
-				shiji_money = all_money * dazhe
-				shuru_info=input('输入任意键继续,结束购物请按Q')
-				if shuru_info=='Q':
-					break
-				else:
-					continue
-			else:
-				print('你的账户余额不足，请及时充值')
-				break
-		print('你一共话费了%s元'%shiji_money)
-		account_data['balance']=account_data['balance']-shiji_money
-		dump_account(account_data)
+	admin_transaction.VIP_jifen(account_data)
+	admin_transaction.buy_shopping(account_data,True_or_False,VIP_LEVEL)
+	dump_account(account_data)
 
 
 def logout(acc_data):

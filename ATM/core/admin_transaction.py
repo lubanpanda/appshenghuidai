@@ -73,5 +73,62 @@ def add_account_vip(add_count_id):
 
 	else:
 		print('没有此账户或管理员账户不能设置为VIP')
+
+def buy_shopping(account_data,True_or_False,VIP_LEVEL):
+	global shiji_money
+	all_money = 0
+	all_moneys = []
+	if True_or_False == 'True':
+		dazhe = settings.BUSINESS ['vip_level'] [VIP_LEVEL] ['discount']
+		print (f"你是尊贵的VIP{VIP_LEVEL}客户买菜可以打折{dazhe}哦")
+		for i in range (len (settings.shucai_menus)):
+			aa = settings.shucai_menus [f'{i+1}'] ["action"]
+			bb = settings.shucai_menus [f'{i+1}'] ["interest"]
+			print (i + 1, aa, ":", bb, "元")
+		while True:
+			xuanze_id = input ('请选购你的商品，每次的价格都不一样哦')
+			if xuanze_id.isdigit():
+				danjia_money = settings.shucai_menus [xuanze_id] ["interest"]
+				if all_money < account_data ['balance']:
+					all_moneys.append (danjia_money)
+					all_money = all_money + danjia_money
+					shiji_money = all_money * dazhe
+					shuru_info = input ('输入任意键继续,结束购物请按Q')
+					if shuru_info == 'Q':
+						break
+					else:
+						continue
+				else:
+					print ('你的账户余额不足，请及时充值')
+					break
+			else:
+				print('请输入正确的编号')
+				continue
+		print ('你一共话费了%s元' % shiji_money)
+		account_data ['balance'] = account_data ['balance'] - shiji_money
+		account_data ['VIP_jifen']=account_data['VIP_jifen']+shiji_money
+		dump_account(account_data)
+		VIP_jifen(account_data)
+
+def VIP_jifen(account_data):
+	print(f"你的当前VIP等级为{account_data['vip_level']}，积分{account_data['VIP_jifen']}")
+	if 0<account_data['VIP_jifen']<=50:
+		account_data['vip_level']="1"
+		dump_account(account_data)
+	if 50 < account_data ['VIP_jifen'] <=100:
+		account_data ['vip_level'] = "2"
+		dump_account (account_data)
+	if 100 < account_data ['VIP_jifen'] <= 150:
+		account_data ['vip_level'] = "3"
+		dump_account (account_data)
+	if 150 < account_data ['VIP_jifen'] <=200:
+		account_data ['vip_level'] = "4"
+		dump_account (account_data)
+	if 200 < account_data ['VIP_jifen'] <250:
+		account_data ['vip_level'] = "5"
+		dump_account (account_data)
+	if 250 < account_data ['VIP_jifen'] < 300:
+		account_data ['vip_level'] = "6"
+		dump_account (account_data)
 if __name__ == '__main__':
 	add_account_vip(123456)

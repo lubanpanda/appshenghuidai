@@ -217,21 +217,19 @@ def Send_a_red(acc_data):
 		return send_grad
 
 def Buy_shopping(acc_data):
+	global shiji_money
 	account_data=load_current_balane(acc_data['account_id'])
 	True_or_False=account_data['VIP']
 	VIP_LEVEL=account_data['vip_level']
 	all_money = 0
 	all_moneys=[]
 	if True_or_False=='True':
-		dazhe=settings.BUSINESS['vip_level']['1']['discount']
+		dazhe=settings.BUSINESS['vip_level'][VIP_LEVEL]['discount']
 		print(f"你是尊贵的VIP{VIP_LEVEL}客户买菜可以打折{dazhe}哦")
-
-
 		for i in range(len(settings.shucai_menus)):
 			aa=settings.shucai_menus[f'{i+1}']["action"]
 			bb=settings.shucai_menus[f'{i+1}']["interest"]
 			print(i+1,aa,":",bb,"元")
-
 		while True:
 			xuanze_id = input ('请选购你的商品，每次的价格都不一样哦')
 			danjia_money = settings.shucai_menus [xuanze_id] ["interest"]

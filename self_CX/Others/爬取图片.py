@@ -17,10 +17,7 @@ def Climb_the_pictures ():
 	a = re.compile ("https.*?\.jpg")
 	b = re.findall (a, ptoho)
 	a = os.path.exists ('panda')
-	if a is True:
-		pass
-	else:
-		os.mkdir ('panda')
+	a if a else os.mkdir ('panda')
 	q = 1
 	url_adds = []
 	url_add = []
@@ -34,7 +31,7 @@ def Climb_the_pictures ():
 			url_add.append (i)
 	for a in url_add:
 		c = requests.get (a)
-		with open ('../self_CX/panda/' + str (q) + '.png', 'wb') as f:
+		with open ('../Others/panda/' + str (q) + '.png', 'wb') as f:
 			f.write (c.content)
 		print (f'正在下载第{q}张图片')
 		q += 1

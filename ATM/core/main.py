@@ -13,7 +13,7 @@ BASE_DIR = os.path.dirname (os.path.dirname (os.path.abspath (__file__)))
 user_data = {'account_id': None,  # 账户的名字
              'is_authenticated': False,  # 验证是否通过，通过后为TRUE
              'account_data': None  # 账户详情
-}
+             }
 
 "管理员的临时数据"
 user_Data = {"admin_id": None, 'admin_is_authenticated': False, 'admin_data': None}
@@ -42,13 +42,16 @@ def admin_interactive (admin_data):
 	exit_flag = False
 	if not exit_flag:
 		print (menus)
-		user_option = input (">>>".strip ())
+		try:
+			user_option = input (">>>".strip ())
 
-		if user_option in menus_dic:
-			menus_dic [user_option] (admin_data)
+			if user_option in menus_dic:
+				menus_dic [user_option] (admin_data)
 
-		else:
-			print ('输入的序号错误，请重新输入')
+			else:
+				print ('输入的序号错误，请重新输入')
+		except:
+			pass
 
 
 def Open_an_account (admin_data):
@@ -131,20 +134,23 @@ def interactive (acc_data):
 	*****************************************
 	'''
 	menu_dic = {'1': account_info, '2': repay, '3': withdrae, '4': transfer, '5': Send_a_red, '6': Buy_shopping,
-		'7': logout,
+	            '7': logout,
 
 	            }
 
 	exit_flag = False
 	if not exit_flag:
 		print (menu)
-		user_option = input (">>>".strip ())
+		try:
+			user_option = input (">>>".strip ())
 
-		if user_option in menu_dic:
-			menu_dic [user_option] (acc_data)
+			if user_option in menu_dic:
+				menu_dic [user_option] (acc_data)
 
-		else:
-			print ('输入的序号错误，请重新输入')
+			else:
+				print ('输入的序号错误，请重新输入')
+		except:
+			pass
 
 
 def withdrae (acc_data):
@@ -253,7 +259,7 @@ def transfer (acc_data):
 			try:
 				accounts_data = loads_current_balane (shoukuan_id)
 				print (f"现在借款方金额为{accounts_data['balance']}元")
-				if len (shoukuan_id) == 6 and shoukuan_id.isdigit ():
+				if len (shoukuan_id) <= 6 and shoukuan_id.isdigit ():
 					huankuan_info = mak_reimbursement (account_data, shoukuan_id)
 					print ("请选择其他服务")
 					interactive (acc_data)

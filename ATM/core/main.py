@@ -57,21 +57,25 @@ def admin_interactive (admin_data):
 def Open_an_account (admin_data):
 	account_data = load_current_balane (admin_data ['admin_id'])
 	account_id = input ('请输入账户ID:')
-	account_password = input ('请输入密码:')
-	for (dirpath, dirnames, filenames) in os.walk (f'{BASE_DIR}/db/accounts'):
-		for file in filenames:
-			if account_id == 'admin' or account_id + '.json' == file:
-				print ('不能创建管理员账号或已经存在的账户')
-				admin_interactive (admin_data)
-			else:
-				cunkuan_json = {"id": account_id, "repay": 0, "status": 0, "password": account_password, "pay_dat": 0,
-				                "credit": 0, "balance": 0, "interest": 0, "expire_date": "2020-01-01",
-				                "Lock_the_card": "", "VIP_jifen": "0",
+	if 0 < len (account_id) < 6:
+		account_password = input ('请输入密码:')
+		for (dirpath, dirnames, filenames) in os.walk (f'{BASE_DIR}/db/accounts'):
+			for file in filenames:
+				if account_id == 'admin' or account_id + '.json' == file:
+					print ('不能创建管理员账号或已经存在的账户')
+					admin_interactive (admin_data)
+				else:
+					cunkuan_json = {"id": account_id, "repay": 0, "status": 0, "password": account_password,
+					                "pay_dat": 0, "credit": 0, "balance": 0, "interest": 0, "expire_date": "2020-01-01",
+					                "Lock_the_card": "", "VIP_jifen": "0",
 
-				                }
-				Open_account (account_id, cunkuan_json)
-	print ('开户账户成功,请在选择其他的服务')
-	admin_interactive (admin_data)
+					                }
+					Open_account (account_id, cunkuan_json)
+		print ('开户账户成功,请在选择其他的服务')
+		admin_interactive (admin_data)
+	else:
+		print ('创建账户的ID不能大于6位')
+		admin_interactive (admin_data)
 
 
 def Pin_households (admin_data):

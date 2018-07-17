@@ -50,15 +50,26 @@ def modify_password (admin_id):
 		print ('你输入的账户有误,请核对后重新输入')
 
 
-def freeze_account (admin_id):
+def freeze_account (admin_id, dongjie):
 	db_path = db_handle.db_handle (settings.DATABASE)
 	account_file = f"{db_path}/{admin_id}.json"
 	if os.path.isfile (account_file) and admin_id != 'admin':
 		with open (account_file, 'r') as f:
 			account_data = json.load (f)
-			account_data ['Lock_the_card'] = 'True'
-			dump_account (account_data)
-			print (f'冻结{admin_id}账户成功')
+			if account_data ['Lock_the_card'] == 'True':
+				if dongjie == 'False':
+					account_data ['Lock_the_card'] = ''
+					dump_account (account_data)
+					print (f'解冻{admin_id}账户成功')
+				else:
+					print ('此账户已经被冻结')
+			elif account_data ['Lock_the_card'] == '':
+				if dongjie == 'True':
+					account_data ['Lock_the_card'] = 'True'
+					dump_account (account_data)
+					print (f'冻结{admin_id}账户成功')
+				else:
+					print ('此账户没有被冻结')
 	else:
 		print ('没有此账户或不能冻结管理员账户')
 
@@ -135,7 +146,3 @@ def VIP_jifen (account_data):
 	elif 250 < account_data ['VIP_jifen']:
 		account_data ['vip_level'] = "6"
 		dump_account (account_data)
-
-
-if __name__ == '__main__':
-	add_account_vip (123456)

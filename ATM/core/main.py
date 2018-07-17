@@ -19,7 +19,7 @@ user_data = {'account_id': None,  # 账户的名字
 user_Data = {"admin_id": None, 'admin_is_authenticated': False, 'admin_data': None}
 
 
-####################管理员账户操作#######################
+############################管理员账户操作#######################
 
 def account_info (acc_data = user_data ['account_data']):
 	print (
@@ -96,7 +96,7 @@ def Pin_households (admin_data):
 
 def Business_is_dealt (admin_data):
 	account_data = load_current_balane (admin_data ['admin_id'])
-	input_admin_id = input ('--------亲爱的用户，请选择你要办理的业务----------\n1.修改用户交易密码\n2.冻结账户\n3.开通账户会员\n')
+	input_admin_id = input ('--------亲爱的用户，请选择你要办理的业务----------\n1.修改用户交易密码\n2.冻结账户\n3.解冻账户\n4.开通账户会员\n')
 	shuru_id = 1
 	while shuru_id <= 3:
 		if input_admin_id == str (1):
@@ -105,10 +105,14 @@ def Business_is_dealt (admin_data):
 			admin_interactive (account_data)
 		elif input_admin_id == str (2):
 			freeze_id = input ('请输入冻结账户的id')
-			admin_transaction.freeze_account (freeze_id)
+			admin_transaction.freeze_account (freeze_id, 'True')
 			admin_interactive (account_data)
-
 		elif input_admin_id == str (3):
+			freezes_id = input ('请输入解冻账户的id')
+			admin_transaction.freeze_account (freezes_id, 'False')
+			admin_interactive (account_data)
+			admin_interactive (admin_data)
+		elif input_admin_id == str (4):
 			"增加服务字段,往用户里增加一些别的信息，如:是否可以升级为会员"
 			add_account_id = input ('请输入要添加功能的账号：')
 			admin_transaction.add_account_vip (add_account_id)

@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
 __author__ = "panda  84305510@qq.com"
 
 from ATM.core import admin_transaction, auth
 from ATM.core.accounts import *
+from ATM.core.borrow_info import brrow_moeny, judge_money_date
 from ATM.core.transaction import *
 
 ############################账户信息模块########################
@@ -55,7 +57,6 @@ def admin_interactive (admin_data):
 
 
 def Open_an_account (admin_data):
-	account_data = load_current_balane (admin_data ['admin_id'])
 	account_id = input ('请输入账户ID:')
 	if 0 < len (account_id) < 6:
 		account_password = input ('请输入密码:')
@@ -67,7 +68,7 @@ def Open_an_account (admin_data):
 				else:
 					cunkuan_json = {"id": account_id, "repay": 0, "status": 0, "password": account_password,
 					                "pay_dat": 0, "credit": 0, "balance": 0, "interest": 0, "expire_date": "2020-01-01",
-					                "Lock_the_card": "", "VIP_jifen": "0",
+					                "Lock_the_card": "", "VIP_jifen": "0", "jiekuan_money": 0, "jiekuan_date": 0
 
 					                }
 					Open_account (account_id, cunkuan_json)
@@ -80,7 +81,6 @@ def Open_an_account (admin_data):
 
 def Pin_households (admin_data):
 	account_list = []
-	account_data = load_current_balane (admin_data ['admin_id'])
 	account_id = input ('请输入要销户的账户ID:')
 	for (dirpath, dirnames, filenames) in os.walk (f'{BASE_DIR}/db/accounts'):
 		for file in filenames:
@@ -94,8 +94,7 @@ def Pin_households (admin_data):
 		admin_interactive (admin_data)
 
 
-def Business_is_dealt (admin_data):
-	account_data = load_current_balane (admin_data ['admin_id'])
+def Business_is_dealt (account_data):
 	input_admin_id = input ('--------亲爱的用户，请选择你要办理的业务----------\n1.修改用户交易密码\n2.冻结账户\n3.解冻账户\n4.开通账户会员\n')
 	shuru_id = 1
 	while shuru_id <= 3:
@@ -111,12 +110,11 @@ def Business_is_dealt (admin_data):
 			freezes_id = input ('请输入解冻账户的id')
 			admin_transaction.freeze_account (freezes_id, 'False')
 			admin_interactive (account_data)
-			admin_interactive (admin_data)
 		elif input_admin_id == str (4):
 			"增加服务字段,往用户里增加一些别的信息，如:是否可以升级为会员"
 			add_account_id = input ('请输入要添加功能的账号：')
 			admin_transaction.add_account_vip (add_account_id)
-			admin_interactive (admin_data)
+			admin_interactive (account_data)
 		else:
 			print ("输入有误，请重新输入")
 			shuru_id += 1
@@ -138,11 +136,12 @@ def interactive (acc_data):
 	*   4.转账                               *
 	*	5.发红包                             *
 	*   6.网上买菜系统                        *
-	*	7.退出                               *
+	*   7.借款                               *
+	*	8.退出                               *
 	*****************************************
 	'''
 	menu_dic = {'1': account_info, '2': repay, '3': withdrae, '4': transfer, '5': Send_a_red, '6': Buy_shopping,
-	            '7': logout,
+	            '7': borrowing, '8': logout,
 
 	            }
 
@@ -168,6 +167,7 @@ def withdrae (acc_data):
 	你的信用值是：{account_data['credit']}
 	你的可取款金额是：{account_data['balance']}
 	"""
+	# TODO 下午写关于信用值的内容
 	print (infp)
 	back_flag = False
 	if not back_flag:
@@ -276,6 +276,21 @@ def transfer (acc_data):
 				interactive (acc_data)
 
 
+def borrowing (acc_data):
+	account_data = load_current_balane (acc_data ['account_id'])
+	print (account_data)
+	# account_data['credit']
+	if 80 <= account_data ['credit'] <= 100:
+		print ('你的信用积分可以进行贷款')
+		borrowing_moeny = input ('请输入你要借贷的金额：')
+		brrowing_yuefen = input ('请输入借款的月份,一个月利率为1%，2个月为2%，以此类推')
+		brrow_moeny (account_data ['id'], borrowing_moeny, brrowing_yuefen)
+	elif account_data ['credit'] < 80:
+		print ('你的信用值太低，不能借款')
+	interactive (acc_data)
+
+
+
 ##############登陆的一些交互和方法#################
 
 def ordinary_user ():
@@ -290,6 +305,7 @@ def administrator ():
 	if user_Data ['admin_is_authenticated']:
 		user_Data ['admin_data'] = acc_data
 	print ('登陆成功啦～～～～～～～～～')
+	judge_money_date()
 	admin_interactive (user_Data)
 
 

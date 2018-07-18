@@ -24,24 +24,27 @@ def acc_auch (accout, password):
 	if os.path.isfile (account_file):
 		with open (account_file, 'r') as f:
 			account_data = json.load (f)
-			if account_data ["Lock_the_card"] == '':
-				if account_data ['password'] == password:
-					exp_time_stamp = time.mktime (time.strptime (account_data ['expire_date'], "%Y-%m-%d"))
-					if time.time () > exp_time_stamp:
-						print ('你的账户已经过期,请重新补办新的银行卡或重新登陆')
+			try:
+				if account_data ["Lock_the_card"] == '':
+					if account_data ['password'] == password:
+						exp_time_stamp = time.mktime (time.strptime (account_data ['expire_date'], "%Y-%m-%d"))
+						if time.time () > exp_time_stamp:
+							print ('你的账户已经过期,请重新补办新的银行卡或重新登陆')
+						else:
+							return account_data
 					else:
-						return account_data
-				else:
-					print ('你输入的密码不正确')
-					pass_word += 1
-					if pass_word == 3:
-						print ('卡的密码输入次数过多，卡已经被锁定')
-						account_data ["Lock_the_card"] = True
-			elif account_data ["Lock_the_card"] == 'True':
-				print ('你的卡已经被锁定不能进行操作了，请联系银行工作人员')
-				exit ()
+						print ('你输入的密码不正确')
+						pass_word += 1
+						if pass_word == 3:
+							print ('卡的密码输入次数过多，卡已经被锁定')
+							account_data ["Lock_the_card"] = True
+				elif account_data ["Lock_the_card"] == 'True':
+					print ('你的卡已经被锁定不能进行操作了，请联系银行工作人员')
+					exit ()
+			except Exception:
+				print ('没有这个账号')
 	else:
-		print ('没有这个文件目录')
+		print ('没有这个账户目录')
 
 
 def admin_acc_auch (admin_id, admin_password):
@@ -73,10 +76,10 @@ def acc_login (user_data):
 	"""
 	retry_count = 0
 	while user_data ['is_authenticated'] is not True and retry_count < 3:
-		accout = input ('请输入你的账号'.strip () + os.linesep)
-		password = input ('请输入你的密码'.strip () + os.linesep)
-		# accout='123456'
-		# password='111'
+		# accout = input ('请输入你的账号'.strip () + os.linesep)
+		# password = input ('请输入你的密码'.strip () + os.linesep)
+		accout = '123456'
+		password = '111'
 		auch = acc_auch (accout, password)
 		if auch:
 			user_data ['is_authenticated'] = True

@@ -32,8 +32,7 @@ TRANSACTION_TYPE={
 
 }
 
-ADMIN_DATABASE={
-	'path':f'{BASE_DIR}/db/accounts',
+ADMIN_DATABASE={'path': f'{BASE_DIR}/db/Admin',
 	'names':'admin'
 
 }

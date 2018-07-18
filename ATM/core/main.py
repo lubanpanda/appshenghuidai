@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
 __author__ = "panda  84305510@qq.com"
 
 from ATM.core import admin_transaction, auth
@@ -67,7 +66,8 @@ def Open_an_account (admin_data):
 					admin_interactive (admin_data)
 				else:
 					cunkuan_json = {"id": account_id, "repay": 0, "status": 0, "password": account_password,
-					                "pay_dat": 0, "credit": 0, "balance": 0, "interest": 0, "expire_date": "2020-01-01",
+					                "pay_dat": 0, "credit": 100, "balance": 0, "interest": 0,
+					                "expire_date": "2020-01-01",
 					                "Lock_the_card": "", "VIP_jifen": "0", "jiekuan_money": 0, "jiekuan_date": 0
 
 					                }

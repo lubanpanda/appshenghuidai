@@ -15,6 +15,12 @@ BASE_DIR = os.path.dirname (os.path.dirname (os.path.abspath (__file__)))
 
 
 def brrow_moeny (add_count_id, borrowing_moeny, brrowing_yuefen):
+	"""
+	:param add_count_id: 账户ID
+	:param borrowing_moeny: 借款金额
+	:param brrowing_yuefen: 借款的月份
+	:return:
+	"""
 	nowtime = datetime.datetime.today ()
 	brrowing_yuefen = int (brrowing_yuefen)
 	borrowing_moeny = int (borrowing_moeny)
@@ -51,4 +57,4 @@ def judge_money_date ():
 
 
 if __name__ == '__main__':
-	judge_money_date ()  # brrow_moeny(123456,100,2)
+	judge_money_date ()

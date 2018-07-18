@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 __author__ = "panda  84305510@qq.com"
+__version__ = '1.0.0'
 
 from ATM.core import admin_transaction, auth
 from ATM.core.accounts import *
@@ -56,6 +57,11 @@ def admin_interactive (admin_data):
 
 
 def Open_an_account (admin_data):
+	"""
+
+	:param admin_data:
+	:return:开户
+	"""
 	account_id = input ('请输入账户ID:')
 	if 0 < len (account_id) < 6:
 		account_password = input ('请输入密码:')
@@ -80,6 +86,11 @@ def Open_an_account (admin_data):
 
 
 def Pin_households (admin_data):
+	"""
+
+	:param admin_data:
+	:return:销户
+	"""
 	account_list = []
 	account_id = input ('请输入要销户的账户ID:')
 	for (dirpath, dirnames, filenames) in os.walk (f'{BASE_DIR}/db/accounts'):
@@ -161,6 +172,11 @@ def interactive (acc_data):
 
 
 def withdrae (acc_data):
+	"""
+
+	:param acc_data:
+	:return:存款
+	"""
 	account_data = load_current_balane (acc_data ['account_id'])
 	infp = f"""
 	---------欢迎使用panda银行系统-----------
@@ -182,6 +198,11 @@ def withdrae (acc_data):
 
 
 def Send_a_red (acc_data):
+	"""
+
+	:param acc_data:
+	:return:发红包
+	"""
 	account_data = load_current_balane (acc_data ['account_id'])  # 获取登陆人的信息
 	print (f"#######欢迎来到银行发红包系统，目前你的金额为{account_data['balance']}元#######")
 	hongbao_flag = False
@@ -209,6 +230,11 @@ def Send_a_red (acc_data):
 
 
 def Buy_shopping (acc_data):
+	"""
+
+	:param acc_data:
+	:return: 购物
+	"""
 	account_data = load_current_balane (acc_data ['account_id'])
 	True_or_False = account_data ['VIP']
 	VIP_LEVEL = account_data ['vip_level']
@@ -218,12 +244,22 @@ def Buy_shopping (acc_data):
 
 
 def logout (acc_data):
+	"""
+
+	:param acc_data:账户的总信息
+	:return: 退出程序
+	"""
 	account_data = load_current_balane (acc_data ['account_id'])
 	print (f"账户{account_data['id']}已退出")
 	exit ()
 
 
 def repay (acc_data):
+	"""
+
+	:param acc_data:账户的总信息
+	:return: 还款
+	"""
 	account_data = load_current_balane (acc_data ['account_id'])
 	infp = f"""
 		---------欢迎使用panda银行系统-----------
@@ -253,6 +289,11 @@ def repay (acc_data):
 
 
 def transfer (acc_data):
+	"""
+
+	:param acc_data: 账户的总信息
+	:return: 转账
+	"""
 	account_data = load_current_balane (acc_data ['account_id'])
 	infp = f"""
 			---------欢迎使用panda银行系统-----------
@@ -277,6 +318,11 @@ def transfer (acc_data):
 
 
 def borrowing (acc_data):
+	"""
+
+	:param acc_data:账户的总信息
+	:return: 借款信息
+	"""
 	account_data = load_current_balane (acc_data ['account_id'])
 	print (account_data)
 	# account_data['credit']
@@ -294,6 +340,10 @@ def borrowing (acc_data):
 ##############登陆的一些交互和方法#################
 
 def ordinary_user ():
+	"""
+
+	:return: 账户登陆入口
+	"""
 	acc_data = auth.acc_login (user_data)  # 判断是否登陆
 	if user_data ['is_authenticated']:  # 如果没有认证就更改下状态
 		user_data ['account_data'] = acc_data
@@ -301,6 +351,10 @@ def ordinary_user ():
 
 
 def administrator ():
+	"""
+
+	:return:管理员登陆入口
+	"""
 	acc_data = auth.admin_login (user_Data)
 	if user_Data ['admin_is_authenticated']:
 		user_Data ['admin_data'] = acc_data
@@ -310,6 +364,10 @@ def administrator ():
 
 
 def run ():
+	"""
+
+	:return:程序主程序入口
+	"""
 	input_id = input ('请选择你要登陆的账户类型，1是管理员用户，2是普通账户,其余任意键退出\n')
 	if input_id == str (1):
 		administrator ()

@@ -60,6 +60,12 @@ def mak_reimbursement (account_data, shoukuan_id):
 
 
 def Save_gade_money (account_data, money):
+	"""
+
+	:param account_data:
+	:param money:红包的钱
+	:return: 更新现有钱的金额
+	"""
 	account_data ['balance'] -= float (money)
 	dump_account (account_data)
 	print ('现在的金额为%s元' % account_data ['balance'])
@@ -67,6 +73,12 @@ def Save_gade_money (account_data, money):
 
 
 def qiang_red (Q_money, cishu):
+	"""
+
+	:param Q_money:红包的钱
+	:param cishu: 发的数量
+	:return:
+	"""
 	nowtime = time.strftime ('%Y-%m-%d %H:%M:%S', time.localtime ())
 	total = float (Q_money)
 	num = int (cishu)

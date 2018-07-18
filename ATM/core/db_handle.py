@@ -22,6 +22,11 @@ def db_handle (coon_parms):
 
 
 def too_file_db_handles (conn_params):
+	"""
+
+	:param conn_params:收款人路径
+	:return:
+	"""
 	db_paths = f"{conn_params['path']}/{conn_params['too_name']}"
 	return db_paths
 

@@ -48,6 +48,12 @@ def acc_auch (accout, password):
 
 
 def admin_acc_auch (admin_id, admin_password):
+	"""
+
+	:param admin_id:管理员账户
+	:param admin_password:管理员密码
+	:return:
+	"""
 	db_path = db_handle.admins_db_handle (settings.ADMIN_DATABASE)
 	account_file = f"{db_path}.json"
 	pass_word = 1
@@ -92,6 +98,11 @@ def acc_login (user_data):
 
 
 def admin_login (user_Data):
+	"""
+
+	:param user_Data:账户信息
+	:return:
+	"""
 	admin_count = 0
 	while user_Data ['admin_is_authenticated'] is not True and admin_count < 3:
 		admin_accout = input ('请输入你的账号'.strip () + os.linesep)

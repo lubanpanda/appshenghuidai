@@ -39,10 +39,10 @@ def brrow_moeny (add_count_id, borrowing_moeny, brrowing_yuefen):
 		print ('借款失败,原因未知')
 
 
-"判断是否是还款期预期"
-
-
 def judge_money_date ():
+	"""
+	:return: 每次登陆时自动查看有无预期的账户
+	"""
 	now_time = datetime.datetime.today ().date ()
 	for (dirpath, dirnames, filenames) in walk (f'{BASE_DIR}/db/accounts'):
 		for file in filenames:
@@ -54,7 +54,3 @@ def judge_money_date ():
 					if str (now_time) >= account_data ['jiekuan_date'] != 0:
 						print (
 							f"账户{file[:-5]}没有进行即使还款，还款金额{account_data['jiekuan_money']},最后还款日期为{account_data['jiekuan_date']},请注意及时催交\n")
-
-
-if __name__ == '__main__':
-	judge_money_date ()

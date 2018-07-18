@@ -17,6 +17,11 @@ from ATM.core.accounts import dump_account
 
 
 def modify_password (admin_id):
+	"""
+
+	:param admin_id:管理员ID
+	:return:
+	"""
 	db_path = db_handle.db_handle (settings.DATABASE)
 	account_file = f"{db_path}/{admin_id}.json"
 	if os.path.isfile (account_file):
@@ -45,12 +50,17 @@ def modify_password (admin_id):
 				print ('你取消了本次密码的修改')
 			else:
 				print ('输入有误，已退出修改密码功能')
-
 	else:
 		print ('你输入的账户有误,请核对后重新输入')
 
 
 def freeze_account (admin_id, dongjie):
+	"""
+
+	:param admin_id:管理员ID
+	:param dongjie: 判断状态
+	:return:
+	"""
 	db_path = db_handle.db_handle (settings.DATABASE)
 	account_file = f"{db_path}/{admin_id}.json"
 	if os.path.isfile (account_file) and admin_id != 'admin':
@@ -75,6 +85,11 @@ def freeze_account (admin_id, dongjie):
 
 
 def add_account_vip (add_count_id):
+	"""
+
+	:param add_count_id:添加账户的ID
+	:return:
+	"""
 	db_path = db_handle.db_handle (settings.DATABASE)
 	account_file = f"{db_path}/{add_count_id}.json"
 	if os.path.isfile (account_file) and add_count_id != 'admin':
@@ -90,6 +105,13 @@ def add_account_vip (add_count_id):
 
 
 def buy_shopping (account_data, True_or_False, VIP_LEVEL):
+	"""
+
+	:param account_data:账户信息
+	:param True_or_False: 判断是否是VIP
+	:param VIP_LEVEL: VIP的级别
+	:return:
+	"""
 	global shiji_money
 	all_money = 0
 	all_moneys = []
@@ -127,6 +149,11 @@ def buy_shopping (account_data, True_or_False, VIP_LEVEL):
 
 
 def VIP_jifen (account_data):
+	"""
+
+	:param account_data:账户总信息
+	:return: 积分的多少来确定VIP的等级
+	"""
 	print (f"你的当前VIP等级为{account_data['vip_level']}，积分{account_data['VIP_jifen']}")
 	if 0 < account_data ['VIP_jifen'] <= 50:
 		account_data ['vip_level'] = "1"

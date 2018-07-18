@@ -14,6 +14,7 @@ TRANSACTION_TYPE：
 
 BASE_DIR=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# 各种账户信息的文件存储路径
 DATABASE={
 	'engine':'file_storage',
 	'name':'accounts',
@@ -24,6 +25,7 @@ DATABASE={
 	"red_path":f"{BASE_DIR}/db/Redenvelopesnatcher/"      #抢红包的名单
 }
 
+#银行间各种交易的利率和方式
 TRANSACTION_TYPE={
 	'repay':{'action':'plus','interest':0},#还款
 	'withdraw': {'action': 'minus', 'interest': 0.05},#存钱
@@ -32,11 +34,13 @@ TRANSACTION_TYPE={
 
 }
 
+#管理员账户路径
 ADMIN_DATABASE={'path': f'{BASE_DIR}/db/Admin',
 	'names':'admin'
 
 }
 
+#VIP的标准
 BUSINESS={
 	"VIP":'vip',
 	"vip_level":{
@@ -49,7 +53,7 @@ BUSINESS={
 	             }
 }
 
-
+#购物菜单明细
 shucai_menus={
 	'1': {'action': '黄瓜', 'interest':3.2},
 	'2': {'action': '辣椒', 'interest': 3.3},

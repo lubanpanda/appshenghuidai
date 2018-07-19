@@ -24,8 +24,16 @@ user_Data = {"admin_id": None, 'admin_is_authenticated': False, 'admin_data': No
 ############################管理员账户操作#######################
 
 def account_info (acc_data = user_data ['account_data']):
-	print (
-		f"-------你的账户信息如下---------\n账户:{acc_data['account_id']}\n密码:{acc_data['account_data']['password']}\n总资产:{acc_data['account_data']['balance']}\n利息:{acc_data['account_data']['interest']}\n卡的有效期:{acc_data['account_data']['expire_date']}\n")
+	print (f"-------你的账户信息如下---------\n"
+	       f"账户:{acc_data['account_id']}\n"
+	       f"密码:{acc_data['account_data']['password']}\n"
+	       f"总资产:{acc_data['account_data']['balance']}\n"
+	       f"信用值:{acc_data['account_data']['credit']}\n"
+	       f"利息:{acc_data['account_data']['interest']}\n"
+	       f"卡的有效期:{acc_data['account_data']['expire_date']}\n"
+	       f"会员等级:{acc_data['account_data']['vip_level']}\n"
+	       f"借款金额：{acc_data['account_data']['jiekuan_money']}\n"
+	       f"还款日期：{acc_data['account_data']['jiekuan_date']}")
 	print ("请问是否还需要其他服务，是的话请选择服务菜单")
 	interactive (acc_data)
 
@@ -147,7 +155,7 @@ def interactive (acc_data):
 	*   4.转账                               *
 	*	5.发红包                             *
 	*   6.网上买菜系统                        *
-	*   7.借款                               *
+	*   7.贷款业务                           *
 	*	8.退出                               *
 	*****************************************
 	'''
@@ -323,17 +331,20 @@ def borrowing (acc_data):
 	:param acc_data:账户的总信息
 	:return: 借款信息
 	"""
-	account_data = load_current_balane (acc_data ['account_id'])
-	print (account_data)
-	# account_data['credit']
-	if 80 <= account_data ['credit'] <= 100:
-		print ('你的信用积分可以进行贷款')
-		borrowing_moeny = input ('请输入你要借贷的金额：')
-		brrowing_yuefen = input ('请输入借款的月份,一个月利率为1%，2个月为2%，以此类推')
-		brrow_moeny (account_data ['id'], borrowing_moeny, brrowing_yuefen)
-	elif account_data ['credit'] < 80:
-		print ('你的信用值太低，不能借款')
-	interactive (acc_data)
+	borro_yewu = input ('请输入你要办的的业务：\n1.贷款\n2.还款\n')
+	if borro_yewu == str (1):
+		account_data = load_current_balane (acc_data ['account_id'])
+		print ('信用分低于80时不可以贷款')
+		if 80 <= account_data ['credit'] <= 100:
+			print ('你的信用积分可以进行贷款')
+			borrowing_moeny = input ('请输入你要借贷的金额：')
+			brrowing_yuefen = input ('请输入借款的月份,一个月利率为1%，2个月为2%，以此类推')
+			brrow_moeny (account_data ['id'], borrowing_moeny, brrowing_yuefen)
+		elif account_data ['credit'] < 80:
+			print ('你的信用值太低，不能借款')
+		interactive (acc_data)
+	elif borro_yewu == str (2):
+		pass
 
 
 

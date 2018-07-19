@@ -66,7 +66,6 @@ def admin_interactive (admin_data):
 
 def Open_an_account (admin_data):
 	"""
-
 	:param admin_data:
 	:return:开户
 	"""
@@ -95,7 +94,6 @@ def Open_an_account (admin_data):
 
 def Pin_households (admin_data):
 	"""
-
 	:param admin_data:
 	:return:销户
 	"""
@@ -181,7 +179,6 @@ def interactive (acc_data):
 
 def withdrae (acc_data):
 	"""
-
 	:param acc_data:
 	:return:存款
 	"""
@@ -207,7 +204,6 @@ def withdrae (acc_data):
 
 def Send_a_red (acc_data):
 	"""
-
 	:param acc_data:
 	:return:发红包
 	"""
@@ -239,7 +235,6 @@ def Send_a_red (acc_data):
 
 def Buy_shopping (acc_data):
 	"""
-
 	:param acc_data:
 	:return: 购物
 	"""
@@ -253,7 +248,6 @@ def Buy_shopping (acc_data):
 
 def logout (acc_data):
 	"""
-
 	:param acc_data:账户的总信息
 	:return: 退出程序
 	"""
@@ -264,7 +258,6 @@ def logout (acc_data):
 
 def repay (acc_data):
 	"""
-
 	:param acc_data:账户的总信息
 	:return: 还款
 	"""
@@ -298,7 +291,6 @@ def repay (acc_data):
 
 def transfer (acc_data):
 	"""
-
 	:param acc_data: 账户的总信息
 	:return: 转账
 	"""
@@ -327,7 +319,6 @@ def transfer (acc_data):
 
 def borrowing (acc_data):
 	"""
-
 	:param acc_data:账户的总信息
 	:return: 借款信息
 	"""
@@ -344,7 +335,11 @@ def borrowing (acc_data):
 			print ('你的信用值太低，不能借款')
 		interactive (acc_data)
 	elif borro_yewu == str (2):
-		pass
+		account_data = load_current_balane (acc_data ['account_id'])
+		print (f"尊敬的{account_data['id']}账户，你目前需要还款的金额是{account_data['jiekuan_money']}元")
+		huankuan_money = input ('请输入你要还款的金额：')
+		huankuan_money = int (huankuan_money)
+
 
 
 
@@ -352,7 +347,6 @@ def borrowing (acc_data):
 
 def ordinary_user ():
 	"""
-
 	:return: 账户登陆入口
 	"""
 	acc_data = auth.acc_login (user_data)  # 判断是否登陆
@@ -363,7 +357,6 @@ def ordinary_user ():
 
 def administrator ():
 	"""
-
 	:return:管理员登陆入口
 	"""
 	acc_data = auth.admin_login (user_Data)
@@ -376,7 +369,6 @@ def administrator ():
 
 def run ():
 	"""
-
 	:return:程序主程序入口
 	"""
 	input_id = input ('请选择你要登陆的账户类型，1是管理员用户，2是普通账户,其余任意键退出\n')

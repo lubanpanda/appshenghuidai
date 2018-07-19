@@ -61,7 +61,6 @@ def mak_reimbursement (account_data, shoukuan_id):
 
 def Save_gade_money (account_data, money):
 	"""
-
 	:param account_data:
 	:param money:红包的钱
 	:return: 更新现有钱的金额
@@ -74,7 +73,6 @@ def Save_gade_money (account_data, money):
 
 def qiang_red (Q_money, cishu):
 	"""
-
 	:param Q_money:红包的钱
 	:param cishu: 发的数量
 	:return:

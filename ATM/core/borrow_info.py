@@ -33,10 +33,21 @@ def brrow_moeny (add_count_id, borrowing_moeny, brrowing_yuefen):
 			date = nowtime + datetime.timedelta (days = 30)
 			account_data ['jiekuan_money'] += shiji_moeny
 			account_data ['jiekuan_date'] = str (date.date ())
+			account_data ['balance'] += shiji_moeny
 			dump_account (account_data)
 			print (f"借款成功,你已成功借款{account_data ['jiekuan_money']}元，还款日期是{account_data ['jiekuan_date']}")
 	else:
 		print ('借款失败,原因未知')
+
+
+def reimbursement (huankuan_money, all_money, jiekuan_money):
+	"""
+	:param huankuan_money: 还款金额
+	:param all_money: 账户总金额
+	:param jiekuan_money: 借款的金额
+	:return:还款
+	"""
+
 
 
 def judge_money_date ():

@@ -82,10 +82,10 @@ def acc_login (user_data):
 	"""
 	retry_count = 0
 	while user_data ['is_authenticated'] is not True and retry_count < 3:
-		# accout = input ('请输入你的账号'.strip () + os.linesep)
-		# password = input ('请输入你的密码'.strip () + os.linesep)
-		accout = '123456'
-		password = '111'
+		accout = input ('请输入你的账号'.strip () + os.linesep)
+		password = input ('请输入你的密码'.strip () + os.linesep)
+		# accout = '123456'
+		# password = '111'
 		auch = acc_auch (accout, password)
 		if auch:
 			user_data ['is_authenticated'] = True
@@ -107,6 +107,8 @@ def admin_login (user_Data):
 	while user_Data ['admin_is_authenticated'] is not True and admin_count < 3:
 		admin_accout = input ('请输入你的账号'.strip () + os.linesep)
 		admin_password = input ('请输入你的密码'.strip () + os.linesep)
+		# admin_accout='admin'
+		# admin_password=123456
 		auchs = admin_acc_auch (admin_accout, admin_password)
 		if auchs:
 			user_Data ['admin_is_authenticated'] = True

@@ -117,7 +117,12 @@ def Pin_households (admin_data):
 
 
 def Business_is_dealt (account_data):
-	input_admin_id = input ('--------亲爱的用户，请选择你要办理的业务----------\n1.修改用户交易密码\n2.冻结账户\n3.解冻账户\n4.开通账户会员\n')
+	input_admin_id = input ('--------亲爱的用户，请选择你要办理的业务----------\n'
+	                        '1.修改用户交易密码\n'
+	                        '2.冻结账户\n'
+	                        '3.解冻账户\n'
+	                        '4.开通账户会员\n'
+	                        '请输入办理业务的序号')
 	shuru_id = 1
 	if input_admin_id.isdigit ():
 		while shuru_id <= 3:

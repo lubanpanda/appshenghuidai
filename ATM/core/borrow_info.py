@@ -83,4 +83,4 @@ def judge_money_date ():
 				with open (account_file, 'r') as f:
 					account_data = json.load (f)
 					account_data ['jiekuan_date'] if account_data ['jiekuan_date'] == 0 else print (
-						f"账户{file[:-5]}没有进行即使还款，还款金额{account_data['jiekuan_money']},最后还款日期为{account_data['jiekuan_date']},请注意及时催交\n")  # if account_data ['jiekuan_date'] == 0:pass  # else:  # 	print (  # 		f"账户{file[:-5]}没有进行即使还款，还款金额{account_data['jiekuan_money']},最后还款日期为{account_data['jiekuan_date']},请注意及时催交\n")
+						f"账户{file[:-5]}没有进行即使还款，还款金额{account_data['jiekuan_money']},最后还款日期为{account_data['jiekuan_date']},请注意及时催交\n")

@@ -221,31 +221,32 @@ def Send_a_red (acc_data):
 	print (f"#######欢迎来到银行发红包系统，目前你的金额为{account_data['balance']}元#######")
 	hongbao_flag = False
 	if not hongbao_flag:
-		send_grad = input ('请输入你要发送红包的金额，最低为0元，最高为200元:' + os.linesep).strip ()
-		if send_grad.isdigit ():
-			if len (send_grad) > 0 and send_grad.isdigit ():
-				if str (0) < send_grad <= str (200):
-					grad_number = input ('请输入红包个数').strip ()
-					numbers = 1
-					if str (0) >= grad_number > str (send_grad * 100):
-						print ('红包输入的个数有误')
-						numbers += 0
-						if numbers == 3:
-							print ('输入次数太多，已退出红包程序')
-							interactive (acc_data)
+		if account_data ['balance'] > 0:
+			send_grad = input ('请输入你要发送红包的金额，最低为0元，最高为200元:' + os.linesep).strip ()
+			if send_grad.isdigit ():
+				if len (send_grad) > 0 and send_grad.isdigit () and send_grad <= account_data ['balance']:
+					if str (0) < send_grad <= str (200):
+						grad_number = input ('请输入红包个数').strip ()
+						numbers = 1
+						if str (0) >= grad_number > str (send_grad * 100):
+							print ('红包输入的个数有误')
+							numbers += 0
+							if numbers == 3:
+								print ('输入次数太多，已退出红包程序')
+								interactive (acc_data)
+						else:
+							print ('红包发送成功')
+							Save_gade_money (account_data, send_grad)
+							print (f'哇，有人发{send_grad}红包了，大家快来抢吧')
+							qiang_red (int (send_grad), int (grad_number))
+							interactive (account_data)
 					else:
-						print ('红包发送成功')
-						Save_gade_money (account_data, send_grad)
-						print (f'哇，有人发{send_grad}红包了，大家快来抢吧')
-						qiang_red (int (send_grad), int (grad_number))
-						interactive (account_data)
-				else:
-					print ('你输入的金额有误')
-					Send_a_red (acc_data)
-			return send_grad
-		else:
-			print ('你输入的字符非法')
-			interactive (acc_data)
+						print ('你输入的金额有误')
+						Send_a_red (acc_data)
+				return send_grad
+			else:
+				print ('你输入的字符非法')
+				interactive (acc_data)
 
 
 def Buy_shopping (acc_data):
@@ -285,7 +286,7 @@ def repay (acc_data):
 	print (infp)
 	back_flag = False
 	if not back_flag:
-		huankuan_money = input ("请输入你要存款的金额或者输入0选择退出进行其他操作:").strip ()
+		huankuan_money = input ("请输入你要还款的金额或者输入0选择退出进行其他操作:").strip ()
 		if huankuan_money.isdigit ():
 			if len (huankuan_money) > 0 and huankuan_money.isdigit ():
 				huanqian = account_data ['repay']
@@ -352,7 +353,11 @@ def borrowing (acc_data):
 			print ('你的信用积分可以进行贷款')
 			borrowing_moeny = input ('请输入你要借贷的金额：')
 			brrowing_yuefen = input ('请输入借款的月份,一个月利率为1%，2个月为2%，以此类推')
-			borrow_info.brrow_moeny (account_data ['id'], borrowing_moeny, brrowing_yuefen)
+			if borrowing_moeny.isdigit () and brrowing_yuefen.isdigit ():
+				borrow_info.brrow_moeny (account_data ['id'], borrowing_moeny, brrowing_yuefen)
+			else:
+				print ('有非法字符，请重新操作')
+				borrowing (acc_data)
 		elif account_data ['credit'] < 80:
 			print ('你的信用值太低，不能借款')
 		interactive (acc_data)
@@ -362,7 +367,9 @@ def borrowing (acc_data):
 		huankuan_money = input ('请输入你要还款的金额：').strip ()
 		if huankuan_money.isdigit ():
 			huankuan_money = int (huankuan_money)
-			borrow_info.reimbursement (huankuan_money, account_data ['balance'], account_data ['jiekuan_money'])
+			borrow_info.reimbursement (account_data ['id'], huankuan_money, account_data ['balance'],
+			                           account_data ['jiekuan_money'])
+			interactive (acc_data)
 		else:
 			print ('请输入数字')
 			borrowing (acc_data)

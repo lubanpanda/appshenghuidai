@@ -4,14 +4,14 @@
   "status": 0,
   "password": "111",
   "pay_dat": 0,
-  "credit": 80,
-  "balance": -98.33999999999999,
+  "credit": 81,
+  "balance": 0,
   "interest": 0,
   "expire_date": "2020-01-01",
   "Lock_the_card": "",
   "VIP": "True",
   "vip_level": "6",
   "VIP_jifen": 305.6,
-  "jiekuan_money": 510.0,
-  "jiekuan_date": "2010-08-17"
+  "jiekuan_money": 0,
+  "jiekuan_date": 0
 }

@@ -26,9 +26,8 @@ DATABASE={
 }
 
 #银行间各种交易的利率和方式
-TRANSACTION_TYPE={
-	'repay':{'action':'plus','interest':0},#还款
-	'withdraw': {'action': 'minus', 'interest': 0.05},#存钱
+TRANSACTION_TYPE={'repay': {'action': 'plus', 'interest': 0},  # 村款
+	'withdraw': {'action': 'minus', 'interest': 0.05},  # 还钱
 	'transfer': {'action': 'minus', 'interest': 0.05},#转账
 	'consume': {'action': 'minus', 'interest': 0},#刷卡
 

@@ -40,17 +40,33 @@ def brrow_moeny (add_count_id, borrowing_moeny, brrowing_yuefen):
 		print ('借款失败,原因未知')
 
 
-def reimbursement (huankuan_money, all_money, jiekuan_money):
+def reimbursement (add_count_id, huankuan_money, all_money, jiekuan_money):
 	"""
 	:param huankuan_money: 还款金额
 	:param all_money: 账户总金额
 	:param jiekuan_money: 借款的金额
 	:return:还款
 	"""
-
-
-# if huankuan_money
-
+	if huankuan_money <= jiekuan_money:
+		if all_money - jiekuan_money <= 0:
+			db_path = db_handle.db_handle (settings.DATABASE)
+			account_file = f"{db_path}/{add_count_id}.json"
+			if os.path.isfile (account_file) and add_count_id != 'admin':
+				with open (account_file, 'r') as f:
+					account_data = json.load (f)
+					account_data ['balance'] = all_money - huankuan_money
+					account_data ['jiekuan_money'] = jiekuan_money - huankuan_money
+					account_data ['credit'] += 1
+					dump_account (account_data)
+					print ('还款成功,你的信用值+1')
+				if account_data ['jiekuan_money'] == 0:
+					account_data ['jiekuan_money'] = 0
+					account_data ['jiekuan_date'] = 0
+					dump_account (account_data)
+		else:
+			print ('还款后你的账户总资产将为负，所以不能进行还款，快快去搬砖存款吧')
+	else:
+		print ('还款金额不能大于借款金额')
 
 
 def judge_money_date ():

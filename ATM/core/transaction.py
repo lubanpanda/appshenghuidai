@@ -10,7 +10,7 @@ from ATM.conf import settings
 from ATM.core.accounts import dump_account, dumps_account, loads_current_balane, save_red_info
 
 
-def mak_transaction (account_data, tran_type, amount):
+def mak_transaction (huanqian, account_data, tran_type, amount):
 	"""
 	:param account_data: 账户信息
 	:param tran_type: 交易类型
@@ -30,6 +30,7 @@ def mak_transaction (account_data, tran_type, amount):
 				print (f"你的额度不够，你现在的余额是{new_balance}")
 				return
 		account_data ['balance'] = new_balance
+		account_data ['repay'] = huanqian
 		dump_account (account_data)
 		return account_data
 	else:

@@ -292,15 +292,17 @@ def repay (acc_data):
 				huanqian = account_data ['repay']
 				if abs (huanqian) >= int (huankuan_money):
 					print ("还款金额输入正确")
-					huanqian += int (huankuan_money)
-					account_data ['repay'] = huanqian
-					huankuan_qian = mak_transaction (account_data, 'withdraw', huankuan_money)
-					print (f"现在的账户余额还有{huankuan_qian['balance']}")
-					if huanqian == 0:
-						print ("你的所有账款已还清")
+					if huanqian < 0:
+						huanqian += int (huankuan_money)  # 还款的钱为负数，所以直接相加即可
+						huankuan_qian = mak_transaction (huanqian, account_data, 'withdraw', huankuan_money)
+						print (f"现在的账户余额还有{huankuan_qian['balance']}")
+						if huanqian == 0:
+							print ("你的所有账款已还清")
+						else:
+							print (f"还有{account_data['repay']}未还")
+						interactive (acc_data)
 					else:
-						print (f"还有{account_data['repay']}未还")
-					interactive (acc_data)
+						print ('欠债已还清')
 				else:
 					print (f"还款金额输入错误或者你已经还清了所有的欠款")
 					interactive (acc_data)

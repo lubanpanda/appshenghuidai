@@ -183,7 +183,6 @@ def withdrae (acc_data):
 	你的信用值是：{account_data['credit']}
 	你的可取款金额是：{account_data['balance']}
 	"""
-	# TODO 下午写关于信用值的内容
 	print (infp)
 	back_flag = False
 	if not back_flag:
@@ -194,7 +193,8 @@ def withdrae (acc_data):
 				print ("存款成功")
 			interactive (acc_data)
 		else:
-			print ("你输入的金额有误，请重新输入,或者输入0选择退出进行其他操作")
+			print ("你输入的金额有误，请选择进行其他操作内容")
+			interactive (acc_data)
 
 
 def Send_a_red (acc_data):

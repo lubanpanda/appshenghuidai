@@ -3,9 +3,8 @@
 __author__ = "panda  84305510@qq.com"
 __version__ = '1.0.0'
 
-from ATM.core import admin_transaction, auth
+from ATM.core import admin_transaction, auth, borrow_info
 from ATM.core.accounts import *
-from ATM.core.borrow_info import brrow_moeny, judge_money_date
 from ATM.core.transaction import *
 
 ############################账户信息模块########################
@@ -54,10 +53,8 @@ def admin_interactive (admin_data):
 		print (menus)
 		try:
 			user_option = input (">>>".strip ())
-
 			if user_option in menus_dic:
 				menus_dic [user_option] (admin_data)
-
 			else:
 				print ('输入的序号错误，请重新输入')
 		except:
@@ -70,25 +67,29 @@ def Open_an_account (admin_data):
 	:return:开户
 	"""
 	account_id = input ('请输入账户ID:')
-	if 0 < len (account_id) < 6:
-		account_password = input ('请输入密码:')
-		for (dirpath, dirnames, filenames) in os.walk (f'{BASE_DIR}/db/accounts'):
-			for file in filenames:
-				if account_id == 'admin' or account_id + '.json' == file:
-					print ('不能创建管理员账号或已经存在的账户')
-					admin_interactive (admin_data)
-				else:
-					cunkuan_json = {"id": account_id, "repay": 0, "status": 0, "password": account_password,
-					                "pay_dat": 0, "credit": 100, "balance": 0, "interest": 0,
-					                "expire_date": "2020-01-01",
-					                "Lock_the_card": "", "VIP_jifen": "0", "jiekuan_money": 0, "jiekuan_date": 0
+	if account_id.isdigit ():
+		if 0 < len (account_id) < 6:
+			account_password = input ('请输入密码:')
+			for (dirpath, dirnames, filenames) in os.walk (f'{BASE_DIR}/db/accounts'):
+				for file in filenames:
+					if account_id == 'admin' or account_id + '.json' == file:
+						print ('不能创建管理员账号或已经存在的账户')
+						admin_interactive (admin_data)
+					else:
+						cunkuan_json = {"id": account_id, "repay": 0, "status": 0, "password": account_password,
+						                "pay_dat": 0, "credit": 100, "balance": 0, "interest": 0,
+						                "expire_date": "2020-01-01", "Lock_the_card": "", "VIP_jifen": "0",
+						                "jiekuan_money": 0, "jiekuan_date": 0
 
-					                }
-					Open_account (account_id, cunkuan_json)
-		print ('开户账户成功,请在选择其他的服务')
-		admin_interactive (admin_data)
+						                }
+						Open_account (account_id, cunkuan_json)
+			print ('开户账户成功,请在选择其他的服务')
+			admin_interactive (admin_data)
+		else:
+			print ('创建账户的ID不能大于6位')
+			admin_interactive (admin_data)
 	else:
-		print ('创建账户的ID不能大于6位')
+		print ('你输入的字符非法')
 		admin_interactive (admin_data)
 
 
@@ -99,44 +100,51 @@ def Pin_households (admin_data):
 	"""
 	account_list = []
 	account_id = input ('请输入要销户的账户ID:')
-	for (dirpath, dirnames, filenames) in os.walk (f'{BASE_DIR}/db/accounts'):
-		for file in filenames:
-			account_list.append (file)
-	if account_id + '.json' in account_list:
-		os.remove (f'{BASE_DIR}/db/accounts/{account_id}.json')
-		print ('销户成功')
-		admin_interactive (admin_data)
+	if account_id.isdigit ():
+		for (dirpath, dirnames, filenames) in os.walk (f'{BASE_DIR}/db/accounts'):
+			for file in filenames:
+				account_list.append (file)
+		if account_id + '.json' in account_list:
+			os.remove (f'{BASE_DIR}/db/accounts/{account_id}.json')
+			print ('销户成功')
+			admin_interactive (admin_data)
+		else:
+			print (f'{account_id}账户没有找到')
+			admin_interactive (admin_data)
 	else:
-		print (f'{account_id}账户没有找到')
+		print ('你输入的字符非法')
 		admin_interactive (admin_data)
 
 
 def Business_is_dealt (account_data):
 	input_admin_id = input ('--------亲爱的用户，请选择你要办理的业务----------\n1.修改用户交易密码\n2.冻结账户\n3.解冻账户\n4.开通账户会员\n')
 	shuru_id = 1
-	while shuru_id <= 3:
-		if input_admin_id == str (1):
-			shuru_xiugai_id = input ('请输入要修改的账户ID：')
-			admin_transaction.modify_password (shuru_xiugai_id)
-			admin_interactive (account_data)
-		elif input_admin_id == str (2):
-			freeze_id = input ('请输入冻结账户的id')
-			admin_transaction.freeze_account (freeze_id, 'True')
-			admin_interactive (account_data)
-		elif input_admin_id == str (3):
-			freezes_id = input ('请输入解冻账户的id')
-			admin_transaction.freeze_account (freezes_id, 'False')
-			admin_interactive (account_data)
-		elif input_admin_id == str (4):
-			"增加服务字段,往用户里增加一些别的信息，如:是否可以升级为会员"
-			add_account_id = input ('请输入要添加功能的账号：')
-			admin_transaction.add_account_vip (add_account_id)
-			admin_interactive (account_data)
-		else:
-			print ("输入有误，请重新输入")
-			shuru_id += 1
-	print ('你输入的指令次数错误太多，已经暂停服务，如需服务请重新开始操作')
-
+	if input_admin_id.isdigit ():
+		while shuru_id <= 3:
+			if input_admin_id == str (1):
+				shuru_xiugai_id = input ('请输入要修改的账户ID：')
+				admin_transaction.modify_password (shuru_xiugai_id)
+				admin_interactive (account_data)
+			elif input_admin_id == str (2):
+				freeze_id = input ('请输入冻结账户的id')
+				admin_transaction.freeze_account (freeze_id, 'True')
+				admin_interactive (account_data)
+			elif input_admin_id == str (3):
+				freezes_id = input ('请输入解冻账户的id')
+				admin_transaction.freeze_account (freezes_id, 'False')
+				admin_interactive (account_data)
+			elif input_admin_id == str (4):
+				"增加服务字段,往用户里增加一些别的信息，如:是否可以升级为会员"
+				add_account_id = input ('请输入要添加功能的账号：')
+				admin_transaction.add_account_vip (add_account_id)
+				admin_interactive (account_data)
+			else:
+				print ("输入有误，请重新输入")
+				shuru_id += 1
+		print ('你输入的指令次数错误太多，已经暂停服务，如需服务请重新开始操作')
+	else:
+		print ('你输入的字符非法')
+		admin_interactive (account_data)
 
 def admin_logout (admin_data):
 	exit ()
@@ -167,10 +175,8 @@ def interactive (acc_data):
 		print (menu)
 		try:
 			user_option = input (">>>".strip ())
-
 			if user_option in menu_dic:
 				menu_dic [user_option] (acc_data)
-
 			else:
 				print ('输入的序号错误，请重新输入')
 		except:
@@ -192,13 +198,17 @@ def withdrae (acc_data):
 	back_flag = False
 	if not back_flag:
 		qukuan_money = input ("请输入你要存款的金额或者输入0选择退出进行其他操作:").strip ()
-		if len (qukuan_money) > 0 and qukuan_money.isdigit ():
-			new_balance = mak_transaction (account_data, 'repay', qukuan_money)
-			if new_balance:
-				print ("存款成功")
-			interactive (acc_data)
+		if qukuan_money.isdigit ():
+			if len (qukuan_money) > 0 and qukuan_money.isdigit ():
+				new_balance = mak_transaction (account_data, 'repay', qukuan_money)
+				if new_balance:
+					print ("存款成功")
+				interactive (acc_data)
+			else:
+				print ("你输入的金额有误，请选择进行其他操作内容")
+				interactive (acc_data)
 		else:
-			print ("你输入的金额有误，请选择进行其他操作内容")
+			print ('你输入的字符非法')
 			interactive (acc_data)
 
 
@@ -212,25 +222,30 @@ def Send_a_red (acc_data):
 	hongbao_flag = False
 	if not hongbao_flag:
 		send_grad = input ('请输入你要发送红包的金额，最低为0元，最高为200元:' + os.linesep).strip ()
-		if len (send_grad) > 0 and send_grad.isdigit ():
-			if str (0) < send_grad <= str (200):
-				grad_number = input ('请输入红包个数').strip ()
-				numbers = 1
-				if str (0) >= grad_number > str (send_grad * 100):
-					print ('红包输入的个数有误')
-					numbers += 0
-					if numbers == 3:
-						print ('输入次数太多，已退出红包程序')
-						interactive (acc_data)
+		if send_grad.isdigit ():
+			if len (send_grad) > 0 and send_grad.isdigit ():
+				if str (0) < send_grad <= str (200):
+					grad_number = input ('请输入红包个数').strip ()
+					numbers = 1
+					if str (0) >= grad_number > str (send_grad * 100):
+						print ('红包输入的个数有误')
+						numbers += 0
+						if numbers == 3:
+							print ('输入次数太多，已退出红包程序')
+							interactive (acc_data)
+					else:
+						print ('红包发送成功')
+						Save_gade_money (account_data, send_grad)
+						print (f'哇，有人发{send_grad}红包了，大家快来抢吧')
+						qiang_red (int (send_grad), int (grad_number))
+						interactive (account_data)
 				else:
-					print ('红包发送成功')
-					Save_gade_money (account_data, send_grad)
-					print (f'哇，有人发{send_grad}红包了，大家快来抢吧')
-					qiang_red (int (send_grad), int (grad_number))
-			else:
-				print ('你输入的金额有误')
-				Send_a_red (acc_data)
-		return send_grad
+					print ('你输入的金额有误')
+					Send_a_red (acc_data)
+			return send_grad
+		else:
+			print ('你输入的字符非法')
+			interactive (acc_data)
 
 
 def Buy_shopping (acc_data):
@@ -271,22 +286,26 @@ def repay (acc_data):
 	back_flag = False
 	if not back_flag:
 		huankuan_money = input ("请输入你要存款的金额或者输入0选择退出进行其他操作:").strip ()
-		if len (huankuan_money) > 0 and huankuan_money.isdigit ():
-			huanqian = account_data ['repay']
-			if abs (huanqian) >= int (huankuan_money):
-				print ("还款金额输入正确")
-				huanqian += int (huankuan_money)
-				account_data ['repay'] = huanqian
-				huankuan_qian = mak_transaction (account_data, 'withdraw', huankuan_money)
-				print (f"现在的账户余额还有{huankuan_qian['balance']}")
-				if huanqian == 0:
-					print ("你的所有账款已还清")
+		if huankuan_money.isdigit ():
+			if len (huankuan_money) > 0 and huankuan_money.isdigit ():
+				huanqian = account_data ['repay']
+				if abs (huanqian) >= int (huankuan_money):
+					print ("还款金额输入正确")
+					huanqian += int (huankuan_money)
+					account_data ['repay'] = huanqian
+					huankuan_qian = mak_transaction (account_data, 'withdraw', huankuan_money)
+					print (f"现在的账户余额还有{huankuan_qian['balance']}")
+					if huanqian == 0:
+						print ("你的所有账款已还清")
+					else:
+						print (f"还有{account_data['repay']}未还")
+					interactive (acc_data)
 				else:
-					print (f"还有{account_data['repay']}未还")
-				interactive (acc_data)
-			else:
-				print (f"还款金额输入错误或者你已经还清了所有的欠款")
-				interactive (acc_data)
+					print (f"还款金额输入错误或者你已经还清了所有的欠款")
+					interactive (acc_data)
+		else:
+			print ('你输入的字符非法')
+			interactive (acc_data)
 
 
 def transfer (acc_data):
@@ -304,7 +323,7 @@ def transfer (acc_data):
 	shoukuan_flag = False
 	if not shoukuan_flag:
 		shoukuan_id = input ('请输入收款方账户的6位id：').strip ()
-		if shoukuan_id:
+		if shoukuan_id and shoukuan_id.isdigit ():
 			try:
 				accounts_data = loads_current_balane (shoukuan_id)
 				print (f"现在借款方金额为{accounts_data['balance']}元")
@@ -315,6 +334,9 @@ def transfer (acc_data):
 			except Exception:
 				print ("没有此账号，请重新选择服务")
 				interactive (acc_data)
+		else:
+			print ('输入的内容非法')
+			interactive (acc_data)
 
 
 def borrowing (acc_data):
@@ -330,16 +352,23 @@ def borrowing (acc_data):
 			print ('你的信用积分可以进行贷款')
 			borrowing_moeny = input ('请输入你要借贷的金额：')
 			brrowing_yuefen = input ('请输入借款的月份,一个月利率为1%，2个月为2%，以此类推')
-			brrow_moeny (account_data ['id'], borrowing_moeny, brrowing_yuefen)
+			borrow_info.brrow_moeny (account_data ['id'], borrowing_moeny, brrowing_yuefen)
 		elif account_data ['credit'] < 80:
 			print ('你的信用值太低，不能借款')
 		interactive (acc_data)
 	elif borro_yewu == str (2):
 		account_data = load_current_balane (acc_data ['account_id'])
 		print (f"尊敬的{account_data['id']}账户，你目前需要还款的金额是{account_data['jiekuan_money']}元")
-		huankuan_money = input ('请输入你要还款的金额：')
-		huankuan_money = int (huankuan_money)
-
+		huankuan_money = input ('请输入你要还款的金额：').strip ()
+		if huankuan_money.isdigit ():
+			huankuan_money = int (huankuan_money)
+			borrow_info.reimbursement (huankuan_money, account_data ['balance'], account_data ['jiekuan_money'])
+		else:
+			print ('请输入数字')
+			borrowing (acc_data)
+	else:
+		print ('输入有误')
+		interactive (acc_data)
 
 
 
@@ -363,7 +392,7 @@ def administrator ():
 	if user_Data ['admin_is_authenticated']:
 		user_Data ['admin_data'] = acc_data
 	print ('登陆成功啦～～～～～～～～～')
-	judge_money_date()
+	borrow_info.judge_money_date ()
 	admin_interactive (user_Data)
 
 

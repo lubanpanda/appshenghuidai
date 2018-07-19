@@ -50,16 +50,16 @@ def acc_auch (accout, password, pass_word):
 		print ('没有这个账户目录')
 
 
-def admin_acc_auch (admin_id, admin_password):
+def admin_acc_auch (admin_id, admin_password, pass_word):
 	"""
 
 	:param admin_id:管理员账户
 	:param admin_password:管理员密码
+	:param pass_word:次数
 	:return:
 	"""
 	db_path = db_handle.admins_db_handle (settings.ADMIN_DATABASE)
 	account_file = f"{db_path}.json"
-	pass_word = 1
 	if os.path.isfile (account_file):
 		with open (account_file, 'r') as f:
 			account_data = json.load (f)
@@ -112,7 +112,7 @@ def admin_login (user_Data):
 		admin_password = input ('请输入你的密码'.strip () + os.linesep)
 		# admin_accout='admin'
 		# admin_password='123456'
-		auchs = admin_acc_auch (admin_accout, admin_password)
+		auchs = admin_acc_auch (admin_accout, admin_password, admin_count)
 		if auchs:
 			user_Data ['admin_is_authenticated'] = True
 			user_Data ['admin_id'] = admin_accout

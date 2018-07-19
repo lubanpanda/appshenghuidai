@@ -8,19 +8,20 @@ import time
 
 from ATM.conf import settings
 from ATM.core import db_handle
+from ATM.core.accounts import dump_account
 from ATM.log.atm_log import *
 
 
-def acc_auch (accout, password):
+def acc_auch (accout, password, pass_word):
 	"""
 	:param accout: 账户
 	:param password: 登陆密码
+	:param pass_word:次数的判定
 	:return:
 	"""
 	# 返回当前的路径信息，通过配置信息来验证是否正确
 	db_path = db_handle.db_handle (settings.DATABASE)
 	account_file = f"{db_path}/{accout}.json"
-	pass_word = 1
 	if os.path.isfile (account_file):
 		with open (account_file, 'r') as f:
 			account_data = json.load (f)
@@ -36,8 +37,10 @@ def acc_auch (accout, password):
 						print ('你输入的密码不正确')
 						pass_word += 1
 						if pass_word == 3:
-							print ('卡的密码输入次数过多，卡已经被锁定')
-							account_data ["Lock_the_card"] = True
+							print ('卡的密码输入次数过多，卡已经被锁定,请联系银行工作人员进行解锁')
+							account_data ["Lock_the_card"] = 'True'
+							dump_account (account_data)
+							exit ()
 				elif account_data ["Lock_the_card"] == 'True':
 					print ('你的卡已经被锁定不能进行操作了，请联系银行工作人员')
 					exit ()
@@ -86,7 +89,7 @@ def acc_login (user_data):
 		password = input ('请输入你的密码'.strip () + os.linesep)
 		# accout = '123456'
 		# password = '111'
-		auch = acc_auch (accout, password)
+		auch = acc_auch (accout, password, retry_count)
 		if auch:
 			user_data ['is_authenticated'] = True
 			user_data ['account_id'] = accout

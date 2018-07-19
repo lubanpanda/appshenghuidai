@@ -74,7 +74,6 @@ def judge_money_date ():
 	"""
 	:return: 每次登陆时自动查看有无预期的账户
 	"""
-	now_time = datetime.datetime.today ().date ()
 	for (dirpath, dirnames, filenames) in walk (f'{BASE_DIR}/db/accounts'):
 		for file in filenames:
 			if file.endswith ('json'):

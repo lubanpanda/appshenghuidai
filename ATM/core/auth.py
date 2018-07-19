@@ -108,7 +108,7 @@ def admin_login (user_Data):
 		admin_accout = input ('请输入你的账号'.strip () + os.linesep)
 		admin_password = input ('请输入你的密码'.strip () + os.linesep)
 		# admin_accout='admin'
-		# admin_password=123456
+		# admin_password='123456'
 		auchs = admin_acc_auch (admin_accout, admin_password)
 		if auchs:
 			user_Data ['admin_is_authenticated'] = True

@@ -42,6 +42,7 @@ def brrow_moeny (add_count_id, borrowing_moeny, brrowing_yuefen):
 
 def reimbursement (add_count_id, huankuan_money, all_money, jiekuan_money):
 	"""
+	:param add_count_id:账户ID
 	:param huankuan_money: 还款金额
 	:param all_money: 账户总金额
 	:param jiekuan_money: 借款的金额

@@ -34,10 +34,9 @@ TRANSACTION_TYPE={'repay': {'action': 'plus', 'interest': 0},  # 村款
 }
 
 #管理员账户路径
-ADMIN_DATABASE={'path': f'{BASE_DIR}/db/Admin',
-	'names':'admin'
+ADMIN_DATABASE = {'path': f'{BASE_DIR}/db/Admin', 'names': 'admin'
 
-}
+                  }
 
 #VIP的标准
 BUSINESS={

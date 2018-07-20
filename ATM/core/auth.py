@@ -8,7 +8,7 @@ import time
 
 from ATM.conf import settings
 from ATM.core import db_handle
-from ATM.core.accounts import dump_account
+from ATM.core.accounts import admin_lock, dump_account
 from ATM.log.atm_log import *
 
 
@@ -59,19 +59,30 @@ def admin_acc_auch (admin_id, admin_password, pass_word):
 	:return:
 	"""
 	db_path = db_handle.admins_db_handle (settings.ADMIN_DATABASE)
-	account_file = f"{db_path}.json"
+	account_file = f"{db_path}/{admin_id}.json"
 	if os.path.isfile (account_file):
 		with open (account_file, 'r') as f:
 			account_data = json.load (f)
 			try:
 				if account_data ['admin_id'] == admin_id:
 					if account_data ['admin_password'] == admin_password:
-						return account_data
+						now_time = time.time ()
+						if now_time < account_data ['jishi_time']:
+							yuji_time = (account_data ['jishi_time'] - now_time) / 60
+							print (f"你的禁止登陆日期到{account_data['suoding_time']}，预计还需要{round(yuji_time,2)}分钟,程序已自动退出")
+							return 0
+						else:
+							return account_data
 					else:
 						print ('你输入的密码不正确')
 						pass_word += 1
 						if pass_word == 3:
-							print ('卡的密码输入次数过多，请稍后再来尝试')
+							print ('卡的密码输入次数过多，请五分钟后再来尝试')
+							suding_time = time.time () + 300
+							nowtime = time.strftime ('%Y-%m-%d %H:%M:%S', time.localtime (suding_time))
+							account_data ['suoding_time'] = nowtime
+							account_data ['jishi_time'] = suding_time
+							admin_lock (account_data, admin_id)
 				else:
 					print ('没有这个账户')
 			except:
@@ -108,8 +119,11 @@ def admin_login (user_Data):
 	"""
 	admin_count = 0
 	while user_Data ['admin_is_authenticated'] is not True and admin_count < 3:
-		admin_accout = input ('请输入你的账号'.strip () + os.linesep)
-		admin_password = input ('请输入你的密码'.strip () + os.linesep)
+		try:
+			admin_accout = input ('请输入你的账号'.strip () + os.linesep)
+			admin_password = input ('请输入你的密码'.strip () + os.linesep)
+		except Exception:
+			pass
 		# admin_accout='admin'
 		# admin_password='123456'
 		auchs = admin_acc_auch (admin_accout, admin_password, admin_count)
@@ -117,6 +131,8 @@ def admin_login (user_Data):
 			user_Data ['admin_is_authenticated'] = True
 			user_Data ['admin_id'] = admin_accout
 			return auchs
+		elif auchs == 0:
+			exit ()
 		admin_count += 1
 	else:
 		logging.info (f"你的账号已经通过了认证权限")

@@ -8,6 +8,13 @@ from ATM.conf import settings
 from ATM.core import db_handle
 
 
+def admin_lock (accounts_data, account_id):
+	db_path = db_handle.admins_db_handle (settings.ADMIN_DATABASE)
+	account_file = f"{db_path}/{account_id}.json"
+	with open (account_file, 'w') as f:
+		acc_data = json.dump (accounts_data, f)
+		return acc_data
+
 def load_current_balane (account_id):
 	"""
 	:param account_id:用户名

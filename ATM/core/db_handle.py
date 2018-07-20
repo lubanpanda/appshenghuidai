@@ -41,7 +41,7 @@ def red_path (conn_params):
 
 
 def admin_db_handle (conn_params):
-	db_path = f"{conn_params['path']}/{conn_params['names']}"
+	db_path = f"{conn_params['path']}"
 	return db_path
 
 

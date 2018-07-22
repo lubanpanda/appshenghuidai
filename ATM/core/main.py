@@ -151,7 +151,9 @@ def Business_is_dealt (account_data):
 		print ('你输入的字符非法')
 		admin_interactive (account_data)
 
-def admin_logout (admin_data):
+
+def admin_logout (admin_data = ''):
+	print (admin_data)
 	exit ()
 
 
@@ -197,7 +199,7 @@ def withdrae (acc_data):
 	infp = f"""
 	---------欢迎使用panda银行系统-----------
 	你的信用值是：{account_data['credit']}
-	你的可取款金额是：{account_data['balance']}
+	你现有的金额是：{account_data['balance']}
 	"""
 	print (infp)
 	back_flag = False
@@ -299,7 +301,9 @@ def repay (acc_data):
 					print ("还款金额输入正确")
 					if huanqian < 0:
 						huanqian += int (huankuan_money)  # 还款的钱为负数，所以直接相加即可
-						huankuan_qian = mak_transaction (huanqian, account_data, 'withdraw', huankuan_money)
+						account_data ['repay'] = huanqian
+						dump_account (account_data)
+						huankuan_qian = mak_transaction (account_data, 'withdraw', huankuan_money)
 						print (f"现在的账户余额还有{huankuan_qian['balance']}")
 						if huanqian == 0:
 							print ("你的所有账款已还清")
@@ -336,7 +340,7 @@ def transfer (acc_data):
 				accounts_data = loads_current_balane (shoukuan_id)
 				print (f"现在借款方金额为{accounts_data['balance']}元")
 				if len (shoukuan_id) <= 6 and shoukuan_id.isdigit ():
-					huankuan_info = mak_reimbursement (account_data, shoukuan_id)
+					mak_reimbursement (account_data, shoukuan_id)
 					print ("请选择其他服务")
 					interactive (acc_data)
 			except Exception:

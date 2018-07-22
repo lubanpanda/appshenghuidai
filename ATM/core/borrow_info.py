@@ -30,7 +30,7 @@ def brrow_moeny (add_count_id, borrowing_moeny, brrowing_yuefen):
 	if os.path.isfile (account_file) and add_count_id != 'admin':
 		with open (account_file, 'r') as f:
 			account_data = json.load (f)
-			date = nowtime + datetime.timedelta (days = 30)
+			date = nowtime + datetime.timedelta (days = 30 * brrowing_yuefen)
 			account_data ['jiekuan_money'] += shiji_moeny
 			account_data ['jiekuan_date'] = str (date.date ())
 			account_data ['balance'] += shiji_moeny
@@ -49,7 +49,7 @@ def reimbursement (add_count_id, huankuan_money, all_money, jiekuan_money):
 	:return:还款
 	"""
 	if huankuan_money <= jiekuan_money:
-		if all_money - jiekuan_money <= 0:
+		if all_money - jiekuan_money >= 0:
 			db_path = db_handle.db_handle (settings.DATABASE)
 			account_file = f"{db_path}/{add_count_id}.json"
 			if os.path.isfile (account_file) and add_count_id != 'admin':

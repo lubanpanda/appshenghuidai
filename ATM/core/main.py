@@ -262,8 +262,8 @@ def Buy_shopping (acc_data):
 	"""
 	account_data = load_current_balane (acc_data ['account_id'])
 	True_or_False = account_data ['VIP']
-	VIP_LEVEL = account_data ['vip_level']
 	admin_transaction.VIP_jifen (account_data)
+	VIP_LEVEL = account_data ['vip_level']
 	admin_transaction.buy_shopping (account_data, True_or_False, VIP_LEVEL)
 	dump_account (account_data)
 

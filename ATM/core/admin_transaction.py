@@ -95,10 +95,13 @@ def add_account_vip (add_count_id):
 	if os.path.isfile (account_file) and add_count_id != 'admin':
 		with open (account_file, 'r') as f:
 			account_data = json.load (f)
-			account_data ['VIP'] = 'True'
-			account_data ['vip_level'] = "1"
-			dump_account (account_data)
-			print ('开通VIP账户成功')
+			if account_data ['VIP'] == 'True':
+				print ('此账户已经是VIP了无需重复开通')
+			else:
+				account_data ['VIP'] = 'True'
+				account_data ['vip_level'] = "1"
+				dump_account (account_data)
+				print ('开通VIP账户成功')
 
 	else:
 		print ('没有此账户或管理员账户不能设置为VIP')
@@ -154,7 +157,6 @@ def VIP_jifen (account_data):
 	:param account_data:账户总信息
 	:return: 积分的多少来确定VIP的等级
 	"""
-	print (f"你的当前VIP等级为{account_data['vip_level']}，积分{account_data['VIP_jifen']}")
 	if 0 < account_data ['VIP_jifen'] <= 50:
 		account_data ['vip_level'] = "1"
 		dump_account (account_data)
@@ -173,3 +175,4 @@ def VIP_jifen (account_data):
 	elif 250 < account_data ['VIP_jifen']:
 		account_data ['vip_level'] = "6"
 		dump_account (account_data)
+	print (f"你的当前VIP等级为{account_data['vip_level']}，积分{account_data['VIP_jifen']}")

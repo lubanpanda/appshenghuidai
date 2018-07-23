@@ -152,8 +152,7 @@ def Business_is_dealt (account_data):
 		admin_interactive (account_data)
 
 
-def admin_logout (admin_data = ''):
-	print (admin_data)
+def admin_logout (admin_data):
 	exit ()
 
 
@@ -418,11 +417,14 @@ def run ():
 	"""
 	:return:程序主程序入口
 	"""
-	input_id = input ('请选择你要登陆的账户类型，1是管理员用户，2是普通账户,其余任意键退出\n')
-	if input_id == str (1):
-		administrator ()
-	elif input_id == str (2):
-		ordinary_user ()
-	else:
-		print ("欢迎你下次使用本银行")
-		exit ()
+	try:
+		input_id = input ('请选择你要登陆的账户类型，1是管理员用户，2是普通账户,其余任意键退出\n')
+		if input_id == str (1):
+			administrator ()
+		elif input_id == str (2):
+			ordinary_user ()
+		else:
+			print ("欢迎你下次使用本银行")
+			exit ()
+	except:
+		pass

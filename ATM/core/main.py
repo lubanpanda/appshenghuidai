@@ -185,6 +185,7 @@ def interactive (acc_data):
 				menu_dic [user_option] (acc_data)
 			else:
 				print ('输入的序号错误，请重新输入')
+				interactive (acc_data)
 		except:
 			pass
 

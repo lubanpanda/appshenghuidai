@@ -159,20 +159,15 @@ def VIP_jifen (account_data):
 	"""
 	if 0 < account_data ['VIP_jifen'] <= 50:
 		account_data ['vip_level'] = "1"
-		dump_account (account_data)
 	elif 50 < account_data ['VIP_jifen'] <= 100:
 		account_data ['vip_level'] = "2"
-		dump_account (account_data)
 	elif 100 < account_data ['VIP_jifen'] <= 150:
 		account_data ['vip_level'] = "3"
-		dump_account (account_data)
 	elif 150 < account_data ['VIP_jifen'] <= 200:
 		account_data ['vip_level'] = "4"
-		dump_account (account_data)
 	elif 200 < account_data ['VIP_jifen'] < 250:
 		account_data ['vip_level'] = "5"
-		dump_account (account_data)
 	elif 250 < account_data ['VIP_jifen']:
 		account_data ['vip_level'] = "6"
-		dump_account (account_data)
+	dump_account (account_data)
 	print (f"你的当前VIP等级为{account_data['vip_level']}，积分{account_data['VIP_jifen']}")

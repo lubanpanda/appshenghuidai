@@ -267,6 +267,7 @@ def Buy_shopping (acc_data):
 	VIP_LEVEL = account_data ['vip_level']
 	admin_transaction.buy_shopping (account_data, True_or_False, VIP_LEVEL)
 	dump_account (account_data)
+	interactive (acc_data)
 
 
 def logout (acc_data):

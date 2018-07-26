@@ -146,7 +146,7 @@ def buy_shopping (account_data, True_or_False, VIP_LEVEL):
 				continue
 		print ('你一共话费了%s元' % shiji_money)
 		account_data ['balance'] = account_data ['balance'] - shiji_money
-		account_data ['VIP_jifen'] = account_data ['VIP_jifen'] + shiji_money
+		account_data ['VIP_jifen'] = round (account_data ['VIP_jifen'] + shiji_money, 2)
 		dump_account (account_data)
 		VIP_jifen (account_data)
 

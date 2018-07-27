@@ -5,13 +5,14 @@
 # @Time : 2018/3/7 14:00
 
 import smtplib
+from email.mime.application import MIMEApplication
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from email.mime.application import MIMEApplication
+
 
 def send_QQ_Email(name):
 	username = '1007596772@qq.com'
-	password = 'jpqlxgdlwcdlbdfa'
+	password = 'dpkbrcajfhsibfgi'
 	sender = username
 	receivers = ','.join(['84305510@qq.com'])
 

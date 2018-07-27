@@ -153,12 +153,18 @@ def Business_is_dealt (account_data):
 
 
 def admin_logout (admin_data):
+	print (f"{admin_data['admin_id']}账户已退出")
 	exit ()
 
 
 ###################普通用户操作#########################
 
 def interactive (acc_data):
+	"""
+	总交互内容
+	:param acc_data: 
+	:return: 
+	"""
 	menu = '''
 	**********welcome to panda bank**********
 	*	1.账户信息                           *
@@ -376,15 +382,19 @@ def borrowing (acc_data):
 	elif borro_yewu == str (2):
 		account_data = load_current_balane (acc_data ['account_id'])
 		print (f"尊敬的{account_data['id']}账户，你目前需要还款的金额是{account_data['jiekuan_money']}元")
-		huankuan_money = input ('请输入你要还款的金额：').strip ()
-		if huankuan_money.isdigit ():
-			huankuan_money = int (huankuan_money)
-			borrow_info.reimbursement (account_data ['id'], huankuan_money, account_data ['balance'],
-			                           account_data ['jiekuan_money'])
+		if account_data ['jiekuan_money'] == 0:
+			print ('你的贷款已经还清，不需要还款.')
 			interactive (acc_data)
 		else:
-			print ('请输入数字')
-			borrowing (acc_data)
+			huankuan_money = input ('请输入你要还款的金额：').strip ()
+			if huankuan_money.isdigit ():
+				huankuan_money = int (huankuan_money)
+				borrow_info.reimbursement (account_data ['id'], huankuan_money, account_data ['balance'],
+				                           account_data ['jiekuan_money'])
+				interactive (acc_data)
+			else:
+				print ('请输入数字')
+				borrowing (acc_data)
 	else:
 		print ('输入有误')
 		interactive (acc_data)

@@ -69,6 +69,7 @@
           <option value="pip._vendor.requests.packages.chardet" />
           <option value="ATM.core.transaction.accounts" />
           <option value="shenghuidai.ATM.bin.atm.*" />
+          <option value="SHD_automation.panda_Email.MAX_VALUE" />
         </list>
       </option>
     </inspection_tool>

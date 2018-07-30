@@ -3,7 +3,7 @@
 __author__ = "panda  84305510@qq.com"
 __version__ = '1.0.0'
 
-from ATM.core import admin_transaction, auth, borrow_info
+from ATM.core import admin_transaction, auth, borrow_info, send_ATMzip
 from ATM.core.accounts import *
 from ATM.core.transaction import *
 
@@ -400,7 +400,6 @@ def borrowing (acc_data):
 		interactive (acc_data)
 
 
-
 ##############登陆的一些交互和方法#################
 
 def ordinary_user ():
@@ -430,11 +429,16 @@ def run ():
 	:return:程序主程序入口
 	"""
 	try:
-		input_id = input ('请选择你要登陆的账户类型，1是管理员用户，2是普通账户,其余任意键退出\n')
+		input_id = input ('请选择你要操作的类型，1是管理员用户，2是普通账户,3是打包程序并发送给需要的人,其余任意键退出\n')
 		if input_id == str (1):
 			administrator ()
 		elif input_id == str (2):
 			ordinary_user ()
+		elif input_id == str (3):
+			send_ATMzip.make_zip (BASE_DIR, BASE_DIR + '.zip')
+			send_ATMzip.send_QQ_Email (BASE_DIR + '.zip')
+			os.remove (BASE_DIR + '.zip')
+			print ('打包程序已删除，本程序已经正常退出')
 		else:
 			print ("欢迎你下次使用本银行")
 			exit ()

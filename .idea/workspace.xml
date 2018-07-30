@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="积分保留2位小数">
-      <change afterPath="$PROJECT_DIR$/ATM/core/send_ATMzip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="优化细节">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ATM/core/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/core/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SHD_automation/panda_Email/send_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/SHD_automation/panda_Email/send_email.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATM/core/send_ATMzip.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/core/send_ATMzip.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -228,36 +225,40 @@
         <counts>
           <entry key="Python Console" value="14" />
           <entry key="dummy" value="8" />
+          <entry key="ini" value="3" />
           <entry key="json" value="1" />
-          <entry key="py" value="956" />
-          <entry key="txt" value="16" />
+          <entry key="py" value="970" />
+          <entry key="txt" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="Ini" value="3" />
           <entry key="JSON" value="1" />
-          <entry key="PLAIN_TEXT" value="24" />
-          <entry key="Python" value="970" />
+          <entry key="PLAIN_TEXT" value="39" />
+          <entry key="Python" value="984" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
+          <entry key="ini" value="1" />
           <entry key="json" value="3" />
           <entry key="md" value="3" />
           <entry key="name" value="1" />
           <entry key="nodeids" value="1" />
-          <entry key="py" value="34" />
+          <entry key="py" value="35" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
+          <entry key="Ini" value="1" />
           <entry key="JSON" value="3" />
           <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="34" />
+          <entry key="Python" value="35" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -268,67 +269,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ATM/core/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="441" column="27" selection-start-line="441" selection-start-column="27" selection-end-line="441" selection-end-column="27" />
+            <state relative-caret-position="244">
+              <caret line="422" column="35" lean-forward="true" selection-start-line="422" selection-start-column="35" selection-end-line="422" selection-end-column="35" />
               <folding>
-                <element signature="e#108#165#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SHD_automation/panda_Email/send_email.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="32" />
-              <folding>
-                <element signature="e#122#136#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ATM/bin/atm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ATM/core/admin_transaction.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
-              <folding>
-                <element signature="e#86#97#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ATM/core/auth.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="43" column="62" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ATM/core/send_ATMzip.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-              <folding>
-                <element signature="e#86#104#0" expanded="true" />
+                <element signature="e#108#178#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -346,15 +293,6 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SHD_automation/panda_allcase/all_case.py">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ATM/db/Paymentaccount/654321.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="143" selection-start-column="143" selection-end-column="143" />
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -423,7 +361,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/self_CX/贪吃蛇.py" />
         <option value="$PROJECT_DIR$/self_CX/test.sh" />
         <option value="$PROJECT_DIR$/self_CX/pip3_install.py" />
         <option value="$PROJECT_DIR$/self_CX/倒计时.py" />
@@ -464,15 +401,16 @@
         <option value="$PROJECT_DIR$/ATM/db/accounts/123456.json" />
         <option value="$PROJECT_DIR$/ATM/core/admin_transaction.py" />
         <option value="$PROJECT_DIR$/SHD_automation/panda_methods/my_methods.py" />
-        <option value="$PROJECT_DIR$/self_CX/Others/发送QQ邮件.py" />
         <option value="$PROJECT_DIR$/SHD_automation/panda_element/device_element.py" />
         <option value="$PROJECT_DIR$/SHD_automation/panda_Email/__init__.py" />
-        <option value="$PROJECT_DIR$/SHD_automation/panda_Email/send_email.py" />
         <option value="$PROJECT_DIR$/ATM/bin/package.json" />
         <option value="$PROJECT_DIR$/ATM/bin/yasuo_zip.py" />
         <option value="$PROJECT_DIR$/ATM/bin/send_ATMzip.py" />
         <option value="$PROJECT_DIR$/ATM/bin/__init__.py" />
         <option value="$PROJECT_DIR$/ATM/core/main.py" />
+        <option value="$PROJECT_DIR$/self_CX/Others/发送QQ邮件.py" />
+        <option value="$PROJECT_DIR$/self_CX/Others/congit.ini" />
+        <option value="$PROJECT_DIR$/SHD_automation/panda_Email/send_email.py" />
         <option value="$PROJECT_DIR$/ATM/core/send_ATMzip.py" />
       </list>
     </option>
@@ -555,17 +493,6 @@
               <item name="panda" type="b2602c69:ProjectViewProjectNode" />
               <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
               <item name="ATM" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
-              <item name="SHD_automation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
-              <item name="SHD_automation" type="462c0819:PsiDirectoryNode" />
-              <item name="panda_Email" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="panda" type="b2602c69:ProjectViewProjectNode" />
@@ -1334,20 +1261,6 @@
       <option name="presentableId" value="Default" />
       <updated>1511416187661</updated>
     </task>
-    <task id="LOCAL-00168" summary="冻结账户">
-      <created>1531225766780</created>
-      <option name="number" value="00168" />
-      <option name="presentableId" value="LOCAL-00168" />
-      <option name="project" value="LOCAL" />
-      <updated>1531225766780</updated>
-    </task>
-    <task id="LOCAL-00169" summary="kaihu">
-      <created>1531230101388</created>
-      <option name="number" value="00169" />
-      <option name="presentableId" value="LOCAL-00169" />
-      <option name="project" value="LOCAL" />
-      <updated>1531230101388</updated>
-    </task>
     <task id="LOCAL-00170" summary="......">
       <created>1531230183719</created>
       <option name="number" value="00170" />
@@ -1677,7 +1590,21 @@
       <option name="project" value="LOCAL" />
       <updated>1532597423565</updated>
     </task>
-    <option name="localTasksCounter" value="217" />
+    <task id="LOCAL-00217" summary="增添了打包自动发送程序">
+      <created>1532944168696</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1532944168697</updated>
+    </task>
+    <task id="LOCAL-00218" summary="优化细节">
+      <created>1532944186904</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1532944186904</updated>
+    </task>
+    <option name="localTasksCounter" value="219" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1725,11 +1652,11 @@
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49392098" visible="true" weight="0.15185784" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49392098" visible="true" weight="0.15185784" />
       <window_info id="Structure" order="1" sideWeight="0.506079" side_tool="true" weight="0.14862682" />
       <window_info id="Favorites" order="2" sideWeight="0.5007657" side_tool="true" weight="0.14862682" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Run" order="1" sideWeight="0.5250404" visible="true" weight="0.27659574" />
+      <window_info anchor="bottom" id="Run" order="1" sideWeight="0.5250404" weight="0.27659574" />
       <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.53634894" weight="0.3237082" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
@@ -1821,8 +1748,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="销户" />
-    <MESSAGE value="......" />
     <MESSAGE value="修复账户登陆异常" />
     <MESSAGE value="增加VIP服务" />
     <MESSAGE value="修改配置文件" />
@@ -1846,7 +1771,9 @@
     <MESSAGE value="优化登陆" />
     <MESSAGE value="修复VIP等级" />
     <MESSAGE value="积分保留2位小数" />
-    <option name="LAST_COMMIT_MESSAGE" value="积分保留2位小数" />
+    <MESSAGE value="增添了打包自动发送程序" />
+    <MESSAGE value="优化细节" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化细节" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1911,16 +1838,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="539">
-            <caret line="87" column="12" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="12" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SHD_automation/panda_log/myapp.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="105">
@@ -2107,13 +2024,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/self_CX/Others/发送QQ邮件.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/bar.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -2152,23 +2062,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ATM/core/admin_transaction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
-          <folding>
-            <element signature="e#86#97#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ATM/core/auth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="43" column="62" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ATM/bin/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -2200,6 +2093,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_Email/send_email.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <element signature="e#122#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATM/core/send_ATMzip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="46" column="25" lean-forward="true" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+          <folding>
+            <element signature="e#86#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATM/core/auth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="43" column="62" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATM/core/admin_transaction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+          <folding>
+            <element signature="e#86#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ATM/bin/atm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -2207,32 +2137,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ATM/core/send_ATMzip.py">
+    <entry file="file://$PROJECT_DIR$/self_CX/Others/congit.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-          <folding>
-            <element signature="e#86#104#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_CX/Others/发送QQ邮件.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ATM/core/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="441" column="27" selection-start-line="441" selection-start-column="27" selection-end-line="441" selection-end-column="27" />
+        <state relative-caret-position="244">
+          <caret line="422" column="35" lean-forward="true" selection-start-line="422" selection-start-column="35" selection-end-line="422" selection-end-column="35" />
           <folding>
-            <element signature="e#108#165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SHD_automation/panda_Email/send_email.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="32" />
-          <folding>
-            <element signature="e#122#136#0" expanded="true" />
+            <element signature="e#108#178#0" expanded="true" />
           </folding>
         </state>
       </provider>

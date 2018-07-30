@@ -1,7 +1,8 @@
 # appshenghuidai
-zidonghua
+
 ###ATM
 **运行程序在ATM / bin / main主方法里运行**
+
 一.普通账户
 
     1.账户信息

@@ -12,9 +12,9 @@ from email.mime.text import MIMEText
 
 def send_QQ_Email(name):
 	username = '1007596772@qq.com'
-	password = 'dpkbrcajfhsibfgi'
+	password = ''  # 填写自己QQ邮箱的授权码
 	sender = username
-	receivers = ','.join(['84305510@qq.com'])
+	receivers = ','.join (['20778962@qq.com'])
 
 	msg = MIMEMultipart()
 	msg['Subject'] = 'shenghuidai Test'
@@ -39,4 +39,4 @@ def send_QQ_Email(name):
 	except Exception as e :
 		print('邮件发送失败',e)
 if __name__ == '__main__':
-    send_QQ_Email('send_email.py')
+	send_QQ_Email ('ATM.zip')

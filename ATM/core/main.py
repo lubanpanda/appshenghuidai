@@ -34,7 +34,7 @@ def account_info (acc_data = user_data ['account_data']):
 	       f"借款金额：{acc_data['account_data']['jiekuan_money']}\n"
 	       f"还款日期：{acc_data['account_data']['jiekuan_date']}")
 	print ("请问是否还需要其他服务，是的话请选择服务菜单")
-	interactive (acc_data)
+	Interactive (acc_data)
 
 
 def admin_interactive (admin_data):
@@ -159,7 +159,7 @@ def admin_logout (admin_data):
 
 ###################普通用户操作#########################
 
-def interactive (acc_data):
+def Interactive (acc_data):
 	"""
 	总交互内容
 	:param acc_data: 
@@ -191,7 +191,7 @@ def interactive (acc_data):
 				menu_dic [user_option] (acc_data)
 			else:
 				print ('输入的序号错误，请重新输入')
-				interactive (acc_data)
+				Interactive (acc_data)
 		except:
 			pass
 
@@ -216,13 +216,13 @@ def withdrae (acc_data):
 				new_balance = mak_transaction (account_data, 'repay', qukuan_money)
 				if new_balance:
 					print ("存款成功")
-				interactive (acc_data)
+					Interactive (acc_data)
 			else:
 				print ("你输入的金额有误，请选择进行其他操作内容")
-				interactive (acc_data)
+				Interactive (acc_data)
 		else:
 			print ('你输入的字符非法')
-			interactive (acc_data)
+			Interactive (acc_data)
 
 
 def Send_a_red (acc_data):
@@ -246,20 +246,20 @@ def Send_a_red (acc_data):
 							numbers += 0
 							if numbers == 3:
 								print ('输入次数太多，已退出红包程序')
-								interactive (acc_data)
+								Interactive (acc_data)
 						else:
 							print ('红包发送成功')
 							Save_gade_money (account_data, send_grad)
 							print (f'哇，有人发{send_grad}红包了，大家快来抢吧')
 							qiang_red (int (send_grad), int (grad_number))
-							interactive (account_data)
+							Interactive (account_data)
 					else:
 						print ('你输入的金额有误')
 						Send_a_red (acc_data)
 				return send_grad
 			else:
 				print ('你输入的字符非法')
-				interactive (acc_data)
+				Interactive (acc_data)
 
 
 def Buy_shopping (acc_data):
@@ -273,7 +273,7 @@ def Buy_shopping (acc_data):
 	VIP_LEVEL = account_data ['vip_level']
 	admin_transaction.buy_shopping (account_data, True_or_False, VIP_LEVEL)
 	dump_account (account_data)
-	interactive (acc_data)
+	Interactive (acc_data)
 
 
 def logout (acc_data):
@@ -316,15 +316,15 @@ def repay (acc_data):
 							print ("你的所有账款已还清")
 						else:
 							print (f"还有{account_data['repay']}未还")
-						interactive (acc_data)
+							Interactive (acc_data)
 					else:
 						print ('欠债已还清')
 				else:
 					print (f"还款金额输入错误或者你已经还清了所有的欠款")
-					interactive (acc_data)
+					Interactive (acc_data)
 		else:
 			print ('你输入的字符非法')
-			interactive (acc_data)
+			Interactive (acc_data)
 
 
 def transfer (acc_data):
@@ -349,13 +349,13 @@ def transfer (acc_data):
 				if len (shoukuan_id) <= 6 and shoukuan_id.isdigit ():
 					mak_reimbursement (account_data, shoukuan_id)
 					print ("请选择其他服务")
-					interactive (acc_data)
+					Interactive (acc_data)
 			except Exception:
 				print ("没有此账号，请重新选择服务")
-				interactive (acc_data)
+				Interactive (acc_data)
 		else:
 			print ('输入的内容非法')
-			interactive (acc_data)
+			Interactive (acc_data)
 
 
 def borrowing (acc_data):
@@ -378,26 +378,26 @@ def borrowing (acc_data):
 				borrowing (acc_data)
 		elif account_data ['credit'] < 80:
 			print ('你的信用值太低，不能借款')
-		interactive (acc_data)
+			Interactive (acc_data)
 	elif borro_yewu == str (2):
 		account_data = load_current_balane (acc_data ['account_id'])
 		print (f"尊敬的{account_data['id']}账户，你目前需要还款的金额是{account_data['jiekuan_money']}元")
 		if account_data ['jiekuan_money'] == 0:
 			print ('你的贷款已经还清，不需要还款.')
-			interactive (acc_data)
+			Interactive (acc_data)
 		else:
 			huankuan_money = input ('请输入你要还款的金额：').strip ()
 			if huankuan_money.isdigit ():
 				huankuan_money = int (huankuan_money)
 				borrow_info.reimbursement (account_data ['id'], huankuan_money, account_data ['balance'],
 				                           account_data ['jiekuan_money'])
-				interactive (acc_data)
+				Interactive (acc_data)
 			else:
 				print ('请输入数字')
 				borrowing (acc_data)
 	else:
 		print ('输入有误')
-		interactive (acc_data)
+		Interactive (acc_data)
 
 
 ##############登陆的一些交互和方法#################
@@ -409,7 +409,7 @@ def ordinary_user ():
 	acc_data = auth.acc_login (user_data)  # 判断是否登陆
 	if user_data ['is_authenticated']:  # 如果没有认证就更改下状态
 		user_data ['account_data'] = acc_data
-		interactive (user_data)  # 与用户的交互
+		Interactive (user_data)  # 与用户的交互
 
 
 def administrator ():
@@ -435,8 +435,8 @@ def run ():
 		elif input_id == str (2):
 			ordinary_user ()
 		elif input_id == str (3):
-			send_ATMzip.make_zip (BASE_DIR, BASE_DIR + '.zip')
-			send_ATMzip.send_QQ_Email (BASE_DIR + '.zip')
+			send_ATMzip.Make_zip (BASE_DIR, BASE_DIR + '.zip')
+			send_ATMzip.Send_QQ_Email (BASE_DIR + '.zip')
 			os.remove (BASE_DIR + '.zip')
 			print ('打包程序已删除，本程序已经正常退出')
 		else:

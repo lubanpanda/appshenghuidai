@@ -31,7 +31,7 @@ def Make_zip (source_dir, output_filename):
 
 def Send_QQ_Email (name):
 	username = '1007596772@qq.com'
-	password = ''  # '填写自己的QQ号的授权码'
+	password = 'dpkbrcajfhsibfgi'  # '填写自己的QQ号的授权码'
 	sender = username
 	receivers = []
 	while True:
@@ -47,7 +47,7 @@ def Send_QQ_Email (name):
 	msg ['To'] = ','.join (receivers)
 
 	# 下面是文字部分，也就是纯文本
-	puretext = MIMEText ('ATM小程序自动打包发送小程序')
+	puretext = MIMEText ('ATM小程序\n本程序由系统自动发送，请忽回复。')
 	msg.attach (puretext)
 
 	# 定义附件的类型

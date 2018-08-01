@@ -60,7 +60,7 @@ def Send_QQ_Email (name):
 		client.sendmail (sender, receivers, msg.as_string ())
 		client.quit ()
 		for i in tqdm (range (len (name))):
-			sleep (0.05)
-		print ('邮件发送成功！')
+			sleep (0.01)
+		print ('邮件发送成功！', receivers, name)
 	except Exception as e:
 		print ('邮件发送失败', e)

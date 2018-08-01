@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="发送文件增加进度条的提示">
+    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="发送文件">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ATM/core/send_ATMzip.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/core/send_ATMzip.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
@@ -228,7 +229,7 @@
           <entry key="ini" value="3" />
           <entry key="json" value="1" />
           <entry key="md" value="1" />
-          <entry key="py" value="1207" />
+          <entry key="py" value="1230" />
           <entry key="txt" value="47" />
           <entry key="xml" value="4" />
         </counts>
@@ -239,7 +240,7 @@
           <entry key="JSON" value="1" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="55" />
-          <entry key="Python" value="1221" />
+          <entry key="Python" value="1244" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
@@ -278,8 +279,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ATM/core/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="437" column="30" selection-start-line="437" selection-start-column="30" selection-end-line="437" selection-end-column="30" />
+            <state relative-caret-position="236">
+              <caret line="438" column="57" lean-forward="true" selection-start-line="437" selection-start-column="12" selection-end-line="438" selection-end-column="57" />
               <folding>
                 <element signature="e#109#179#0" expanded="true" />
               </folding>
@@ -299,8 +300,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ATM/core/send_ATMzip.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+            <state relative-caret-position="990">
+              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
               <folding>
                 <element signature="e#87#96#0" expanded="true" />
               </folding>
@@ -521,6 +522,19 @@
               <item name="panda" type="b2602c69:ProjectViewProjectNode" />
               <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
               <item name="ATM" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
+              <item name="ATM" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
+              <item name="ATM" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="send_ATMzip.py" type="8704e2dd:PyFileNode" />
             </path>
             <path>
               <item name="panda" type="b2602c69:ProjectViewProjectNode" />
@@ -1318,27 +1332,6 @@
       <option name="presentableId" value="Default" />
       <updated>1511416187661</updated>
     </task>
-    <task id="LOCAL-00176" summary="增加VIP服务">
-      <created>1531379496472</created>
-      <option name="number" value="00176" />
-      <option name="presentableId" value="LOCAL-00176" />
-      <option name="project" value="LOCAL" />
-      <updated>1531379496472</updated>
-    </task>
-    <task id="LOCAL-00177" summary="修改配置文件">
-      <created>1531381227220</created>
-      <option name="number" value="00177" />
-      <option name="presentableId" value="LOCAL-00177" />
-      <option name="project" value="LOCAL" />
-      <updated>1531381227221</updated>
-    </task>
-    <task id="LOCAL-00178" summary="购物系统的完善">
-      <created>1531381266728</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
-      <option name="project" value="LOCAL" />
-      <updated>1531381266728</updated>
-    </task>
     <task id="LOCAL-00179" summary="修复初始化类型错误">
       <created>1531383444384</created>
       <option name="number" value="00179" />
@@ -1661,7 +1654,28 @@
       <option name="project" value="LOCAL" />
       <updated>1533086573311</updated>
     </task>
-    <option name="localTasksCounter" value="225" />
+    <task id="LOCAL-00225" summary="发送文件增加进度条的提示">
+      <created>1533087911591</created>
+      <option name="number" value="00225" />
+      <option name="presentableId" value="LOCAL-00225" />
+      <option name="project" value="LOCAL" />
+      <updated>1533087911591</updated>
+    </task>
+    <task id="LOCAL-00226" summary="发送文件增加进度条的提示">
+      <created>1533088110888</created>
+      <option name="number" value="00226" />
+      <option name="presentableId" value="LOCAL-00226" />
+      <option name="project" value="LOCAL" />
+      <updated>1533088110888</updated>
+    </task>
+    <task id="LOCAL-00227" summary="发送文件">
+      <created>1533090445120</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1533090445120</updated>
+    </task>
+    <option name="localTasksCounter" value="228" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1718,12 +1732,12 @@
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" sideWeight="0.5129241" weight="0.32826748" />
-      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.47576737" side_tool="true" weight="0.29179332" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.47334412" side_tool="true" weight="0.28115502" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="8" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.53069466" visible="true" weight="0.28115502" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.5266559" weight="0.28115502" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.5274637" weight="0.26291794" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.509693" weight="0.28115502" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.509693" visible="true" weight="0.28115502" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="13" sideWeight="0.48869145" weight="0.32826748" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -1805,7 +1819,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改配置文件" />
     <MESSAGE value="购物系统的完善" />
     <MESSAGE value="修复初始化类型错误" />
     <MESSAGE value="增加VIP等级升级" />
@@ -1830,7 +1843,8 @@
     <MESSAGE value="优化细节" />
     <MESSAGE value="添加说明" />
     <MESSAGE value="发送文件增加进度条的提示" />
-    <option name="LAST_COMMIT_MESSAGE" value="发送文件增加进度条的提示" />
+    <MESSAGE value="发送文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="发送文件" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2171,16 +2185,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ATM/core/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="437" column="30" selection-start-line="437" selection-start-column="30" selection-end-line="437" selection-end-column="30" />
-          <folding>
-            <element signature="e#109#179#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ATM/log/atm.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="-3012" />
@@ -2221,10 +2225,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ATM/core/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="438" column="57" lean-forward="true" selection-start-line="437" selection-start-column="12" selection-end-line="438" selection-end-column="57" />
+          <folding>
+            <element signature="e#109#179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ATM/core/send_ATMzip.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+        <state relative-caret-position="990">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
           <folding>
             <element signature="e#87#96#0" expanded="true" />
           </folding>

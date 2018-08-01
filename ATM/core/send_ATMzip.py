@@ -33,14 +33,14 @@ def Send_QQ_Email (name):
 	username = '1007596772@qq.com'
 	password = 'dpkbrcajfhsibfgi'  # '填写自己的QQ号的授权码'
 	sender = username
-	receivers = []
-	while True:
-		send_qq = input ('请输入要发送的QQ号码,按回车输入下一位QQ接受人，结束时直接按回车即可完成发送' + os.linesep)
-		if send_qq is not None and send_qq != '':
-			receivers.append (send_qq + '@qq.com')
-			continue
-		else:
-			break
+	receivers = ['84305510@qq.com']
+	# while True:
+	# 	send_qq = input ('请输入要发送的QQ号码,按回车输入下一位QQ接受人，结束时直接按回车即可完成发送' + os.linesep)
+	# 	if send_qq is not None and send_qq != '':
+	# 		receivers.append (send_qq + '@qq.com')
+	# 		continue
+	# 	else:
+	# 		break
 	msg = MIMEMultipart ()
 	msg ['Subject'] = 'shenghuidai Test'
 	msg ['From'] = sender

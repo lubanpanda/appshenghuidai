@@ -31,7 +31,7 @@ def Make_zip (source_dir, output_filename):
 
 def Send_QQ_Email (name):
 	username = '1007596772@qq.com'
-	password = ''  # '填写自己的QQ号的授权码'
+	password = 'dpkbrcajfhsibfgi'  # '填写自己的QQ号的授权码'
 	sender = username
 	receivers = []
 	while True:

@@ -25,7 +25,7 @@ def modify_password (admin_id):
 	db_path = db_handle.db_handle (settings.DATABASE)
 	account_file = f"{db_path}/{admin_id}.json"
 	if os.path.isfile (account_file):
-		with open (account_file, 'r') as f:
+		with open (account_file) as f:
 			account_data = json.load (f)
 			true_password = input (f"你当前的密码为{account_data['password']}，是否进行修改，修改输入Y不修改输入N")
 			if true_password == 'Y':
@@ -64,7 +64,7 @@ def freeze_account (admin_id, dongjie):
 	db_path = db_handle.db_handle (settings.DATABASE)
 	account_file = f"{db_path}/{admin_id}.json"
 	if os.path.isfile (account_file) and admin_id != 'admin':
-		with open (account_file, 'r') as f:
+		with open (account_file) as f:
 			account_data = json.load (f)
 			if account_data ['Lock_the_card'] == 'True':
 				if dongjie == 'False':
@@ -93,7 +93,7 @@ def add_account_vip (add_count_id):
 	db_path = db_handle.db_handle (settings.DATABASE)
 	account_file = f"{db_path}/{add_count_id}.json"
 	if os.path.isfile (account_file) and add_count_id != 'admin':
-		with open (account_file, 'r') as f:
+		with open (account_file) as f:
 			account_data = json.load (f)
 			if account_data ['VIP'] == 'True':
 				print ('此账户已经是VIP了无需重复开通')

@@ -23,7 +23,7 @@ def acc_auch (accout, password, pass_word):
 	db_path = db_handle.db_handle (settings.DATABASE)
 	account_file = f"{db_path}/{accout}.json"
 	if os.path.isfile (account_file):
-		with open (account_file, 'r') as f:
+		with open (account_file) as f:
 			account_data = json.load (f)
 			try:
 				if account_data ["Lock_the_card"] == '':
@@ -61,7 +61,7 @@ def admin_acc_auch (admin_id, admin_password, pass_word):
 	db_path = db_handle.admins_db_handle (settings.ADMIN_DATABASE)
 	account_file = f"{db_path}/{admin_id}.json"
 	if os.path.isfile (account_file):
-		with open (account_file, 'r') as f:
+		with open (account_file) as f:
 			account_data = json.load (f)
 			try:
 				if account_data ['admin_id'] == admin_id:

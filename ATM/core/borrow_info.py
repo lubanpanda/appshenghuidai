@@ -28,7 +28,7 @@ def brrow_moeny (add_count_id, borrowing_moeny, brrowing_yuefen):
 	db_path = db_handle.db_handle (settings.DATABASE)
 	account_file = f"{db_path}/{add_count_id}.json"
 	if os.path.isfile (account_file) and add_count_id != 'admin':
-		with open (account_file, 'r') as f:
+		with open (account_file) as f:
 			account_data = json.load (f)
 			date = nowtime + datetime.timedelta (days = 30 * brrowing_yuefen)
 			account_data ['jiekuan_money'] += shiji_moeny
@@ -53,7 +53,7 @@ def reimbursement (add_count_id, huankuan_money, all_money, jiekuan_money):
 			db_path = db_handle.db_handle (settings.DATABASE)
 			account_file = f"{db_path}/{add_count_id}.json"
 			if os.path.isfile (account_file) and add_count_id != 'admin':
-				with open (account_file, 'r') as f:
+				with open (account_file) as f:
 					account_data = json.load (f)
 					account_data ['balance'] = all_money - huankuan_money
 					account_data ['jiekuan_money'] = jiekuan_money - huankuan_money
@@ -79,7 +79,7 @@ def judge_money_date ():
 			if file.endswith ('json'):
 				db_path = db_handle.db_handle (settings.DATABASE)
 				account_file = f"{db_path}/{file}"
-				with open (account_file, 'r') as f:
+				with open (account_file) as f:
 					account_data = json.load (f)
 					account_data ['jiekuan_date'] if account_data ['jiekuan_date'] == 0 else print (
 						f"账户{file[:-5]}没有进行即使还款，还款金额{account_data['jiekuan_money']},最后还款日期为{account_data['jiekuan_date']},请注意及时催交\n")

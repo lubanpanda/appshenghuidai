@@ -27,12 +27,12 @@ def modify_password (admin_id):
 	if os.path.isfile (account_file):
 		with open (account_file) as f:
 			account_data = json.load (f)
-			true_password = input (f"你当前的密码为{account_data['password']}，是否进行修改，修改输入Y不修改输入N")
+			true_password = input (f"你当前的密码为{account_data['password']}，是否进行修改，修改输入Y不修改输入N").strip ()
 			if true_password == 'Y':
 				pass_id = 3
 				while True:
-					trues_password = input ('请输入修改后的密码')
-					truse_too_password = input ("请在输入一次密码")
+					trues_password = input ('请输入修改后的密码').strip ()
+					truse_too_password = input ("请在输入一次密码").strip ()
 					if trues_password == truse_too_password:
 						print ('密码修改成功')
 						account_data ["password"] = trues_password
@@ -126,14 +126,14 @@ def buy_shopping (account_data, True_or_False, VIP_LEVEL):
 			bb = settings.shucai_menus [f'{i+1}'] ["interest"]
 			print (i + 1, aa, ":", bb, "元")
 		while True:
-			xuanze_id = input ('请选购你的商品，每次的价格都不一样哦')
+			xuanze_id = input ('请选购你的商品，每次的价格都不一样哦').strip ()
 			if xuanze_id.isdigit ():
 				danjia_money = settings.shucai_menus [xuanze_id] ["interest"]
 				if all_money < account_data ['balance']:
 					all_moneys.append (danjia_money)
 					all_money = all_money + danjia_money
 					shiji_money = all_money * dazhe
-					shuru_info = input ('输入任意键继续,结束购物请按Q')
+					shuru_info = input ('输入任意键继续,结束购物请按Q').strip ()
 					if shuru_info == 'Q':
 						break
 					else:

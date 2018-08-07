@@ -52,7 +52,7 @@ def admin_interactive (admin_data):
 	if not exit_flag:
 		print (menus)
 		try:
-			user_option = input (">>>".strip ())
+			user_option = input (">>>").strip ()
 			if user_option in menus_dic:
 				menus_dic [user_option] (admin_data)
 			else:
@@ -66,10 +66,10 @@ def Open_an_account (admin_data):
 	:param admin_data:
 	:return:开户
 	"""
-	account_id = input ('请输入账户ID:')
+	account_id = input ('请输入账户ID:').strip ()
 	if account_id.isdigit ():
 		if 0 < len (account_id) < 6:
-			account_password = input ('请输入密码:')
+			account_password = input ('请输入密码:').strip ()
 			for (dirpath, dirnames, filenames) in os.walk (f'{BASE_DIR}/db/accounts'):
 				for file in filenames:
 					if account_id == 'admin' or account_id + '.json' == file:
@@ -99,7 +99,7 @@ def Pin_households (admin_data):
 	:return:销户
 	"""
 	account_list = []
-	account_id = input ('请输入要销户的账户ID:')
+	account_id = input ('请输入要销户的账户ID:').strip ()
 	if account_id.isdigit ():
 		for (dirpath, dirnames, filenames) in os.walk (f'{BASE_DIR}/db/accounts'):
 			for file in filenames:
@@ -127,20 +127,20 @@ def Business_is_dealt (account_data):
 	if input_admin_id.isdigit ():
 		while shuru_id <= 3:
 			if input_admin_id == str (1):
-				shuru_xiugai_id = input ('请输入要修改的账户ID：')
+				shuru_xiugai_id = input ('请输入要修改的账户ID：').strip ()
 				admin_transaction.modify_password (shuru_xiugai_id)
 				admin_interactive (account_data)
 			elif input_admin_id == str (2):
-				freeze_id = input ('请输入冻结账户的id')
+				freeze_id = input ('请输入冻结账户的id').strip ()
 				admin_transaction.freeze_account (freeze_id, 'True')
 				admin_interactive (account_data)
 			elif input_admin_id == str (3):
-				freezes_id = input ('请输入解冻账户的id')
+				freezes_id = input ('请输入解冻账户的id').strip ()
 				admin_transaction.freeze_account (freezes_id, 'False')
 				admin_interactive (account_data)
 			elif input_admin_id == str (4):
 				"增加服务字段,往用户里增加一些别的信息，如:是否可以升级为会员"
-				add_account_id = input ('请输入要添加功能的账号：')
+				add_account_id = input ('请输入要添加功能的账号：').strip ()
 				admin_transaction.add_account_vip (add_account_id)
 				admin_interactive (account_data)
 			else:
@@ -186,7 +186,7 @@ def Interactive (acc_data):
 	if not exit_flag:
 		print (menu)
 		try:
-			user_option = input (">>>".strip ())
+			user_option = input (">>>").strip ()
 			if user_option in menu_dic:
 				menu_dic [user_option] (acc_data)
 			else:
@@ -363,14 +363,14 @@ def borrowing (acc_data):
 	:param acc_data:账户的总信息
 	:return: 借款信息
 	"""
-	borro_yewu = input ('请输入你要办的的业务：\n1.贷款\n2.还款\n')
+	borro_yewu = input ('请输入你要办的的业务：\n1.贷款\n2.还款\n').strip ()
 	if borro_yewu == str (1):
 		account_data = load_current_balane (acc_data ['account_id'])
 		print ('信用分低于80时不可以贷款')
 		if 80 <= account_data ['credit'] <= 100:
 			print ('你的信用积分可以进行贷款')
-			borrowing_moeny = input ('请输入你要借贷的金额：')
-			brrowing_yuefen = input ('请输入借款的月份,一个月利率为1%，2个月为2%，以此类推')
+			borrowing_moeny = input ('请输入你要借贷的金额：').strip ()
+			brrowing_yuefen = input ('请输入借款的月份,一个月利率为1%，2个月为2%，以此类推').strip ()
 			if borrowing_moeny.isdigit () and brrowing_yuefen.isdigit ():
 				borrow_info.brrow_moeny (account_data ['id'], borrowing_moeny, brrowing_yuefen)
 			else:
@@ -429,7 +429,7 @@ def run ():
 	:return:程序主程序入口
 	"""
 	try:
-		input_id = input ('请选择你要操作的类型，1是管理员用户，2是普通账户,3是打包程序并发送给需要的人,其余任意键退出\n')
+		input_id = input ('请选择你要操作的类型，1是管理员用户，2是普通账户,3是打包程序并发送给需要的人,其余任意键退出\n').strip ()
 		if input_id == str (1):
 			administrator ()
 		elif input_id == str (2):

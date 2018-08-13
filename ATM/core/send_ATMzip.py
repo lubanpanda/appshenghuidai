@@ -6,7 +6,6 @@ __author__ = "panda  84305510@qq.com"
 import os
 import smtplib
 import zipfile
-from email.mime.application import MIMEApplication
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from time import sleep
@@ -47,13 +46,13 @@ def Send_QQ_Email (name):
 	msg ['To'] = ','.join (receivers)
 
 	# 下面是文字部分，也就是纯文本
-	puretext = MIMEText ('ATM小程序\n本程序由系统自动发送，请忽回复。')
+	puretext = MIMEText ('ATM小程序\n本程序由系统自动发送，请忽回复。', name)
 	msg.attach (puretext)
 
 	# 定义附件的类型
-	xlsxpart = MIMEApplication (open (name, 'rb').read ())
-	xlsxpart.add_header ('Content-Disposition', 'attachment', filename = name)
-	msg.attach (xlsxpart)
+	# xlsxpart = MIMEApplication (open (name, 'rb').read ())
+	# xlsxpart.add_header ('Content-Disposition', 'attachment', filename = name)
+	# msg.attach (xlsxpart)
 	try:
 		client = smtplib.SMTP_SSL ('smtp.qq.com', 465)
 		client.login (username, password)
@@ -67,5 +66,5 @@ def Send_QQ_Email (name):
 
 
 if __name__ == '__main__':
-	Make_zip (BASE_DIR, BASE_DIR + '.zip')
-	Send_QQ_Email (BASE_DIR + '.zip')
+	# Make_zip (BASE_DIR, BASE_DIR + '.zip')
+	Send_QQ_Email ('nihao')

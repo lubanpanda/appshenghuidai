@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="优化流程">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ATM/core/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/core/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ATM/core/send_ATMzip.py" beforeDir="false" afterPath="$PROJECT_DIR$/send_ATMzip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/send_ATMzip.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/core/send_ATMzip.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -315,13 +314,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/send_ATMzip.py">
+        <entry file="file://$PROJECT_DIR$/ATM/core/send_ATMzip.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-              <folding>
-                <element signature="e#87#96#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="213">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
             </state>
           </provider>
         </entry>
@@ -330,7 +326,7 @@
         <entry file="file://$PROJECT_DIR$/ATM/core/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="6540">
-              <caret line="439" column="56" selection-start-line="439" selection-start-column="39" selection-end-line="439" selection-end-column="56" />
+              <caret line="438" column="56" selection-start-line="438" selection-start-column="39" selection-end-line="438" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -402,7 +398,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ATM/db/Redenvelopesnatcher/__init__.py" />
         <option value="$PROJECT_DIR$/ATM/db/accounts/111.json" />
         <option value="$PROJECT_DIR$/ATM/db/accounts/__init__.py" />
         <option value="$PROJECT_DIR$/self_CX/测试练习.py" />
@@ -451,8 +446,9 @@
         <option value="$PROJECT_DIR$/ATM/core/main.py" />
         <option value="$PROJECT_DIR$/self_CX/Others/__init__.py" />
         <option value="$PROJECT_DIR$/ATM/core/auth.py" />
-        <option value="$PROJECT_DIR$/ATM/core/send_ATMzip.py" />
         <option value="$PROJECT_DIR$/ATM/core/__init__.py" />
+        <option value="$PROJECT_DIR$/send_ATMzip.py" />
+        <option value="$PROJECT_DIR$/ATM/core/send_ATMzip.py" />
       </list>
     </option>
   </component>
@@ -537,6 +533,17 @@
               <item name="panda" type="b2602c69:ProjectViewProjectNode" />
               <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
+              <item name="ATM" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
+              <item name="ATM" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -574,10 +581,10 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ATM/core" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/SHD_automation/panda_Email" />
       <recent name="$PROJECT_DIR$/ATM/db/Admin" />
       <recent name="$PROJECT_DIR$/SHD_automation/panda_toubiao" />
-      <recent name="$PROJECT_DIR$/self_CX" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -1181,7 +1188,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/send_ATMzip.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ATM/core/send_ATMzip.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -1311,13 +1318,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511416187661</updated>
-    </task>
-    <task id="LOCAL-00185" summary="。。。">
-      <created>1531403532587</created>
-      <option name="number" value="00185" />
-      <option name="presentableId" value="LOCAL-00185" />
-      <option name="project" value="LOCAL" />
-      <updated>1531403532587</updated>
     </task>
     <task id="LOCAL-00186" summary="更改目录">
       <created>1531403781421</created>
@@ -1655,7 +1655,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534167316065</updated>
     </task>
-    <option name="localTasksCounter" value="234" />
+    <task id="LOCAL-00234" summary="优化流程">
+      <created>1534212568861</created>
+      <option name="number" value="00234" />
+      <option name="presentableId" value="LOCAL-00234" />
+      <option name="project" value="LOCAL" />
+      <updated>1534212568862</updated>
+    </task>
+    <option name="localTasksCounter" value="235" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1701,6 +1708,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49392098" visible="true" weight="0.13408723" />
       <window_info id="Structure" order="1" sideWeight="0.506079" side_tool="true" weight="0.14862682" />
@@ -2185,17 +2193,14 @@
     <entry file="file://$PROJECT_DIR$/ATM/core/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6540">
-          <caret line="439" column="56" selection-start-line="439" selection-start-column="39" selection-end-line="439" selection-end-column="56" />
+          <caret line="438" column="56" selection-start-line="438" selection-start-column="39" selection-end-line="438" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/send_ATMzip.py">
+    <entry file="file://$PROJECT_DIR$/ATM/core/send_ATMzip.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding>
-            <element signature="e#87#96#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="213">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
     </entry>

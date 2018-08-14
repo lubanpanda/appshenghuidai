@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="知道了">
+    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="知道了1111">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ATM/core/send_ATMzip.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/core/send_ATMzip.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
@@ -235,8 +236,8 @@
           <entry key="js" value="8" />
           <entry key="json" value="1" />
           <entry key="md" value="1" />
-          <entry key="py" value="1613" />
-          <entry key="txt" value="78" />
+          <entry key="py" value="1614" />
+          <entry key="txt" value="82" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
@@ -246,8 +247,8 @@
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="8" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="86" />
-          <entry key="Python" value="1637" />
+          <entry key="PLAIN_TEXT" value="90" />
+          <entry key="Python" value="1638" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
@@ -315,8 +316,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ATM/core/send_ATMzip.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="71" column="14" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
+            <state relative-caret-position="310">
+              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
             </state>
           </provider>
         </entry>
@@ -1318,27 +1319,6 @@
       <option name="presentableId" value="Default" />
       <updated>1511416187661</updated>
     </task>
-    <task id="LOCAL-00191" summary="增加借款和管理员自动查询还款功能">
-      <created>1531910413842</created>
-      <option name="number" value="00191" />
-      <option name="presentableId" value="LOCAL-00191" />
-      <option name="project" value="LOCAL" />
-      <updated>1531910413842</updated>
-    </task>
-    <task id="LOCAL-00192" summary="增加借款和管理员自动查询还款功能">
-      <created>1531910618418</created>
-      <option name="number" value="00192" />
-      <option name="presentableId" value="LOCAL-00192" />
-      <option name="project" value="LOCAL" />
-      <updated>1531910618419</updated>
-    </task>
-    <task id="LOCAL-00193" summary="增加借款和管理员自动查询还款功能">
-      <created>1531910868510</created>
-      <option name="number" value="00193" />
-      <option name="presentableId" value="LOCAL-00193" />
-      <option name="project" value="LOCAL" />
-      <updated>1531910868510</updated>
-    </task>
     <task id="LOCAL-00194" summary="增加借款和管理员自动查询还款功能">
       <created>1531916842526</created>
       <option name="number" value="00194" />
@@ -1661,7 +1641,28 @@
       <option name="project" value="LOCAL" />
       <updated>1534223068201</updated>
     </task>
-    <option name="localTasksCounter" value="240" />
+    <task id="LOCAL-00240" summary="知道了">
+      <created>1534225839843</created>
+      <option name="number" value="00240" />
+      <option name="presentableId" value="LOCAL-00240" />
+      <option name="project" value="LOCAL" />
+      <updated>1534225839844</updated>
+    </task>
+    <task id="LOCAL-00241" summary="知道了1111">
+      <created>1534226042842</created>
+      <option name="number" value="00241" />
+      <option name="presentableId" value="LOCAL-00241" />
+      <option name="project" value="LOCAL" />
+      <updated>1534226042843</updated>
+    </task>
+    <task id="LOCAL-00242" summary="知道了1111">
+      <created>1534226494568</created>
+      <option name="number" value="00242" />
+      <option name="presentableId" value="LOCAL-00242" />
+      <option name="project" value="LOCAL" />
+      <updated>1534226494568</updated>
+    </task>
+    <option name="localTasksCounter" value="243" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1807,7 +1808,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="可变参数" />
     <MESSAGE value="优化显示" />
     <MESSAGE value="优化注册" />
     <MESSAGE value="解冻账户" />
@@ -1832,7 +1832,8 @@
     <MESSAGE value="测试一下" />
     <MESSAGE value="嗯嗯嗯嗯嗯" />
     <MESSAGE value="知道了" />
-    <option name="LAST_COMMIT_MESSAGE" value="知道了" />
+    <MESSAGE value="知道了1111" />
+    <option name="LAST_COMMIT_MESSAGE" value="知道了1111" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2198,8 +2199,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ATM/core/send_ATMzip.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="71" column="14" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
+        <state relative-caret-position="310">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
         </state>
       </provider>
     </entry>

@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="优化流程">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ATM/core/send_ATMzip.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/core/send_ATMzip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATM/core/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/core/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATM/core/send_ATMzip.py" beforeDir="false" afterPath="$PROJECT_DIR$/send_ATMzip.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -142,7 +141,7 @@
     <SUITE FILE_PATH="coverage/shenghuidai$Nosetests_in_Homepage_py.coverage" NAME="Nosetests in Homepage.py Coverage Results" MODIFIED="1511536782481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case" />
     <SUITE FILE_PATH="coverage/panda$Unittests_in_test_04_xinshoubiao_py.coverage" NAME="Unittests in test_04_xinshoubiao.py Coverage Results" MODIFIED="1530849564892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SHD_automation/panda_case" />
     <SUITE FILE_PATH="coverage/panda$accounts.coverage" NAME="accounts Coverage Results" MODIFIED="1532069516866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ATM/core" />
-    <SUITE FILE_PATH="coverage/panda$send_ATMzip.coverage" NAME="send_ATMzip Coverage Results" MODIFIED="1534166948978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ATM/core" />
+    <SUITE FILE_PATH="coverage/panda$send_ATMzip.coverage" NAME="send_ATMzip Coverage Results" MODIFIED="1534173764042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ATM/core" />
     <SUITE FILE_PATH="coverage/shenghuidai$shoujiinfo.coverage" NAME="shoujiinfo Coverage Results" MODIFIED="1514282864841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/iphoneinfo" />
     <SUITE FILE_PATH="coverage/panda$qushu.coverage" NAME="qushu Coverage Results" MODIFIED="1523435648110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX" />
     <SUITE FILE_PATH="coverage/panda$device.coverage" NAME="device Coverage Results" MODIFIED="1515813133242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SHD_automation/device_info" />
@@ -217,15 +216,17 @@
     <session id="187185534">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="25" />
+          <entry key="project.closed" value="27" />
           <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.10" value="9" />
           <entry key="project.open.time.11" value="8" />
           <entry key="project.open.time.12" value="3" />
           <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="28" />
+          <entry key="project.opened" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -236,7 +237,7 @@
           <entry key="js" value="8" />
           <entry key="json" value="1" />
           <entry key="md" value="1" />
-          <entry key="py" value="1591" />
+          <entry key="py" value="1592" />
           <entry key="txt" value="60" />
           <entry key="xml" value="4" />
         </counts>
@@ -248,7 +249,7 @@
           <entry key="JavaScript" value="8" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="68" />
-          <entry key="Python" value="1613" />
+          <entry key="Python" value="1614" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
@@ -262,7 +263,7 @@
           <entry key="md" value="5" />
           <entry key="name" value="2" />
           <entry key="nodeids" value="1" />
-          <entry key="py" value="104" />
+          <entry key="py" value="105" />
           <entry key="xml" value="12" />
         </counts>
       </usages-collector>
@@ -275,7 +276,7 @@
           <entry key="Log" value="1" />
           <entry key="Markdown" value="5" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="104" />
+          <entry key="Python" value="105" />
           <entry key="XML" value="12" />
         </counts>
       </usages-collector>
@@ -299,16 +300,25 @@
         <entry file="file://$PROJECT_DIR$/self_CX/Others/pip3_install.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ATM/core/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ATM/core/send_ATMzip.py">
+        <entry file="file://$PROJECT_DIR$/send_ATMzip.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="49" column="56" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
+            <state relative-caret-position="255">
+              <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
               <folding>
                 <element signature="e#87#96#0" expanded="true" />
               </folding>
@@ -319,8 +329,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ATM/core/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="438" column="56" selection-start-line="438" selection-start-column="39" selection-end-line="438" selection-end-column="56" />
+            <state relative-caret-position="6540">
+              <caret line="439" column="56" selection-start-line="439" selection-start-column="39" selection-end-line="439" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -386,8 +396,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/SHD_automation/panda_log/myapp.log" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/SHD_automation/panda_methods/my_methods.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SHD_automation/panda_log/myapp.log" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -439,10 +449,10 @@
         <option value="$PROJECT_DIR$/SHD_automation/device_info/__init__.py" />
         <option value="$PROJECT_DIR$/ATM/core/admin_transaction.py" />
         <option value="$PROJECT_DIR$/ATM/core/main.py" />
-        <option value="$PROJECT_DIR$/ATM/core/__init__.py" />
         <option value="$PROJECT_DIR$/self_CX/Others/__init__.py" />
         <option value="$PROJECT_DIR$/ATM/core/auth.py" />
         <option value="$PROJECT_DIR$/ATM/core/send_ATMzip.py" />
+        <option value="$PROJECT_DIR$/ATM/core/__init__.py" />
       </list>
     </option>
   </component>
@@ -527,23 +537,6 @@
               <item name="panda" type="b2602c69:ProjectViewProjectNode" />
               <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
-              <item name="ATM" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
-              <item name="ATM" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="panda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenghuidai" type="462c0819:PsiDirectoryNode" />
-              <item name="ATM" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -566,7 +559,7 @@
     <property name="node.js.selected.package.tslint" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -716,6 +709,47 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="清理非法文件名" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="panda" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/self_CX" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/self_CX/清理非法文件名.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="清理非法文件名" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="panda" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/self_CX" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/self_CX/清理非法文件名.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="装饰器" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="panda" />
@@ -731,6 +765,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/self_CX/装饰器.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="倒计时" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="panda" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/self_CX" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/self_CX/倒计时.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -1027,63 +1080,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="清理非法文件名" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="panda" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/self_CX" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/self_CX/清理非法文件名.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="清理非法文件名" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="panda" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/self_CX" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/self_CX/清理非法文件名.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="倒计时" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="panda" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/self_CX" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/self_CX/倒计时.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="__init__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="panda" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -1185,7 +1181,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ATM/core/send_ATMzip.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/send_ATMzip.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -1288,6 +1284,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.打酱油的" />
       <item itemvalue="Python.atm" />
       <item itemvalue="Python.__init__" />
       <item itemvalue="Python.__init__ (1)" />
@@ -1314,13 +1311,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511416187661</updated>
-    </task>
-    <task id="LOCAL-00184" summary="增加VIP等级升级">
-      <created>1531402711394</created>
-      <option name="number" value="00184" />
-      <option name="presentableId" value="LOCAL-00184" />
-      <option name="project" value="LOCAL" />
-      <updated>1531402711394</updated>
     </task>
     <task id="LOCAL-00185" summary="。。。">
       <created>1531403532587</created>
@@ -1658,7 +1648,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534167009025</updated>
     </task>
-    <option name="localTasksCounter" value="233" />
+    <task id="LOCAL-00233" summary="优化流程">
+      <created>1534167316065</created>
+      <option name="number" value="00233" />
+      <option name="presentableId" value="LOCAL-00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1534167316065</updated>
+    </task>
+    <option name="localTasksCounter" value="234" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1704,24 +1701,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49392098" visible="true" weight="0.13085622" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49392098" visible="true" weight="0.13408723" />
       <window_info id="Structure" order="1" sideWeight="0.506079" side_tool="true" weight="0.14862682" />
       <window_info id="Favorites" order="2" sideWeight="0.5007657" side_tool="true" weight="0.14862682" />
       <window_info id="DB Browser" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Run" order="1" sideWeight="0.52342486" visible="true" weight="0.36102718" />
+      <window_info anchor="bottom" id="Run" order="1" sideWeight="0.52342486" weight="0.36102718" />
       <window_info anchor="bottom" id="Debug" order="2" sideWeight="0.52907914" weight="0.32326284" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" sideWeight="0.5129241" weight="0.32779455" />
-      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.4765751" side_tool="true" weight="0.28096676" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.4838449" side_tool="true" weight="0.28096676" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.5266559" weight="0.2688822" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.5274637" weight="0.26283988" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.509693" weight="0.28096676" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.5274637" visible="true" weight="0.26283988" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.51615506" weight="0.28096676" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="13" sideWeight="0.48869145" weight="0.32826748" />
       <window_info anchor="bottom" id="DB Execution Console" order="14" />
@@ -1827,9 +1823,9 @@
     <MESSAGE value="添加说明" />
     <MESSAGE value="发送文件增加进度条的提示" />
     <MESSAGE value="发送文件" />
-    <MESSAGE value="优化流程" />
     <MESSAGE value="测试jeent" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试jeent" />
+    <MESSAGE value="优化流程" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化流程" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2092,13 +2088,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ATM/core/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ATM/core/transaction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -2182,21 +2171,28 @@
     <entry file="file://$PROJECT_DIR$/self_CX/Others/pip3_install.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATM/core/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ATM/core/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="438" column="56" selection-start-line="438" selection-start-column="39" selection-end-line="438" selection-end-column="56" />
+        <state relative-caret-position="6540">
+          <caret line="439" column="56" selection-start-line="439" selection-start-column="39" selection-end-line="439" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ATM/core/send_ATMzip.py">
+    <entry file="file://$PROJECT_DIR$/send_ATMzip.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="49" column="56" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
+        <state relative-caret-position="255">
+          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
           <folding>
             <element signature="e#87#96#0" expanded="true" />
           </folding>

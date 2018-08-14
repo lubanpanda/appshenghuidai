@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+from email.mime.application import MIMEApplication
 
 __author__ = "panda  84305510@qq.com"
 
@@ -50,9 +51,9 @@ def Send_QQ_Email (name):
 	msg.attach (puretext)
 
 	# 定义附件的类型
-	# xlsxpart = MIMEApplication (open (name, 'rb').read ())
-	# xlsxpart.add_header ('Content-Disposition', 'attachment', filename = name)
-	# msg.attach (xlsxpart)
+	xlsxpart = MIMEApplication (open (name, 'rb').read ())
+	xlsxpart.add_header ('Content-Disposition', 'attachment', filename = name)
+	msg.attach (xlsxpart)
 	try:
 		client = smtplib.SMTP_SSL ('smtp.qq.com', 465)
 		client.login (username, password)
@@ -66,5 +67,5 @@ def Send_QQ_Email (name):
 
 
 if __name__ == '__main__':
-	# Make_zip (BASE_DIR, BASE_DIR + '.zip')
+	Make_zip (BASE_DIR, BASE_DIR + '.zip')
 	Send_QQ_Email ('nihao')

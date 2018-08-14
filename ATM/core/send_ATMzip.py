@@ -32,6 +32,7 @@ def Send_QQ_Email (name):
 	password = 'dpkbrcajfhsibfgi'  # '填写自己的QQ号的授权码'
 	sender = username
 	receivers = ['84305510@qq.com']
+
 	msg = MIMEMultipart ()
 	msg ['Subject'] = 'ATM小程序'  # 标题
 	msg ['From'] = sender

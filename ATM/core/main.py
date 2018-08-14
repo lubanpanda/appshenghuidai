@@ -3,8 +3,7 @@
 __author__ = "panda  84305510@qq.com"
 __version__ = '1.0.0'
 
-import send_ATMzip
-from ATM.core import admin_transaction, auth, borrow_info
+from ATM.core import admin_transaction, auth, borrow_info, send_ATMzip
 from ATM.core.accounts import *
 from ATM.core.transaction import *
 

@@ -69,3 +69,4 @@ def Send_QQ_Email (name):
 if __name__ == '__main__':
 	Make_zip (BASE_DIR, BASE_DIR + '.zip')
 	Send_QQ_Email (BASE_DIR + '.zip')
+	print ('很成功')

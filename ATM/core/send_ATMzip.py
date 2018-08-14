@@ -10,9 +10,7 @@ import zipfile
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from time import sleep
-
 from tqdm import tqdm
-
 BASE_DIR = os.path.dirname (os.path.dirname (os.path.abspath (__file__)))
 
 

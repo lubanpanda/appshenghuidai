@@ -4,10 +4,10 @@ from tkinter import *
 
 
 class Ball:
-	def __init__ (self, canvas, paddle, color):
-		self.canvas = canvas
+	def __init__ (self, Canvas, paddle, color):
+		self.canvas = Canvas
 		self.paddle = paddle
-		self.id = canvas.create_oval (10, 10, 25, 25, fill = color)
+		self.id = Canvas.create_oval (10, 10, 25, 25, fill = color)
 		self.canvas.move (self.id, 245, 100)
 		startx = [-3, -2, -1, 1, 2, 3]
 		random.shuffle (startx)
@@ -20,25 +20,25 @@ class Ball:
 	def draw (self):
 		self.canvas.move (self.id, self.x, self.y)
 		pos = self.canvas.coords (self.id)  # top-left bottom-right
-		if (pos [1] <= 0 or self.hit_paddle (pos) == True):
+		if pos [1] <= 0 or self.hit_paddle (pos) == True:
 			self.y = -self.y
-		if (pos [0] <= 0 or pos [2] >= self.canvas_width):
+		if pos [0] <= 0 or pos [2] >= self.canvas_width:
 			self.x = -self.x
-		if (pos [3] >= self.canvas_height):
+		if pos [3] >= self.canvas_height:
 			self.hit_bottom = True
 
 	def hit_paddle (self, pos):
 		paddle_pos = self.canvas.coords (self.paddle.id)
-		if (pos [2] >= paddle_pos [0] and pos [0] <= paddle_pos [2]):
-			if (pos [3] >= paddle_pos [1] and pos [3] <= paddle_pos [3]):
+		if pos [2] >= paddle_pos [0] and pos [0] <= paddle_pos [2]:
+			if paddle_pos [1] <= pos [3] <= paddle_pos [3]:
 				return True
 		return False
 
 
 class Paddle:
-	def __init__ (self, canvas, color):
-		self.canvas = canvas
-		self.id = canvas.create_rectangle (0, 0, 100, 10, fill = color)
+	def __init__ (self, CAnvas, color):
+		self.canvas = CAnvas
+		self.id = CAnvas.create_rectangle (0, 0, 100, 10, fill = color)
 		self.x = 0
 		self.canvas.move (self.id, 200, 300)
 		self.canvas_width = self.canvas.winfo_width ()
@@ -47,7 +47,7 @@ class Paddle:
 
 	def draw (self):
 		pos = self.canvas.coords (self.id)
-		if (pos [0] + self.x >= 0 and pos [2] + self.x <= self.canvas_width):
+		if pos [0] + self.x >= 0 and pos [2] + self.x <= self.canvas_width:
 			self.canvas.move (self.id, self.x, 0)
 
 	def turn_left (self, event):
@@ -67,7 +67,7 @@ tk.update ()  # init
 paddle = Paddle (canvas, 'blue')
 ball = Ball (canvas, paddle, 'red')
 while 1:
-	if (ball.hit_bottom == False):
+	if not ball.hit_bottom:
 		ball.draw ()
 		paddle.draw ()
 	tk.update_idletasks ()

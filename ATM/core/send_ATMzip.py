@@ -41,7 +41,7 @@ def Send_QQ_Email (name):
 	puretext = MIMEText ('ATM小程序\n本程序由系统自动发送，请忽回复。', name)
 	msg.attach (puretext)
 
-	# 定义附件类型
+	# 定义附件的类型
 	xlsxpart = MIMEApplication (open (name, 'rb').read ())
 	xlsxpart.add_header ('Content-Disposition', 'attachment', filename = name)
 	msg.attach (xlsxpart)

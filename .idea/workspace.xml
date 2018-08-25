@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="优化邮件222">
-      <change beforePath="$PROJECT_DIR$/ATM/core/send_ATMzip.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/core/send_ATMzip.py" afterDir="false" />
+    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="123456">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ATM/core/transaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATM/core/transaction.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -239,8 +240,8 @@
           <entry key="js" value="8" />
           <entry key="json" value="1" />
           <entry key="md" value="1" />
-          <entry key="py" value="3233" />
-          <entry key="txt" value="128" />
+          <entry key="py" value="3241" />
+          <entry key="txt" value="134" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
@@ -251,8 +252,8 @@
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="8" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="136" />
-          <entry key="Python" value="3264" />
+          <entry key="PLAIN_TEXT" value="142" />
+          <entry key="Python" value="3272" />
           <entry key="XML" value="5" />
         </counts>
       </usages-collector>
@@ -267,7 +268,7 @@
           <entry key="md" value="5" />
           <entry key="name" value="2" />
           <entry key="nodeids" value="1" />
-          <entry key="py" value="134" />
+          <entry key="py" value="135" />
           <entry key="pyi" value="1" />
           <entry key="xml" value="14" />
         </counts>
@@ -282,7 +283,7 @@
           <entry key="Log" value="1" />
           <entry key="Markdown" value="5" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="134" />
+          <entry key="Python" value="135" />
           <entry key="PythonStub" value="1" />
           <entry key="XML" value="14" />
         </counts>
@@ -342,11 +343,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ATM/core/send_ATMzip.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="301">
+              <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ATM/core/transaction.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -453,7 +463,6 @@
         <option value="$PROJECT_DIR$/self_CX/Others/倒计时.py" />
         <option value="$PROJECT_DIR$/ATM/core/accounts.py" />
         <option value="$PROJECT_DIR$/ATM/core/borrow_info.py" />
-        <option value="$PROJECT_DIR$/ATM/core/transaction.py" />
         <option value="$PROJECT_DIR$/ATM/bin/atm.py" />
         <option value="$PROJECT_DIR$/self_CX/Others/清理非法文件名.py" />
         <option value="$PROJECT_DIR$/SHD_automation/device_info/__init__.py" />
@@ -469,6 +478,7 @@
         <option value="$PROJECT_DIR$/ATM/henkh.html" />
         <option value="$PROJECT_DIR$/self_CX/Others/pip3_install.py" />
         <option value="$PROJECT_DIR$/ATM/core/send_ATMzip.py" />
+        <option value="$PROJECT_DIR$/ATM/core/transaction.py" />
       </list>
     </option>
   </component>
@@ -1257,27 +1267,6 @@
       <option name="presentableId" value="Default" />
       <updated>1511416187661</updated>
     </task>
-    <task id="LOCAL-00205" summary="优化字段">
-      <created>1532006659044</created>
-      <option name="number" value="00205" />
-      <option name="presentableId" value="LOCAL-00205" />
-      <option name="project" value="LOCAL" />
-      <updated>1532006659045</updated>
-    </task>
-    <task id="LOCAL-00206" summary="优化字段">
-      <created>1532006782303</created>
-      <option name="number" value="00206" />
-      <option name="presentableId" value="LOCAL-00206" />
-      <option name="project" value="LOCAL" />
-      <updated>1532006782303</updated>
-    </task>
-    <task id="LOCAL-00207" summary="修复不能锁定的BUG">
-      <created>1532009218748</created>
-      <option name="number" value="00207" />
-      <option name="presentableId" value="LOCAL-00207" />
-      <option name="project" value="LOCAL" />
-      <updated>1532009218748</updated>
-    </task>
     <task id="LOCAL-00208" summary="修复不能锁定的BUG">
       <created>1532009507426</created>
       <option name="number" value="00208" />
@@ -1600,7 +1589,28 @@
       <option name="project" value="LOCAL" />
       <updated>1535196063552</updated>
     </task>
-    <option name="localTasksCounter" value="254" />
+    <task id="LOCAL-00254" summary="123456">
+      <created>1535196283169</created>
+      <option name="number" value="00254" />
+      <option name="presentableId" value="LOCAL-00254" />
+      <option name="project" value="LOCAL" />
+      <updated>1535196283170</updated>
+    </task>
+    <task id="LOCAL-00255" summary="123456">
+      <created>1535196448246</created>
+      <option name="number" value="00255" />
+      <option name="presentableId" value="LOCAL-00255" />
+      <option name="project" value="LOCAL" />
+      <updated>1535196448246</updated>
+    </task>
+    <task id="LOCAL-00256" summary="123456">
+      <created>1535197054866</created>
+      <option name="number" value="00256" />
+      <option name="presentableId" value="LOCAL-00256" />
+      <option name="project" value="LOCAL" />
+      <updated>1535197054866</updated>
+    </task>
+    <option name="localTasksCounter" value="257" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1648,7 +1658,7 @@
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49392098" visible="true" weight="0.15993538" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49392098" visible="true" weight="0.15993538" />
       <window_info id="Structure" order="1" sideWeight="0.506079" side_tool="true" weight="0.14862682" />
       <window_info id="Favorites" order="2" sideWeight="0.5007657" side_tool="true" weight="0.14862682" />
       <window_info id="DB Browser" order="3" />
@@ -1658,7 +1668,7 @@
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" sideWeight="0.5129241" weight="0.32779455" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="6" sideWeight="0.48142165" side_tool="true" visible="true" weight="0.30664653" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.48142165" side_tool="true" weight="0.30664653" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.5266559" weight="0.2688822" />
@@ -1746,7 +1756,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="优化字段" />
     <MESSAGE value="修复不能锁定的BUG" />
     <MESSAGE value="管理员的超市登陆" />
     <MESSAGE value="修复还款" />
@@ -1771,7 +1780,8 @@
     <MESSAGE value="优化邮件" />
     <MESSAGE value="优化邮件111" />
     <MESSAGE value="优化邮件222" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化邮件222" />
+    <MESSAGE value="123456" />
+    <option name="LAST_COMMIT_MESSAGE" value="123456" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1878,13 +1888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ATM/core/transaction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -2143,8 +2146,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ATM/core/send_ATMzip.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="301">
+          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATM/core/transaction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>

@@ -38,7 +38,6 @@ def mak_transaction (account_data, tran_type, amount):
 
 def mak_reimbursement (account_data, shoukuan_id):
 	"""
-
 	:param account_id:转账人
 	:param shoukuan_id: 接收人
 	:return:

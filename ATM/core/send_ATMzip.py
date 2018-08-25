@@ -36,7 +36,7 @@ def Send_QQ_Email (name):
 	msg ['Subject'] = 'ATM小程序'  # 标题
 	msg ['From'] = sender
 	msg ['To'] = ','.join (receivers)
-
+	# 试一试
 	# 下面是文字部分，也就是纯文本
 	puretext = MIMEText ('ATM小程序\n本程序由系统自动发送，请忽回复。', name)
 	msg.attach (puretext)

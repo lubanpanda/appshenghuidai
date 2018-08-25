@@ -33,7 +33,7 @@ def Send_QQ_Email (name):
 	receivers = ['84305510@qq.com']
 
 	msg = MIMEMultipart ()
-	msg ['Subject'] = 'ATM小程序'  # 难啊难
+	msg ['Subject'] = 'ATM小程序'
 	msg ['From'] = sender
 	msg ['To'] = ','.join (receivers)
 	# 试一试

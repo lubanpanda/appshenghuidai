@@ -19,6 +19,9 @@ def onQQMessage (bot, contact, member, content):
 	if '天气预报' in content:
 		bot.SendTo (contact, str (tianqi (content [5:])))
 
+	elif content == "-stop":
+		bot.Stop ()
+
 
 def tianqi (name):
 	url = 'http://wthrcdn.etouch.cn/weather_mini?city=' + name

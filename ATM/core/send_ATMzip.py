@@ -56,7 +56,6 @@ def Send_QQ_Email (name):
 	except Exception as e:
 		print ('邮件发送失败', e)
 
-
-if __name__ == '__main__':
-	Make_zip (BASE_DIR, BASE_DIR + '.zip')
-	Send_QQ_Email (BASE_DIR + '.zip')
+# if __name__ == '__main__':
+# 	Make_zip (BASE_DIR, BASE_DIR + '.zip')
+# 	Send_QQ_Email (BASE_DIR + '.zip')

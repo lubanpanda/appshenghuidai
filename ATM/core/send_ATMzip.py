@@ -1,16 +1,19 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-from email.mime.application import MIMEApplication
+
 
 __author__ = "panda  84305510@qq.com"
 
 import os
 import smtplib
 import zipfile
+from email.mime.application import MIMEApplication
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from time import sleep
+
 from tqdm import tqdm
+
 BASE_DIR = os.path.dirname (os.path.dirname (os.path.abspath (__file__)))
 
 

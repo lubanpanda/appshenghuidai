@@ -3,6 +3,7 @@
 __author__ = "panda  84305510@qq.com"
 
 import requests
+from bs4 import BeautifulSoup
 from qqbot import QQBotSlot as qqbotslot, RunBot, qqbotsched
 
 
@@ -18,7 +19,8 @@ def mytask (bot):
 def onQQMessage (bot, contact, member, content):
 	if '天气预报' in content:
 		bot.SendTo (contact, str (tianqi (content [5:])))
-
+	elif '新闻' in content:
+		bot.SendTo (contact, str (sina ()))
 	elif content == "-stop":
 		bot.Stop ()
 
@@ -39,6 +41,26 @@ def tianqi (name):
 	            f"最高温度：{tomorrow['high']}\n" \
 	            f"最低温度：{tomorrow['low']}\n"
 	return xiangqing
+
+
+def sina ():
+	url = 'https://news.sina.com.cn/society/'
+	UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'
+	url_info = requests.get (url, headers = {'User-Agent': UA})
+	info = url_info.content.decode ('utf-8')  # 转化编码格式
+	soup = BeautifulSoup (info, 'html.parser')
+	new_heads = soup.find ('div', class_ = 'right-content')
+	bbb = new_heads.find_all ('a')
+	news = []
+	for i in bbb:
+		news.append (i.text + ":" + i.get ('href'))
+
+	bbb = f"1:{news[0]}\n" \
+	      f"2:{news[1]}\n" \
+	      f"3:{news[2]}\n" \
+	      f"4:{news[3]}\n" \
+	      f"5:{news[4]}\n"
+	return bbb
 
 
 def Ai_tianqi (name):
@@ -63,5 +85,6 @@ def Ai_tianqi (name):
 	            f"小傻瓜提示:{info}\n"
 	return xiangqing
 
+
 if __name__ == '__main__':
-	RunBot (["-u", "somebody"])
+	RunBot (["-u", "somebody"])  # sina()

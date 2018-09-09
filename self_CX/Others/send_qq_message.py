@@ -21,6 +21,10 @@ def onQQMessage (bot, contact, member, content):
 		bot.SendTo (contact, str (tianqi (content [5:])))
 	elif '新闻' in content:
 		bot.SendTo (contact, str (sina ()))
+
+	if '@ME' in content:
+		bot.SendTo (contact, member.name + '你好，此消息由系统自动回复，有事请私聊？')
+
 	elif content == "-stop":
 		bot.Stop ()
 
@@ -87,4 +91,4 @@ def Ai_tianqi (name):
 
 
 if __name__ == '__main__':
-	RunBot (["-u", "somebody"])  # sina()
+	RunBot (["-u", "somebody"])

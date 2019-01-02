@@ -55,10 +55,8 @@ class Crecipe(object):
                     name = self.derive.find_element_by_xpath('/html/body/div[2]/div[1]/div[2]/div[2]/h2').text  # 名字
                     peiliao = self.derive.find_element_by_xpath('/html/body/div[2]/div[1]/div[2]/div[2]').text  # 配料
                     zuofa = self.derive.find_element_by_xpath('/html/body/div[2]/div[1]/div[2]/div[4]/p[1]').text  # 做法
-                    Crecipe.excel(self, name, zuofa, peiliao)
+                    self.excel(self, name, zuofa)
                     self.derive.back()
-                else:
-                    pass
 
     def excel(self, name, zuofa, peiliao):
         self.sheet.write(self.i, 0, name)

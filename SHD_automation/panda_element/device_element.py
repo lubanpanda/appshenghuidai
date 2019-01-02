@@ -126,7 +126,7 @@ zhuce['跳过']='com.yourenkeji.shenghuidai:id/img_cancel'
 global HTMLbaogao
 # noinspection PyRedeclaration
 HTMLbaogao={}
-HTMLbaogao['报告地址']='/Users/yuchengtao/PycharmProjects/shenghuidai/SHD_automation/panda_baogao/'
+HTMLbaogao['报告地址'] = '/Users/panda/PycharmProjects/appshenghuidai/SHD_automation/panda_baogao/'
 HTMLbaogao['图片地址']='/Users/yuchengtao/PycharmProjects/shenghuidai/SHD_automation/panda_picture/'
 
 #谷歌游览器的驱动程序

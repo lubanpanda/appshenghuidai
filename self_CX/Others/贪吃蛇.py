@@ -130,23 +130,23 @@ class SnakeGame (Frame):
 		if randint (0, 40) == 5:
 			self.food.color = "#FFD700"
 			self.food.type = 3
-			while (self.food.pos in self.snake.body):
+            while self.food.pos in self.snake.body:
 				self.food.set_pos ()
 			self.food.display ()
 		elif randint (0, 4) == 2:
 			self.food.color = "#EE82EE"
 			self.food.type = 4
-			while (self.food.pos in self.snake.body):
+            while self.food.pos in self.snake.body:
 				self.food.set_pos ()
 			self.food.display ()
 		elif len (self.snake.body) > 10 and randint (0, 16) == 5:
 			self.food.color = "#BC8F8F"
 			self.food.type = 2
-			while (self.food.pos in self.snake.body):
+            while self.food.pos in self.snake.body:
 				self.food.set_pos ()
 			self.food.display ()
 		else:
-			while (self.food.pos in self.snake.body):
+            while self.food.pos in self.snake.body:
 				self.food.set_pos ()
 			self.food.display ()
 
@@ -164,7 +164,7 @@ class SnakeGame (Frame):
 		# 首先判断游戏是否暂停
 		if not self.status [0] == 'stop':
 			# 判断游戏是否结束
-			if self.gameover == True:
+            if self.gameover:
 				message = tkinter.messagebox.showinfo ("Game Over", "your score: %d" % self.score)
 				if message == 'ok':
 					self.initial ()

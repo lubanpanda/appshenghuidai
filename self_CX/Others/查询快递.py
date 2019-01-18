@@ -56,7 +56,6 @@ def main ():
 		exit ()
 	else:
 		print ('!!!!!您的指令输入有误，请重新输入：<---------')
-
-
 if __name__ == '__main__':
-	main ()
+    main()
+    input('按任意键退出')

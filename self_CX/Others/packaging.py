@@ -34,3 +34,4 @@ def Uninx():
 
 if __name__ == '__main__':
     Uninx()
+    print('程序打包成功，所得的打包程序在dist目录下，无用的目录已经呗删除')

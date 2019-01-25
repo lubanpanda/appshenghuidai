@@ -25,7 +25,7 @@ class Crecipe(object):
         self.book = xlwt.Workbook(encoding='utf-8')  # style_compression是否进行文件压缩，0代表否
         self.sheet = self.book.add_sheet('菜谱', cell_overwrite_ok=True)
         self.derive = webdriver.Chrome(
-            '/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-chromedriver/chromedriver/mac/chromedriver')
+            '/Applications/Appium.app/Contents/Resources/app/node_modules/appium-chromedriver/chromedriver/mac/chromedriver')
         self.derive.implicitly_wait(30)
 
     def menu_url(self):

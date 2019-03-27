@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="ORM操作">
+    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="日常更新">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self_CX/Others/installApks.py" beforeDir="false" afterPath="$PROJECT_DIR$/self_CX/Others/installApks.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -232,7 +233,20 @@
     <favorites_list name="panda" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/self_CX/Others/installApks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -299,7 +313,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/self_CX/Others/玩玩.py" />
         <option value="$PROJECT_DIR$/self_CX/Others/QQ空间点赞.py" />
         <option value="$PROJECT_DIR$/self_CX/Others/查询淘宝物流.py" />
         <option value="$PROJECT_DIR$/self_CX/Others/线程锁.py" />
@@ -350,6 +363,7 @@
         <option value="$PROJECT_DIR$/self_CX/Others/get_ip.py" />
         <option value="$PROJECT_DIR$/SHD_automation/panda_case/test_02_fengxian.py" />
         <option value="$PROJECT_DIR$/self_CX/Others/__init__.py" />
+        <option value="$PROJECT_DIR$/self_CX/Others/installApks.py" />
       </list>
     </option>
   </component>
@@ -488,7 +502,7 @@
     <property name="node.js.selected.package.tslint" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -1792,13 +1806,7 @@
       <workItem from="1553491642467" duration="718000" />
       <workItem from="1553493337550" duration="1511000" />
       <workItem from="1553594027811" duration="211000" />
-    </task>
-    <task id="LOCAL-00230" summary="优化流程">
-      <created>1533298446828</created>
-      <option name="number" value="00230" />
-      <option name="presentableId" value="LOCAL-00230" />
-      <option name="project" value="LOCAL" />
-      <updated>1533298446828</updated>
+      <workItem from="1553596244794" duration="1107000" />
     </task>
     <task id="LOCAL-00231" summary="优化流程">
       <created>1533630366431</created>
@@ -2136,7 +2144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552910269290</updated>
     </task>
-    <option name="localTasksCounter" value="279" />
+    <task id="LOCAL-00279" summary="日常更新">
+      <created>1553596402629</created>
+      <option name="number" value="00279" />
+      <option name="presentableId" value="LOCAL-00279" />
+      <option name="project" value="LOCAL" />
+      <updated>1553596402634</updated>
+    </task>
+    <option name="localTasksCounter" value="280" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -2172,7 +2187,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209908000" />
+    <option name="totallyTimeSpent" value="211015000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2184,9 +2199,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1280" height="777" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.492569" visible="true" weight="0.16720517" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.492569" visible="true" weight="0.12843296" />
       <window_info id="Structure" order="1" sideWeight="0.507431" side_tool="true" weight="0.14862682" />
       <window_info id="Favorites" order="2" sideWeight="0.5007657" side_tool="true" weight="0.14862682" />
       <window_info id="DB Browser" order="3" weight="0.19547658" />
@@ -2199,9 +2215,9 @@
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.48465267" side_tool="true" weight="0.29909366" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.5201939" weight="0.2900302" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.5201939" visible="true" weight="0.2900302" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.51857835" weight="0.28247735" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.51534736" visible="true" weight="0.29909366" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.51534736" weight="0.29909366" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="13" sideWeight="0.4878837" weight="0.32779455" />
       <window_info anchor="bottom" id="DB Execution Console" order="14" />
@@ -2301,7 +2317,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="知道了1111" />
     <MESSAGE value="知道了" />
     <MESSAGE value="知道了a a a a a a a a" />
     <MESSAGE value="再试试集成" />
@@ -2326,7 +2341,8 @@
     <MESSAGE value="打包Mac程序" />
     <MESSAGE value="更新代码" />
     <MESSAGE value="ORM操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="ORM操作" />
+    <MESSAGE value="日常更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="日常更新" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2391,7 +2407,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/self_CX/Others/panda/2.png" />
     <entry file="file://$PROJECT_DIR$/self_CX/Others/panda/18.png" />
     <entry file="file://$PROJECT_DIR$/self_CX/Others/panda/13.png" />
     <entry file="file://$PROJECT_DIR$/self_CX/Others/panda/3.png" />
@@ -2586,11 +2601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/self_CX/Others/love.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-43" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/self_CX/Others/send_qq_message.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -2651,6 +2661,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_CX/Others/love.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self_CX/Others/installApks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

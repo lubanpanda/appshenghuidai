@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # @Author  : panda  84305510@qq.com
-import random
-import time
 import os
+import random
 import sys
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+import time
+
 from appium.webdriver.common.touch_action import TouchAction
-from SHD_automation.panda_log.log import *
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+
 from SHD_automation.device_info.device import *
+from SHD_automation.panda_log.log import *
+
 
 # noinspection PyUnresolvedReferences,PyPep8Naming
 class My_method(object):
@@ -201,7 +204,7 @@ class My_method(object):
 		My_method.My_id (self, zhuce ['跳过'], 'click')
 		logging.info ('初始化登陆成功')
 
-	def yiwai_login(self,uesrnames=15201525754,passwords=123456):
+    def yiwai_login(self, uesrnames="***********", passwords=123456):
 		"""
 		:param uesrnames: 账户
 		:param passwords: 密码

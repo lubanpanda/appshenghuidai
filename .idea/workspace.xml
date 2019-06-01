@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="启动jemter">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="更改手机号1">
+      <change beforePath="$PROJECT_DIR$/SHD_automation/panda_methods/my_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/SHD_automation/panda_methods/my_methods.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -245,10 +245,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SHD_automation/panda_methods/my_methods.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="68" column="21" lean-forward="true" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
+            <state relative-caret-position="1587">
+              <caret line="206" column="67" lean-forward="true" selection-start-line="206" selection-start-column="67" selection-end-line="206" selection-end-column="67" />
               <folding>
-                <element signature="e#83#96#0" expanded="true" />
+                <element signature="e#83#92#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -413,10 +413,10 @@
         <option value="$PROJECT_DIR$/ATM/core/borrow_info.py" />
         <option value="$USER_HOME$/Downloads/面向对象.py" />
         <option value="$PROJECT_DIR$/self_CX/Others/crawlQzone.py" />
-        <option value="$PROJECT_DIR$/SHD_automation/panda_methods/my_methods.py" />
         <option value="$PROJECT_DIR$/self_CX/Others/Test_Case.py" />
         <option value="$PROJECT_DIR$/self_CX/Others/get_ip.py" />
         <option value="$PROJECT_DIR$/ATM/__init__.py" />
+        <option value="$PROJECT_DIR$/SHD_automation/panda_methods/my_methods.py" />
       </list>
     </option>
   </component>
@@ -2002,14 +2002,7 @@
       <workItem from="1558528494203" duration="2108000" />
       <workItem from="1558768786906" duration="33000" />
       <workItem from="1558768850317" duration="6767000" />
-      <workItem from="1559362622908" duration="1578000" />
-    </task>
-    <task id="LOCAL-00234" summary="优化流程">
-      <created>1534212568861</created>
-      <option name="number" value="00234" />
-      <option name="presentableId" value="LOCAL-00234" />
-      <option name="project" value="LOCAL" />
-      <updated>1534212568862</updated>
+      <workItem from="1559362622908" duration="1748000" />
     </task>
     <task id="LOCAL-00235" summary="优化流程">
       <created>1534215425831</created>
@@ -2347,7 +2340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558268861153</updated>
     </task>
-    <option name="localTasksCounter" value="283" />
+    <task id="LOCAL-00283" summary="更改手机号">
+      <created>1559397863731</created>
+      <option name="number" value="00283" />
+      <option name="presentableId" value="LOCAL-00283" />
+      <option name="project" value="LOCAL" />
+      <updated>1559397863732</updated>
+    </task>
+    <option name="localTasksCounter" value="284" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -2383,7 +2383,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="271913000" />
+    <option name="totallyTimeSpent" value="272083000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2408,10 +2408,10 @@
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" sideWeight="0.5129241" weight="0.32779455" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="6" sideWeight="0.48626816" side_tool="true" visible="true" weight="0.28700906" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.4806139" side_tool="true" weight="0.2900302" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.5201939" weight="0.2900302" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.5193861" visible="true" weight="0.2900302" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.51857835" weight="0.2900302" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.51534736" weight="0.29909366" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -2513,8 +2513,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="知道了a a a a a a a a" />
-    <MESSAGE value="再试试集成" />
     <MESSAGE value="再试试集成1111111111" />
     <MESSAGE value="优化" />
     <MESSAGE value="优化邮件" />
@@ -2538,7 +2536,9 @@
     <MESSAGE value="ORM操作" />
     <MESSAGE value="日常更新" />
     <MESSAGE value="启动jemter" />
-    <option name="LAST_COMMIT_MESSAGE" value="启动jemter" />
+    <MESSAGE value="更改手机号" />
+    <MESSAGE value="更改手机号1" />
+    <option name="LAST_COMMIT_MESSAGE" value="更改手机号1" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2923,10 +2923,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SHD_automation/panda_methods/my_methods.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="68" column="21" lean-forward="true" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
+        <state relative-caret-position="1587">
+          <caret line="206" column="67" lean-forward="true" selection-start-line="206" selection-start-column="67" selection-end-line="206" selection-end-column="67" />
           <folding>
-            <element signature="e#83#96#0" expanded="true" />
+            <element signature="e#83#92#0" expanded="true" />
           </folding>
         </state>
       </provider>

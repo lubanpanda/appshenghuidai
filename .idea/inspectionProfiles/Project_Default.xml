@@ -31,7 +31,6 @@
     <inspection_tool class="PyArgumentEqualDefaultInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PyAugmentAssignmentInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="PyBehaveInspection" enabled="true" level="WARNING" enabled_by_default="true" />
-    <inspection_tool class="PyBroadExceptionInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="PyCallByClassInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="PyClassicStyleClassInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="PyDictCreationInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
@@ -71,6 +70,7 @@
           <option value="ATM.core.transaction.accounts" />
           <option value="shenghuidai.ATM.bin.atm.*" />
           <option value="SHD_automation.panda_Email.MAX_VALUE" />
+          <option value="FoowwDemo.core.stardriver.self" />
         </list>
       </option>
     </inspection_tool>

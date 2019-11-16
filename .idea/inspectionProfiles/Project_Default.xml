@@ -71,6 +71,8 @@
           <option value="shenghuidai.ATM.bin.atm.*" />
           <option value="SHD_automation.panda_Email.MAX_VALUE" />
           <option value="FoowwDemo.core.stardriver.self" />
+          <option value="self_CX.Others.sikulitest.initLogging" />
+          <option value="self_CX.Others.dist.newrizhi.rizhi" />
         </list>
       </option>
     </inspection_tool>

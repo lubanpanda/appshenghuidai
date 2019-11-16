@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+from appshenghuidai.self_CX.Others.testlog import Loggings
+
 __author__ = "panda  84305510@qq.com"
 
 import os
+
+log = Loggings()
 
 
 def Writefile():
@@ -12,6 +16,7 @@ def Writefile():
     if not os.path.exists(file_path):
         with open(file_path, "w"):
             print("正在创建文件中")
+            log.info("aaa")
     with open(file_path, "w") as f:
         f.write(str("a" * 1024 * 1024 * int(file_size)))
 

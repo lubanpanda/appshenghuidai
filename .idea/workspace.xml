@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="创立文件">
-      <change beforePath="$PROJECT_DIR$/self_CX/Others/generatefile.py" beforeDir="false" afterPath="$PROJECT_DIR$/self_CX/Others/generatefile.py" afterDir="false" />
-    </list>
+    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="创立文件" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1819,13 +1817,7 @@
       <workItem from="1573902289878" duration="586000" />
       <workItem from="1573903000218" duration="2266000" />
       <workItem from="1573909537460" duration="41000" />
-    </task>
-    <task id="LOCAL-00242" summary="知道了1111">
-      <created>1534226494568</created>
-      <option name="number" value="00242" />
-      <option name="presentableId" value="LOCAL-00242" />
-      <option name="project" value="LOCAL" />
-      <updated>1534226494568</updated>
+      <workItem from="1573910947847" duration="313000" />
     </task>
     <task id="LOCAL-00243" summary="知道了">
       <created>1534229149743</created>
@@ -2163,7 +2155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573899265433</updated>
     </task>
-    <option name="localTasksCounter" value="291" />
+    <task id="LOCAL-00291" summary="创立文件">
+      <created>1573910987196</created>
+      <option name="number" value="00291" />
+      <option name="presentableId" value="LOCAL-00291" />
+      <option name="project" value="LOCAL" />
+      <updated>1573910987197</updated>
+    </task>
+    <option name="localTasksCounter" value="292" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2234,9 +2233,9 @@
     <MESSAGE value="更改手机号1" />
     <MESSAGE value="自动更新所有的pip包的库" />
     <MESSAGE value="更新一下" />
-    <MESSAGE value="创立文件" />
     <MESSAGE value="添加主方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加主方法" />
+    <MESSAGE value="创立文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="创立文件" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2258,7 +2257,7 @@
     <SUITE FILE_PATH="coverage/panda$stardriver.coverage" NAME="stardriver Coverage Results" MODIFIED="1562482848456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FoowwDemo/core" />
     <SUITE FILE_PATH="coverage/panda$222.coverage" NAME="222 Coverage Results" MODIFIED="1573904096194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX/pandatest" />
     <SUITE FILE_PATH="coverage/panda$tocat.coverage" NAME="tocat Coverage Results" MODIFIED="1563766177777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX/Others" />
-    <SUITE FILE_PATH="coverage/panda$generatefile.coverage" NAME="generatefile Coverage Results" MODIFIED="1573910967119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX/Others" />
+    <SUITE FILE_PATH="coverage/panda$generatefile.coverage" NAME="generatefile Coverage Results" MODIFIED="1573911209698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX/Others" />
     <SUITE FILE_PATH="coverage/panda$newrizhi.coverage" NAME="newrizhi Coverage Results" MODIFIED="1573902451679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX/Others/dist" />
     <SUITE FILE_PATH="coverage/panda$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1573899521786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/self_CX/Others" />
     <SUITE FILE_PATH="coverage/panda$atm.coverage" NAME="atm Coverage Results" MODIFIED="1553740841842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ATM/bin" />

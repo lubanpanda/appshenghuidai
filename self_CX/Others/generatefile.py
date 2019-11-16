@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-from self_CX.Others.testlog import Loggings
+from appshenghuidai.self_CX.Others.testlog import Loggings
 
 __author__ = "panda  84305510@qq.com"
 

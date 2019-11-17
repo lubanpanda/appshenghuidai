@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-from appshenghuidai.self_CX.Others.testlog import Loggings
+from self_CX.Others.testlog import Loggings
 
 __author__ = "panda  84305510@qq.com"
 
 import os
 
 log = Loggings()
-
+log.info("speak")
 
 def Writefile():
     file_name = input("请输入要生成的文本文件名字:" + os.linesep)

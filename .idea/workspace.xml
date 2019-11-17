@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="创立文件">
-      <change afterPath="$PROJECT_DIR$/self_CX/Others/dist/friend_info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/self_CX/Others/dist/get_ip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/self_CX/Others/dist/start_jemter" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/self_CX/Others/dist/查询快递" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/self_CX/Others/dist/爬取图片" afterDir="false" />
+    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="tijiao">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/self_CX/Others/a.log" beforeDir="false" afterPath="$PROJECT_DIR$/self_CX/Others/a.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/self_CX/Others/generatefile.py" beforeDir="false" afterPath="$PROJECT_DIR$/self_CX/Others/generatefile.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -329,7 +322,7 @@
     <property name="node.js.selected.package.tslint" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -1676,14 +1669,7 @@
       <workItem from="1573910947847" duration="313000" />
       <workItem from="1573949883742" duration="177000" />
       <workItem from="1573950266121" duration="97000" />
-      <workItem from="1573952442292" duration="948000" />
-    </task>
-    <task id="LOCAL-00243" summary="知道了">
-      <created>1534229149743</created>
-      <option name="number" value="00243" />
-      <option name="presentableId" value="LOCAL-00243" />
-      <option name="project" value="LOCAL" />
-      <updated>1534229149743</updated>
+      <workItem from="1573952442292" duration="1467000" />
     </task>
     <task id="LOCAL-00244" summary="知道了a a a a a a a a">
       <created>1534253308749</created>
@@ -2021,7 +2007,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573910987197</updated>
     </task>
-    <option name="localTasksCounter" value="292" />
+    <task id="LOCAL-00292" summary="tijiao">
+      <created>1573953441885</created>
+      <option name="number" value="00292" />
+      <option name="presentableId" value="LOCAL-00292" />
+      <option name="project" value="LOCAL" />
+      <updated>1573953441885</updated>
+    </task>
+    <option name="localTasksCounter" value="293" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2069,7 +2062,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="优化邮件222" />
     <MESSAGE value="123456" />
     <MESSAGE value="优化代码" />
     <MESSAGE value="654321" />
@@ -2094,7 +2086,8 @@
     <MESSAGE value="更新一下" />
     <MESSAGE value="添加主方法" />
     <MESSAGE value="创立文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="创立文件" />
+    <MESSAGE value="tijiao" />
+    <option name="LAST_COMMIT_MESSAGE" value="tijiao" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="更多日志的记录">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/self_CX/Others/a.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/self_CX/Others/testlog.py" beforeDir="false" afterPath="$PROJECT_DIR$/self_CX/Others/testlog.py" afterDir="false" />
     </list>
@@ -329,7 +328,7 @@
     <property name="node.js.selected.package.tslint" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -1775,14 +1774,7 @@
       <workItem from="1574471860360" duration="286000" />
       <workItem from="1574472312017" duration="416000" />
       <workItem from="1574477391565" duration="852000" />
-      <workItem from="1574481601173" duration="667000" />
-    </task>
-    <task id="LOCAL-00247" summary="再试试集成1111111111">
-      <created>1534254607452</created>
-      <option name="number" value="00247" />
-      <option name="presentableId" value="LOCAL-00247" />
-      <option name="project" value="LOCAL" />
-      <updated>1534254607452</updated>
+      <workItem from="1574481601173" duration="1036000" />
     </task>
     <task id="LOCAL-00248" summary="再试试集成1111111111">
       <created>1534254955517</created>
@@ -2120,7 +2112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574389794089</updated>
     </task>
-    <option name="localTasksCounter" value="296" />
+    <task id="LOCAL-00296" summary="selenium元素封装">
+      <created>1574483241702</created>
+      <option name="number" value="00296" />
+      <option name="presentableId" value="LOCAL-00296" />
+      <option name="project" value="LOCAL" />
+      <updated>1574483241703</updated>
+    </task>
+    <option name="localTasksCounter" value="297" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2168,7 +2167,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="优化代码" />
     <MESSAGE value="654321" />
     <MESSAGE value="发送邮件" />
     <MESSAGE value="发送邮件111" />
@@ -2193,7 +2191,8 @@
     <MESSAGE value="创立文件" />
     <MESSAGE value="tijiao" />
     <MESSAGE value="更多日志的记录" />
-    <option name="LAST_COMMIT_MESSAGE" value="更多日志的记录" />
+    <MESSAGE value="selenium元素封装" />
+    <option name="LAST_COMMIT_MESSAGE" value="selenium元素封装" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

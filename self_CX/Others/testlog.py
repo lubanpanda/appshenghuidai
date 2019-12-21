@@ -23,17 +23,19 @@ def Loggings():
 # 第三方日志模块，语法简单
 from loguru import logger
 
-logger.add('runtime_{time}.log', rotation='00:00', encoding='utf-8')
+logger.remove(handler_id=None)  # 去除dos显示
+logger.add('aa.log', rotation='00:00', encoding='utf-8', )
+LOG_TO_CONSOLE = True
 logger.debug('这是一个bug')
 logger.info("this is a info message")
 logger.error("this is a error message")
 logger.warning("this is a warning message")
 
-
 from logzero import logger
 
 # import uiautomation
 # These log messages are sent to the console
+logger.remove(handler_id=None)
 logger.debug("这是一个程序")
 logger.info("读取了一条数据")
 logger.warning("此数据可能有异常")

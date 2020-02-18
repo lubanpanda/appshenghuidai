@@ -1,0 +1,35 @@
+2019-12-23 13:44:42.433 common.py[209] select_menu -> Can not move curosr. TextControl's BoundingRectangle is (0,0,0,0)[0x0]. SearchProperties: {ControlType: TextControl}
+2019-12-23 15:37:12.883 common.py[41] __init__ -> Find Control Timeout: {ClassName: 'GridSplitter', ControlType: ThumbControl}
+2019-12-23 15:42:22.519 common.py[41] __init__ -> Find Control Timeout: {ClassName: 'GridSplitter', ControlType: ThumbControl}
+2019-12-23 15:45:21.834 common.py[42] __init__ -> Find Control Timeout: {ClassName: 'GridSplitter', ControlType: ThumbControl}
+2019-12-23 15:45:32.349 common.py[42] __init__ -> Find Control Timeout: {ClassName: 'GridSplitter', ControlType: ThumbControl}
+2019-12-23 15:45:43.223 custom_case_set.py[34] get_case_list -> Find Control Timeout: {ClassName: 'TreeViewItem', ControlType: TreeItemControl}
+2019-12-23 16:24:54.324 common.py[93] clickloop -> Can not move curosr. ButtonControl's BoundingRectangle is (0,0,0,0)[0x0]. SearchProperties: {ControlType: ButtonControl}
+2019-12-23 16:24:55.369 common.py[93] clickloop -> Can not move curosr. ButtonControl's BoundingRectangle is (0,0,0,0)[0x0]. SearchProperties: {ControlType: ButtonControl}
+2019-12-23 16:24:56.399 common.py[93] clickloop -> Can not move curosr. ButtonControl's BoundingRectangle is (0,0,0,0)[0x0]. SearchProperties: {ControlType: ButtonControl}
+2019-12-23 16:24:57.413 common.py[93] clickloop -> Can not move curosr. ButtonControl's BoundingRectangle is (0,0,0,0)[0x0]. SearchProperties: {ControlType: ButtonControl}
+2019-12-23 16:24:58.443 common.py[93] clickloop -> Can not move curosr. ButtonControl's BoundingRectangle is (0,0,0,0)[0x0]. SearchProperties: {ControlType: ButtonControl}
+2019-12-23 16:24:59.457 common.py[93] clickloop -> Can not move curosr. ButtonControl's BoundingRectangle is (0,0,0,0)[0x0]. SearchProperties: {ControlType: ButtonControl}
+2019-12-23 16:25:00.502 common.py[93] clickloop -> Can not move curosr. ButtonControl's BoundingRectangle is (0,0,0,0)[0x0]. SearchProperties: {ControlType: ButtonControl}
+2019-12-23 16:25:01.594 common.py[93] clickloop -> Can not move curosr. ButtonControl's BoundingRectangle is (0,0,0,0)[0x0]. SearchProperties: {ControlType: ButtonControl}
+2019-12-23 16:25:02.608 common.py[93] clickloop -> Can not move curosr. ButtonControl's BoundingRectangle is (0,0,0,0)[0x0]. SearchProperties: {ControlType: ButtonControl}
+2019-12-23 16:25:03.622 common.py[93] clickloop -> Can not move curosr. CustomControl's BoundingRectangle is (0,0,0,0)[0x0]. SearchProperties: {ControlType: ButtonControl}
+2019-12-27 09:21:16.938 custom_case_set.py[164] log_information -> Find Control Timeout: {AutomationId: 'flow', ControlType: DocumentControl}
+2019-12-27 10:41:15.992 common.py[414] batch_filling -> Find Control Timeout: {Name: '确定', ControlType: ButtonControl}
+2019-12-27 15:20:03.189 common.py[415] batch_filling -> Find Control Timeout: {Name: '确定', ControlType: ButtonControl}
+2019-12-27 15:24:14.260 common.py[415] batch_filling -> Find Control Timeout: {Name: '确定', ControlType: ButtonControl}
+2019-12-30 09:03:22.175 certification_case_set.py[22] left_lower_menu -> Find Control Timeout: {ClassName: 'ListView', ControlType: ListControl}
+2019-12-30 09:16:03.045 custom_case_set.py[39] get_case_list -> Find Control Timeout: {ControlType: TextControl}
+2019-12-30 09:42:09.059 certification_case_set.py[22] left_lower_menu -> Find Control Timeout: {ClassName: 'ListView', ControlType: ListControl}
+2019-12-30 09:58:28.242 custom_case_set.py[103] edit_field -> Find Control Timeout: {Name: '3123212', ControlType: CustomControl}
+2019-12-30 09:59:26.889 common.py[425] batch_filling -> Find Control Timeout: {Name: '确定', ControlType: ButtonControl}
+2019-12-30 10:26:23.749 custom_case_set.py[103] edit_field -> Find Control Timeout: {Name: '3123212', ControlType: CustomControl}
+2019-12-30 10:27:01.922 common.py[424] batch_filling -> Find Control Timeout: {Name: '确定', ControlType: ButtonControl}
+2019-12-30 10:30:52.003 custom_case_set.py[103] edit_field -> Find Control Timeout: {Name: '3123212', ControlType: CustomControl}
+2019-12-30 10:31:29.593 common.py[424] batch_filling -> Find Control Timeout: {Name: '确定', ControlType: ButtonControl}
+2019-12-30 10:37:30.210 common.py[424] batch_filling -> Find Control Timeout: {Name: '确定', ControlType: ButtonControl}
+2019-12-30 10:41:56.472 common.py[424] batch_filling -> Find Control Timeout: {Name: '确定', ControlType: ButtonControl}
+2019-12-30 10:47:20.170 common.py[424] batch_filling -> Find Control Timeout: {Name: '确定', ControlType: ButtonControl}
+2019-12-30 10:49:33.458 common.py[424] batch_filling -> Find Control Timeout: {Name: '确定', ControlType: ButtonControl}
+2019-12-30 10:52:20.537 common.py[424] batch_filling -> Find Control Timeout: {Name: '确定', ControlType: ButtonControl}
+2019-12-30 13:51:02.420 uiautomation.py[5907] Refind -> Find Control Timeout: {Name: '3123212', ControlType: CustomControl}

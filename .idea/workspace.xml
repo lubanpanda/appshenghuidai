@@ -1,43 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="去除dos输出">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/Biz/DataLoad.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/Biz/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/Config/Conf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/Config/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/Config/config1.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/Config/config2.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/ControlEngine/ControEngine.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/ControlEngine/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/Core/StepOne.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/Core/StepThree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/Core/StepTwo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/Core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/Datas/CasePath.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/Datas/CasePaths.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/Datas/TestCase.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/Datas/TestSuite.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/Datas/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/Files/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/Logs/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/Logs/logs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/Page/AuthPO.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/Page/CaseShowOnePO.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/Page/CaseShowTwoPO.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/Page/CustomPO.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/Page/LogPO.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/Page/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/SaveFile/SaveCaseLog.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/SaveFile/SaveExcel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/SaveFile/SaveWord.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/SaveFile/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/result_files/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UnionPay/start.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="提交主体结构框架">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnionPay/Logs/logs.py" beforeDir="false" afterPath="$PROJECT_DIR$/UnionPay/Logs/logs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnionPay/Page/AuthPO.py" beforeDir="false" afterPath="$PROJECT_DIR$/UnionPay/Page/AuthPO.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1821,21 +1788,7 @@
       <workItem from="1581736167079" duration="1078000" />
       <workItem from="1581737766665" duration="3817000" />
       <workItem from="1581834773921" duration="9195000" />
-      <workItem from="1581987925534" duration="1220000" />
-    </task>
-    <task id="LOCAL-00252" summary="优化邮件111">
-      <created>1535195714549</created>
-      <option name="number" value="00252" />
-      <option name="presentableId" value="LOCAL-00252" />
-      <option name="project" value="LOCAL" />
-      <updated>1535195714549</updated>
-    </task>
-    <task id="LOCAL-00253" summary="优化邮件222">
-      <created>1535196063552</created>
-      <option name="number" value="00253" />
-      <option name="presentableId" value="LOCAL-00253" />
-      <option name="project" value="LOCAL" />
-      <updated>1535196063552</updated>
+      <workItem from="1581987925534" duration="4389000" />
     </task>
     <task id="LOCAL-00254" summary="123456">
       <created>1535196283169</created>
@@ -2166,7 +2119,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576897574016</updated>
     </task>
-    <option name="localTasksCounter" value="301" />
+    <task id="LOCAL-00301" summary="提交主体结构框架">
+      <created>1581989317447</created>
+      <option name="number" value="00301" />
+      <option name="presentableId" value="LOCAL-00301" />
+      <option name="project" value="LOCAL" />
+      <updated>1581989317447</updated>
+    </task>
+    <task id="LOCAL-00302" summary="数据的填充">
+      <created>1581990634631</created>
+      <option name="number" value="00302" />
+      <option name="presentableId" value="LOCAL-00302" />
+      <option name="project" value="LOCAL" />
+      <updated>1581990634631</updated>
+    </task>
+    <option name="localTasksCounter" value="303" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2214,8 +2181,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="QQ问答" />
-    <MESSAGE value="发送邮件123456" />
     <MESSAGE value="QQ自动回复" />
     <MESSAGE value="查询快递" />
     <MESSAGE value="增加@功能" />
@@ -2239,7 +2204,9 @@
     <MESSAGE value="读取Excel文件封装" />
     <MESSAGE value="pytest文档整理，待续......" />
     <MESSAGE value="去除dos输出" />
-    <option name="LAST_COMMIT_MESSAGE" value="去除dos输出" />
+    <MESSAGE value="提交主体结构框架" />
+    <MESSAGE value="数据的填充" />
+    <option name="LAST_COMMIT_MESSAGE" value="数据的填充" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2252,10 +2219,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="328" y="146" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.777@0.23.1280.777" timestamp="1581987890234" />
-    <state x="246" y="23" key="CommitChangelistDialog2" timestamp="1577852173561">
+    <state x="246" y="23" width="893" height="777" key="CommitChangelistDialog2" timestamp="1581990634124">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="246" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1577852173561" />
+    <state x="246" y="23" width="893" height="777" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1581990634124" />
     <state x="100" y="123" width="1080" height="577" key="DiffContextDialog" timestamp="1576928848732">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -2292,10 +2259,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="141" y="50" width="1080" height="722" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1581928651094" />
-    <state x="240" y="151" key="Vcs.Push.Dialog.v2" timestamp="1576897576809">
+    <state x="240" y="151" key="Vcs.Push.Dialog.v2" timestamp="1581989320292">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="240" y="151" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1576897576809" />
+    <state x="240" y="151" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1581989320291" />
     <state x="221" y="136" width="837" height="550" key="find.popup" timestamp="1581917877556">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="write conf">
+    <list default="true" id="b41f575a-dfdc-45f3-9599-c67958dfc2c6" name="Default" comment="StepOne">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnionPay/Core/StepOne.py" beforeDir="false" afterPath="$PROJECT_DIR$/UnionPay/Core/StepOne.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnionPay/Page/AuthPO.py" beforeDir="false" afterPath="$PROJECT_DIR$/UnionPay/Page/AuthPO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnionPay/Page/CaseShowOnePO.py" beforeDir="false" afterPath="$PROJECT_DIR$/UnionPay/Page/CaseShowOnePO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnionPay/Page/CaseShowTwoPO.py" beforeDir="false" afterPath="$PROJECT_DIR$/UnionPay/Page/CaseShowTwoPO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnionPay/Page/CustomPO.py" beforeDir="false" afterPath="$PROJECT_DIR$/UnionPay/Page/CustomPO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnionPay/Page/LogPO.py" beforeDir="false" afterPath="$PROJECT_DIR$/UnionPay/Page/LogPO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UnionPay_Project/UnionPay/custom_case_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/UnionPay_Project/UnionPay/custom_case_set.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnionPay/Core/StepTwo.py" beforeDir="false" afterPath="$PROJECT_DIR$/UnionPay/Core/StepTwo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1817,14 +1811,7 @@
       <workItem from="1581834773921" duration="9195000" />
       <workItem from="1581987925534" duration="18118000" />
       <workItem from="1582163335039" duration="903000" />
-      <workItem from="1582166733810" duration="15936000" />
-    </task>
-    <task id="LOCAL-00258" summary="优化代码">
-      <created>1535197888919</created>
-      <option name="number" value="00258" />
-      <option name="presentableId" value="LOCAL-00258" />
-      <option name="project" value="LOCAL" />
-      <updated>1535197888919</updated>
+      <workItem from="1582166733810" duration="20998000" />
     </task>
     <task id="LOCAL-00259" summary="654321">
       <created>1535197992284</created>
@@ -2162,7 +2149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582172029935</updated>
     </task>
-    <option name="localTasksCounter" value="307" />
+    <task id="LOCAL-00307" summary="StepOne">
+      <created>1582250254506</created>
+      <option name="number" value="00307" />
+      <option name="presentableId" value="LOCAL-00307" />
+      <option name="project" value="LOCAL" />
+      <updated>1582250254507</updated>
+    </task>
+    <option name="localTasksCounter" value="308" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2210,7 +2204,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="..." />
     <MESSAGE value="打包Mac程序" />
     <MESSAGE value="更新代码" />
     <MESSAGE value="ORM操作" />
@@ -2235,7 +2228,8 @@
     <MESSAGE value="save file" />
     <MESSAGE value="dpwnLoad file" />
     <MESSAGE value="write conf" />
-    <option name="LAST_COMMIT_MESSAGE" value="write conf" />
+    <MESSAGE value="StepOne" />
+    <option name="LAST_COMMIT_MESSAGE" value="StepOne" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -2248,10 +2242,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="328" y="146" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1280.777@0.23.1280.777" timestamp="1581987890234" />
-    <state x="246" y="23" width="893" height="777" key="CommitChangelistDialog2" timestamp="1582172029610">
+    <state x="246" y="23" width="893" height="777" key="CommitChangelistDialog2" timestamp="1582250253793">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="246" y="23" width="893" height="777" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1582172029610" />
+    <state x="246" y="23" width="893" height="777" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1582250253793" />
     <state x="100" y="123" width="1080" height="577" key="DiffContextDialog" timestamp="1576928848732">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

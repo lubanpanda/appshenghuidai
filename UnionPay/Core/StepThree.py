@@ -78,18 +78,7 @@ class StepThree():
         check = '' if is_fail is False else re.compile(r'(报文检查.*)', re.S).findall(complete_content)[0]
         excute_list.append(check)
         self._log.info(f"匹配报文检查的信息>>>{check}")
-        # 获得执行结果
-        # if expected_f39 is None:
-        #     excute_list.append('00')
-        #     final = False if log_f39 != '00' else True
-        #     excute_list.append(check)
-        # else:
-        #     excute_list.append(','.join(expected_f39))
-        #     final = False if log_f39 not in expected_f39 else True
-        #     excute_list.append(check)
         excute_list.append(check)
-
-        # excute_list.append(','.join(expected_f39))
         final = False if log_f39 not in "00" else True
         excute_list.append(final)
         name_pat = '系统运行状态信息：(.*?)开始发送报文'
@@ -98,8 +87,6 @@ class StepThree():
         for ch in [i for i in range(0, 38)]:
             if chr(ch) != '\n':
                 complete_content = complete_content.replace(chr(ch), ' ')
-        # summary_file.add_heading('{}'.format(co_name))
-        # summary_file.add_paragraph('{}'.format(complete_content))
         summary_file.add_heading(str(caseNo) + "-" + f"{co_name}")
         summary_file.add_paragraph(f"{complete_content}")
         self._Allcase.append(excute_list)

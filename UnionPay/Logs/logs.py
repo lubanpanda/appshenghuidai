@@ -21,3 +21,9 @@ class Logs():
                               encoding='utf-8')
 
         return self.__logger
+
+    def getLogger(self):
+        return self.__logger
+
+    def deleteHand(self):
+        return self.__logger.__handlers.clear()

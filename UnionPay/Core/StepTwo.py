@@ -48,7 +48,7 @@ class StepTwo():
         Nus = self._DataLoad.load()
         wordPO = docx.Document()
         caseNo = Nus[0]
-        b = Conf.Conf().readConf("config1. ini")
+        b = Conf.Conf().readConf("config1.ini")
         casepath = b.get('paths', 'casePath')
         PO = self._DataLoad.load()
         pathss = PO[3]

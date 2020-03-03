@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-__author__ = "panda  84305510@qq.com"
+
+import time
 
 import uiautomation as auto
-
-from UnionPay.Page import AuthPO, CustomPO
+from Page import AuthPO, CustomPO
 
 
 class StepOne():
@@ -16,6 +16,7 @@ class StepOne():
         self.__AuthPO = None
         self.__CustomPO = None
         self.__log = Logger
+        self.setpOneinitControl()
 
     def setpOneinitControl(self):
         self.clcikout = int(self.__Conf1.get("timeout", "clickout"))
@@ -27,6 +28,7 @@ class StepOne():
         self.__CustomPO = CustomPO.CustomPO(self.__Conf2.items("CostomPO"))
         self.__CustomPO.CustominitControl(auto)
 
+    "左侧栏向右最大化"
     def rigthSide(self):
         try:
             splitter = auto.ThumbControl(ClassName='GridSplitter').GetClickablePoint()
@@ -36,21 +38,20 @@ class StepOne():
         except:
             pass
 
+    "添加案例"
     def addCase(self):
-        self.__log.info("正在开始添加案例")
+        self.__log.info("正在开始添加案例......")
         casepath = self.__DataLoad.load()[1]
         self.__log.info(f"获取到了案例数据>>>:{casepath}")
         self.__AuthPO.getTab1().DoubleClick()
         count = 0
         for case in casepath:
-            # 当count是0，也就是添加第一条案例时，默认寻找左下角路径，否则判断当前路径和上一条路径的左下角路径是否相同
             if count > 0:
                 if case[0] != casepath[count - 1][0]:
                     # 寻找左下角路径
                     self.clickLeftMeus(case[0])
             else:
                 self.clickLeftMeus(case[0])
-
             self.findCase(case)
             count += 1
 
@@ -78,14 +79,11 @@ class StepOne():
             self.__log.info(f"开始执行失败案例的添加")
             count = 0
             for case in exeNewList:
-                # 当count是0，也就是添加第一条案例时，默认寻找左下角路径，否则判断当前路径和上一条路径的左下角路径是否相同
                 if count > 0:
                     if case[0] != exeNewList[count - 1][0]:
-                        # 寻找左下角路径
                         self.clickLeftMeus(case[0])
                 else:
                     self.clickLeftMeus(case[0])
-
                 self.findCase(case)
                 count += 1
 
@@ -93,7 +91,6 @@ class StepOne():
         self.__log.info("开始查找案例")
         count = 0
         flag = True
-        focus_path = ''
         root = self.__AuthPO.getTree1().TextControl(Name=case_list[0])
         temp_list = [i for i in root.GetParentControl().GetChildren() if i.Name == 'emd.ViewModel.SubLevelViewModel']
         for path in range(1, len(case_list)):  # 从路径的第二个开始搜索
@@ -101,15 +98,12 @@ class StepOne():
                 focus_path = case_list[path]
                 if i.TextControl().Name == case_list[path]:
                     count += 1
-                    # i.GetScrollItemPattern().ScrollIntoView()
                     if i.ButtonControl():
                         try:
-                            if auto.ButtonControl.GetTogglePattern().ToggleState == 0:
-                                i.GetExpandCollapsePattern.Expand(0)
+                            if i.ButtonControl().GetTogglePattern().ToggleState == 0:
+                                i.GetExpandCollapsePattern().Expand(0)
                         except:
                             pass
-                        # self.certificate.unfold(i.ButtonControl(), name=i.TextControl().Name)  # 展开该节点下的案例
-
                         # 获取展开节点的子节点
                         temp_list = [temp for temp in i.GetChildren() if temp.Name == 'emd.ViewModel.SubLevelViewModel']
                         if path == len(case_list) - 1:
@@ -118,17 +112,14 @@ class StepOne():
                             i.TextControl().Click()
                             self.addList(i.TextControl(), "案例另存为自定义案例集")
 
-                            # self.certificate.select_menu(i.TextControl(), '案例另存为自定义案例集', certification_='certificate')
-                            # self.logger.info('添加案例：{}--成功'.format(i.TextControl().Name))
-
         if count < len(case_list) - 1:
-            self.__log.error('案例路径:{}书写错误，未找到该路径，请检查路径文件！'.format(focus_path))
-            print('案例路径:{}书写错误，未找到该路径，请检查路径文件！'.format(focus_path))
+            self.__log.error(f'案例路径:{focus_path}书写错误，未找到该路径，请检查路径文件！')
+            print(f'案例路径:{focus_path}书写错误，未找到该路径，请检查路径文件！')
             input("请按任意键退出。。。")
             exit(0)
         if flag is False:
-            self.__log.error('案例路径:{}书写错误，未找到该路径，请检查路径文件！'.format(focus_path))
-            print('案例路径:{}书写错误，未找到该路径，请检查路径文件！'.format(focus_path))
+            self.__log.error(f'案例路径:{focus_path}书写错误，未找到该路径，请检查路径文件！')
+            print(f'案例路径:{focus_path}书写错误，未找到该路径，请检查路径文件！')
             input("请按任意键退出。。。")
             exit(0)
 
@@ -138,22 +129,18 @@ class StepOne():
             '银联发出的报文': 1,
             '银联接收的报文': 2,
         }
-
         case.DoubleClick()
-        # time.sleep(self.click_time)
+        time.sleep(self.clcikout)
         case.RightClick()
-        # time.sleep(self.click_time)
         select_list = auto.MenuItemControl(ClassName='MenuItem').GetParentControl().GetChildren()
         number = certification_select_dict[select_item]
         selection = select_list[number].TextControl()
         self.__log.info('选择菜单：{}-选项'.format(selection.Name))
         selection.Click()
-        # time.sleep(self.click_time)
 
     def clickLeftMeus(self, meusname):
         self.__log.info("选择左侧菜单栏")
         self.__AuthPO.getList1().GetScrollPattern().SetScrollPercent(-1, 0)
-
         flag = False
         for i in self.__AuthPO.getList1().GetChildren():
             if i.Name == meusname:
@@ -163,8 +150,8 @@ class StepOne():
                 self.__log.info(f"自动滚到》》》{meusname}，并去点击它")
 
         if flag is False:
-            self.__log.error('没有路径--{}，请检查路径'.format(meusname))
-            print('没有路径--{}，请检查路径'.format(meusname))
+            self.__log.error(f'没有路径--{meusname}，请检查路径')
+            print(f'没有路径--{meusname}，请检查路径')
             input("请按任意键退出。。。")
             exit(0)
 
@@ -187,16 +174,19 @@ class StepOne():
             '银联接收的报文': 1,
             '删除案例': 2,
         }
-
         case.DoubleClick()
         self.__log.info('点击：{}'.format(case.Name))
         case.RightClick()
-        # time.sleep(self.click_time)
+        time.sleep(self.clcikout)
         select_list = auto.MenuItemControl(ClassName='MenuItem').GetParentControl().GetChildren()
         number = custom_select_dict[select_item]
         selection = select_list[number].TextControl()
         self.__log.info('选择菜单：{}-选项'.format(selection.Name))
         selection.Click()
+
+    def click_self(self):
+        self.__log.info("点击【认证案例集】")
+        return self.__AuthPO.getTab1().DoubleClick()
 
     def getCaseList(self):
         case_lists = []

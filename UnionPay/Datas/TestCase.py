@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-__author__ = "panda  84305510@qq.com"
+
 
 class TestCase():
     def __init__(self, caseNo, flag, pathNo, dataMap):

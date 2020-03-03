@@ -1,24 +1,19 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-__author__ = "panda  84305510@qq.com"
+
 
 import re
 import time
 
-import docx
 import uiautomation as auto
-
-from UnionPay.Config import Conf
-from UnionPay.Core import StepThree
-from UnionPay.Page import CaseShowOnePO, CaseShowTwoPO, AuthPO, CustomPO
-from UnionPay.SaveFile import SaveWord, SaveExcel
+from Core import StepThree
+from Page import CaseShowOnePO, CaseShowTwoPO, AuthPO, CustomPO
 
 
 class StepTwo():
-    def __init__(self, conf1, conf2, DataLoad, Logger):
+    def __init__(self, Logger, conf1, conf2, DataLoad):
         self._Conf1 = conf1
         self._Conf2 = conf2
-        self._upwin = None
         self._DataLoad = DataLoad
         self._CaseShowOnePO = None
         self._CaseShowTwoPO = None
@@ -31,9 +26,9 @@ class StepTwo():
     def stemTwoinitControl(self):
         self.clickout = int(self._Conf1.get("timeout", "clickout"))
         self.logwait = int(self._Conf1.get("timeout", "logwait"))
-        self.click_menu = int(self._Conf1.get("timeout", "click_ menu"))
-        self.intputtime = int(self._Conf1.get("timeout", " intputtime"))
-        self._CaseShowOnePO = CaseShowOnePO.CaseShowOnePO(self._Conf2.items("CaseShow0ne"))
+        self.click_menu = int(self._Conf1.get("timeout", "click_menu"))
+        self.intputtime = int(self._Conf1.get("timeout", "inputtime"))
+        self._CaseShowOnePO = CaseShowOnePO.CaseShowOnePO(self._Conf2.items("CaseShowOne"))
         self._CaseShowOnePO.CaseShowOneinitControl(auto)
         self._CaseShowTwoPO = CaseShowTwoPO.CaseShowTwoPO(self._Conf2.items("CaseShowTwo"))
         self._CaseShowTwoPO.CaseShowTwoinitControl(auto)
@@ -44,82 +39,47 @@ class StepTwo():
         self._StepThree = StepThree.StepThree(self._Conf1, self._Conf2, self._log)
         self._StepThree.StepThreeinitcontrol()
 
-    def selectCard(self):
-        Nus = self._DataLoad.load()
-        wordPO = docx.Document()
-        caseNo = Nus[0]
-        b = Conf.Conf().readConf("config1.ini")
-        casepath = b.get('paths', 'casePath')
-        PO = self._DataLoad.load()
-        pathss = PO[3]
-        POName = PO[2]
-        getResultlist = []
-        wordsList = []
-        getAllCase = None
-        b = 0
-        Noss = []
-        for s in range(len(PO[0])):
-            Nos = caseNo[s] + 1
-            Noss.append(Nos)
-            if len(pathss[s]) == 1:
-                name = POName[b][-1]
-                self.inputPoName(name)
-                time.sleep(self.clickout)
-                while 1:
-                    try:
-                        group = auto.GroupControl(Name='账号基本信息').GetChildren()
-                        combo = group[2]
-                        break
-                    except:
-                        tab = auto.TabControl(AutomationId='mainTab').TabItemControl(
-                            Name=' emd.ViewModel. ColGridViewModel ')
-                        tab.DoubleClick()
-                        continue
-                try:
-                    auto.PaneControl(AutomationId=' scroll').GetScrollPattern().SetScrollPercent(
-                        horizontalPercent=-1, verticalPercent=100)
-
-                    self._log.info(f"滚动到选择卡号的位置")
-                except:
-                    pass
-                self.cards(combo, s, 1)
-                self.addListTwo(self.inputPoName(name).TextControl(), ' 银联发出的报文')
-                self.AsendData(s, 1)
-                self.SaveButton()
-                self.execase()
-                a = self._StepThree.getSaveInfo(wordPO, Nos)
-                getResultlist.append(a[0])
-                getAllCase: a[1]
-                wordsList.append(a[2])
-                b += 1
-            self._StepThree.cleanlog()
-        SaveWord.SaveWord(wordPO, casepath)
-        SaveExcel.SaveExcel(casepath, getAllCase, getResultlist)
-        return getResultlist
+    def rootCardInfo(self):
+        while 1:
+            try:
+                group = auto.GroupControl(Name='账号基本信息').GetChildren()
+                combo = group[2]
+                break
+            except:
+                tab = auto.TabControl(AutomationId='mainTab').TabItemControl(
+                    Name='emd.ViewModel.ColGridViewModel')
+                tab.DoubleClick()
+                continue
+        try:
+            auto.PaneControl(AutomationId='scroll').GetScrollPattern().SetScrollPercent(
+                horizontalPercent=-1, verticalPercent=100)
+            self._log.info(f"滚动到选择卡号的位置")
+        except:
+            pass
+        return combo
 
     def cards(self, combo, i, ii):
         while 1:
             try:
                 self.stemTwoinitControl()
-                time.sleep(self.clickout)
                 data = self.getInputData(i, ii)
                 card1 = data.get("卡号1")
                 self._log.info(f"获得到的卡1数据是>>: {card1}")
                 base_name = combo.GetSelectionPattern().GetSelection()[0].Name
                 if len(re.compile(card1).findall(base_name)) != 0:
                     self._log.info(f'以选择案例卡号>: {base_name}')
+                else:
+                    combo.Click()
                 card_id_list = [i for i in combo.GetChildren() if i.ClassName == 'ListBoxItem' and i.Name]
                 for card_id in card_id_list:
                     if len(re.compile(card1).findall(card_id.Name)) != 0:
                         combo.Select(card_id.Name)
                 break
             except Exception as e:
-                tab = auto.TabControl(AutomationId=' mainTab ').TabItemControl(Name="emd.ViewModel.ColGridViewModel")
+                tab = auto.TabControl(AutomationId='mainTab').TabItemControl(Name="emd.ViewModel.ColGridViewModel")
                 tab.DoubleClick()
-                auto.PaneControl(AutomationId=' scroll').GetScrollPattern().SetScrollPercent(horizontalPercent=-1,
-                                                                                             verticalPercent=100)
-                # time. sleep(self.click menu)
-                self._log.info(f" 滚动到选择卡号的位置")
+                auto.PaneControl(AutomationId='scroll').GetScrollPattern().SetScrollPercent(horizontalPercent=-1,
+                                                                                            verticalPercent=100)
                 self._log.error(f"卡号对象消失，正在重新查找，报错信息为{e}")
                 continue
 
@@ -127,7 +87,7 @@ class StepTwo():
         while 1:
             try:
                 locating = auto.DataGridControl(
-                    AutomationId=' DataGrid1').HeaderControl().HeaderItemControl().TextControl()
+                    AutomationId='DataGrid1').HeaderControl().HeaderItemControl().TextControl()
                 locating_x = locating.GetClickablePoint()[0]
                 locating_y = locating.GetClickablePoint()[1] - 40
                 auto.Click(locating_x, locating_y)
@@ -145,7 +105,7 @@ class StepTwo():
         self._log.info("点击发送报文按钮")
 
     def inputPoName(self, pathName):
-        # time.sleep(self.clickout)
+        time.sleep(self.clickout)
         case_lists = []
         case_list = auto.TreeItemControl(ClassName='TreeViewItem').GetChildren()
         for case in case_list:
@@ -156,17 +116,17 @@ class StepTwo():
             if pathName == case.TextControl().Name:
                 self._log.info(f"判断{pathName}<<<是否等于>>>: {case.TextControl().Name}")
                 sure = case.GetScrollItemPattern().ScrollIntoView()
-                self._log.info(f" É TJ9E4 J>»»: (pathName]")
                 if sure is True:
-                    case.TextContro1().Click()
-                    # time.sleep(self.clickout)
+                    case.TextControl().Click()
+                    case.TextControl().DoubleClick()
+                    time.sleep(self.clickout)
                     self._log.info(f"点击>>>: {pathName}")
                 else:
                     self._log.info(f"点击失败了，重新点击一下")
                     auto.PaneControl(ClassName='ScrollViewer').Click()
                     case.GetScrollItemPattern().Scrol1IntoView()
                     case.TextControl().Click()
-                    return case
+                return case
 
     def addListTwo(self, case, select_item):
         custom_select_dict = {
@@ -176,20 +136,20 @@ class StepTwo():
         }
 
         case.DoubleClick()
-        self._log.info('点击：{}'.format(case.Name))
+        self._log.info(f'点击：{case.Name}')
         case.RightClick()
-        # time.sleep(self.click_time)
+        time.sleep(self.clickout)
         select_list = auto.MenuItemControl(ClassName='MenuItem').GetParentControl().GetChildren()
         number = custom_select_dict[select_item]
         selection = select_list[number].TextControl()
-        self._log.info('选择菜单：{}-选项'.format(selection.Name))
+        self._log.info(f'选择菜单：{selection.Name}-选项')
         selection.Click()
 
     def getInputData(self, exeNo, selectNo):
         self._log.info("多条案例的执行数据处理")
         PO = self._DataLoad.load()
         POname = PO[4]
-        cardName = POname.setExecead()
+        cardName = POname.setExeCaed()
         newMap = {}
         for i in cardName[int(exeNo)].keys():
             if i.endswith("#" + str(selectNo)):
@@ -210,7 +170,6 @@ class StepTwo():
         for field in data:
             self._log.info(f"输入的值为》》》{field},value>>>{data[field]}")
             self.input_text(field, data[field], 1)
-        pass
 
     def input_text(self, field, message, num):
         while 1:
@@ -219,19 +178,16 @@ class StepTwo():
                 search.SendKeys('{Ctrl}a{Delete}')
                 self._log.info('搜索字段：{}'.format(field))
                 search.SendKeys(field + '{Enter}')
-                # 报文信息填写域
                 try:
                     fieldInput = self._CaseShowTwoPO.getTab6()(Name=field).GetParentControl().GetChildren()[2]
                     fieldInput.DoubleClick()
-                    # time.sleep(self.cus.click_time)
+                    time.sleep(self.clickout)
                     send = fieldInput.EditControl()
                     self._log.info('填写字段：{}-->{}'.format(field, message))
                     send.SendKeys('{Ctrl}a{Delete}')
                     send.SendKeys(message + '{Enter}')
-                    # time.sleep(self.cus.click_time)
                 except LookupError:
                     self._log.error('案例序号：{}，字段:{},名称有误，请检查'.format(num, field))
-                    print('案例序号：{}，字段:{},名称有误，请检查'.format(num, field))
                     return False, field
                 break
             except Exception as e:
@@ -239,9 +195,6 @@ class StepTwo():
                 tab.DoubleClick()
                 self._log.error(f"输入对象丢失，正在重新查找，报错信息为{e}")
                 continue
-
-    def getstepTowUpwin(self):
-        return self._upwin
 
     def getCaseShowOnePO(self):
         return self._CaseShowOnePO

@@ -1,0 +1,1040 @@
+2020-02-24 14:08:31.087 | INFO     | UnionPay.Core.StepOne:CaseCompartion:58 - 开始进行案例对比
+2020-02-24 14:08:31.087 | INFO     | UnionPay.Core.StepOne:CaseCompartion:58 - 开始进行案例对比
+2020-02-24 14:15:27.307 | INFO     | UnionPay.Core.StepOne:rigthSide:35 - 左侧栏滑倒最右端
+2020-02-24 14:15:27.307 | INFO     | UnionPay.Core.StepOne:rigthSide:35 - 左侧栏滑倒最右端
+2020-02-24 14:15:27.309 | INFO     | UnionPay.Core.StepOne:clearCase:172 - 开始执行清空自定义案例集
+2020-02-24 14:15:27.309 | INFO     | UnionPay.Core.StepOne:clearCase:172 - 开始执行清空自定义案例集
+2020-02-24 14:19:06.145 | INFO     | UnionPay.Core.StepOne:rigthSide:35 - 左侧栏滑倒最右端
+2020-02-24 14:19:06.145 | INFO     | UnionPay.Core.StepOne:rigthSide:35 - 左侧栏滑倒最右端
+2020-02-24 14:19:08.951 | INFO     | UnionPay.Core.StepOne:clearCase:172 - 开始执行清空自定义案例集
+2020-02-24 14:19:08.951 | INFO     | UnionPay.Core.StepOne:clearCase:172 - 开始执行清空自定义案例集
+2020-02-24 14:20:44.687 | INFO     | UnionPay.Core.StepOne:clearCase:172 - 开始执行清空自定义案例集
+2020-02-24 14:20:44.687 | INFO     | UnionPay.Core.StepOne:clearCase:172 - 开始执行清空自定义案例集
+2020-02-24 14:22:35.689 | INFO     | UnionPay.Core.StepOne:clearCase:172 - 开始执行清空自定义案例集
+2020-02-24 14:22:35.689 | INFO     | UnionPay.Core.StepOne:clearCase:172 - 开始执行清空自定义案例集
+2020-02-24 14:23:23.110 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:23:23.110 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:23:32.636 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:23:32.636 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:26:09.551 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:26:09.551 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:26:11.481 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:26:11.481 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:26:12.668 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:26:12.668 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:26:45.145 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:26:45.145 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:26:55.147 | INFO     | UnionPay.Core.StepOne:deleteList:193 - 点击：网络管理测试案例
+2020-02-24 14:26:55.147 | INFO     | UnionPay.Core.StepOne:deleteList:193 - 点击：网络管理测试案例
+2020-02-24 14:26:55.895 | INFO     | UnionPay.Core.StepOne:deleteList:199 - 选择菜单：银联接收的报文-选项
+2020-02-24 14:26:55.895 | INFO     | UnionPay.Core.StepOne:deleteList:199 - 选择菜单：银联接收的报文-选项
+2020-02-24 14:26:56.582 | INFO     | UnionPay.Core.StepOne:clearCase:180 - 删除案例成功
+2020-02-24 14:26:56.582 | INFO     | UnionPay.Core.StepOne:clearCase:180 - 删除案例成功
+2020-02-24 14:26:57.818 | INFO     | UnionPay.Core.StepOne:deleteList:193 - 点击：网络管理测试案例
+2020-02-24 14:26:57.818 | INFO     | UnionPay.Core.StepOne:deleteList:193 - 点击：网络管理测试案例
+2020-02-24 14:26:58.607 | INFO     | UnionPay.Core.StepOne:deleteList:199 - 选择菜单：案例展示-选项
+2020-02-24 14:26:58.607 | INFO     | UnionPay.Core.StepOne:deleteList:199 - 选择菜单：案例展示-选项
+2020-02-24 14:26:59.330 | INFO     | UnionPay.Core.StepOne:clearCase:180 - 删除案例成功
+2020-02-24 14:26:59.330 | INFO     | UnionPay.Core.StepOne:clearCase:180 - 删除案例成功
+2020-02-24 14:27:00.714 | INFO     | UnionPay.Core.StepOne:deleteList:193 - 点击：网络管理测试案例
+2020-02-24 14:27:00.714 | INFO     | UnionPay.Core.StepOne:deleteList:193 - 点击：网络管理测试案例
+2020-02-24 14:27:01.536 | INFO     | UnionPay.Core.StepOne:deleteList:199 - 选择菜单：银联接收的报文-选项
+2020-02-24 14:27:01.536 | INFO     | UnionPay.Core.StepOne:deleteList:199 - 选择菜单：银联接收的报文-选项
+2020-02-24 14:27:02.278 | INFO     | UnionPay.Core.StepOne:clearCase:180 - 删除案例成功
+2020-02-24 14:27:02.278 | INFO     | UnionPay.Core.StepOne:clearCase:180 - 删除案例成功
+2020-02-24 14:27:03.630 | INFO     | UnionPay.Core.StepOne:deleteList:193 - 点击：网络管理测试案例
+2020-02-24 14:27:03.630 | INFO     | UnionPay.Core.StepOne:deleteList:193 - 点击：网络管理测试案例
+2020-02-24 14:27:04.413 | INFO     | UnionPay.Core.StepOne:deleteList:199 - 选择菜单：银联接收的报文-选项
+2020-02-24 14:27:04.413 | INFO     | UnionPay.Core.StepOne:deleteList:199 - 选择菜单：银联接收的报文-选项
+2020-02-24 14:27:05.095 | INFO     | UnionPay.Core.StepOne:clearCase:180 - 删除案例成功
+2020-02-24 14:27:05.095 | INFO     | UnionPay.Core.StepOne:clearCase:180 - 删除案例成功
+2020-02-24 14:27:06.395 | INFO     | UnionPay.Core.StepOne:deleteList:193 - 点击：网络管理测试案例
+2020-02-24 14:27:06.395 | INFO     | UnionPay.Core.StepOne:deleteList:193 - 点击：网络管理测试案例
+2020-02-24 14:27:07.221 | INFO     | UnionPay.Core.StepOne:deleteList:199 - 选择菜单：银联接收的报文-选项
+2020-02-24 14:27:07.221 | INFO     | UnionPay.Core.StepOne:deleteList:199 - 选择菜单：银联接收的报文-选项
+2020-02-24 14:27:07.944 | INFO     | UnionPay.Core.StepOne:clearCase:180 - 删除案例成功
+2020-02-24 14:27:07.944 | INFO     | UnionPay.Core.StepOne:clearCase:180 - 删除案例成功
+2020-02-24 14:27:08.296 | INFO     | UnionPay.Core.StepOne:clearCase:182 - 自定义案例集里的所有案例删除成功
+2020-02-24 14:27:08.296 | INFO     | UnionPay.Core.StepOne:clearCase:182 - 自定义案例集里的所有案例删除成功
+2020-02-24 14:27:08.297 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:27:08.297 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:27:09.644 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:27:09.644 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:32:18.767 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:32:18.767 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:32:20.851 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:32:20.851 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:32:22.013 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:32:22.013 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:33:46.398 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:33:46.398 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:33:48.224 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:33:48.224 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:33:49.397 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:33:49.397 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:35:42.421 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:35:42.421 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:35:44.291 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:35:44.291 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:35:45.464 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:35:45.464 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:37:10.774 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:37:10.774 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:37:12.909 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:37:12.909 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:37:14.071 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:37:14.071 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:40:25.816 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:40:25.816 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:40:27.648 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:40:27.648 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:40:28.843 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:40:28.843 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:40:28.876 | INFO     | UnionPay.Core.StepOne:addCase:43 - 获取到了案例数据>>>:[]
+2020-02-24 14:40:28.876 | INFO     | UnionPay.Core.StepOne:addCase:43 - 获取到了案例数据>>>:[]
+2020-02-24 14:40:29.793 | INFO     | UnionPay.Core.StepOne:CaseCompartion:59 - 开始进行案例对比
+2020-02-24 14:40:29.793 | INFO     | UnionPay.Core.StepOne:CaseCompartion:59 - 开始进行案例对比
+2020-02-24 14:40:31.036 | INFO     | UnionPay.Core.StepOne:CaseCompartion:74 - 添加案例失败的路径是[]
+2020-02-24 14:40:31.036 | INFO     | UnionPay.Core.StepOne:CaseCompartion:74 - 添加案例失败的路径是[]
+2020-02-24 14:40:31.036 | INFO     | UnionPay.Core.StepOne:CaseCompartion:76 - 没有需要额外添加的案例
+2020-02-24 14:40:31.036 | INFO     | UnionPay.Core.StepOne:CaseCompartion:76 - 没有需要额外添加的案例
+2020-02-24 14:44:04.943 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:44:04.943 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:44:06.690 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:44:06.690 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:44:07.858 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:44:07.858 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:48:01.747 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:48:01.747 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:48:03.641 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:48:03.641 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:48:04.798 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:48:04.798 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:48:42.830 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:48:42.830 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:48:44.710 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:48:44.710 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:48:45.882 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:48:45.882 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:49:32.548 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:49:32.548 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:49:34.404 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:49:34.404 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:49:35.575 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:49:35.575 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:54:07.075 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:54:07.075 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:54:08.945 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:54:08.945 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:54:10.110 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:54:10.110 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:56:12.930 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:56:12.930 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:56:14.798 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:56:14.798 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:56:15.973 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:56:15.973 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:56:32.662 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:56:32.662 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:56:34.545 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:56:34.545 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:56:35.717 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:56:35.717 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:59:29.086 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:59:29.086 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 14:59:30.952 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:59:30.952 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 14:59:32.132 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 14:59:32.132 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:00:03.760 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 15:00:03.760 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 15:00:05.620 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 15:00:05.620 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 15:00:06.869 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:00:06.869 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:00:27.513 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 15:00:27.513 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 15:00:29.510 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 15:00:29.510 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 15:00:30.692 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:00:30.692 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:02:23.530 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 15:02:23.530 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 15:02:25.378 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 15:02:25.378 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 15:02:26.545 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:02:26.545 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:04:19.681 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 15:04:19.681 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 15:04:21.695 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 15:04:21.695 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 15:04:22.879 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:04:22.879 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:07:00.435 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 15:07:00.435 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 15:07:02.394 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 15:07:02.394 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 15:07:03.575 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:07:03.575 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:07:26.844 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 15:07:26.844 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 15:07:28.706 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 15:07:28.706 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 15:07:29.889 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:07:29.889 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:07:48.462 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 15:07:48.462 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 15:07:50.290 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 15:07:50.290 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 15:07:51.499 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:07:51.499 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:07:51.549 | INFO     | UnionPay.Core.StepOne:addCase:43 - 获取到了案例数据>>>:[]
+2020-02-24 15:07:51.549 | INFO     | UnionPay.Core.StepOne:addCase:43 - 获取到了案例数据>>>:[]
+2020-02-24 15:07:52.469 | INFO     | UnionPay.Core.StepOne:CaseCompartion:59 - 开始进行案例对比
+2020-02-24 15:07:52.469 | INFO     | UnionPay.Core.StepOne:CaseCompartion:59 - 开始进行案例对比
+2020-02-24 15:07:53.711 | INFO     | UnionPay.Core.StepOne:CaseCompartion:74 - 添加案例失败的路径是[]
+2020-02-24 15:07:53.711 | INFO     | UnionPay.Core.StepOne:CaseCompartion:74 - 添加案例失败的路径是[]
+2020-02-24 15:07:53.711 | INFO     | UnionPay.Core.StepOne:CaseCompartion:76 - 没有需要额外添加的案例
+2020-02-24 15:07:53.711 | INFO     | UnionPay.Core.StepOne:CaseCompartion:76 - 没有需要额外添加的案例
+2020-02-24 15:10:35.219 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 15:10:35.219 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 15:10:37.083 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 15:10:37.083 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 15:10:38.260 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:10:38.260 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:10:38.296 | INFO     | UnionPay.Core.StepOne:addCase:43 - 获取到了案例数据>>>:[]
+2020-02-24 15:10:38.296 | INFO     | UnionPay.Core.StepOne:addCase:43 - 获取到了案例数据>>>:[]
+2020-02-24 15:10:39.216 | INFO     | UnionPay.Core.StepOne:CaseCompartion:59 - 开始进行案例对比
+2020-02-24 15:10:39.216 | INFO     | UnionPay.Core.StepOne:CaseCompartion:59 - 开始进行案例对比
+2020-02-24 15:10:40.469 | INFO     | UnionPay.Core.StepOne:CaseCompartion:74 - 添加案例失败的路径是[]
+2020-02-24 15:10:40.469 | INFO     | UnionPay.Core.StepOne:CaseCompartion:74 - 添加案例失败的路径是[]
+2020-02-24 15:10:40.469 | INFO     | UnionPay.Core.StepOne:CaseCompartion:76 - 没有需要额外添加的案例
+2020-02-24 15:10:40.469 | INFO     | UnionPay.Core.StepOne:CaseCompartion:76 - 没有需要额外添加的案例
+2020-02-24 15:14:34.929 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 15:14:34.929 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 15:14:36.701 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 15:14:36.701 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 15:14:37.874 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:14:37.874 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:15:24.112 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:15:24.112 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:15:26.127 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:15:26.127 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:15:27.309 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:15:27.309 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:18:18.728 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:18:18.728 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:18:20.726 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:18:20.726 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:18:21.907 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:18:21.907 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:19:40.649 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:19:40.649 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:19:42.641 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:19:42.641 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:19:43.831 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:19:43.831 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:20:47.200 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:20:47.200 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:20:49.057 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:20:49.057 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:20:50.249 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:20:50.249 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:20:50.300 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号']]
+2020-02-24 15:20:50.300 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号']]
+2020-02-24 15:20:51.233 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:156 - 选择左侧菜单栏
+2020-02-24 15:20:51.233 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:156 - 选择左侧菜单栏
+2020-02-24 15:20:53.534 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:165 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 15:20:53.534 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:165 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 15:20:53.551 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 15:20:53.551 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 15:20:53.920 | ERROR    | UnionPay.Core.StepOne:findCase:127 - 案例路径:代收业务书写错误，未找到该路径，请检查路径文件！
+2020-02-24 15:20:53.920 | ERROR    | UnionPay.Core.StepOne:findCase:127 - 案例路径:代收业务书写错误，未找到该路径，请检查路径文件！
+2020-02-24 15:22:50.925 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:22:50.925 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:22:52.886 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:22:52.886 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:22:54.051 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:22:54.051 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:24:32.348 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:24:32.348 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:24:34.434 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:24:34.434 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:24:35.604 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:24:35.604 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:27:48.845 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:27:48.845 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:27:50.933 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:27:50.933 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:27:52.098 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:27:52.098 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:28:05.014 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:28:05.014 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:28:07.116 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:28:07.116 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:28:08.295 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:28:08.295 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:28:26.823 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:28:26.823 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:28:28.787 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:28:28.787 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:28:29.990 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:28:29.990 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:28:30.063 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息']]
+2020-02-24 15:28:30.063 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息']]
+2020-02-24 15:28:30.976 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:156 - 选择左侧菜单栏
+2020-02-24 15:28:30.976 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:156 - 选择左侧菜单栏
+2020-02-24 15:28:33.335 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:165 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 15:28:33.335 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:165 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 15:28:33.345 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 15:28:33.345 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 15:28:33.699 | ERROR    | UnionPay.Core.StepOne:findCase:127 - 案例路径:代收业务书写错误，未找到该路径，请检查路径文件！
+2020-02-24 15:28:33.699 | ERROR    | UnionPay.Core.StepOne:findCase:127 - 案例路径:代收业务书写错误，未找到该路径，请检查路径文件！
+2020-02-24 15:29:33.691 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:29:33.691 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:29:35.802 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:29:35.802 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:29:36.985 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:29:36.985 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:29:37.033 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号']]
+2020-02-24 15:29:37.033 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号']]
+2020-02-24 15:29:37.945 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:156 - 选择左侧菜单栏
+2020-02-24 15:29:37.945 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:156 - 选择左侧菜单栏
+2020-02-24 15:29:40.297 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:165 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 15:29:40.297 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:165 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 15:29:40.314 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 15:29:40.314 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 15:29:40.679 | ERROR    | UnionPay.Core.StepOne:findCase:127 - 案例路径:代收业务书写错误，未找到该路径，请检查路径文件！
+2020-02-24 15:29:40.679 | ERROR    | UnionPay.Core.StepOne:findCase:127 - 案例路径:代收业务书写错误，未找到该路径，请检查路径文件！
+2020-02-24 15:30:40.827 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:30:40.827 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:30:42.781 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:30:42.781 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:30:43.976 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:30:43.976 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:30:44.020 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息']]
+2020-02-24 15:30:44.020 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息']]
+2020-02-24 15:30:44.933 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:156 - 选择左侧菜单栏
+2020-02-24 15:30:44.933 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:156 - 选择左侧菜单栏
+2020-02-24 15:30:47.303 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:165 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 15:30:47.303 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:165 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 15:30:47.308 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 15:30:47.308 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 15:30:47.656 | ERROR    | UnionPay.Core.StepOne:findCase:127 - 案例路径:代收业务书写错误，未找到该路径，请检查路径文件！
+2020-02-24 15:30:47.656 | ERROR    | UnionPay.Core.StepOne:findCase:127 - 案例路径:代收业务书写错误，未找到该路径，请检查路径文件！
+2020-02-24 15:32:40.330 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:32:40.330 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:32:42.255 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:32:42.255 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:32:43.423 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:32:43.423 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:32:43.481 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名']]
+2020-02-24 15:32:43.481 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名']]
+2020-02-24 15:32:44.392 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:156 - 选择左侧菜单栏
+2020-02-24 15:32:44.392 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:156 - 选择左侧菜单栏
+2020-02-24 15:32:46.803 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:165 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 15:32:46.803 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:165 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 15:32:46.809 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 15:32:46.809 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 15:48:47.554 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:48:47.554 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:48:49.484 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:48:49.484 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:48:50.654 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:48:50.654 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:48:50.728 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息']]
+2020-02-24 15:48:50.728 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息']]
+2020-02-24 15:48:51.642 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:156 - 选择左侧菜单栏
+2020-02-24 15:48:51.642 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:156 - 选择左侧菜单栏
+2020-02-24 15:48:54.051 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:165 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 15:48:54.051 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:165 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 15:48:54.079 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 15:48:54.079 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 15:49:05.050 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:49:05.050 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:49:07.155 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:49:07.155 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:49:08.319 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:49:08.319 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:49:08.391 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名']]
+2020-02-24 15:49:08.391 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名']]
+2020-02-24 15:49:09.303 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:156 - 选择左侧菜单栏
+2020-02-24 15:49:09.303 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:156 - 选择左侧菜单栏
+2020-02-24 15:49:11.709 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:165 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 15:49:11.709 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:165 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 15:49:11.716 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 15:49:11.716 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 15:49:49.329 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:49:49.329 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 15:49:51.450 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:49:51.450 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 15:49:52.630 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:49:52.630 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:49:52.687 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名']]
+2020-02-24 15:49:52.687 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名']]
+2020-02-24 15:49:53.597 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:156 - 选择左侧菜单栏
+2020-02-24 15:49:53.597 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:156 - 选择左侧菜单栏
+2020-02-24 15:49:56.032 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:165 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 15:49:56.032 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:165 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 15:49:56.039 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 15:49:56.039 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 15:50:54.883 | INFO     | UnionPay.Core.StepOne:clearCase:171 - 开始执行清空自定义案例集
+2020-02-24 15:50:54.883 | INFO     | UnionPay.Core.StepOne:clearCase:171 - 开始执行清空自定义案例集
+2020-02-24 15:50:56.929 | INFO     | UnionPay.Core.StepOne:click_self:201 - 点击【认证案例集】
+2020-02-24 15:50:56.929 | INFO     | UnionPay.Core.StepOne:click_self:201 - 点击【认证案例集】
+2020-02-24 15:50:58.103 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:50:58.103 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 15:50:58.162 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号']]
+2020-02-24 15:50:58.162 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号']]
+2020-02-24 15:50:59.074 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:153 - 选择左侧菜单栏
+2020-02-24 15:50:59.074 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:153 - 选择左侧菜单栏
+2020-02-24 15:51:01.448 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:162 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 15:51:01.448 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:162 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 15:51:01.459 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 15:51:01.459 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:06:20.990 | INFO     | UnionPay.Core.StepOne:clearCase:171 - 开始执行清空自定义案例集
+2020-02-24 16:06:20.990 | INFO     | UnionPay.Core.StepOne:clearCase:171 - 开始执行清空自定义案例集
+2020-02-24 16:06:23.207 | INFO     | UnionPay.Core.StepOne:click_self:201 - 点击【认证案例集】
+2020-02-24 16:06:23.207 | INFO     | UnionPay.Core.StepOne:click_self:201 - 点击【认证案例集】
+2020-02-24 16:06:24.375 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:06:24.375 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:06:24.433 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名']]
+2020-02-24 16:06:24.433 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名']]
+2020-02-24 16:06:25.346 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:153 - 选择左侧菜单栏
+2020-02-24 16:06:25.346 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:153 - 选择左侧菜单栏
+2020-02-24 16:06:27.760 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:162 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:06:27.760 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:162 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:06:27.766 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:06:27.766 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:06:37.999 | INFO     | UnionPay.Core.StepOne:clearCase:171 - 开始执行清空自定义案例集
+2020-02-24 16:06:37.999 | INFO     | UnionPay.Core.StepOne:clearCase:171 - 开始执行清空自定义案例集
+2020-02-24 16:06:40.090 | INFO     | UnionPay.Core.StepOne:click_self:201 - 点击【认证案例集】
+2020-02-24 16:06:40.090 | INFO     | UnionPay.Core.StepOne:click_self:201 - 点击【认证案例集】
+2020-02-24 16:06:41.270 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:06:41.270 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:06:41.326 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息']]
+2020-02-24 16:06:41.326 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息']]
+2020-02-24 16:06:42.237 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:153 - 选择左侧菜单栏
+2020-02-24 16:06:42.237 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:153 - 选择左侧菜单栏
+2020-02-24 16:06:44.655 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:162 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:06:44.655 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:162 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:06:44.666 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:06:44.666 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:08:52.054 | INFO     | UnionPay.Core.StepOne:clearCase:171 - 开始执行清空自定义案例集
+2020-02-24 16:08:52.054 | INFO     | UnionPay.Core.StepOne:clearCase:171 - 开始执行清空自定义案例集
+2020-02-24 16:08:54.188 | INFO     | UnionPay.Core.StepOne:click_self:201 - 点击【认证案例集】
+2020-02-24 16:08:54.188 | INFO     | UnionPay.Core.StepOne:click_self:201 - 点击【认证案例集】
+2020-02-24 16:08:55.353 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:08:55.353 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:08:55.428 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名']]
+2020-02-24 16:08:55.428 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名']]
+2020-02-24 16:08:56.341 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:153 - 选择左侧菜单栏
+2020-02-24 16:08:56.341 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:153 - 选择左侧菜单栏
+2020-02-24 16:08:58.755 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:162 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:08:58.755 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:162 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:08:58.777 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:08:58.777 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:09:34.968 | INFO     | UnionPay.Core.StepOne:clearCase:171 - 开始执行清空自定义案例集
+2020-02-24 16:09:34.968 | INFO     | UnionPay.Core.StepOne:clearCase:171 - 开始执行清空自定义案例集
+2020-02-24 16:09:36.929 | INFO     | UnionPay.Core.StepOne:click_self:201 - 点击【认证案例集】
+2020-02-24 16:09:36.929 | INFO     | UnionPay.Core.StepOne:click_self:201 - 点击【认证案例集】
+2020-02-24 16:09:38.125 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:09:38.125 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:09:38.174 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息']]
+2020-02-24 16:09:38.174 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息']]
+2020-02-24 16:09:39.094 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:153 - 选择左侧菜单栏
+2020-02-24 16:09:39.094 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:153 - 选择左侧菜单栏
+2020-02-24 16:09:41.470 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:162 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:09:41.470 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:162 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:09:41.488 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:09:41.488 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:09:41.872 | ERROR    | UnionPay.Core.StepOne:findCase:124 - 案例路径:代收业务书写错误，未找到该路径，请检查路径文件！
+2020-02-24 16:09:41.872 | ERROR    | UnionPay.Core.StepOne:findCase:124 - 案例路径:代收业务书写错误，未找到该路径，请检查路径文件！
+2020-02-24 16:17:12.196 | INFO     | UnionPay.Core.StepOne:clearCase:171 - 开始执行清空自定义案例集
+2020-02-24 16:17:12.196 | INFO     | UnionPay.Core.StepOne:clearCase:171 - 开始执行清空自定义案例集
+2020-02-24 16:17:14.646 | INFO     | UnionPay.Core.StepOne:click_self:201 - 点击【认证案例集】
+2020-02-24 16:17:14.646 | INFO     | UnionPay.Core.StepOne:click_self:201 - 点击【认证案例集】
+2020-02-24 16:17:15.814 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:17:15.814 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:17:15.876 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息']]
+2020-02-24 16:17:15.876 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息']]
+2020-02-24 16:17:16.789 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:153 - 选择左侧菜单栏
+2020-02-24 16:17:16.789 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:153 - 选择左侧菜单栏
+2020-02-24 16:17:19.237 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:162 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:17:19.237 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:162 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:17:19.255 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:17:19.255 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:17:19.707 | ERROR    | UnionPay.Core.StepOne:findCase:124 - 案例路径:账户验证书写错误，未找到该路径，请检查路径文件！
+2020-02-24 16:17:19.707 | ERROR    | UnionPay.Core.StepOne:findCase:124 - 案例路径:账户验证书写错误，未找到该路径，请检查路径文件！
+2020-02-24 16:22:14.297 | INFO     | UnionPay.Core.StepOne:clearCase:172 - 开始执行清空自定义案例集
+2020-02-24 16:22:14.297 | INFO     | UnionPay.Core.StepOne:clearCase:172 - 开始执行清空自定义案例集
+2020-02-24 16:22:16.363 | INFO     | UnionPay.Core.StepOne:click_self:202 - 点击【认证案例集】
+2020-02-24 16:22:16.363 | INFO     | UnionPay.Core.StepOne:click_self:202 - 点击【认证案例集】
+2020-02-24 16:22:17.546 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:22:17.546 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:22:17.628 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名']]
+2020-02-24 16:22:17.628 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名']]
+2020-02-24 16:22:18.541 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:154 - 选择左侧菜单栏
+2020-02-24 16:22:18.541 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:154 - 选择左侧菜单栏
+2020-02-24 16:22:21.049 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:163 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:22:21.049 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:163 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:22:21.076 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:22:21.076 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:23:55.426 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 16:23:55.426 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 16:23:57.586 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 16:23:57.586 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 16:23:58.768 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:23:58.768 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:23:58.837 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息']]
+2020-02-24 16:23:58.837 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息']]
+2020-02-24 16:23:59.747 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:155 - 选择左侧菜单栏
+2020-02-24 16:23:59.747 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:155 - 选择左侧菜单栏
+2020-02-24 16:24:02.219 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:164 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:24:02.219 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:164 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:24:02.243 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:24:02.243 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:25:05.210 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 16:25:05.210 | INFO     | UnionPay.Core.StepOne:clearCase:173 - 开始执行清空自定义案例集
+2020-02-24 16:25:07.374 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 16:25:07.374 | INFO     | UnionPay.Core.StepOne:click_self:203 - 点击【认证案例集】
+2020-02-24 16:25:08.538 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:25:08.538 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:25:08.619 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号']]
+2020-02-24 16:25:08.619 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号']]
+2020-02-24 16:25:09.530 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:155 - 选择左侧菜单栏
+2020-02-24 16:25:09.530 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:155 - 选择左侧菜单栏
+2020-02-24 16:25:12.030 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:164 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:25:12.030 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:164 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:25:12.055 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:25:12.055 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:25:12.514 | ERROR    | UnionPay.Core.StepOne:findCase:126 - 案例路径:实时代收书写错误，未找到该路径，请检查路径文件！
+2020-02-24 16:25:12.514 | ERROR    | UnionPay.Core.StepOne:findCase:126 - 案例路径:实时代收书写错误，未找到该路径，请检查路径文件！
+2020-02-24 16:26:35.127 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 16:26:35.127 | INFO     | UnionPay.Core.StepOne:clearCase:174 - 开始执行清空自定义案例集
+2020-02-24 16:26:37.291 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 16:26:37.291 | INFO     | UnionPay.Core.StepOne:click_self:204 - 点击【认证案例集】
+2020-02-24 16:26:38.464 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:26:38.464 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:26:38.535 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息']]
+2020-02-24 16:26:38.535 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息']]
+2020-02-24 16:26:39.448 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:156 - 选择左侧菜单栏
+2020-02-24 16:26:39.448 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:156 - 选择左侧菜单栏
+2020-02-24 16:26:41.914 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:165 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:26:41.914 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:165 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:26:41.920 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:26:41.920 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:26:42.375 | ERROR    | UnionPay.Core.StepOne:findCase:127 - 案例路径:账户验证书写错误，未找到该路径，请检查路径文件！
+2020-02-24 16:26:42.375 | ERROR    | UnionPay.Core.StepOne:findCase:127 - 案例路径:账户验证书写错误，未找到该路径，请检查路径文件！
+2020-02-24 16:28:02.536 | INFO     | UnionPay.Core.StepOne:clearCase:175 - 开始执行清空自定义案例集
+2020-02-24 16:28:02.536 | INFO     | UnionPay.Core.StepOne:clearCase:175 - 开始执行清空自定义案例集
+2020-02-24 16:28:04.694 | INFO     | UnionPay.Core.StepOne:click_self:205 - 点击【认证案例集】
+2020-02-24 16:28:04.694 | INFO     | UnionPay.Core.StepOne:click_self:205 - 点击【认证案例集】
+2020-02-24 16:28:05.869 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:28:05.869 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:28:05.934 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号']]
+2020-02-24 16:28:05.934 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号']]
+2020-02-24 16:28:06.850 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:157 - 选择左侧菜单栏
+2020-02-24 16:28:06.850 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:157 - 选择左侧菜单栏
+2020-02-24 16:28:09.353 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:166 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:28:09.353 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:166 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:28:09.377 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:28:09.377 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:29:39.113 | INFO     | UnionPay.Core.StepOne:clearCase:175 - 开始执行清空自定义案例集
+2020-02-24 16:29:39.113 | INFO     | UnionPay.Core.StepOne:clearCase:175 - 开始执行清空自定义案例集
+2020-02-24 16:29:41.283 | INFO     | UnionPay.Core.StepOne:click_self:205 - 点击【认证案例集】
+2020-02-24 16:29:41.283 | INFO     | UnionPay.Core.StepOne:click_self:205 - 点击【认证案例集】
+2020-02-24 16:29:42.458 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:29:42.458 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:29:42.537 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息']]
+2020-02-24 16:29:42.537 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息']]
+2020-02-24 16:29:43.452 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:157 - 选择左侧菜单栏
+2020-02-24 16:29:43.452 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:157 - 选择左侧菜单栏
+2020-02-24 16:29:45.955 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:166 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:29:45.955 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:166 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:29:45.961 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:29:45.961 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:31:40.044 | INFO     | UnionPay.Core.StepOne:clearCase:175 - 开始执行清空自定义案例集
+2020-02-24 16:31:40.044 | INFO     | UnionPay.Core.StepOne:clearCase:175 - 开始执行清空自定义案例集
+2020-02-24 16:31:42.214 | INFO     | UnionPay.Core.StepOne:click_self:205 - 点击【认证案例集】
+2020-02-24 16:31:42.214 | INFO     | UnionPay.Core.StepOne:click_self:205 - 点击【认证案例集】
+2020-02-24 16:31:43.391 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:31:43.391 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:31:43.464 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号']]
+2020-02-24 16:31:43.464 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号']]
+2020-02-24 16:31:44.378 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:157 - 选择左侧菜单栏
+2020-02-24 16:31:44.378 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:157 - 选择左侧菜单栏
+2020-02-24 16:31:46.882 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:166 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:31:46.882 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:166 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:31:46.905 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:31:46.905 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:32:42.696 | INFO     | UnionPay.Core.StepOne:clearCase:175 - 开始执行清空自定义案例集
+2020-02-24 16:32:42.696 | INFO     | UnionPay.Core.StepOne:clearCase:175 - 开始执行清空自定义案例集
+2020-02-24 16:32:44.702 | INFO     | UnionPay.Core.StepOne:click_self:205 - 点击【认证案例集】
+2020-02-24 16:32:44.702 | INFO     | UnionPay.Core.StepOne:click_self:205 - 点击【认证案例集】
+2020-02-24 16:32:45.867 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:32:45.867 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:32:45.900 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名']]
+2020-02-24 16:32:45.900 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名']]
+2020-02-24 16:32:46.813 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:157 - 选择左侧菜单栏
+2020-02-24 16:32:46.813 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:157 - 选择左侧菜单栏
+2020-02-24 16:32:49.263 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:166 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:32:49.263 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:166 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:32:49.280 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:32:49.280 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:32:49.724 | ERROR    | UnionPay.Core.StepOne:findCase:128 - 案例路径:账户验证书写错误，未找到该路径，请检查路径文件！
+2020-02-24 16:32:49.724 | ERROR    | UnionPay.Core.StepOne:findCase:128 - 案例路径:账户验证书写错误，未找到该路径，请检查路径文件！
+2020-02-24 16:33:24.973 | INFO     | UnionPay.Core.StepOne:clearCase:175 - 开始执行清空自定义案例集
+2020-02-24 16:33:24.973 | INFO     | UnionPay.Core.StepOne:clearCase:175 - 开始执行清空自定义案例集
+2020-02-24 16:33:27.205 | INFO     | UnionPay.Core.StepOne:click_self:205 - 点击【认证案例集】
+2020-02-24 16:33:27.205 | INFO     | UnionPay.Core.StepOne:click_self:205 - 点击【认证案例集】
+2020-02-24 16:33:28.378 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:33:28.378 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:33:28.410 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息']]
+2020-02-24 16:33:28.410 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息']]
+2020-02-24 16:33:29.323 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:157 - 选择左侧菜单栏
+2020-02-24 16:33:29.323 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:157 - 选择左侧菜单栏
+2020-02-24 16:33:31.794 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:166 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:33:31.794 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:166 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:33:31.812 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:33:31.812 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:33:32.274 | ERROR    | UnionPay.Core.StepOne:findCase:128 - 案例路径:账户验证书写错误，未找到该路径，请检查路径文件！
+2020-02-24 16:33:32.274 | ERROR    | UnionPay.Core.StepOne:findCase:128 - 案例路径:账户验证书写错误，未找到该路径，请检查路径文件！
+2020-02-24 16:34:13.387 | INFO     | UnionPay.Core.StepOne:clearCase:175 - 开始执行清空自定义案例集
+2020-02-24 16:34:13.387 | INFO     | UnionPay.Core.StepOne:clearCase:175 - 开始执行清空自定义案例集
+2020-02-24 16:34:15.604 | INFO     | UnionPay.Core.StepOne:click_self:205 - 点击【认证案例集】
+2020-02-24 16:34:15.604 | INFO     | UnionPay.Core.StepOne:click_self:205 - 点击【认证案例集】
+2020-02-24 16:34:16.788 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:34:16.788 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:34:16.827 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号']]
+2020-02-24 16:34:16.827 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-无卡', '代收业务', '账户验证', '账户验证', '1 账户验证-成功-上送身份证件信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '2 账户验证-成功-上送手机号'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '6 账户验证-成功-上送手机号+姓名'], ['发卡方-无卡', '代收业务', '实时代收', '实时代收', '1 实时代收-成功-不上送辅助认证信息'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '3 账户验证-成功-上送姓名'], ['发卡方-无卡', '代收业务', '账户验证', '账户验证', '4 账户验证-成功-上送证件信息+手机号']]
+2020-02-24 16:34:17.740 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:157 - 选择左侧菜单栏
+2020-02-24 16:34:17.740 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:157 - 选择左侧菜单栏
+2020-02-24 16:34:20.215 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:166 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:34:20.215 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:166 - 自动滚到》》》发卡方-无卡，并去点击它
+2020-02-24 16:34:20.235 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:34:20.235 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:34:21.748 | ERROR    | UnionPay.Core.StepOne:findCase:128 - 案例路径:账户验证书写错误，未找到该路径，请检查路径文件！
+2020-02-24 16:34:21.748 | ERROR    | UnionPay.Core.StepOne:findCase:128 - 案例路径:账户验证书写错误，未找到该路径，请检查路径文件！
+2020-02-24 16:37:11.768 | INFO     | UnionPay.Core.StepOne:clearCase:175 - 开始执行清空自定义案例集
+2020-02-24 16:37:11.768 | INFO     | UnionPay.Core.StepOne:clearCase:175 - 开始执行清空自定义案例集
+2020-02-24 16:37:13.922 | INFO     | UnionPay.Core.StepOne:click_self:205 - 点击【认证案例集】
+2020-02-24 16:37:13.922 | INFO     | UnionPay.Core.StepOne:click_self:205 - 点击【认证案例集】
+2020-02-24 16:37:15.082 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:37:15.082 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:37:15.132 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-有卡', 'CDM存款业务', 'CDM存款（磁条）', '有卡存款', '1 CDM存款-成功-刷卡无密'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '2 CDM存款-成功-手输卡号无密'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '3 账户验证-成功-上送F4，作为“存款确认”的原交易1'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '4 CDM存款-超时-作为“存款确认”的原交易2'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '1 账户验证-成功-不上送F4'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '5 CDM存款确认-成功']]
+2020-02-24 16:37:15.132 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-有卡', 'CDM存款业务', 'CDM存款（磁条）', '有卡存款', '1 CDM存款-成功-刷卡无密'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '2 CDM存款-成功-手输卡号无密'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '3 账户验证-成功-上送F4，作为“存款确认”的原交易1'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '4 CDM存款-超时-作为“存款确认”的原交易2'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '1 账户验证-成功-不上送F4'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '5 CDM存款确认-成功']]
+2020-02-24 16:37:16.042 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:157 - 选择左侧菜单栏
+2020-02-24 16:37:16.042 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:157 - 选择左侧菜单栏
+2020-02-24 16:37:18.517 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:166 - 自动滚到》》》发卡方-有卡，并去点击它
+2020-02-24 16:37:18.517 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:166 - 自动滚到》》》发卡方-有卡，并去点击它
+2020-02-24 16:37:18.534 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:37:18.534 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:37:19.535 | ERROR    | UnionPay.Core.StepOne:findCase:128 - 案例路径:CDM存款业务书写错误，未找到该路径，请检查路径文件！
+2020-02-24 16:37:19.535 | ERROR    | UnionPay.Core.StepOne:findCase:128 - 案例路径:CDM存款业务书写错误，未找到该路径，请检查路径文件！
+2020-02-24 16:40:40.958 | INFO     | UnionPay.Core.StepOne:rigthSide:36 - 左侧栏滑倒最右端
+2020-02-24 16:40:40.958 | INFO     | UnionPay.Core.StepOne:rigthSide:36 - 左侧栏滑倒最右端
+2020-02-24 16:40:40.958 | INFO     | UnionPay.Core.StepOne:clearCase:175 - 开始执行清空自定义案例集
+2020-02-24 16:40:40.958 | INFO     | UnionPay.Core.StepOne:clearCase:175 - 开始执行清空自定义案例集
+2020-02-24 16:40:42.990 | INFO     | UnionPay.Core.StepOne:click_self:205 - 点击【认证案例集】
+2020-02-24 16:40:42.990 | INFO     | UnionPay.Core.StepOne:click_self:205 - 点击【认证案例集】
+2020-02-24 16:40:44.172 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:40:44.172 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:40:44.210 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '2 CDM存款-成功-手输卡号无密'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '3 账户验证-成功-上送F4，作为“存款确认”的原交易1'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '4 CDM存款-超时-作为“存款确认”的原交易2'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '1 账户验证-成功-不上送F4'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（磁条）', '有卡存款', '1 CDM存款-成功-刷卡无密'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '5 CDM存款确认-成功']]
+2020-02-24 16:40:44.210 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '2 CDM存款-成功-手输卡号无密'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '3 账户验证-成功-上送F4，作为“存款确认”的原交易1'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '4 CDM存款-超时-作为“存款确认”的原交易2'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '1 账户验证-成功-不上送F4'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（磁条）', '有卡存款', '1 CDM存款-成功-刷卡无密'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '5 CDM存款确认-成功']]
+2020-02-24 16:40:45.121 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:157 - 选择左侧菜单栏
+2020-02-24 16:40:45.121 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:157 - 选择左侧菜单栏
+2020-02-24 16:40:47.416 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:166 - 自动滚到》》》发卡方-有卡，并去点击它
+2020-02-24 16:40:47.416 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:166 - 自动滚到》》》发卡方-有卡，并去点击它
+2020-02-24 16:40:47.426 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:40:47.426 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:40:47.916 | ERROR    | UnionPay.Core.StepOne:findCase:128 - 案例路径:CDM存款业务书写错误，未找到该路径，请检查路径文件！
+2020-02-24 16:40:47.916 | ERROR    | UnionPay.Core.StepOne:findCase:128 - 案例路径:CDM存款业务书写错误，未找到该路径，请检查路径文件！
+2020-02-24 16:42:06.098 | INFO     | UnionPay.Core.StepOne:clearCase:175 - 开始执行清空自定义案例集
+2020-02-24 16:42:06.098 | INFO     | UnionPay.Core.StepOne:clearCase:175 - 开始执行清空自定义案例集
+2020-02-24 16:42:08.131 | INFO     | UnionPay.Core.StepOne:click_self:205 - 点击【认证案例集】
+2020-02-24 16:42:08.131 | INFO     | UnionPay.Core.StepOne:click_self:205 - 点击【认证案例集】
+2020-02-24 16:42:09.292 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:42:09.292 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:42:09.349 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '1 账户验证-成功-不上送F4'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '4 CDM存款-超时-作为“存款确认”的原交易2'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '3 账户验证-成功-上送F4，作为“存款确认”的原交易1'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '5 CDM存款确认-成功'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '2 CDM存款-成功-手输卡号无密'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（磁条）', '有卡存款', '1 CDM存款-成功-刷卡无密']]
+2020-02-24 16:42:09.349 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '1 账户验证-成功-不上送F4'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '4 CDM存款-超时-作为“存款确认”的原交易2'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '3 账户验证-成功-上送F4，作为“存款确认”的原交易1'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '5 CDM存款确认-成功'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '2 CDM存款-成功-手输卡号无密'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（磁条）', '有卡存款', '1 CDM存款-成功-刷卡无密']]
+2020-02-24 16:42:10.265 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:157 - 选择左侧菜单栏
+2020-02-24 16:42:10.265 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:157 - 选择左侧菜单栏
+2020-02-24 16:42:12.773 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:166 - 自动滚到》》》发卡方-有卡，并去点击它
+2020-02-24 16:42:12.773 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:166 - 自动滚到》》》发卡方-有卡，并去点击它
+2020-02-24 16:42:12.781 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:42:12.781 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:43:35.883 | INFO     | UnionPay.Core.StepOne:clearCase:175 - 开始执行清空自定义案例集
+2020-02-24 16:43:35.883 | INFO     | UnionPay.Core.StepOne:clearCase:175 - 开始执行清空自定义案例集
+2020-02-24 16:43:37.943 | INFO     | UnionPay.Core.StepOne:click_self:205 - 点击【认证案例集】
+2020-02-24 16:43:37.943 | INFO     | UnionPay.Core.StepOne:click_self:205 - 点击【认证案例集】
+2020-02-24 16:43:39.115 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:43:39.115 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:43:39.147 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-有卡', 'CDM存款业务', 'CDM存款（磁条）', '有卡存款', '1 CDM存款-成功-刷卡无密'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '3 账户验证-成功-上送F4，作为“存款确认”的原交易1'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '2 CDM存款-成功-手输卡号无密'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '4 CDM存款-超时-作为“存款确认”的原交易2'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '5 CDM存款确认-成功'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '1 账户验证-成功-不上送F4']]
+2020-02-24 16:43:39.147 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-有卡', 'CDM存款业务', 'CDM存款（磁条）', '有卡存款', '1 CDM存款-成功-刷卡无密'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '3 账户验证-成功-上送F4，作为“存款确认”的原交易1'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '2 CDM存款-成功-手输卡号无密'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '4 CDM存款-超时-作为“存款确认”的原交易2'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '5 CDM存款确认-成功'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '1 账户验证-成功-不上送F4']]
+2020-02-24 16:43:40.060 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:157 - 选择左侧菜单栏
+2020-02-24 16:43:40.060 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:157 - 选择左侧菜单栏
+2020-02-24 16:43:42.606 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:166 - 自动滚到》》》发卡方-有卡，并去点击它
+2020-02-24 16:43:42.606 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:166 - 自动滚到》》》发卡方-有卡，并去点击它
+2020-02-24 16:43:42.614 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:43:42.614 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:43:43.316 | INFO     | UnionPay.Core.StepOne:findCase:122 - 自动滚到1 CDM存款-成功-刷卡无密路径下
+2020-02-24 16:43:43.316 | INFO     | UnionPay.Core.StepOne:findCase:122 - 自动滚到1 CDM存款-成功-刷卡无密路径下
+2020-02-24 16:43:46.411 | INFO     | UnionPay.Core.StepOne:addList:152 - 选择菜单：案例另存到自定义案例集-选项
+2020-02-24 16:43:46.411 | INFO     | UnionPay.Core.StepOne:addList:152 - 选择菜单：案例另存到自定义案例集-选项
+2020-02-24 16:43:47.098 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:43:47.098 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:43:47.628 | INFO     | UnionPay.Core.StepOne:findCase:122 - 自动滚到3 账户验证-成功-上送F4，作为“存款确认”的原交易1路径下
+2020-02-24 16:43:47.628 | INFO     | UnionPay.Core.StepOne:findCase:122 - 自动滚到3 账户验证-成功-上送F4，作为“存款确认”的原交易1路径下
+2020-02-24 16:43:50.532 | INFO     | UnionPay.Core.StepOne:addList:152 - 选择菜单：案例另存到自定义案例集-选项
+2020-02-24 16:43:50.532 | INFO     | UnionPay.Core.StepOne:addList:152 - 选择菜单：案例另存到自定义案例集-选项
+2020-02-24 16:43:51.267 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:43:51.267 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:43:51.758 | INFO     | UnionPay.Core.StepOne:findCase:122 - 自动滚到2 CDM存款-成功-手输卡号无密路径下
+2020-02-24 16:43:51.758 | INFO     | UnionPay.Core.StepOne:findCase:122 - 自动滚到2 CDM存款-成功-手输卡号无密路径下
+2020-02-24 16:43:54.734 | INFO     | UnionPay.Core.StepOne:addList:152 - 选择菜单：案例另存到自定义案例集-选项
+2020-02-24 16:43:54.734 | INFO     | UnionPay.Core.StepOne:addList:152 - 选择菜单：案例另存到自定义案例集-选项
+2020-02-24 16:43:55.487 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:43:55.487 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:43:55.991 | INFO     | UnionPay.Core.StepOne:findCase:122 - 自动滚到4 CDM存款-超时-作为“存款确认”的原交易2路径下
+2020-02-24 16:43:55.991 | INFO     | UnionPay.Core.StepOne:findCase:122 - 自动滚到4 CDM存款-超时-作为“存款确认”的原交易2路径下
+2020-02-24 16:43:58.893 | INFO     | UnionPay.Core.StepOne:addList:152 - 选择菜单：案例另存到自定义案例集-选项
+2020-02-24 16:43:58.893 | INFO     | UnionPay.Core.StepOne:addList:152 - 选择菜单：案例另存到自定义案例集-选项
+2020-02-24 16:43:59.622 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:43:59.622 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:44:00.148 | INFO     | UnionPay.Core.StepOne:findCase:122 - 自动滚到5 CDM存款确认-成功路径下
+2020-02-24 16:44:00.148 | INFO     | UnionPay.Core.StepOne:findCase:122 - 自动滚到5 CDM存款确认-成功路径下
+2020-02-24 16:44:03.111 | INFO     | UnionPay.Core.StepOne:addList:152 - 选择菜单：案例另存到自定义案例集-选项
+2020-02-24 16:44:03.111 | INFO     | UnionPay.Core.StepOne:addList:152 - 选择菜单：案例另存到自定义案例集-选项
+2020-02-24 16:44:03.795 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:44:03.795 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:44:04.252 | INFO     | UnionPay.Core.StepOne:findCase:122 - 自动滚到1 账户验证-成功-不上送F4路径下
+2020-02-24 16:44:04.252 | INFO     | UnionPay.Core.StepOne:findCase:122 - 自动滚到1 账户验证-成功-不上送F4路径下
+2020-02-24 16:44:07.156 | INFO     | UnionPay.Core.StepOne:addList:152 - 选择菜单：案例另存到自定义案例集-选项
+2020-02-24 16:44:07.156 | INFO     | UnionPay.Core.StepOne:addList:152 - 选择菜单：案例另存到自定义案例集-选项
+2020-02-24 16:44:07.931 | INFO     | UnionPay.Core.StepOne:CaseCompartion:60 - 开始进行案例对比
+2020-02-24 16:44:07.931 | INFO     | UnionPay.Core.StepOne:CaseCompartion:60 - 开始进行案例对比
+2020-02-24 16:44:10.709 | INFO     | UnionPay.Core.StepOne:CaseCompartion:75 - 添加案例失败的路径是[]
+2020-02-24 16:44:10.709 | INFO     | UnionPay.Core.StepOne:CaseCompartion:75 - 添加案例失败的路径是[]
+2020-02-24 16:44:10.709 | INFO     | UnionPay.Core.StepOne:CaseCompartion:77 - 没有需要额外添加的案例
+2020-02-24 16:44:10.709 | INFO     | UnionPay.Core.StepOne:CaseCompartion:77 - 没有需要额外添加的案例
+2020-02-24 16:44:10.983 | INFO     | UnionPay.Core.StepTwo:inputPoName:154 - 开始得到自定义案例集里所有的案例
+2020-02-24 16:44:10.983 | INFO     | UnionPay.Core.StepTwo:inputPoName:154 - 开始得到自定义案例集里所有的案例
+2020-02-24 16:44:11.008 | INFO     | UnionPay.Core.StepTwo:inputPoName:157 - 判断1 CDM存款-成功-刷卡无密<<<是否等于>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 16:44:11.008 | INFO     | UnionPay.Core.StepTwo:inputPoName:157 - 判断1 CDM存款-成功-刷卡无密<<<是否等于>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 16:44:11.509 | INFO     | UnionPay.Core.StepTwo:inputPoName:159 -  É TJ9E4 J>»»: (pathName]
+2020-02-24 16:44:11.509 | INFO     | UnionPay.Core.StepTwo:inputPoName:159 -  É TJ9E4 J>»»: (pathName]
+2020-02-24 16:46:06.910 | INFO     | UnionPay.Core.StepOne:clearCase:175 - 开始执行清空自定义案例集
+2020-02-24 16:46:06.910 | INFO     | UnionPay.Core.StepOne:clearCase:175 - 开始执行清空自定义案例集
+2020-02-24 16:46:10.081 | INFO     | UnionPay.Core.StepOne:deleteList:195 - 点击：1 CDM存款-成功-刷卡无密
+2020-02-24 16:46:10.081 | INFO     | UnionPay.Core.StepOne:deleteList:195 - 点击：1 CDM存款-成功-刷卡无密
+2020-02-24 16:46:10.832 | INFO     | UnionPay.Core.StepOne:deleteList:201 - 选择菜单：删除案例-选项
+2020-02-24 16:46:10.832 | INFO     | UnionPay.Core.StepOne:deleteList:201 - 选择菜单：删除案例-选项
+2020-02-24 16:46:11.495 | INFO     | UnionPay.Core.StepOne:clearCase:182 - 删除案例成功
+2020-02-24 16:46:11.495 | INFO     | UnionPay.Core.StepOne:clearCase:182 - 删除案例成功
+2020-02-24 16:46:12.698 | INFO     | UnionPay.Core.StepOne:deleteList:195 - 点击：3 账户验证-成功-上送F4，作为“存款确认”的原交易1
+2020-02-24 16:46:12.698 | INFO     | UnionPay.Core.StepOne:deleteList:195 - 点击：3 账户验证-成功-上送F4，作为“存款确认”的原交易1
+2020-02-24 16:46:13.418 | INFO     | UnionPay.Core.StepOne:deleteList:201 - 选择菜单：删除案例-选项
+2020-02-24 16:46:13.418 | INFO     | UnionPay.Core.StepOne:deleteList:201 - 选择菜单：删除案例-选项
+2020-02-24 16:46:14.079 | INFO     | UnionPay.Core.StepOne:clearCase:182 - 删除案例成功
+2020-02-24 16:46:14.079 | INFO     | UnionPay.Core.StepOne:clearCase:182 - 删除案例成功
+2020-02-24 16:46:15.350 | INFO     | UnionPay.Core.StepOne:deleteList:195 - 点击：2 CDM存款-成功-手输卡号无密
+2020-02-24 16:46:15.350 | INFO     | UnionPay.Core.StepOne:deleteList:195 - 点击：2 CDM存款-成功-手输卡号无密
+2020-02-24 16:46:16.075 | INFO     | UnionPay.Core.StepOne:deleteList:201 - 选择菜单：删除案例-选项
+2020-02-24 16:46:16.075 | INFO     | UnionPay.Core.StepOne:deleteList:201 - 选择菜单：删除案例-选项
+2020-02-24 16:46:16.745 | INFO     | UnionPay.Core.StepOne:clearCase:182 - 删除案例成功
+2020-02-24 16:46:16.745 | INFO     | UnionPay.Core.StepOne:clearCase:182 - 删除案例成功
+2020-02-24 16:46:17.964 | INFO     | UnionPay.Core.StepOne:deleteList:195 - 点击：4 CDM存款-超时-作为“存款确认”的原交易2
+2020-02-24 16:46:17.964 | INFO     | UnionPay.Core.StepOne:deleteList:195 - 点击：4 CDM存款-超时-作为“存款确认”的原交易2
+2020-02-24 16:46:18.713 | INFO     | UnionPay.Core.StepOne:deleteList:201 - 选择菜单：删除案例-选项
+2020-02-24 16:46:18.713 | INFO     | UnionPay.Core.StepOne:deleteList:201 - 选择菜单：删除案例-选项
+2020-02-24 16:46:19.379 | INFO     | UnionPay.Core.StepOne:clearCase:182 - 删除案例成功
+2020-02-24 16:46:19.379 | INFO     | UnionPay.Core.StepOne:clearCase:182 - 删除案例成功
+2020-02-24 16:46:20.665 | INFO     | UnionPay.Core.StepOne:deleteList:195 - 点击：5 CDM存款确认-成功
+2020-02-24 16:46:20.665 | INFO     | UnionPay.Core.StepOne:deleteList:195 - 点击：5 CDM存款确认-成功
+2020-02-24 16:46:21.413 | INFO     | UnionPay.Core.StepOne:deleteList:201 - 选择菜单：删除案例-选项
+2020-02-24 16:46:21.413 | INFO     | UnionPay.Core.StepOne:deleteList:201 - 选择菜单：删除案例-选项
+2020-02-24 16:46:22.076 | INFO     | UnionPay.Core.StepOne:clearCase:182 - 删除案例成功
+2020-02-24 16:46:22.076 | INFO     | UnionPay.Core.StepOne:clearCase:182 - 删除案例成功
+2020-02-24 16:46:23.297 | INFO     | UnionPay.Core.StepOne:deleteList:195 - 点击：1 账户验证-成功-不上送F4
+2020-02-24 16:46:23.297 | INFO     | UnionPay.Core.StepOne:deleteList:195 - 点击：1 账户验证-成功-不上送F4
+2020-02-24 16:46:24.031 | INFO     | UnionPay.Core.StepOne:deleteList:201 - 选择菜单：删除案例-选项
+2020-02-24 16:46:24.031 | INFO     | UnionPay.Core.StepOne:deleteList:201 - 选择菜单：删除案例-选项
+2020-02-24 16:46:24.693 | INFO     | UnionPay.Core.StepOne:clearCase:182 - 删除案例成功
+2020-02-24 16:46:24.693 | INFO     | UnionPay.Core.StepOne:clearCase:182 - 删除案例成功
+2020-02-24 16:46:24.939 | INFO     | UnionPay.Core.StepOne:clearCase:184 - 自定义案例集里的所有案例删除成功
+2020-02-24 16:46:24.939 | INFO     | UnionPay.Core.StepOne:clearCase:184 - 自定义案例集里的所有案例删除成功
+2020-02-24 16:46:24.939 | INFO     | UnionPay.Core.StepOne:click_self:205 - 点击【认证案例集】
+2020-02-24 16:46:24.939 | INFO     | UnionPay.Core.StepOne:click_self:205 - 点击【认证案例集】
+2020-02-24 16:46:26.163 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:46:26.163 | INFO     | UnionPay.Core.StepOne:addCase:41 - 正在开始添加案例
+2020-02-24 16:46:26.199 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '2 CDM存款-成功-手输卡号无密'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '3 账户验证-成功-上送F4，作为“存款确认”的原交易1'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（磁条）', '有卡存款', '1 CDM存款-成功-刷卡无密'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '5 CDM存款确认-成功'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '4 CDM存款-超时-作为“存款确认”的原交易2'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '1 账户验证-成功-不上送F4']]
+2020-02-24 16:46:26.199 | INFO     | UnionPay.Core.StepOne:addCase:44 - 获取到了案例数据>>>:[['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '2 CDM存款-成功-手输卡号无密'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '3 账户验证-成功-上送F4，作为“存款确认”的原交易1'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（磁条）', '有卡存款', '1 CDM存款-成功-刷卡无密'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '5 CDM存款确认-成功'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '4 CDM存款-超时-作为“存款确认”的原交易2'], ['发卡方-有卡', 'CDM存款业务', 'CDM存款（无卡）', '无卡存款', '1 账户验证-成功-不上送F4']]
+2020-02-24 16:46:27.112 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:157 - 选择左侧菜单栏
+2020-02-24 16:46:27.112 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:157 - 选择左侧菜单栏
+2020-02-24 16:46:29.845 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:166 - 自动滚到》》》发卡方-有卡，并去点击它
+2020-02-24 16:46:29.845 | INFO     | UnionPay.Core.StepOne:clickLeftMeus:166 - 自动滚到》》》发卡方-有卡，并去点击它
+2020-02-24 16:46:29.859 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:46:29.859 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:46:30.550 | INFO     | UnionPay.Core.StepOne:findCase:122 - 自动滚到2 CDM存款-成功-手输卡号无密路径下
+2020-02-24 16:46:30.550 | INFO     | UnionPay.Core.StepOne:findCase:122 - 自动滚到2 CDM存款-成功-手输卡号无密路径下
+2020-02-24 16:46:33.578 | INFO     | UnionPay.Core.StepOne:addList:152 - 选择菜单：案例另存到自定义案例集-选项
+2020-02-24 16:46:33.578 | INFO     | UnionPay.Core.StepOne:addList:152 - 选择菜单：案例另存到自定义案例集-选项
+2020-02-24 16:46:34.326 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:46:34.326 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:46:34.823 | INFO     | UnionPay.Core.StepOne:findCase:122 - 自动滚到3 账户验证-成功-上送F4，作为“存款确认”的原交易1路径下
+2020-02-24 16:46:34.823 | INFO     | UnionPay.Core.StepOne:findCase:122 - 自动滚到3 账户验证-成功-上送F4，作为“存款确认”的原交易1路径下
+2020-02-24 16:46:37.684 | INFO     | UnionPay.Core.StepOne:addList:152 - 选择菜单：案例另存到自定义案例集-选项
+2020-02-24 16:46:37.684 | INFO     | UnionPay.Core.StepOne:addList:152 - 选择菜单：案例另存到自定义案例集-选项
+2020-02-24 16:46:38.432 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:46:38.432 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:46:38.894 | INFO     | UnionPay.Core.StepOne:findCase:122 - 自动滚到1 CDM存款-成功-刷卡无密路径下
+2020-02-24 16:46:38.894 | INFO     | UnionPay.Core.StepOne:findCase:122 - 自动滚到1 CDM存款-成功-刷卡无密路径下
+2020-02-24 16:46:41.865 | INFO     | UnionPay.Core.StepOne:addList:152 - 选择菜单：案例另存到自定义案例集-选项
+2020-02-24 16:46:41.865 | INFO     | UnionPay.Core.StepOne:addList:152 - 选择菜单：案例另存到自定义案例集-选项
+2020-02-24 16:46:42.559 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:46:42.559 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:46:43.076 | INFO     | UnionPay.Core.StepOne:findCase:122 - 自动滚到5 CDM存款确认-成功路径下
+2020-02-24 16:46:43.076 | INFO     | UnionPay.Core.StepOne:findCase:122 - 自动滚到5 CDM存款确认-成功路径下
+2020-02-24 16:46:45.968 | INFO     | UnionPay.Core.StepOne:addList:152 - 选择菜单：案例另存到自定义案例集-选项
+2020-02-24 16:46:45.968 | INFO     | UnionPay.Core.StepOne:addList:152 - 选择菜单：案例另存到自定义案例集-选项
+2020-02-24 16:46:46.659 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:46:46.659 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:46:47.196 | INFO     | UnionPay.Core.StepOne:findCase:122 - 自动滚到4 CDM存款-超时-作为“存款确认”的原交易2路径下
+2020-02-24 16:46:47.196 | INFO     | UnionPay.Core.StepOne:findCase:122 - 自动滚到4 CDM存款-超时-作为“存款确认”的原交易2路径下
+2020-02-24 16:46:50.066 | INFO     | UnionPay.Core.StepOne:addList:152 - 选择菜单：案例另存到自定义案例集-选项
+2020-02-24 16:46:50.066 | INFO     | UnionPay.Core.StepOne:addList:152 - 选择菜单：案例另存到自定义案例集-选项
+2020-02-24 16:46:50.799 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:46:50.799 | INFO     | UnionPay.Core.StepOne:findCase:95 - 开始查找案例
+2020-02-24 16:46:51.267 | INFO     | UnionPay.Core.StepOne:findCase:122 - 自动滚到1 账户验证-成功-不上送F4路径下
+2020-02-24 16:46:51.267 | INFO     | UnionPay.Core.StepOne:findCase:122 - 自动滚到1 账户验证-成功-不上送F4路径下
+2020-02-24 16:46:54.235 | INFO     | UnionPay.Core.StepOne:addList:152 - 选择菜单：案例另存到自定义案例集-选项
+2020-02-24 16:46:54.235 | INFO     | UnionPay.Core.StepOne:addList:152 - 选择菜单：案例另存到自定义案例集-选项
+2020-02-24 16:46:55.008 | INFO     | UnionPay.Core.StepOne:CaseCompartion:60 - 开始进行案例对比
+2020-02-24 16:46:55.008 | INFO     | UnionPay.Core.StepOne:CaseCompartion:60 - 开始进行案例对比
+2020-02-24 16:46:57.775 | INFO     | UnionPay.Core.StepOne:CaseCompartion:75 - 添加案例失败的路径是[]
+2020-02-24 16:46:57.775 | INFO     | UnionPay.Core.StepOne:CaseCompartion:75 - 添加案例失败的路径是[]
+2020-02-24 16:46:57.776 | INFO     | UnionPay.Core.StepOne:CaseCompartion:77 - 没有需要额外添加的案例
+2020-02-24 16:46:57.776 | INFO     | UnionPay.Core.StepOne:CaseCompartion:77 - 没有需要额外添加的案例
+2020-02-24 16:46:58.057 | INFO     | UnionPay.Core.StepTwo:inputPoName:154 - 开始得到自定义案例集里所有的案例
+2020-02-24 16:46:58.057 | INFO     | UnionPay.Core.StepTwo:inputPoName:154 - 开始得到自定义案例集里所有的案例
+2020-02-24 16:46:58.108 | INFO     | UnionPay.Core.StepTwo:inputPoName:157 - 判断1 CDM存款-成功-刷卡无密<<<是否等于>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 16:46:58.108 | INFO     | UnionPay.Core.StepTwo:inputPoName:157 - 判断1 CDM存款-成功-刷卡无密<<<是否等于>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 16:46:59.311 | INFO     | UnionPay.Core.StepTwo:inputPoName:163 - 点击>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 16:46:59.311 | INFO     | UnionPay.Core.StepTwo:inputPoName:163 - 点击>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 16:47:10.129 | INFO     | UnionPay.Core.StepTwo:getInputData:189 - 多条案例的执行数据处理
+2020-02-24 16:47:10.129 | INFO     | UnionPay.Core.StepTwo:getInputData:189 - 多条案例的执行数据处理
+2020-02-24 16:49:27.334 | INFO     | UnionPay.Core.StepThree:clean_log:97 - 清理执行发送报文时产生的日志
+2020-02-24 16:49:27.334 | INFO     | UnionPay.Core.StepThree:clean_log:97 - 清理执行发送报文时产生的日志
+2020-02-24 16:49:31.519 | INFO     | UnionPay.Core.StepOne:CaseCompartion:60 - 开始进行案例对比
+2020-02-24 16:49:31.519 | INFO     | UnionPay.Core.StepOne:CaseCompartion:60 - 开始进行案例对比
+2020-02-24 16:49:34.977 | INFO     | UnionPay.Core.StepOne:CaseCompartion:75 - 添加案例失败的路径是[]
+2020-02-24 16:49:34.977 | INFO     | UnionPay.Core.StepOne:CaseCompartion:75 - 添加案例失败的路径是[]
+2020-02-24 16:49:34.977 | INFO     | UnionPay.Core.StepOne:CaseCompartion:77 - 没有需要额外添加的案例
+2020-02-24 16:49:34.977 | INFO     | UnionPay.Core.StepOne:CaseCompartion:77 - 没有需要额外添加的案例
+2020-02-24 16:49:35.252 | INFO     | UnionPay.Core.StepTwo:inputPoName:154 - 开始得到自定义案例集里所有的案例
+2020-02-24 16:49:35.252 | INFO     | UnionPay.Core.StepTwo:inputPoName:154 - 开始得到自定义案例集里所有的案例
+2020-02-24 16:49:35.303 | INFO     | UnionPay.Core.StepTwo:inputPoName:157 - 判断1 CDM存款-成功-刷卡无密<<<是否等于>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 16:49:35.303 | INFO     | UnionPay.Core.StepTwo:inputPoName:157 - 判断1 CDM存款-成功-刷卡无密<<<是否等于>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 16:49:36.552 | INFO     | UnionPay.Core.StepTwo:inputPoName:163 - 点击>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 16:49:36.552 | INFO     | UnionPay.Core.StepTwo:inputPoName:163 - 点击>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 16:49:47.424 | INFO     | UnionPay.Core.StepTwo:getInputData:189 - 多条案例的执行数据处理
+2020-02-24 16:49:47.424 | INFO     | UnionPay.Core.StepTwo:getInputData:189 - 多条案例的执行数据处理
+2020-02-24 16:49:47.444 | INFO     | UnionPay.Core.StepTwo:getInputData:198 - 处理后的案例数据为》》》{'卡号1': '23-620522120000123943', '卡号2': '', 'F4交易金额': '000000000001', 'F6持卡人扣账金额': '1'}
+2020-02-24 16:49:47.444 | INFO     | UnionPay.Core.StepTwo:getInputData:198 - 处理后的案例数据为》》》{'卡号1': '23-620522120000123943', '卡号2': '', 'F4交易金额': '000000000001', 'F6持卡人扣账金额': '1'}
+2020-02-24 16:49:47.444 | INFO     | UnionPay.Core.StepTwo:cards:107 - 获得到的卡1数据是>>: 23-620522120000123943
+2020-02-24 16:49:47.444 | INFO     | UnionPay.Core.StepTwo:cards:107 - 获得到的卡1数据是>>: 23-620522120000123943
+2020-02-24 16:49:47.691 | INFO     | UnionPay.Core.StepTwo:inputPoName:154 - 开始得到自定义案例集里所有的案例
+2020-02-24 16:49:47.691 | INFO     | UnionPay.Core.StepTwo:inputPoName:154 - 开始得到自定义案例集里所有的案例
+2020-02-24 16:49:47.742 | INFO     | UnionPay.Core.StepTwo:inputPoName:157 - 判断1 CDM存款-成功-刷卡无密<<<是否等于>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 16:49:47.742 | INFO     | UnionPay.Core.StepTwo:inputPoName:157 - 判断1 CDM存款-成功-刷卡无密<<<是否等于>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 16:49:48.899 | INFO     | UnionPay.Core.StepTwo:inputPoName:163 - 点击>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 16:49:48.899 | INFO     | UnionPay.Core.StepTwo:inputPoName:163 - 点击>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 16:53:29.211 | INFO     | UnionPay.Core.StepThree:clean_log:97 - 清理执行发送报文时产生的日志
+2020-02-24 16:53:29.211 | INFO     | UnionPay.Core.StepThree:clean_log:97 - 清理执行发送报文时产生的日志
+2020-02-24 16:53:33.257 | INFO     | UnionPay.Core.StepOne:CaseCompartion:60 - 开始进行案例对比
+2020-02-24 16:53:33.257 | INFO     | UnionPay.Core.StepOne:CaseCompartion:60 - 开始进行案例对比
+2020-02-24 16:53:36.664 | INFO     | UnionPay.Core.StepOne:CaseCompartion:75 - 添加案例失败的路径是[]
+2020-02-24 16:53:36.664 | INFO     | UnionPay.Core.StepOne:CaseCompartion:75 - 添加案例失败的路径是[]
+2020-02-24 16:53:36.664 | INFO     | UnionPay.Core.StepOne:CaseCompartion:77 - 没有需要额外添加的案例
+2020-02-24 16:53:36.664 | INFO     | UnionPay.Core.StepOne:CaseCompartion:77 - 没有需要额外添加的案例
+2020-02-24 16:53:36.942 | INFO     | UnionPay.Core.StepTwo:inputPoName:154 - 开始得到自定义案例集里所有的案例
+2020-02-24 16:53:36.942 | INFO     | UnionPay.Core.StepTwo:inputPoName:154 - 开始得到自定义案例集里所有的案例
+2020-02-24 16:53:36.991 | INFO     | UnionPay.Core.StepTwo:inputPoName:157 - 判断1 CDM存款-成功-刷卡无密<<<是否等于>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 16:53:36.991 | INFO     | UnionPay.Core.StepTwo:inputPoName:157 - 判断1 CDM存款-成功-刷卡无密<<<是否等于>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 16:53:38.226 | INFO     | UnionPay.Core.StepTwo:inputPoName:163 - 点击>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 16:53:38.226 | INFO     | UnionPay.Core.StepTwo:inputPoName:163 - 点击>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 16:54:01.350 | INFO     | UnionPay.Core.StepThree:clean_log:97 - 清理执行发送报文时产生的日志
+2020-02-24 16:54:01.350 | INFO     | UnionPay.Core.StepThree:clean_log:97 - 清理执行发送报文时产生的日志
+2020-02-24 16:54:05.414 | INFO     | UnionPay.Core.StepOne:CaseCompartion:60 - 开始进行案例对比
+2020-02-24 16:54:05.414 | INFO     | UnionPay.Core.StepOne:CaseCompartion:60 - 开始进行案例对比
+2020-02-24 16:54:08.799 | INFO     | UnionPay.Core.StepOne:CaseCompartion:75 - 添加案例失败的路径是[]
+2020-02-24 16:54:08.799 | INFO     | UnionPay.Core.StepOne:CaseCompartion:75 - 添加案例失败的路径是[]
+2020-02-24 16:54:08.800 | INFO     | UnionPay.Core.StepOne:CaseCompartion:77 - 没有需要额外添加的案例
+2020-02-24 16:54:08.800 | INFO     | UnionPay.Core.StepOne:CaseCompartion:77 - 没有需要额外添加的案例
+2020-02-24 16:54:09.072 | INFO     | UnionPay.Core.StepTwo:inputPoName:154 - 开始得到自定义案例集里所有的案例
+2020-02-24 16:54:09.072 | INFO     | UnionPay.Core.StepTwo:inputPoName:154 - 开始得到自定义案例集里所有的案例
+2020-02-24 16:54:09.122 | INFO     | UnionPay.Core.StepTwo:inputPoName:157 - 判断1 CDM存款-成功-刷卡无密<<<是否等于>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 16:54:09.122 | INFO     | UnionPay.Core.StepTwo:inputPoName:157 - 判断1 CDM存款-成功-刷卡无密<<<是否等于>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 16:54:10.356 | INFO     | UnionPay.Core.StepTwo:inputPoName:163 - 点击>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 16:54:10.356 | INFO     | UnionPay.Core.StepTwo:inputPoName:163 - 点击>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:01:16.657 | INFO     | UnionPay.Core.StepThree:clean_log:97 - 清理执行发送报文时产生的日志
+2020-02-24 17:01:16.657 | INFO     | UnionPay.Core.StepThree:clean_log:97 - 清理执行发送报文时产生的日志
+2020-02-24 17:01:20.568 | INFO     | UnionPay.Core.StepOne:CaseCompartion:60 - 开始进行案例对比
+2020-02-24 17:01:20.568 | INFO     | UnionPay.Core.StepOne:CaseCompartion:60 - 开始进行案例对比
+2020-02-24 17:01:23.955 | INFO     | UnionPay.Core.StepOne:CaseCompartion:75 - 添加案例失败的路径是[]
+2020-02-24 17:01:23.955 | INFO     | UnionPay.Core.StepOne:CaseCompartion:75 - 添加案例失败的路径是[]
+2020-02-24 17:01:23.955 | INFO     | UnionPay.Core.StepOne:CaseCompartion:77 - 没有需要额外添加的案例
+2020-02-24 17:01:23.955 | INFO     | UnionPay.Core.StepOne:CaseCompartion:77 - 没有需要额外添加的案例
+2020-02-24 17:01:24.228 | INFO     | UnionPay.Core.StepTwo:inputPoName:154 - 开始得到自定义案例集里所有的案例
+2020-02-24 17:01:24.228 | INFO     | UnionPay.Core.StepTwo:inputPoName:154 - 开始得到自定义案例集里所有的案例
+2020-02-24 17:01:24.278 | INFO     | UnionPay.Core.StepTwo:inputPoName:157 - 判断1 CDM存款-成功-刷卡无密<<<是否等于>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:01:24.278 | INFO     | UnionPay.Core.StepTwo:inputPoName:157 - 判断1 CDM存款-成功-刷卡无密<<<是否等于>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:01:25.529 | INFO     | UnionPay.Core.StepTwo:inputPoName:163 - 点击>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:01:25.529 | INFO     | UnionPay.Core.StepTwo:inputPoName:163 - 点击>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:01:36.196 | INFO     | UnionPay.Core.StepTwo:getInputData:189 - 多条案例的执行数据处理
+2020-02-24 17:01:36.196 | INFO     | UnionPay.Core.StepTwo:getInputData:189 - 多条案例的执行数据处理
+2020-02-24 17:01:36.216 | INFO     | UnionPay.Core.StepTwo:getInputData:198 - 处理后的案例数据为》》》{'卡号1': '23-620522120000123943', '卡号2': '', 'F4交易金额': '000000000001', 'F6持卡人扣账金额': '1'}
+2020-02-24 17:01:36.216 | INFO     | UnionPay.Core.StepTwo:getInputData:198 - 处理后的案例数据为》》》{'卡号1': '23-620522120000123943', '卡号2': '', 'F4交易金额': '000000000001', 'F6持卡人扣账金额': '1'}
+2020-02-24 17:01:36.216 | INFO     | UnionPay.Core.StepTwo:cards:107 - 获得到的卡1数据是>>: 23-620522120000123943
+2020-02-24 17:01:36.216 | INFO     | UnionPay.Core.StepTwo:cards:107 - 获得到的卡1数据是>>: 23-620522120000123943
+2020-02-24 17:01:36.449 | INFO     | UnionPay.Core.StepTwo:inputPoName:154 - 开始得到自定义案例集里所有的案例
+2020-02-24 17:01:36.449 | INFO     | UnionPay.Core.StepTwo:inputPoName:154 - 开始得到自定义案例集里所有的案例
+2020-02-24 17:01:36.499 | INFO     | UnionPay.Core.StepTwo:inputPoName:157 - 判断1 CDM存款-成功-刷卡无密<<<是否等于>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:01:36.499 | INFO     | UnionPay.Core.StepTwo:inputPoName:157 - 判断1 CDM存款-成功-刷卡无密<<<是否等于>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:01:37.659 | INFO     | UnionPay.Core.StepTwo:inputPoName:163 - 点击>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:01:37.659 | INFO     | UnionPay.Core.StepTwo:inputPoName:163 - 点击>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:01:38.587 | INFO     | UnionPay.Core.StepTwo:addListTwo:179 - 点击：1 CDM存款-成功-刷卡无密
+2020-02-24 17:01:38.587 | INFO     | UnionPay.Core.StepTwo:addListTwo:179 - 点击：1 CDM存款-成功-刷卡无密
+2020-02-24 17:01:39.353 | INFO     | UnionPay.Core.StepTwo:addListTwo:185 - 选择菜单：银联发出的报文-选项
+2020-02-24 17:01:39.353 | INFO     | UnionPay.Core.StepTwo:addListTwo:185 - 选择菜单：银联发出的报文-选项
+2020-02-24 17:01:40.011 | INFO     | UnionPay.Core.StepTwo:getInputData:189 - 多条案例的执行数据处理
+2020-02-24 17:01:40.011 | INFO     | UnionPay.Core.StepTwo:getInputData:189 - 多条案例的执行数据处理
+2020-02-24 17:01:40.032 | INFO     | UnionPay.Core.StepTwo:getInputData:198 - 处理后的案例数据为》》》{'卡号1': '23-620522120000123943', '卡号2': '', 'F4交易金额': '000000000001', 'F6持卡人扣账金额': '1'}
+2020-02-24 17:01:40.032 | INFO     | UnionPay.Core.StepTwo:getInputData:198 - 处理后的案例数据为》》》{'卡号1': '23-620522120000123943', '卡号2': '', 'F4交易金额': '000000000001', 'F6持卡人扣账金额': '1'}
+2020-02-24 17:01:40.032 | INFO     | UnionPay.Core.StepTwo:AsendData:203 - 删除卡号1
+2020-02-24 17:01:40.032 | INFO     | UnionPay.Core.StepTwo:AsendData:203 - 删除卡号1
+2020-02-24 17:01:40.033 | INFO     | UnionPay.Core.StepTwo:AsendData:207 - 删除卡号2
+2020-02-24 17:01:40.033 | INFO     | UnionPay.Core.StepTwo:AsendData:207 - 删除卡号2
+2020-02-24 17:01:40.033 | INFO     | UnionPay.Core.StepTwo:AsendData:211 - 输入的值为》》》F4交易金额,value>>>000000000001
+2020-02-24 17:01:40.033 | INFO     | UnionPay.Core.StepTwo:AsendData:211 - 输入的值为》》》F4交易金额,value>>>000000000001
+2020-02-24 17:01:41.177 | INFO     | UnionPay.Core.StepTwo:input_text:220 - 搜索字段：F4交易金额
+2020-02-24 17:01:41.177 | INFO     | UnionPay.Core.StepTwo:input_text:220 - 搜索字段：F4交易金额
+2020-02-24 17:01:43.745 | INFO     | UnionPay.Core.StepTwo:input_text:228 - 填写字段：F4交易金额-->000000000001
+2020-02-24 17:01:43.745 | INFO     | UnionPay.Core.StepTwo:input_text:228 - 填写字段：F4交易金额-->000000000001
+2020-02-24 17:01:44.976 | INFO     | UnionPay.Core.StepTwo:AsendData:211 - 输入的值为》》》F6持卡人扣账金额,value>>>1
+2020-02-24 17:01:44.976 | INFO     | UnionPay.Core.StepTwo:AsendData:211 - 输入的值为》》》F6持卡人扣账金额,value>>>1
+2020-02-24 17:01:46.073 | INFO     | UnionPay.Core.StepTwo:input_text:220 - 搜索字段：F6持卡人扣账金额
+2020-02-24 17:01:46.073 | INFO     | UnionPay.Core.StepTwo:input_text:220 - 搜索字段：F6持卡人扣账金额
+2020-02-24 17:01:48.213 | INFO     | UnionPay.Core.StepTwo:input_text:228 - 填写字段：F6持卡人扣账金额-->1
+2020-02-24 17:01:48.213 | INFO     | UnionPay.Core.StepTwo:input_text:228 - 填写字段：F6持卡人扣账金额-->1
+2020-02-24 17:02:01.325 | ERROR    | UnionPay.Core.StepTwo:SaveButton:139 - 输入对象丢失，正在重新查找，报错信息为Find Control Timeout: {ControlType: TextControl}
+2020-02-24 17:02:01.325 | ERROR    | UnionPay.Core.StepTwo:SaveButton:139 - 输入对象丢失，正在重新查找，报错信息为Find Control Timeout: {ControlType: TextControl}
+2020-02-24 17:05:16.662 | INFO     | UnionPay.Core.StepThree:clean_log:97 - 清理执行发送报文时产生的日志
+2020-02-24 17:05:16.662 | INFO     | UnionPay.Core.StepThree:clean_log:97 - 清理执行发送报文时产生的日志
+2020-02-24 17:05:20.635 | INFO     | UnionPay.Core.StepOne:CaseCompartion:60 - 开始进行案例对比
+2020-02-24 17:05:20.635 | INFO     | UnionPay.Core.StepOne:CaseCompartion:60 - 开始进行案例对比
+2020-02-24 17:05:24.006 | INFO     | UnionPay.Core.StepOne:CaseCompartion:75 - 添加案例失败的路径是[]
+2020-02-24 17:05:24.006 | INFO     | UnionPay.Core.StepOne:CaseCompartion:75 - 添加案例失败的路径是[]
+2020-02-24 17:05:24.007 | INFO     | UnionPay.Core.StepOne:CaseCompartion:77 - 没有需要额外添加的案例
+2020-02-24 17:05:24.007 | INFO     | UnionPay.Core.StepOne:CaseCompartion:77 - 没有需要额外添加的案例
+2020-02-24 17:05:24.285 | INFO     | UnionPay.Core.StepTwo:inputPoName:154 - 开始得到自定义案例集里所有的案例
+2020-02-24 17:05:24.285 | INFO     | UnionPay.Core.StepTwo:inputPoName:154 - 开始得到自定义案例集里所有的案例
+2020-02-24 17:05:24.335 | INFO     | UnionPay.Core.StepTwo:inputPoName:157 - 判断1 CDM存款-成功-刷卡无密<<<是否等于>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:05:24.335 | INFO     | UnionPay.Core.StepTwo:inputPoName:157 - 判断1 CDM存款-成功-刷卡无密<<<是否等于>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:05:25.582 | INFO     | UnionPay.Core.StepTwo:inputPoName:163 - 点击>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:05:25.582 | INFO     | UnionPay.Core.StepTwo:inputPoName:163 - 点击>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:05:36.351 | INFO     | UnionPay.Core.StepTwo:getInputData:189 - 多条案例的执行数据处理
+2020-02-24 17:05:36.351 | INFO     | UnionPay.Core.StepTwo:getInputData:189 - 多条案例的执行数据处理
+2020-02-24 17:05:36.371 | INFO     | UnionPay.Core.StepTwo:getInputData:198 - 处理后的案例数据为》》》{'卡号1': '23-620522120000123943', '卡号2': '', 'F4交易金额': '000000000001', 'F6持卡人扣账金额': '1'}
+2020-02-24 17:05:36.371 | INFO     | UnionPay.Core.StepTwo:getInputData:198 - 处理后的案例数据为》》》{'卡号1': '23-620522120000123943', '卡号2': '', 'F4交易金额': '000000000001', 'F6持卡人扣账金额': '1'}
+2020-02-24 17:05:36.371 | INFO     | UnionPay.Core.StepTwo:cards:107 - 获得到的卡1数据是>>: 23-620522120000123943
+2020-02-24 17:05:36.371 | INFO     | UnionPay.Core.StepTwo:cards:107 - 获得到的卡1数据是>>: 23-620522120000123943
+2020-02-24 17:05:36.601 | INFO     | UnionPay.Core.StepTwo:inputPoName:154 - 开始得到自定义案例集里所有的案例
+2020-02-24 17:05:36.601 | INFO     | UnionPay.Core.StepTwo:inputPoName:154 - 开始得到自定义案例集里所有的案例
+2020-02-24 17:05:36.650 | INFO     | UnionPay.Core.StepTwo:inputPoName:157 - 判断1 CDM存款-成功-刷卡无密<<<是否等于>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:05:36.650 | INFO     | UnionPay.Core.StepTwo:inputPoName:157 - 判断1 CDM存款-成功-刷卡无密<<<是否等于>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:05:37.813 | INFO     | UnionPay.Core.StepTwo:inputPoName:163 - 点击>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:05:37.813 | INFO     | UnionPay.Core.StepTwo:inputPoName:163 - 点击>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:05:38.743 | INFO     | UnionPay.Core.StepTwo:addListTwo:179 - 点击：1 CDM存款-成功-刷卡无密
+2020-02-24 17:05:38.743 | INFO     | UnionPay.Core.StepTwo:addListTwo:179 - 点击：1 CDM存款-成功-刷卡无密
+2020-02-24 17:05:39.472 | INFO     | UnionPay.Core.StepTwo:addListTwo:185 - 选择菜单：银联发出的报文-选项
+2020-02-24 17:05:39.472 | INFO     | UnionPay.Core.StepTwo:addListTwo:185 - 选择菜单：银联发出的报文-选项
+2020-02-24 17:05:40.130 | INFO     | UnionPay.Core.StepTwo:getInputData:189 - 多条案例的执行数据处理
+2020-02-24 17:05:40.130 | INFO     | UnionPay.Core.StepTwo:getInputData:189 - 多条案例的执行数据处理
+2020-02-24 17:05:40.163 | INFO     | UnionPay.Core.StepTwo:getInputData:198 - 处理后的案例数据为》》》{'卡号1': '23-620522120000123943', '卡号2': '', 'F4交易金额': '000000000001', 'F6持卡人扣账金额': '1'}
+2020-02-24 17:05:40.163 | INFO     | UnionPay.Core.StepTwo:getInputData:198 - 处理后的案例数据为》》》{'卡号1': '23-620522120000123943', '卡号2': '', 'F4交易金额': '000000000001', 'F6持卡人扣账金额': '1'}
+2020-02-24 17:05:40.163 | INFO     | UnionPay.Core.StepTwo:AsendData:203 - 删除卡号1
+2020-02-24 17:05:40.163 | INFO     | UnionPay.Core.StepTwo:AsendData:203 - 删除卡号1
+2020-02-24 17:05:40.164 | INFO     | UnionPay.Core.StepTwo:AsendData:207 - 删除卡号2
+2020-02-24 17:05:40.164 | INFO     | UnionPay.Core.StepTwo:AsendData:207 - 删除卡号2
+2020-02-24 17:05:40.165 | INFO     | UnionPay.Core.StepTwo:AsendData:211 - 输入的值为》》》F4交易金额,value>>>000000000001
+2020-02-24 17:05:40.165 | INFO     | UnionPay.Core.StepTwo:AsendData:211 - 输入的值为》》》F4交易金额,value>>>000000000001
+2020-02-24 17:05:41.244 | INFO     | UnionPay.Core.StepTwo:input_text:220 - 搜索字段：F4交易金额
+2020-02-24 17:05:41.244 | INFO     | UnionPay.Core.StepTwo:input_text:220 - 搜索字段：F4交易金额
+2020-02-24 17:05:43.814 | INFO     | UnionPay.Core.StepTwo:input_text:228 - 填写字段：F4交易金额-->000000000001
+2020-02-24 17:05:43.814 | INFO     | UnionPay.Core.StepTwo:input_text:228 - 填写字段：F4交易金额-->000000000001
+2020-02-24 17:05:45.063 | INFO     | UnionPay.Core.StepTwo:AsendData:211 - 输入的值为》》》F6持卡人扣账金额,value>>>1
+2020-02-24 17:05:45.063 | INFO     | UnionPay.Core.StepTwo:AsendData:211 - 输入的值为》》》F6持卡人扣账金额,value>>>1
+2020-02-24 17:05:46.130 | INFO     | UnionPay.Core.StepTwo:input_text:220 - 搜索字段：F6持卡人扣账金额
+2020-02-24 17:05:46.130 | INFO     | UnionPay.Core.StepTwo:input_text:220 - 搜索字段：F6持卡人扣账金额
+2020-02-24 17:05:48.259 | INFO     | UnionPay.Core.StepTwo:input_text:228 - 填写字段：F6持卡人扣账金额-->1
+2020-02-24 17:05:48.259 | INFO     | UnionPay.Core.StepTwo:input_text:228 - 填写字段：F6持卡人扣账金额-->1
+2020-02-24 17:06:01.544 | ERROR    | UnionPay.Core.StepTwo:SaveButton:139 - 输入对象丢失，正在重新查找，报错信息为Find Control Timeout: {ControlType: TextControl}
+2020-02-24 17:06:01.544 | ERROR    | UnionPay.Core.StepTwo:SaveButton:139 - 输入对象丢失，正在重新查找，报错信息为Find Control Timeout: {ControlType: TextControl}
+2020-02-24 17:06:13.425 | ERROR    | UnionPay.Core.StepTwo:SaveButton:139 - 输入对象丢失，正在重新查找，报错信息为Find Control Timeout: {ControlType: TextControl}
+2020-02-24 17:06:13.425 | ERROR    | UnionPay.Core.StepTwo:SaveButton:139 - 输入对象丢失，正在重新查找，报错信息为Find Control Timeout: {ControlType: TextControl}
+2020-02-24 17:06:25.558 | ERROR    | UnionPay.Core.StepTwo:SaveButton:139 - 输入对象丢失，正在重新查找，报错信息为Find Control Timeout: {ControlType: TextControl}
+2020-02-24 17:06:25.558 | ERROR    | UnionPay.Core.StepTwo:SaveButton:139 - 输入对象丢失，正在重新查找，报错信息为Find Control Timeout: {ControlType: TextControl}
+2020-02-24 17:09:04.199 | INFO     | UnionPay.Core.StepThree:clean_log:97 - 清理执行发送报文时产生的日志
+2020-02-24 17:09:04.199 | INFO     | UnionPay.Core.StepThree:clean_log:97 - 清理执行发送报文时产生的日志
+2020-02-24 17:09:08.004 | INFO     | UnionPay.Core.StepOne:CaseCompartion:60 - 开始进行案例对比
+2020-02-24 17:09:08.004 | INFO     | UnionPay.Core.StepOne:CaseCompartion:60 - 开始进行案例对比
+2020-02-24 17:09:11.491 | INFO     | UnionPay.Core.StepOne:CaseCompartion:75 - 添加案例失败的路径是[]
+2020-02-24 17:09:11.491 | INFO     | UnionPay.Core.StepOne:CaseCompartion:75 - 添加案例失败的路径是[]
+2020-02-24 17:09:11.492 | INFO     | UnionPay.Core.StepOne:CaseCompartion:77 - 没有需要额外添加的案例
+2020-02-24 17:09:11.492 | INFO     | UnionPay.Core.StepOne:CaseCompartion:77 - 没有需要额外添加的案例
+2020-02-24 17:09:11.769 | INFO     | UnionPay.Core.StepTwo:inputPoName:154 - 开始得到自定义案例集里所有的案例
+2020-02-24 17:09:11.769 | INFO     | UnionPay.Core.StepTwo:inputPoName:154 - 开始得到自定义案例集里所有的案例
+2020-02-24 17:09:11.819 | INFO     | UnionPay.Core.StepTwo:inputPoName:157 - 判断1 CDM存款-成功-刷卡无密<<<是否等于>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:09:11.819 | INFO     | UnionPay.Core.StepTwo:inputPoName:157 - 判断1 CDM存款-成功-刷卡无密<<<是否等于>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:09:13.039 | INFO     | UnionPay.Core.StepTwo:inputPoName:163 - 点击>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:09:13.039 | INFO     | UnionPay.Core.StepTwo:inputPoName:163 - 点击>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:09:37.379 | INFO     | UnionPay.Core.StepTwo:getInputData:189 - 多条案例的执行数据处理
+2020-02-24 17:09:37.379 | INFO     | UnionPay.Core.StepTwo:getInputData:189 - 多条案例的执行数据处理
+2020-02-24 17:09:37.396 | INFO     | UnionPay.Core.StepTwo:getInputData:198 - 处理后的案例数据为》》》{'卡号1': '23-6212141100000000037         ', '卡号2': '', 'F4交易金额': '000000000001', 'F6持卡人扣账金额': '1'}
+2020-02-24 17:09:37.396 | INFO     | UnionPay.Core.StepTwo:getInputData:198 - 处理后的案例数据为》》》{'卡号1': '23-6212141100000000037         ', '卡号2': '', 'F4交易金额': '000000000001', 'F6持卡人扣账金额': '1'}
+2020-02-24 17:09:37.396 | INFO     | UnionPay.Core.StepTwo:cards:107 - 获得到的卡1数据是>>: 23-6212141100000000037         
+2020-02-24 17:09:37.396 | INFO     | UnionPay.Core.StepTwo:cards:107 - 获得到的卡1数据是>>: 23-6212141100000000037         
+2020-02-24 17:09:37.642 | INFO     | UnionPay.Core.StepTwo:inputPoName:154 - 开始得到自定义案例集里所有的案例
+2020-02-24 17:09:37.642 | INFO     | UnionPay.Core.StepTwo:inputPoName:154 - 开始得到自定义案例集里所有的案例
+2020-02-24 17:09:37.692 | INFO     | UnionPay.Core.StepTwo:inputPoName:157 - 判断1 CDM存款-成功-刷卡无密<<<是否等于>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:09:37.692 | INFO     | UnionPay.Core.StepTwo:inputPoName:157 - 判断1 CDM存款-成功-刷卡无密<<<是否等于>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:09:39.096 | INFO     | UnionPay.Core.StepTwo:inputPoName:163 - 点击>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:09:39.096 | INFO     | UnionPay.Core.StepTwo:inputPoName:163 - 点击>>>: 1 CDM存款-成功-刷卡无密
+2020-02-24 17:09:40.024 | INFO     | UnionPay.Core.StepTwo:addListTwo:179 - 点击：1 CDM存款-成功-刷卡无密
+2020-02-24 17:09:40.024 | INFO     | UnionPay.Core.StepTwo:addListTwo:179 - 点击：1 CDM存款-成功-刷卡无密
+2020-02-24 17:09:40.789 | INFO     | UnionPay.Core.StepTwo:addListTwo:185 - 选择菜单：银联发出的报文-选项
+2020-02-24 17:09:40.789 | INFO     | UnionPay.Core.StepTwo:addListTwo:185 - 选择菜单：银联发出的报文-选项
+2020-02-24 17:09:41.451 | INFO     | UnionPay.Core.StepTwo:getInputData:189 - 多条案例的执行数据处理
+2020-02-24 17:09:41.451 | INFO     | UnionPay.Core.StepTwo:getInputData:189 - 多条案例的执行数据处理
+2020-02-24 17:09:41.485 | INFO     | UnionPay.Core.StepTwo:getInputData:198 - 处理后的案例数据为》》》{'卡号1': '23-6212141100000000037         ', '卡号2': '', 'F4交易金额': '000000000001', 'F6持卡人扣账金额': '1'}
+2020-02-24 17:09:41.485 | INFO     | UnionPay.Core.StepTwo:getInputData:198 - 处理后的案例数据为》》》{'卡号1': '23-6212141100000000037         ', '卡号2': '', 'F4交易金额': '000000000001', 'F6持卡人扣账金额': '1'}
+2020-02-24 17:09:41.485 | INFO     | UnionPay.Core.StepTwo:AsendData:203 - 删除卡号1
+2020-02-24 17:09:41.485 | INFO     | UnionPay.Core.StepTwo:AsendData:203 - 删除卡号1
+2020-02-24 17:09:41.485 | INFO     | UnionPay.Core.StepTwo:AsendData:207 - 删除卡号2
+2020-02-24 17:09:41.485 | INFO     | UnionPay.Core.StepTwo:AsendData:207 - 删除卡号2
+2020-02-24 17:09:41.485 | INFO     | UnionPay.Core.StepTwo:AsendData:211 - 输入的值为》》》F4交易金额,value>>>000000000001
+2020-02-24 17:09:41.485 | INFO     | UnionPay.Core.StepTwo:AsendData:211 - 输入的值为》》》F4交易金额,value>>>000000000001
+2020-02-24 17:09:42.577 | INFO     | UnionPay.Core.StepTwo:input_text:220 - 搜索字段：F4交易金额
+2020-02-24 17:09:42.577 | INFO     | UnionPay.Core.StepTwo:input_text:220 - 搜索字段：F4交易金额
+2020-02-24 17:09:45.167 | INFO     | UnionPay.Core.StepTwo:input_text:228 - 填写字段：F4交易金额-->000000000001
+2020-02-24 17:09:45.167 | INFO     | UnionPay.Core.StepTwo:input_text:228 - 填写字段：F4交易金额-->000000000001
+2020-02-24 17:09:46.418 | INFO     | UnionPay.Core.StepTwo:AsendData:211 - 输入的值为》》》F6持卡人扣账金额,value>>>1
+2020-02-24 17:09:46.418 | INFO     | UnionPay.Core.StepTwo:AsendData:211 - 输入的值为》》》F6持卡人扣账金额,value>>>1
+2020-02-24 17:09:47.524 | INFO     | UnionPay.Core.StepTwo:input_text:220 - 搜索字段：F6持卡人扣账金额
+2020-02-24 17:09:47.524 | INFO     | UnionPay.Core.StepTwo:input_text:220 - 搜索字段：F6持卡人扣账金额
+2020-02-24 17:09:49.731 | INFO     | UnionPay.Core.StepTwo:input_text:228 - 填写字段：F6持卡人扣账金额-->1
+2020-02-24 17:09:49.731 | INFO     | UnionPay.Core.StepTwo:input_text:228 - 填写字段：F6持卡人扣账金额-->1
+2020-02-24 17:10:03.266 | ERROR    | UnionPay.Core.StepTwo:SaveButton:139 - 输入对象丢失，正在重新查找，报错信息为Find Control Timeout: {ControlType: TextControl}
+2020-02-24 17:10:03.266 | ERROR    | UnionPay.Core.StepTwo:SaveButton:139 - 输入对象丢失，正在重新查找，报错信息为Find Control Timeout: {ControlType: TextControl}

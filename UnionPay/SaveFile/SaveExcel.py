@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-__author__ = "panda  84305510@qq.com"
 
 import datetime
 import os
@@ -9,7 +8,6 @@ import xlwt
 
 
 def SaveExcel(data_file, result_list, execute_result):
-    # self.logger.info('将结果写入Excel表格...')
     result_list = result_list + ['F39应答码', '报文检查', '执行结果']
     total = [['案例序号'] + result_list] + execute_result
     today = datetime.datetime.now().strftime('%Y-%m-%d')
@@ -36,21 +34,16 @@ def SaveExcel(data_file, result_list, execute_result):
             elif j == len(total[i]) - 1:
                 if data is False:
                     style.pattern = fail_pat
-                    worksheet.write(i, j, '成功', style)
-                    # self.success_case.append(number)
-                    # del self.undo[self.undo.index(number)]
-                elif data:
-                    style.pattern = success_pat
                     worksheet.write(i, j, '失败', style)
-                    # self.fail_case.append(number)
-                    # del self.undo[self.undo.index(number)]
+
+                else:
+                    style.pattern = success_pat
+                    worksheet.write(i, j, '成功', style)
             else:
                 worksheet.write(i, j, data)
 
-    paths = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    path = paths + r'\result_files\excel_files\{}'.format(today)
+    path = os.getcwd() + r'\result_files\excel_files\{}'.format(today)
     if not os.path.exists(path):
         os.makedirs(path)
 
     workbook.save(path + r'\{}-{}.xls'.format(data_file, precise_time))
-    # self.logger.info('写入成功，该表格仅保存已执行过案例的结果')

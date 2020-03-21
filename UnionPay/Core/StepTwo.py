@@ -6,8 +6,9 @@ import re
 import time
 
 import uiautomation as auto
-from Core import StepThree
-from Page import CaseShowOnePO, CaseShowTwoPO, AuthPO, CustomPO
+
+from UnionPay.Core import StepThree
+from UnionPay.Page import CaseShowOnePO, CaseShowTwoPO, AuthPO, CustomPO
 
 
 class StepTwo():

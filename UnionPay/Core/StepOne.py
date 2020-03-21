@@ -4,7 +4,8 @@
 import time
 
 import uiautomation as auto
-from Page import AuthPO, CustomPO
+
+from UnionPay.Page import AuthPO, CustomPO
 
 
 class StepOne():

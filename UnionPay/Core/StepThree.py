@@ -6,8 +6,9 @@ import re
 import time
 
 import uiautomation as auto
-from Page import LogPO
-from SaveFile import SaveCaseLog
+
+from UnionPay.Page import LogPO
+from UnionPay.SaveFile import SaveCaseLog
 
 
 class StepThree():

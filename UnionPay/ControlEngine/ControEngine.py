@@ -5,11 +5,12 @@ import os
 
 import docx
 import uiautomation as auto
-from Biz import DataLoad
-from Config import Conf
-from Core import StepOne, StepTwo, StepThree
-from Logs.logs import Logs
-from SaveFile import SaveWord, SaveExcel
+
+from UnionPay.Biz import DataLoad
+from UnionPay.Config import Conf
+from UnionPay.Core import StepOne, StepTwo, StepThree
+from UnionPay.Logs.logs import Logs
+from UnionPay.SaveFile import SaveWord, SaveExcel
 
 
 class ControlEngine():

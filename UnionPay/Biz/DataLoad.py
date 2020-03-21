@@ -3,8 +3,9 @@
 import os
 
 import xlrd
-from Datas import TestCase, TestSuite, CasePath, CasePaths
-from Logs.logs import Logs
+
+from UnionPay.Datas import TestCase, TestSuite, CasePath, CasePaths
+from UnionPay.Logs.logs import Logs
 
 
 class DataLoad():

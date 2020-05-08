@@ -39,27 +39,27 @@ def logger_log():
 while 1:
     logger_log()
     time.sleep(1)
-# from logzero import logger
-#
-# # import uiautomation
-# # These log messages are sent to the console
-# logger.remove(handler_id=None)
-# logger.debug("这是一个程序")
-# logger.info("读取了一条数据")
-# logger.warning("此数据可能有异常")
-# logger.error("保存按钮没有找到")
-#
-# from logbook import Logger, StreamHandler, TimedRotatingFileHandler
-# import sys
-# import os
-#
-# StreamHandler(sys.stdout).push_application()
-# log = Logger('Logbook')
-# log.info('Hello, World!')
-# LOG_DIR = os.path.join('log')
-# if not os.path.exists(LOG_DIR):
-#     os.makedirs(LOG_DIR)
-# TimedRotatingFileHandler(os.path.join(LOG_DIR, '%s.log' % 'user_log'), date_format='%Y%m%d',
-#                          bubble=True).push_application()
-# user_log = Logger('user_log')
-# user_log.info('user_log mytest....')
+from logzero import logger
+
+# import uiautomation
+# These log messages are sent to the console
+logger.remove(handler_id=None)
+logger.debug("这是一个程序")
+logger.info("读取了一条数据")
+logger.warning("此数据可能有异常")
+logger.error("保存按钮没有找到")
+
+from logbook import Logger, StreamHandler, TimedRotatingFileHandler
+import sys
+import os
+
+StreamHandler(sys.stdout).push_application()
+log = Logger('Logbook')
+log.info('Hello, World!')
+LOG_DIR = os.path.join('log')
+if not os.path.exists(LOG_DIR):
+    os.makedirs(LOG_DIR)
+TimedRotatingFileHandler(os.path.join(LOG_DIR, '%s.log' % 'user_log'), date_format='%Y%m%d',
+                         bubble=True).push_application()
+user_log = Logger('user_log')
+user_log.info('user_log mytest....')

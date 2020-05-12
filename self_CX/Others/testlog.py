@@ -39,6 +39,7 @@ def logger_log():
 while 1:
     logger_log()
     time.sleep(1)
+
 from logzero import logger
 
 # import uiautomation
